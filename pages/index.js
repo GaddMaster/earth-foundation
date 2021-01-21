@@ -31,8 +31,8 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section className={utilStyles.headingMd}>
-        <Alert type = "error">
-          <span>Alerting</span>
+        <Alert type = "success">
+          <span>Production Branch</span>
         </Alert>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
