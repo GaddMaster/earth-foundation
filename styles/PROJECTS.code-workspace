@@ -10,6 +10,7 @@
 		"tailwindCSS.emmetCompletions": true,
 		"css.lint.validProperties": [
 			"\"css.validate\": false"
-		]
+		],
+		"workbench.tree.indent": 32
 	}
 }
