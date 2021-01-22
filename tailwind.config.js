@@ -1,9 +1,16 @@
-// tailwind.config.js
+
 module.exports = {
-  purge: [
-    // Use *.tsx if using TypeScript
-    './pages/**/*.js',
-    './components/**/*.js'
-  ]
-  // ...
-}
+  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "media",
+  theme: {
+    extend: {
+      colors: {
+        "accent-1": "#333",
+      }
+    }
+  },
+  variants: {
+    extend: {}
+  },
+  plugins: []
+};
