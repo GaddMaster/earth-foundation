@@ -23,7 +23,7 @@ export default function Home({ allPostsData }: { allPostsData: { date: string, t
       </Head>
 
       <section>
-        <div>Image</div>
+        <div>My Image</div>
       </section>
 
     </Layout>
