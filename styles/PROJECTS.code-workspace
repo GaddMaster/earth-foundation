@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": ".."
+		},
+		{
+			"path": "..\\..\\thearsenalreview"
+		},
+		{
+			"path": "..\\..\\tar-api"
 		}
 	],
 	"settings": {

@@ -10,6 +10,7 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background: white;;
 }
 
 * {
@@ -30,6 +31,16 @@ img {
   display: block;
 }
 
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
 
 
 @tailwind utilities;

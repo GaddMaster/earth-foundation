@@ -1,4 +1,4 @@
 
-export default function Custom404() {
-  return <h1>GetInvolved</h1>;
+export default function GetInvolved() {
+  return <h1>Get Involved</h1>;
 };
