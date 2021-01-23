@@ -8,14 +8,12 @@ import Board from "../components/Board";
 import { getSortedPostsData } from "../lib/posts";
 
 import { motion, AnimatePresence } from "framer-motion";
-import KeenSlider from "keen-slider/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "../styles/layout.module.scss";
-import "keen-slider/keen-slider.min.css";
 
 import content from "../assets/home";
 
@@ -65,11 +63,7 @@ export default function Home({ allPostsData }) {
           <div className = {styles.docker}>
             <div className = {styles.wall}></div>
             <div className = {styles.car}>
-              <KeenSlider>
-                <div className = "keen-slider__slide">1</div>
-                <div className = "keen-slider__slide">2</div>
-                <div className = "keen-slider__slide">3</div>
-              </KeenSlider>
+
             </div>
           </div>
         </section>
