@@ -1,7 +1,4 @@
 
-import { parseISO, format } from 'date-fns'
-
 export default function Date({ dateString }: { dateString: string }) {
-  const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
+  return <div>2nd July 20201</div>;
 };
