@@ -4,11 +4,16 @@ import { GetStaticProps } from "next";
 
 import Layout, { siteTitle } from "../components/layout";
 import Board from "../components/Board";
-import Slider from "../components/Slider";
+import Latest from "../components/Latest";
+import Subscribe from "../components/Subscribe";
 
 import { getSortedPostsData } from "../lib/posts";
 
 import { motion, AnimatePresence } from "framer-motion";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "../styles/layout.module.scss";
 
@@ -45,30 +50,8 @@ export default function Home({ allPostsData }) {
             background = {item.background}
             key = {item.index} />
         ))}
-        <section className = {styles.latest}>
-          <div className = {styles.left}>
-            <div className = {styles.centered}>
-              <div className = {styles.icon}>
-                0
-              </div>
-              <div className = {styles.icon}>
-                0
-              </div>
-              <div className = {styles.label}>
-                <span>Latest News</span>
-              </div>
-              <div className = {styles.all}>
-                <span style = {{marginRight:10}}>Read All News</span>
-                0
-              </div>
-            </div>
-            <div className = {styles.wall}></div>
-          </div>
-          <div className = {styles.right}>
-          <Slider />
-          </div>
-        </section>
-        <Slider />
+        <Latest />
+        <Subscribe />
       </Layout>
     </motion.div>
   );

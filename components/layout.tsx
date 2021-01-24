@@ -4,6 +4,9 @@ import Link from "next/link";
 
 export const siteTitle = "Earth Foundation";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 import styles from "../styles/layout.module.scss";
 
 export default function Layout({ children, home }: { children: React.ReactNode, home ? : boolean }) {
@@ -35,7 +38,7 @@ export default function Layout({ children, home }: { children: React.ReactNode, 
               <span className = {styles.mySpan}>Get Involved</span>
             </Link>
             <div className = {styles.searchIcon}>
-              0
+              <FontAwesomeIcon icon={faSearch} />
             </div>
           </div>
         </nav>

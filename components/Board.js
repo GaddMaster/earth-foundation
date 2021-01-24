@@ -1,4 +1,7 @@
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle as solid, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCircle as hollow } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "../styles/board.module.scss";
 
@@ -15,7 +18,7 @@ const Board = props => {
             <span>04</span>
           </div>
           <div className = {styles.dots}>
-            {[0,1,2,3].map((number, index) => <span>O</span>)}
+            {[0,1,2,3].map((number, index) => <FontAwesomeIcon icon = {index === props.index ? solid : hollow} className = {styles.dot} key = {index} />)}
           </div>
         </div>
         <div className = {styles.label}>
@@ -26,7 +29,7 @@ const Board = props => {
         </div>
         <div className = {styles.route}>
           <span>Read More About The Initiate</span>
-          0
+          <FontAwesomeIcon icon = {faArrowRight} />
         </div>
       </div>
     </section>
