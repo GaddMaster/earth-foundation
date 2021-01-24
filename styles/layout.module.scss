@@ -120,5 +120,9 @@
     user-select: none;
     display: flex;
     align-items: center;
+    .wrapper {
+      padding: 10px;
+      height: 460px;
+    }
   }
 }

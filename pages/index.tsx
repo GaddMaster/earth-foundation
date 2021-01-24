@@ -10,10 +10,6 @@ import { getSortedPostsData } from "../lib/posts";
 
 import { motion, AnimatePresence } from "framer-motion";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faCircle } from "@fortawesome/free-regular-svg-icons";
-
 import styles from "../styles/layout.module.scss";
 
 import content from "../assets/home";
@@ -53,17 +49,17 @@ export default function Home({ allPostsData }) {
           <div className = {styles.left}>
             <div className = {styles.centered}>
               <div className = {styles.icon}>
-                <FontAwesomeIcon icon = {faArrowRight} />
+                0
               </div>
               <div className = {styles.icon}>
-                <FontAwesomeIcon icon = {faArrowLeft} />
+                0
               </div>
               <div className = {styles.label}>
                 <span>Latest News</span>
               </div>
               <div className = {styles.all}>
                 <span style = {{marginRight:10}}>Read All News</span>
-                <FontAwesomeIcon icon = {faArrowRight} />
+                0
               </div>
             </div>
             <div className = {styles.wall}></div>
