@@ -6,6 +6,7 @@ import Layout, { siteTitle } from "../components/layout";
 import Board from "../components/Board";
 import Latest from "../components/Latest";
 import Subscribe from "../components/Subscribe";
+import Footer from "../components/Footer";
 
 import { getSortedPostsData } from "../lib/posts";
 
@@ -52,6 +53,7 @@ export default function Home({ allPostsData }) {
         ))}
         <Latest />
         <Subscribe />
+        <Footer />
       </Layout>
     </motion.div>
   );

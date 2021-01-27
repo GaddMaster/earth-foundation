@@ -14,9 +14,9 @@ const Subscribe = props => {
                     <span>Passionate about our initiatives?</span>
                 </div>
                 <InputBase
-                placeholder = "Your Email Here"
-                    className = {styles.input}
-                    onChange = {()=>{}} />
+                    placeholder = "Your Email Here"
+                        className = {styles.input}
+                        onChange = {()=>{}} />
                 <ButtonBase
                     className = {styles.button}
                     onClick = {()=>{}}>

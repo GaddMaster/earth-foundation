@@ -1,15 +1,9 @@
 {
 	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"path": "..\\..\\thearsenalreview"
-		},
-		{
-			"path": "..\\..\\tar-api"
-		}
-	],
+        {
+            "path": ".."
+        }
+    ],
 	"settings": {
 		"tailwindCSS.colorDecorators": "on",
 		"tailwindCSS.experimental.showPixelValues": true,
