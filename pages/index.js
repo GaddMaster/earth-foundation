@@ -100,12 +100,12 @@ class Home extends PureComponent {
     onLock = (name, value) => this.setState({ [name]: value });
     
     render = () => {
-        console.clear();
-        console.log("");
-        console.log("PUSH : ", this.state.push);
-        console.log("PULL : ", this.state.pull);
-        console.log("CURRENT : ", this.state.current);
-        console.log("GESTURE : ", this.state.gesture);
+        // console.clear();
+        // console.log("");
+        // console.log("PUSH : ", this.state.push);
+        // console.log("PULL : ", this.state.pull);
+        // console.log("CURRENT : ", this.state.current);
+        // console.log("GESTURE : ", this.state.gesture);
         return (
             <motion.div
                 initial = {{ opacity: 0 }}
@@ -115,7 +115,9 @@ class Home extends PureComponent {
                     <Head>
                         <title>The Earth Foundation | Home | Landing</title>
                     </Head>
-                    <Slide
+                    <h1>The Earth Foundation</h1>
+                    <h2>Coming Soon</h2>
+                    {/*<Slide
                         index = {0}
                         current = {this.state.current}
                         touch = {this.state.touch}
@@ -131,8 +133,8 @@ class Home extends PureComponent {
                                 "The Earth Foundation aims to distribute $1 million annually to students, researchers​, and youngentrepreneurs​ with innovative ideas to tackle environmental challenges.",
                                 "By encouraging andsupporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystemthat accelerates positive change​ towards ​environmental sustainability."
                             ]} />
-                    </Slide>
-                    <Slide
+                        </Slide>*/}
+                    {/*<Slide
                         index = {1}
                         current = {this.state.current}
                         touch = {this.state.touch}
@@ -148,8 +150,8 @@ class Home extends PureComponent {
                             posY = {this.state.posY}
                             gesture = {this.state.gesture}
                             onLock = {this.onLock} />
-                    </Slide>
-                    <Slide
+                    </Slide>*/}
+                    {/*<Slide
                         index = {2}
                         current = {this.state.current}
                         touch = {this.state.touch}
@@ -158,12 +160,12 @@ class Home extends PureComponent {
                         push = {this.state.push && this.state.current === 2}
                         background = "orange">
                         <span>Information C</span>
-                    </Slide>
-                    <TouchControl 
+                    </Slide>*/}
+                    {/*<TouchControl 
                         onTouch = {this.onTouch}
                         onDragging = {this.onDragging}
                         onGesture = {this.onGesture}
-                        onCurrent = {this.onCurrent} />
+                    onCurrent = {this.onCurrent} />*/}
                 </Layout>
             </motion.div>
         );
