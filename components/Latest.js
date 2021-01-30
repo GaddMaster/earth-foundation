@@ -14,7 +14,7 @@ import { faCircle as hollow } from "@fortawesome/free-regular-svg-icons";
 import styles from "../styles/latest.module.scss";
 import "react-multi-carousel/lib/styles.css";
 
-import content from "../assets/home";
+import content from "../assets/content";
 import responsive from "../assets/responsive";
 
 class Latest extends PureComponent {

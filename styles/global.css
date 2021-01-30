@@ -49,5 +49,7 @@ h2 {
   font-weight: bold;
 }
 
+img { width: 100%; }
+
 
 @tailwind utilities;
