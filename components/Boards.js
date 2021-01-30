@@ -54,8 +54,18 @@ class Boards extends PureComponent {
                 this.props.onLock("push", false);
                 this.props.onLock("pull", true);
             }
-            if (ps.index === 1 && this.state.index === 0) this.props.onLock("push", true);
-            if (ps.index === content.home.length - 1 && this.state.index === content.home.length - 2) this.props.onLock("pull", true);
+            if (ps.index === 0 && this.state.index === 1) {
+                this.props.onLock("push", false);
+                this.props.onLock("pull", false);
+            }
+            if (ps.index === 1 && this.state.index === 0) {
+                this.props.onLock("push", true);
+                this.props.onLock("pull", false);
+            }
+            if (ps.index < this.state.max && this.state.index === this.state.max) {
+                this.props.onLock("push", false);
+                this.props.onLock("pull", true);
+            }
             if (this.props.gesture && pp.gesture !== this.props.gesture) {
                 console.log("GESTURE ", this.props.gesture);
                 if (this.props.gesture === "push") this.setState({ index: this.state.index > 0 ? this.state.index - 1 : 0 });

@@ -37,16 +37,10 @@ class Home extends PureComponent {
             percentage: 0,
             direction: "",
             threshold: 20,
+            push: false,
             pull: true,
-            push: true,
             gesture: ""
         };
-    };
-
-    componentDidUpdate = (pp, ps) => {
-        // if (this.state.gesture !== ps.gesture) {
-        //     console.log("New Gesture : ", this.state.gesture);
-        // }
     };
 
     onTouch = (touch, posX, posY) => {
@@ -54,7 +48,13 @@ class Home extends PureComponent {
         if (this.state.percentage < 0) {
             if (this.state.percentage < (this.state.threshold * -1)) {
                 if (this.state.push) {
-                    if (this.state.current === 1) current = 0;
+                    if (this.state.current === 1) {
+                        current = 0;
+                        this.setState({
+                            push: false,
+                            pull: true
+                        });
+                    }
                     else if (this.state.current === 2) current = 1;
                 }
                 this.setState({ gesture: "push" });
@@ -64,7 +64,13 @@ class Home extends PureComponent {
             if (this.state.percentage > this.state.threshold) {
                 if (this.state.pull) {
                     if (this.state.current === 0) current = 1;
-                    else if (this.state.current === 1) current = 2;
+                    else if (this.state.current === 1) {
+                        current = 2;
+                        this.setState({
+                            push: true,
+                            pull: false
+                        });
+                    }
                 }
                 this.setState({ gesture: "pull" });
                 setTimeout(() => this.setState({ gesture: "" }), 500);
@@ -102,8 +108,8 @@ class Home extends PureComponent {
     render = () => {
         console.clear();
         console.log("");
-        console.log("PUSH : ", this.state.push);
-        console.log("PULL : ", this.state.pull);
+        console.log(`PUSH : %c${this.state.push}`, `color:${this.state.push?"green":"red"}`);
+        console.log(`PULL : %c${this.state.pull}`, `color:${this.state.pull?"green":"red"}`);
         console.log("CURRENT : ", this.state.current);
         console.log("GESTURE : ", this.state.gesture);
         return (
@@ -157,7 +163,7 @@ class Home extends PureComponent {
                         pull = {this.state.pull && this.state.current === 1}
                         push = {this.state.push && this.state.current === 2}
                         background = "orange">
-                        <span>Information C</span>
+                        <span>Latest & Footer Section</span>
                     </Slide>
                     <TouchControl 
                         onTouch = {this.onTouch}
