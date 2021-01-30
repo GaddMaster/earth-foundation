@@ -31,11 +31,15 @@ class Home extends PureComponent {
         super(props);
         this.state = {
             touch: false,
+            posX: 0,
+            posY: 0,
             current: 0,
-            gesture: "",
             percentage: 0,
             direction: "",
-            threshold: 20
+            threshold: 20,
+            pull: true,
+            push: true,
+            gesture: ""
         };
     };
 
@@ -45,21 +49,31 @@ class Home extends PureComponent {
         // }
     };
 
-    onTouch = touch => {
+    onTouch = (touch, posX, posY) => {
         let current = this.state.current;
         if (this.state.percentage < 0) {
             if (this.state.percentage < (this.state.threshold * -1)) {
-                if (this.state.current === 1) current = 0;
-                else if (this.state.current === 2) current = 1;
+                if (this.state.push) {
+                    if (this.state.current === 1) current = 0;
+                    else if (this.state.current === 2) current = 1;
+                }
+                this.setState({ gesture: "push" });
+                setTimeout(() => this.setState({ gesture: "" }), 500);
             }
         } else if (this.state.percentage > 0) {
             if (this.state.percentage > this.state.threshold) {
-                if (this.state.current === 0) current = 1;
-                else if (this.state.current === 1) current = 2;
+                if (this.state.pull) {
+                    if (this.state.current === 0) current = 1;
+                    else if (this.state.current === 1) current = 2;
+                }
+                this.setState({ gesture: "pull" });
+                setTimeout(() => this.setState({ gesture: "" }), 500);
             }
         }
         this.setState({
             touch,
+            posX,
+            posY,
             current,
             percentage: 0,
             direction: ""
@@ -77,16 +91,21 @@ class Home extends PureComponent {
     };
 
     onDragging = (direction, percentage) => {
-        console.log({ direction, percentage });
         this.setState({ 
             direction, 
             percentage
         });
     };
 
-    onGesture = gesture => this.setState({ gesture });
+    onLock = (name, value) => this.setState({ [name]: value });
     
     render = () => {
+        console.clear();
+        console.log("");
+        console.log("PUSH : ", this.state.push);
+        console.log("PULL : ", this.state.pull);
+        console.log("CURRENT : ", this.state.current);
+        console.log("GESTURE : ", this.state.gesture);
         return (
             <motion.div
                 initial = {{ opacity: 0 }}
@@ -104,25 +123,39 @@ class Home extends PureComponent {
                         pull = {false}
                         push = {false}
                         background = "yellow">
-                        <span>Information A</span>
+                        <Section 
+                            cover = "/images/nasa-Q1p7bh3SHj8-unsplash.jpg"
+                            title = "The Earth Foundation"
+                            subtitle = "Inspire. Educate. Mentor. Empower."
+                            paragraphs = {[
+                                "The Earth Foundation aims to distribute $1 million annually to students, researchers​, and youngentrepreneurs​ with innovative ideas to tackle environmental challenges.",
+                                "By encouraging andsupporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystemthat accelerates positive change​ towards ​environmental sustainability."
+                            ]} />
                     </Slide>
                     <Slide
                         index = {1}
                         current = {this.state.current}
                         touch = {this.state.touch}
                         percentage = {this.state.percentage}
-                        pull = {this.state.current === 0}
-                        push = {this.state.current === 1}
+                        pull = {this.state.pull && this.state.current === 0}
+                        push = {this.state.push && this.state.current === 1}
                         background = "purple">
-                        <span>Information B</span>
+                        <Boards
+                            current = {this.state.current}
+                            touch = {this.state.touch}
+                            percentage = {this.state.percentage}
+                            posX = {this.state.posX}
+                            posY = {this.state.posY}
+                            gesture = {this.state.gesture}
+                            onLock = {this.onLock} />
                     </Slide>
                     <Slide
                         index = {2}
                         current = {this.state.current}
                         touch = {this.state.touch}
                         percentage = {this.state.percentage}
-                        pull = {this.state.current === 1}
-                        push = {this.state.current === 2}
+                        pull = {this.state.pull && this.state.current === 1}
+                        push = {this.state.push && this.state.current === 2}
                         background = "orange">
                         <span>Information C</span>
                     </Slide>
@@ -149,13 +182,3 @@ export const getStaticProps = async () => {
   };
 };
 
-{
-    /* <Section 
-    cover = "/images/nasa-Q1p7bh3SHj8-unsplash.jpg"
-    title = "The Earth Foundation"
-    subtitle = "Inspire. Educate. Mentor. Empower."
-    paragraphs = {[
-        "The Earth Foundation aims to distribute $1 million annually to students, researchers​, and youngentrepreneurs​ with innovative ideas to tackle environmental challenges.",
-        "By encouraging andsupporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystemthat accelerates positive change​ towards ​environmental sustainability."
-    ]} /> */
-}
