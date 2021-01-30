@@ -1,3 +1,7 @@
+
+@tailwind base;
+@tailwind components;
+
 html,
 body {
   padding: 0;
@@ -6,7 +10,15 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background: white;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+*:focus { outline: 0 !important; }
 
 * {
   box-sizing: border-box;
@@ -25,3 +37,19 @@ img {
   max-width: 100%;
   display: block;
 }
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+img { width: 100%; }
+
+
+@tailwind utilities;

@@ -1,0 +1,84 @@
+
+.wrapper {
+    padding: 10px;
+    height: 460px;
+}
+
+.iconage {
+    position: absolute;
+    left: 80px;
+    top: 160px;
+}
+
+.latest {
+    height: 700px;
+    position: relative;
+    background: #F4F4F4;
+    padding: 100px 0px;
+    outline:none;
+    .control {
+        width: 30%;
+        background: #CFAA7A;
+        position: relative;
+        height: 500px;
+        float: left;
+        .centered {
+            padding: 50px 0px 0px 80px;
+            flex-grow: 1;
+            .spacer {
+                margin: 10px;
+                outline: none;
+            }
+            .icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 3px;
+                border: 1px solid #16172C;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #16172C;
+                font-size: 12px;
+                outline: none;
+            }
+            .label {
+                font-size: 44px;
+                color: white;
+                font-weight: bold;
+                margin: 0px 0px 20px 0px;
+            }
+            .all {
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                color: #16172C;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
+        }
+        .wall {
+            height: 100%;
+            width: 100px;
+            position: absolute;
+            right: -100px;
+            top: 0px;
+            background: #CFAA7A;
+        }
+    }
+    .carousel {
+        width: 70%;
+        float: left;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 20px 0px;
+        .wrapper {
+            padding: 10px;
+            height: 460px;
+        }
+    }
+}

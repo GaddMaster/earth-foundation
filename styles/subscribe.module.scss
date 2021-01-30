@@ -1,0 +1,41 @@
+
+.subscribe {
+    display: flex;
+    justify-content: flex-end;
+    height: 120px;
+    background: whitesmoke;
+    .block {
+        flex-grow: 1;
+        background: white;
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 120px;
+        .label {
+            font-size: 24px;
+            flex-grow: 1;
+            padding: 0px 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .input {
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 0px 20px 0px 0px;
+            input {
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+        .button {
+            width: 100px;
+            height: 50px;
+            background: #CFAA7A;;
+            margin: 0px 120px 0px 0px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+    }
+}

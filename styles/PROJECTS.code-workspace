@@ -1,0 +1,16 @@
+{
+	"folders": [
+        {
+            "path": ".."
+        }
+    ],
+	"settings": {
+		"tailwindCSS.colorDecorators": "on",
+		"tailwindCSS.experimental.showPixelValues": true,
+		"tailwindCSS.emmetCompletions": true,
+		"css.lint.validProperties": [
+			"\"css.validate\": false"
+		],
+		"workbench.tree.indent": 32
+	}
+}
