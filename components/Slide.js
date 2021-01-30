@@ -24,7 +24,7 @@ class Slide extends PureComponent {
                 className = {styles.slide}
                 style = {{
                     background: this.props.background,
-                    transition: this.props.touch ? "top 0.0s" : "top 0.5s",
+                    transition: this.props.touch ? "top 0.1s" : "top 0.5s",
                     top: pushing ? `${this.props.percentage*-1}vh` : pulling ? `${100-this.props.percentage}vh` : this.props.index <= this.props.current ? "0vh" : "100vh",
                     zIndex: this.props.index
                 }}>

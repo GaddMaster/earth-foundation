@@ -66,7 +66,18 @@ class Home extends PureComponent {
         });
     };
 
+    onCurrent = direction => {
+        let current = this.state.current;
+        if (direction === "up") {
+            if (this.state.current > 0) current--;
+        } else if (direction === "down") {
+            if (this.state.current < 2) current++;
+        }
+        this.setState({ current });
+    };
+
     onDragging = (direction, percentage) => {
+        console.log({ direction, percentage });
         this.setState({ 
             direction, 
             percentage
@@ -118,7 +129,8 @@ class Home extends PureComponent {
                     <TouchControl 
                         onTouch = {this.onTouch}
                         onDragging = {this.onDragging}
-                        onGesture = {this.onGesture} />
+                        onGesture = {this.onGesture}
+                        onCurrent = {this.onCurrent} />
                 </Layout>
             </motion.div>
         );
