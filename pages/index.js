@@ -46,16 +46,21 @@ class Home extends PureComponent {
     };
 
     onTouch = touch => {
+        let current = this.state.current;
+        if (this.state.percentage < 0) {
+            if (this.state.percentage < (this.state.threshold * -1)) {
+                if (this.state.current === 1) current = 0;
+                else if (this.state.current === 2) current = 1;
+            }
+        } else if (this.state.percentage > 0) {
+            if (this.state.percentage > this.state.threshold) {
+                if (this.state.current === 0) current = 1;
+                else if (this.state.current === 1) current = 2;
+            }
+        }
         this.setState({
             touch,
-            current: 
-                !touch ? 
-                (
-                    this.state.percentage > this.state.threshold ? ((this.state.current+1) < 3 ? (this.state.current+1) : this.state.current) : 
-                    this.state.percentage < this.state.threshold ? ((this.state.current-1) > -1 ? (this.state.current-1) : 0) : 
-                    this.state.current
-                ) : 
-                this.state.current,
+            current,
             percentage: 0,
             direction: ""
         });
