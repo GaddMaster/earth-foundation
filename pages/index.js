@@ -16,6 +16,8 @@ import { getSortedPostsData } from "../lib/posts";
 
 import { motion } from "framer-motion";
 
+import styles from "../styles/home.module.scss";
+
 class Home extends PureComponent {
 
     constructor (props) {
@@ -34,10 +36,11 @@ class Home extends PureComponent {
         };
     };
 
-    onTouch = (touch, posX, posY) => {
+    onTouch = (touch, posX, posY, gesture) => {
+        console.log("GESTURE : ", gesture);
         let current = this.state.current;
-        if (this.state.percentage < 0) {
-            if (this.state.percentage < (this.state.threshold * -1)) {
+        if (gesture === "push" || this.state.percentage < 0) {
+            if (gesture || this.state.percentage < (this.state.threshold * -1)) {
                 if (this.state.push) {
                     if (this.state.current === 1) {
                         current = 0;
@@ -47,21 +50,23 @@ class Home extends PureComponent {
                         });
                     }
                     else if (this.state.current === 2) current = 1;
+                    else if (this.state.current === 3) current = 2;
                 }
                 this.setState({ gesture: "push" });
                 setTimeout(() => this.setState({ gesture: "" }), 500);
             }
-        } else if (this.state.percentage > 0) {
-            if (this.state.percentage > this.state.threshold) {
+        } else if (gesture === "pull" || this.state.percentage > 0) {
+            if (gesture || this.state.percentage > this.state.threshold) {
                 if (this.state.pull) {
                     if (this.state.current === 0) current = 1;
                     else if (this.state.current === 1) {
                         current = 2;
                         this.setState({
                             push: true,
-                            pull: false
+                            pull: true
                         });
                     }
+                    else if (this.state.current === 2) current = 3;
                 }
                 this.setState({ gesture: "pull" });
                 setTimeout(() => this.setState({ gesture: "" }), 500);
@@ -78,13 +83,25 @@ class Home extends PureComponent {
     };
 
     onCurrent = direction => {
+        // UP PULL
+        // DOWN PULL
         let current = this.state.current;
+        let gesture = this.state.gesture;
+        console.log("");
+        console.log("DIRECTION : ", direction);
         if (direction === "up") {
-            if (this.state.current > 0) current--;
+            gesture = "push";
+            if (this.state.push && this.state.current === 1) current--;
+            else gesture = "push";
         } else if (direction === "down") {
-            if (this.state.current < 2) current++;
+            gesture = "pull";
+            if (this.state.pull && this.state.current === 1) current++;
+            else if (this.state.current < 3) current++;
+            else gesture = "pull";
         }
-        this.setState({ current });
+        // this.setState({ current, gesture });
+        console.log(gesture);
+        this.onTouch(false, 0, 0, gesture);
     };
 
     onDragging = (direction, percentage) => {
@@ -97,7 +114,7 @@ class Home extends PureComponent {
     onLock = (name, value) => this.setState({ [name]: value });
     
     render = () => {
-        console.clear();
+        // console.clear();
         console.log("");
         console.log(`PUSH : %c${this.state.push}`, `color:${this.state.push?"green":"red"}`);
         console.log(`PULL : %c${this.state.pull}`, `color:${this.state.pull?"green":"red"}`);
@@ -152,21 +169,22 @@ class Home extends PureComponent {
                         touch = {this.state.touch}
                         percentage = {this.state.percentage}
                         pull = {this.state.pull && this.state.current === 1}
-                        push = {this.state.push && this.state.current === 2}
-                        background = "orange">
+                        push = {this.state.push && this.state.current === 2}>
                         <Latest />
                     </Slide>
-                    {/*<Slide
+                    <Slide
                         index = {3}
                         current = {this.state.current}
                         touch = {this.state.touch}
                         percentage = {this.state.percentage}
-                        pull = {this.state.pull && this.state.current === 1}
-                        push = {this.state.push && this.state.current === 2}
-                        background = "orange">
-                        <Subscribe />
-                        <Footer />
-                    </Slide>*/}
+                        pull = {this.state.pull && this.state.current === 2}
+                        push = {this.state.push && this.state.current === 3}
+                        background = "whitesmoke">
+                        <div className = {styles.last}>
+                            <Subscribe />
+                            <Footer />
+                        </div>
+                    </Slide>
                     <TouchControl 
                         onTouch = {this.onTouch}
                         onDragging = {this.onDragging}

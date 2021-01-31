@@ -10,6 +10,7 @@ class TouchControl extends PureComponent {
 
     constructor (props) {
         super(props);
+        this.lock = false;
         this.state = {
             touch: false,
             height: 0,
@@ -90,12 +91,15 @@ class TouchControl extends PureComponent {
     };
 
     onWheel = e => {
+        if (this.lock) return;
+        this.lock = true;
         var delta = null, direction = false;
         if (!e) e = window.event;
         if (e.wheelDelta) delta = e.wheelDelta / 60;
         else if ( e.detail ) delta = -e.detail / 2;
         if ( delta !== null ) direction = delta > 0 ? 'up' : 'down';
         this.props.onCurrent(direction);
+        setTimeout(() => this.lock = false, 1000);
     };
     
     render = () => {

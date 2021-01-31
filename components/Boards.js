@@ -46,7 +46,7 @@ class Boards extends PureComponent {
             }
             if (pp.current === 1 && this.props.current === 2) {
                 this.props.onLock("push", true);
-                this.props.onLock("pull", false);
+                this.props.onLock("pull", true);
             }
             if (pp.current === 2 && this.props.current === 1) {
                 this.props.onLock("push", false);
@@ -82,7 +82,7 @@ class Boards extends PureComponent {
         return (
             <div className = {styles.boards}>
                 <div className = {styles.banner} style = {{background:`url(${item.image})`}}></div>
-                <div className = {styles.block} style = {{background:item.background||"black"}}>
+                <div className = {styles.block} style = {{background:item.background||"white"}}>
                     <div className = {styles.padding}>
                         <div className = {styles.pagination}>
                             <div className = {styles.index}>
