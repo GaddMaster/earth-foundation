@@ -121,7 +121,7 @@ class Home extends PureComponent {
                         push = {false}
                         background = "yellow">
                         <Section 
-                            cover = "/images/nasa-Q1p7bh3SHj8-unsplash.jpg"
+                            cover = "/images/nasa-Q1p7bh3SHj8-unsplash.webp"
                             title = "The Earth Foundation"
                             subtitle = "Inspire. Educate. Mentor. Empower."
                             paragraphs = {[

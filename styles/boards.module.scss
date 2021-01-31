@@ -54,13 +54,13 @@
         }
       }
       .label {
-        line-height: 40px;
+        line-height: 30px;
         margin: 0px 0px 40px 0px;
         color: #CFAA7A;
-        h1 {font-size: 38px; }
+        h1 {font-size: 32px; }
       }
       .summary {
-        line-height: 16px;
+        line-height: 14px;
         line-height: 1.6em;
         margin: 0px 0px 40px 0px;
         color: #b9b9b9;
@@ -73,6 +73,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: bold;
+        font-size: 12px;
         svg {
           margin: 0px 0px 0px 20px;
           width: 20px;

@@ -8,8 +8,7 @@ import { motion } from "framer-motion";
 import Button from "@material-ui/core/ButtonBase";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle as solid, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faCircle as hollow } from "@fortawesome/free-regular-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/latest.module.scss";
 import "react-multi-carousel/lib/styles.css";
@@ -70,6 +69,7 @@ class Latest extends PureComponent {
                 <div className = {styles.carousel}>
                     <Carousel
                         ref = {el => this.myCarousel = el}
+                        containerClass = {styles.list}
                         additionalTransfrom = {0}
                         swipeable
                         dragable
