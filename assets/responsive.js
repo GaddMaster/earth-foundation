@@ -6,17 +6,17 @@ export default {
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 2.8,
+        items: 3.8,
         partialVisibilityGutter: 30
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 1.8,
+        items: 2.8,
         partialVisibilityGutter: 20
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1,
+        items: 1.4,
         partialVisibilityGutter: 10
     }
 };

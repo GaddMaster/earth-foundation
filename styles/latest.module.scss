@@ -1,33 +1,30 @@
 
-.wrapper {
-    padding: 10px;
-    height: 460px;
-}
-
-.iconage {
-    position: absolute;
-    left: 80px;
-    top: 160px;
-}
+@import "./variables";
 
 .latest {
-    height: 700px;
+    width: 100%;
+    height: 100vh;
     position: relative;
     background: #F4F4F4;
-    padding: 100px 0px;
-    outline:none;
+    @media (min-width: $breakpoint) {}
     .control {
-        width: 30%;
+        width: 60%;
         background: #CFAA7A;
         position: relative;
-        height: 500px;
-        float: left;
+        height: 200px;
+        margin: 40px 0px 0px 0px;
+        @media (min-width: $breakpoint) {
+            width: 30%;
+            float: left;
+        }
         .centered {
-            padding: 50px 0px 0px 80px;
+            padding: 20px 0px 0px 30px;
             flex-grow: 1;
+            @media (min-width: $breakpoint) { padding: 50px 0px 0px 80px; }
             .spacer {
                 margin: 10px;
                 outline: none;
+                @media (max-width: $breakpoint) { display: none; }
             }
             .icon {
                 width: 50px;
@@ -42,7 +39,7 @@
                 outline: none;
             }
             .label {
-                font-size: 44px;
+                font-size: 24px;
                 color: white;
                 font-weight: bold;
                 margin: 0px 0px 20px 0px;
@@ -64,18 +61,26 @@
             right: -100px;
             top: 0px;
             background: #CFAA7A;
+            @media (max-width: $breakpoint) { display: none; }
         }
     }
     .carousel {
-        width: 70%;
-        float: left;
+        width: 90%;
+        position: relative;
+        top: -80px;
+        float: right;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        padding: 20px 0px;
+        overflow: visible;
+        .react-multi-carousel-list{ overflow: visible; }
+        @media (min-width: $breakpoint) {
+            width: 70%;
+            float: left;
+        }
         .wrapper {
             padding: 10px;
             height: 460px;

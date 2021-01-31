@@ -109,9 +109,9 @@ class TouchControl extends PureComponent {
                         alignItems: "center",
                         opacity: 0.25
                     }}>
-                        <span>{this.state.direction.toUpperCase()}</span>
+                        {/*<span>{this.state.direction.toUpperCase()}</span>
                         <span>{this.state.percentage}</span>
-                        <span><FontAwesomeIcon icon = {faFingerprint} /></span>
+                <span><FontAwesomeIcon icon = {faFingerprint} /></span>*/}
                     </div> }
             </div>
         );

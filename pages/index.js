@@ -6,7 +6,6 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Section from "../components/Section";
 import Boards from "../components/Boards";
-import Board from "../components/Board";
 import Slide from "../components/Slide";
 import Latest from "../components/Latest";
 import Subscribe from "../components/Subscribe";
@@ -15,15 +14,7 @@ import TouchControl from "../components/TouchControl";
 
 import { getSortedPostsData } from "../lib/posts";
 
-import { motion, AnimatePresence } from "framer-motion";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faCircle } from "@fortawesome/free-regular-svg-icons";
-
-import styles from "../styles/home.module.scss";
-
-import content from "../assets/content";
+import { motion } from "framer-motion";
 
 class Home extends PureComponent {
 
@@ -163,8 +154,19 @@ class Home extends PureComponent {
                         pull = {this.state.pull && this.state.current === 1}
                         push = {this.state.push && this.state.current === 2}
                         background = "orange">
-                        <span>Latest & Footer Section</span>
+                        <Latest />
                     </Slide>
+                    {/*<Slide
+                        index = {3}
+                        current = {this.state.current}
+                        touch = {this.state.touch}
+                        percentage = {this.state.percentage}
+                        pull = {this.state.pull && this.state.current === 1}
+                        push = {this.state.push && this.state.current === 2}
+                        background = "orange">
+                        <Subscribe />
+                        <Footer />
+                    </Slide>*/}
                     <TouchControl 
                         onTouch = {this.onTouch}
                         onDragging = {this.onDragging}

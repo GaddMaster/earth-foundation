@@ -1,8 +1,6 @@
 
 import React, { PureComponent } from "react";
 
-import Board from "./Board";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle as solid, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faCircle as hollow } from "@fortawesome/free-regular-svg-icons";
@@ -27,17 +25,17 @@ class Boards extends PureComponent {
 
     componentDidUpdate = (pp, ps) => {
         if (this.props.current === 1) {
-            if (!pp.touch && this.props.touch && !this.lock) {
-                this.lock = true;
-                for (let x = 0; x < content.home.length; x++) {
-                    let element = document.getElementById(`dotID_${x}`);
-                    var rect = element.getBoundingClientRect();
-                    if (pointInRect({ x1: rect.x, y1: rect.y, x2: rect.x+rect.width, y2: rect.y+rect.height}, { x: this.props.posX, y: this.props.posY })) {
-                        this.setState({ index: x });
-                    }
-                    setTimeout(() => this.lock = false, 500);
-                }
-            }
+            // if (!pp.touch && this.props.touch && !this.lock) {
+            //     this.lock = true;
+            //     for (let x = 0; x < content.home.length; x++) {
+            //         let element = document.getElementById(`dotID_${x}`);
+            //         var rect = element.getBoundingClientRect();
+            //         if (pointInRect({ x1: rect.x, y1: rect.y, x2: rect.x+rect.width, y2: rect.y+rect.height}, { x: this.props.posX, y: this.props.posY })) {
+            //             this.setState({ index: x });
+            //         }
+            //         setTimeout(() => this.lock = false, 500);
+            //     }
+            // }
             if (pp.current === 0 && this.props.current === 1) {
                 this.props.onLock("push", true);
                 this.props.onLock("pull", false);
@@ -97,7 +95,7 @@ class Boards extends PureComponent {
                                 {[0,1,2,3].map(number => (
                                     <div
                                         id = {`dotID_${number}`}
-                                        onClick = {() => {console.log("PAGE");}} 
+                                        onClick = {this.onPage.bind(this, number)} 
                                         key = {number}>
                                         <FontAwesomeIcon 
                                             icon = {number === this.state.index ? solid : hollow} 

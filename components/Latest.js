@@ -59,14 +59,10 @@ class Latest extends PureComponent {
                             <span>Latest News</span>
                         </div>
                         <div className = {styles.all}>
-                            <motion.button
-                                whileHover = {{ scale: 1.1 }}
-                                whileTap = {{ scale: 0.8 }}>
-                                <div>
-                                    <span style = {{marginRight:10}}>Read All News</span>
-                                    <FontAwesomeIcon icon = {faArrowRight} />
-                                </div>
-                            </motion.button>
+                            <div>
+                                <span style = {{marginRight:10}}>Read All</span>
+                                <FontAwesomeIcon icon = {faArrowRight} />
+                            </div>
                         </div>
                     </div>
                     <div className = {styles.wall}></div>
