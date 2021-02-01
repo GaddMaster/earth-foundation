@@ -99,7 +99,7 @@ class TouchControl extends PureComponent {
         else if ( e.detail ) delta = -e.detail / 2;
         if ( delta !== null ) direction = delta > 0 ? 'up' : 'down';
         this.props.onCurrent(direction);
-        setTimeout(() => this.lock = false, 1000);
+        setTimeout(() => this.lock = false, 500);
     };
     
     render = () => {

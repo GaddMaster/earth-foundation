@@ -32,12 +32,18 @@ class Home extends PureComponent {
             threshold: 20,
             push: false,
             pull: true,
-            gesture: ""
+            gesture: "",
+            lock: false
         };
     };
 
+    componentDidMount = () => {
+        var element = document.getElementById("end");
+        element.addEventListener("scroll", e => this.setState({ lock: e.target.scrollTop > 0 }));
+    };
+
     onTouch = (touch, posX, posY, gesture) => {
-        console.log("GESTURE : ", gesture);
+        if (this.state.lock) return;
         let current = this.state.current;
         if (gesture === "push" || this.state.percentage < 0) {
             if (gesture || this.state.percentage < (this.state.threshold * -1)) {
@@ -50,7 +56,6 @@ class Home extends PureComponent {
                         });
                     }
                     else if (this.state.current === 2) current = 1;
-                    else if (this.state.current === 3) current = 2;
                 }
                 this.setState({ gesture: "push" });
                 setTimeout(() => this.setState({ gesture: "" }), 500);
@@ -63,10 +68,9 @@ class Home extends PureComponent {
                         current = 2;
                         this.setState({
                             push: true,
-                            pull: true
+                            pull: false
                         });
                     }
-                    else if (this.state.current === 2) current = 3;
                 }
                 this.setState({ gesture: "pull" });
                 setTimeout(() => this.setState({ gesture: "" }), 500);
@@ -83,12 +87,9 @@ class Home extends PureComponent {
     };
 
     onCurrent = direction => {
-        // UP PULL
-        // DOWN PULL
+        if (this.state.lock) return;
         let current = this.state.current;
         let gesture = this.state.gesture;
-        console.log("");
-        console.log("DIRECTION : ", direction);
         if (direction === "up") {
             gesture = "push";
             if (this.state.push && this.state.current === 1) current--;
@@ -96,11 +97,9 @@ class Home extends PureComponent {
         } else if (direction === "down") {
             gesture = "pull";
             if (this.state.pull && this.state.current === 1) current++;
-            else if (this.state.current < 3) current++;
+            else if (this.state.current < 2) current++;
             else gesture = "pull";
         }
-        // this.setState({ current, gesture });
-        console.log(gesture);
         this.onTouch(false, 0, 0, gesture);
     };
 
@@ -114,8 +113,9 @@ class Home extends PureComponent {
     onLock = (name, value) => this.setState({ [name]: value });
     
     render = () => {
-        // console.clear();
+        console.clear();
         console.log("");
+        console.log("LOCK : ", this.state.lock);
         console.log(`PUSH : %c${this.state.push}`, `color:${this.state.push?"green":"red"}`);
         console.log(`PULL : %c${this.state.pull}`, `color:${this.state.pull?"green":"red"}`);
         console.log("CURRENT : ", this.state.current);
@@ -170,19 +170,14 @@ class Home extends PureComponent {
                         percentage = {this.state.percentage}
                         pull = {this.state.pull && this.state.current === 1}
                         push = {this.state.push && this.state.current === 2}>
-                        <Latest />
-                    </Slide>
-                    <Slide
-                        index = {3}
-                        current = {this.state.current}
-                        touch = {this.state.touch}
-                        percentage = {this.state.percentage}
-                        pull = {this.state.pull && this.state.current === 2}
-                        push = {this.state.push && this.state.current === 3}
-                        background = "whitesmoke">
                         <div className = {styles.last}>
-                            <Subscribe />
-                            <Footer />
+                            <div 
+                                id = "end"
+                                className = {styles.wrapper}>
+                                <Latest />
+                                <Subscribe />
+                                <Footer />
+                            </div>
                         </div>
                     </Slide>
                     <TouchControl 
@@ -207,3 +202,4 @@ export const getStaticProps = async () => {
     }
   };
 };
+

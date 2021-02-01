@@ -18,11 +18,6 @@ import responsive from "../assets/responsive";
 
 class Latest extends PureComponent {
 
-    componentDidMount = () => {
-        console.log("Mounted");
-        window.addEventListener("scroll", this.onScroll);
-    };
-
     onScroll = event => {};
 
     onPrev = () => this.myCarousel.previous();
