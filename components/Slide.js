@@ -17,7 +17,7 @@ class Slide extends PureComponent {
     render = () => {
         let pushing = this.props.touch && this.props.push && this.props.percentage < 0;
         let pulling = this.props.touch && this.props.pull && this.props.percentage > 0;
-        console.log(`Y:${this.props.index} PUSH:${this.props.push} PULL:${this.props.pull}`);
+        console.log(`Y : ${this.props.index}   PUSH : %c${this.props.push}   %cPULL : %c${this.props.pull}`, `color:${this.props.push?"green":"red"}`, "color:white", `color:${this.props.pull?"green":"red"}`);
         return (
             <div 
                 className = {styles.slide}

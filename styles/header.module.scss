@@ -32,7 +32,12 @@
             flex-grow: 1;
             .link {
                 margin: 0px 20px 0px 0px;
+                font-size: 20px;
                 @media (max-width: $breakpoint) { display: none; }
+                &:hover {
+                    cursor: pointer;
+                    color: $gold;
+                }
             }
             .icon {
                 width: 24px;
@@ -48,7 +53,9 @@
                 &.search {
                     @media (max-width: $breakpoint) { display: none; }
                 }
-                &.bars {}
+                &.bars {
+                    @media (min-width: $breakpoint) { display: none; }
+                }
             }
         }
     }

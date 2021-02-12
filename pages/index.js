@@ -6,7 +6,6 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Section from "../components/Section";
 import Boards from "../components/Boards";
-import Board from "../components/Board";
 import Slide from "../components/Slide";
 import Latest from "../components/Latest";
 import Subscribe from "../components/Subscribe";
@@ -15,15 +14,9 @@ import TouchControl from "../components/TouchControl";
 
 import { getSortedPostsData } from "../lib/posts";
 
-import { motion, AnimatePresence } from "framer-motion";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faCircle } from "@fortawesome/free-regular-svg-icons";
+import { motion } from "framer-motion";
 
 import styles from "../styles/home.module.scss";
-
-import content from "../assets/content";
 
 class Home extends PureComponent {
 
@@ -37,34 +30,47 @@ class Home extends PureComponent {
             percentage: 0,
             direction: "",
             threshold: 20,
+            push: false,
             pull: true,
-            push: true,
-            gesture: ""
+            gesture: "",
+            lock: false
         };
     };
 
-    componentDidUpdate = (pp, ps) => {
-        // if (this.state.gesture !== ps.gesture) {
-        //     console.log("New Gesture : ", this.state.gesture);
-        // }
+    componentDidMount = () => {
+        var element = document.getElementById("end");
+        element.addEventListener("scroll", e => this.setState({ lock: e.target.scrollTop > 0 }));
     };
 
-    onTouch = (touch, posX, posY) => {
+    onTouch = (touch, posX, posY, gesture) => {
+        if (this.state.lock) return;
         let current = this.state.current;
-        if (this.state.percentage < 0) {
-            if (this.state.percentage < (this.state.threshold * -1)) {
+        if (gesture === "push" || this.state.percentage < 0) {
+            if (gesture || this.state.percentage < (this.state.threshold * -1)) {
                 if (this.state.push) {
-                    if (this.state.current === 1) current = 0;
+                    if (this.state.current === 1) {
+                        current = 0;
+                        this.setState({
+                            push: false,
+                            pull: true
+                        });
+                    }
                     else if (this.state.current === 2) current = 1;
                 }
                 this.setState({ gesture: "push" });
                 setTimeout(() => this.setState({ gesture: "" }), 500);
             }
-        } else if (this.state.percentage > 0) {
-            if (this.state.percentage > this.state.threshold) {
+        } else if (gesture === "pull" || this.state.percentage > 0) {
+            if (gesture || this.state.percentage > this.state.threshold) {
                 if (this.state.pull) {
                     if (this.state.current === 0) current = 1;
-                    else if (this.state.current === 1) current = 2;
+                    else if (this.state.current === 1) {
+                        current = 2;
+                        this.setState({
+                            push: true,
+                            pull: false
+                        });
+                    }
                 }
                 this.setState({ gesture: "pull" });
                 setTimeout(() => this.setState({ gesture: "" }), 500);
@@ -81,13 +87,20 @@ class Home extends PureComponent {
     };
 
     onCurrent = direction => {
+        if (this.state.lock) return;
         let current = this.state.current;
+        let gesture = this.state.gesture;
         if (direction === "up") {
-            if (this.state.current > 0) current--;
+            gesture = "push";
+            if (this.state.push && this.state.current === 1) current--;
+            else gesture = "push";
         } else if (direction === "down") {
-            if (this.state.current < 2) current++;
+            gesture = "pull";
+            if (this.state.pull && this.state.current === 1) current++;
+            else if (this.state.current < 2) current++;
+            else gesture = "pull";
         }
-        this.setState({ current });
+        this.onTouch(false, 0, 0, gesture);
     };
 
     onDragging = (direction, percentage) => {
@@ -100,12 +113,15 @@ class Home extends PureComponent {
     onLock = (name, value) => this.setState({ [name]: value });
     
     render = () => {
-        // console.clear();
-        // console.log("");
-        // console.log("PUSH : ", this.state.push);
-        // console.log("PULL : ", this.state.pull);
-        // console.log("CURRENT : ", this.state.current);
-        // console.log("GESTURE : ", this.state.gesture);
+
+        console.clear();
+        console.log("");
+        console.log("LOCK : ", this.state.lock);
+        console.log(`PUSH : %c${this.state.push}`, `color:${this.state.push?"green":"red"}`);
+        console.log(`PULL : %c${this.state.pull}`, `color:${this.state.pull?"green":"red"}`);
+        console.log("CURRENT : ", this.state.current);
+        console.log("GESTURE : ", this.state.gesture);
+
         return (
             <motion.div
                 initial = {{ opacity: 0 }}
@@ -126,7 +142,7 @@ class Home extends PureComponent {
                         push = {false}
                         background = "yellow">
                         <Section 
-                            cover = "/images/nasa-Q1p7bh3SHj8-unsplash.jpg"
+                            cover = "/images/nasa-Q1p7bh3SHj8-unsplash.webp"
                             title = "The Earth Foundation"
                             subtitle = "Inspire. Educate. Mentor. Empower."
                             paragraphs = {[
@@ -157,11 +173,18 @@ class Home extends PureComponent {
                         touch = {this.state.touch}
                         percentage = {this.state.percentage}
                         pull = {this.state.pull && this.state.current === 1}
-                        push = {this.state.push && this.state.current === 2}
-                        background = "orange">
-                        <span>Information C</span>
-                    </Slide>*/}
-                    {/*<TouchControl 
+                        push = {this.state.push && this.state.current === 2}>
+                        <div className = {styles.last}>
+                            <div 
+                                id = "end"
+                                className = {styles.wrapper}>
+                                <Latest />
+                                <Subscribe />
+                                <Footer />
+                            </div>
+                        </div>
+                    </Slide>
+                    <TouchControl 
                         onTouch = {this.onTouch}
                         onDragging = {this.onDragging}
                         onGesture = {this.onGesture}

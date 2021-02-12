@@ -1,33 +1,30 @@
 
-.wrapper {
-    padding: 10px;
-    height: 460px;
-}
-
-.iconage {
-    position: absolute;
-    left: 80px;
-    top: 160px;
-}
+@import "./variables";
 
 .latest {
-    height: 700px;
-    position: relative;
-    background: #F4F4F4;
-    padding: 100px 0px;
-    outline:none;
+    width: 100%;
+    background: whitesmoke;
+    @media (min-width: $breakpoint) { position: relative; }
     .control {
-        width: 30%;
+        width: 60%;
         background: #CFAA7A;
         position: relative;
-        height: 500px;
-        float: left;
+        height: 200px;
+        margin: 40px 0px 0px 0px;
+        @media (min-width: $breakpoint) {
+            width: 30%;
+            float: left;
+            height: 60vh;
+            margin: 80px 0px 0px 0px;
+        }
         .centered {
-            padding: 50px 0px 0px 80px;
+            padding: 20px 0px 0px 30px;
             flex-grow: 1;
+            @media (min-width: $breakpoint) { padding: 50px 0px 0px 80px; }
             .spacer {
                 margin: 10px;
                 outline: none;
+                @media (max-width: $breakpoint) { display: none; }
             }
             .icon {
                 width: 50px;
@@ -42,7 +39,7 @@
                 outline: none;
             }
             .label {
-                font-size: 44px;
+                font-size: 24px;
                 color: white;
                 font-weight: bold;
                 margin: 0px 0px 20px 0px;
@@ -64,21 +61,42 @@
             right: -100px;
             top: 0px;
             background: #CFAA7A;
+            @media (max-width: $breakpoint) { display: none; }
         }
     }
     .carousel {
-        width: 70%;
-        float: left;
+        width: calc(100% - 20px);
+        height: 380px;
+        position: relative;
+        float: right;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        padding: 20px 0px;
+        overflow: visible;
+        @media (max-width: $breakpoint) { 
+            top: -80px; 
+            .list{overflow: visible; }
+        }
+        @media (min-width: $breakpoint) {
+            width: 70%;
+            float: left;
+            margin: 130px 0px 0px 0px;
+        }
         .wrapper {
             padding: 10px;
-            height: 460px;
+            height: 380px;
         }
+    }
+    .block {
+        width: 90%;
+        height: 100px;
+        margin: 20px 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
     }
 }

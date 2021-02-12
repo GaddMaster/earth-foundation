@@ -8,8 +8,7 @@ import { motion } from "framer-motion";
 import Button from "@material-ui/core/ButtonBase";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle as solid, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faCircle as hollow } from "@fortawesome/free-regular-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/latest.module.scss";
 import "react-multi-carousel/lib/styles.css";
@@ -18,11 +17,6 @@ import content from "../assets/content";
 import responsive from "../assets/responsive";
 
 class Latest extends PureComponent {
-
-    componentDidMount = () => {
-        console.log("Mounted");
-        window.addEventListener("scroll", this.onScroll);
-    };
 
     onScroll = event => {};
 
@@ -59,14 +53,10 @@ class Latest extends PureComponent {
                             <span>Latest News</span>
                         </div>
                         <div className = {styles.all}>
-                            <motion.button
-                                whileHover = {{ scale: 1.1 }}
-                                whileTap = {{ scale: 0.8 }}>
-                                <div>
-                                    <span style = {{marginRight:10}}>Read All News</span>
-                                    <FontAwesomeIcon icon = {faArrowRight} />
-                                </div>
-                            </motion.button>
+                            <div>
+                                <span style = {{marginRight:10}}>Read All</span>
+                                <FontAwesomeIcon icon = {faArrowRight} />
+                            </div>
                         </div>
                     </div>
                     <div className = {styles.wall}></div>
@@ -74,6 +64,7 @@ class Latest extends PureComponent {
                 <div className = {styles.carousel}>
                     <Carousel
                         ref = {el => this.myCarousel = el}
+                        containerClass = {styles.list}
                         additionalTransfrom = {0}
                         swipeable
                         dragable
