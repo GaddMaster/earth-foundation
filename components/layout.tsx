@@ -17,7 +17,7 @@ const Layout = ({ children, home }: { children: React.ReactNode, home ? : boolea
         <meta name = "description" content = "The Earth Foundation Was Founded To Help The Planet Recover" />
       </Head>
 
-      <Header />
+      {/*<Header />*/}
 
       {children}
 
