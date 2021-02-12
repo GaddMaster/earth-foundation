@@ -174,7 +174,7 @@ class Home extends PureComponent {
                             <div 
                                 id = "end"
                                 className = {styles.wrapper}>
-                                <Latest />
+                                <Latest onLock = {this.onLock} />
                                 <Subscribe />
                                 <Footer />
                             </div>
