@@ -133,7 +133,7 @@ class Home extends PureComponent {
                     </Head>
                     <h1>The Earth Foundation</h1>
                     <h2>Coming Soon</h2>
-                    {/*<Slide
+                    <Slide
                         index = {0}
                         current = {this.state.current}
                         touch = {this.state.touch}
@@ -149,8 +149,8 @@ class Home extends PureComponent {
                                 "The Earth Foundation aims to distribute $1 million annually to students, researchers​, and youngentrepreneurs​ with innovative ideas to tackle environmental challenges.",
                                 "By encouraging andsupporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystemthat accelerates positive change​ towards ​environmental sustainability."
                             ]} />
-                        </Slide>*/}
-                    {/*<Slide
+                        </Slide>
+                    <Slide
                         index = {1}
                         current = {this.state.current}
                         touch = {this.state.touch}
@@ -166,8 +166,8 @@ class Home extends PureComponent {
                             posY = {this.state.posY}
                             gesture = {this.state.gesture}
                             onLock = {this.onLock} />
-                    </Slide>*/}
-                    {/*<Slide
+                    </Slide>
+                    <Slide
                         index = {2}
                         current = {this.state.current}
                         touch = {this.state.touch}
@@ -188,7 +188,7 @@ class Home extends PureComponent {
                         onTouch = {this.onTouch}
                         onDragging = {this.onDragging}
                         onGesture = {this.onGesture}
-                    onCurrent = {this.onCurrent} />*/}
+                    onCurrent = {this.onCurrent} />
                 </Layout>
             </motion.div>
         );
