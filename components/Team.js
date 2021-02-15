@@ -1,18 +1,13 @@
 
 import React, { PureComponent } from "react";
 
-import { motion, AnimatePresence } from "framer-motion";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle as solid, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faCircle as hollow } from "@fortawesome/free-regular-svg-icons";
+import { motion } from "framer-motion";
 
 import content from "../assets/content";
 
 import styles from "../styles/team.module.scss";
 
-const pointInRect = ({ x1, y1, x2, y2 }, { x, y }) => (x > x1 && x < x2) && (y > y1 && y < y2);
-const heights = [254, 274, 396, 340];
+const heights = [254, 274, 396];
 
 class Team extends PureComponent {
 
@@ -28,7 +23,7 @@ class Team extends PureComponent {
         return (
             <div className={styles.board}>
                 <div className={styles.dots}>
-                    {[0, 1].map(number => (
+                    {[0, 1, 2].map(number => (
                         <div
                             id={`dotID_${number}`}
                             onClick={this.onPage.bind(this, number)}
@@ -37,6 +32,7 @@ class Team extends PureComponent {
                                 className={styles.thumbnail}
                                 src={content.about[number].image}
                                 alt={content.about[number].name} />
+                            <p>{content.about[number].name}</p>
                         </div>
                     ))}
                 </div>
@@ -49,7 +45,7 @@ class Team extends PureComponent {
                                     style={{
                                         marginBottom: current ? 20 : 0,
                                     }}
-                                    animate={{
+                                    animate = {{
                                         x: current ? 0 : -100,
                                         opacity: current ? 1 : 0,
                                         height: current ? heights[index] : 0

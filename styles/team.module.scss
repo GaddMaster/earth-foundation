@@ -4,24 +4,34 @@
     flex-direction: row;
     width: 100%;
     height: 100vh;
-    margin: 0 5% 0 5%;
     align-items: center;
     
 
     .dots {
+      width: 20%;
+      margin: auto;
       display: flex;
+      padding: 0 5%;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
       .thumbnail {
-        width: 100px;
-        height: 100px;
-        margin: 0px 20px 0px 0px;
+        width: 130px;
+        height: 130px;
+        margin: 10% 0;
         border-radius: 50%;
+      }
+      p {
+        font-size: 14px;
+        color: white;
       }
     }
 
     .block {
+      margin: auto;
       display: flex;
-      width: 60%;
+      width: 80%;
       background: #16172C;
       padding: 80px 80px 100px 80px;
       .pagination {
@@ -43,20 +53,18 @@
         }
       }
       .name {
-        font-size: 44px;
         font-weight: bold;
         line-height: 40px;
-        margin: 0px 0px 40px 0px;
+        margin-bottom: 12px;
         color: #CFAA7A;
-        h1 {font-size: 44px; }
+        h1 {font-size: 35px; }
       }
 
       .role {
-        font-size: 30px;
         line-height: 40px;
-        margin: 0px 0px 40px 0px;
+        margin-bottom: 12px;
         color: #CFAA7A;
-        h2 {font-size: 30px; }
+        h2 {font-size: 23px; font-weight: normal;}
       }
 
       .info {

@@ -52,5 +52,16 @@ export default {
             +"solutions to resolving the world’s environmental crisis.",
             background: "#074D3F"
         },
+        {
+            image : "/images/jean_christophe_hocke.jpg",
+            name: "Jean Christophe",
+            role: "Independent member of the Board",
+            info: "Jean-Christophe Hocke has been a Partner at the law firm Python in Geneva since 2004. Prior to"
+            +"joining Python, he was a visiting lawyer at the law firm Golenbock Eiseman in New York. While"
+            +"assisting The Earth Foundation in its organization, Jean-Christophe will bring his expertise to the"
+            +"Foundation and to the winners of The Earth Prize to properly structure their startup ventures."
+            +"Jean-Christophe is a Swiss Citizen, living in Geneva with his wife and two children.",
+            background: "#02304F"
+        },
     ]
 };
