@@ -58,6 +58,7 @@ class Team extends PureComponent {
                                     <div className={styles.role}>
                                         <h2>{i.role}</h2>
                                     </div>
+                                    <hr/>
                                     <div className={styles.info}>
                                         <p>{i.info}</p>
                                     </div>
