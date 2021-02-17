@@ -1,4 +1,4 @@
-import Layout from '../../components/Layout'
+import Layout from "../../components/Layout";
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
@@ -7,12 +7,6 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 
 export default function Post({
   postData
-}: {
-  postData: {
-    title: string
-    date: string
-    contentHtml: string
-  }
 }) {
   return (
     <Layout>
