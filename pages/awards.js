@@ -1,15 +1,15 @@
 
 import Head from "next/head";
-import Layout from "../components/Layout";
-import Switcher from "../components/Switcher";
+import Layout from "components/Layout";
+import Switcher from "components/Switcher";
 
 import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
-import adjudication from "../assets/adjudication";
-import styles from "../styles/awards.module.scss";
+import adjudication from "assets/adjudication";
+import styles from "styles/awards.module.scss";
 
 const Awards = props => {
     return (

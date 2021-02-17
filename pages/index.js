@@ -3,20 +3,18 @@ import React, { PureComponent } from "react";
 
 import Head from "next/head";
 
-import Layout from "../components/Layout";
-import Section from "../components/Section";
-import Boards from "../components/Boards";
-import Slide from "../components/Slide";
-import Latest from "../components/Latest";
-import Subscribe from "../components/Subscribe";
-import Footer from "../components/Footer";
-import TouchControl from "../components/TouchControl";
-
-import { getSortedPostsData } from "../lib/posts";
+import Layout from "components/Layout";
+import Section from "components/Section";
+import Boards from "components/Boards";
+import Slide from "components/Slide";
+import Latest from "components/Latest";
+import Subscribe from "components/Subscribe";
+import Footer from "components/Footer";
+import TouchControl from "components/TouchControl";
 
 import { motion } from "framer-motion";
 
-import styles from "../styles/home.module.scss";
+import styles from "styles/home.module.scss";
 
 class Home extends PureComponent {
 
@@ -198,11 +196,3 @@ class Home extends PureComponent {
 
 export default Home;
 
-export const getStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData
-    }
-  };
-};

@@ -2,15 +2,15 @@ import React, { PureComponent } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
 
-import Layout from "../components/Layout";
-import Switcher from "../components/Switcher";
-import Section from "../components/Section";
-import ContentSection from "../components/ContentSection";
-import Subscribe from "../components/Subscribe";
+import Layout from "components/Layout";
+import Switcher from "components/Switcher";
+import Section from "components/Section";
+import ContentSection from "components/ContentSection";
+import Subscribe from "components/Subscribe";
 
-import styles from "../styles/about.module.scss";
+import styles from "styles/about.module.scss";
 
-import foundation from "../assets/foundation";
+import foundation from "assets/foundation";
 
 class AboutUs extends PureComponent {
 
