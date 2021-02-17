@@ -16,7 +16,10 @@ const MenuToggle = ({ toggle }) => (
     <div 
         onClick = {toggle}
         style = {{
-            position: "absolute"
+            position: "absolute",
+            zIndex: 2,
+            top: 37,
+            right: 34
         }}>
         <svg width = "23" height = "23" viewBox = "0 0 23 23">
             <Path
