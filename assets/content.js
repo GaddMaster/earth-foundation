@@ -28,5 +28,5 @@ export default {
             path: "/",
             background: "#02304F"
         }
-    ]
+    ],
 };
