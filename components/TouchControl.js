@@ -1,9 +1,6 @@
 
 import React, { PureComponent } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFingerprint } from "@fortawesome/free-solid-svg-icons";
-
 import styles from "../styles/touch.module.scss";
 
 class TouchControl extends PureComponent {
