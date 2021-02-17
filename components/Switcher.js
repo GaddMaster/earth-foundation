@@ -31,12 +31,15 @@ const Switcher = props => {
     
     const title = props.title;
     const data = props.data;
+    const themeColor = props.themeColor;
+    const titleColor = props.titleColor;
+    const boardTitleColor = props.boardTitleColor;
 
     return (
         <div className = {styles.switcher}>
             <div className = {styles.control}>
                 <div className = {styles.label}>
-                    <span>{title}</span>
+                    <span style={{color:titleColor}}>{title}</span>
                 </div>
                 <div className = {styles.swiper}>
                     <Carousel 
@@ -48,6 +51,7 @@ const Switcher = props => {
                         {data.map((item, i) => (
                             <ButtonBase 
                                 className = {`${styles.avatar} ${index === i ? styles.true : ""}`}
+                                style={{borderColor: index === i ? themeColor : "" }}
                                 onClick = {setIndex.bind(this, i)}
                                 key = {i}>
                                 <img src = {item.avatar} />
@@ -56,12 +60,12 @@ const Switcher = props => {
                     </Carousel>
                 </div>
             </div>
-            <div className = {styles.panel_board}>
-                <div className = {styles.details}>
-                    <div className = {styles.header}>
+            <div className = {styles.panel_board}> 
+                <div className = {styles.details} style={{backgroundColor:themeColor}}>
+                    <div className = {styles.header} style={{color:boardTitleColor}}>
                         <span>{data[index].first} {data[index].last}</span>
                     </div>
-                    <div className = {styles.op}>
+                    <div className = {styles.op} style={{color:boardTitleColor}}>
                         <span>{data[index].position}</span>
                     </div>
                     <div className = {styles.br}></div>
@@ -71,7 +75,7 @@ const Switcher = props => {
                     <div className = {styles.description}>
                         <span>{data[index].description}</span>
                     </div>
-                    <div className = {styles.bar}></div>
+                    <div className = {styles.bar} style={{backgroundColor:themeColor}}></div>
                 </div>
                 <div className = {styles.portrait}>
                     <div className = {styles.image}>

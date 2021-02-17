@@ -7,7 +7,8 @@ import Switcher from "../components/Switcher";
 import Section from "../components/Section";
 import ContentSection from "../components/ContentSection";
 import Subscribe from "../components/Subscribe";
-import Footer from "../components/Footer";
+
+import styles from "../styles/about.module.scss";
 
 import foundation from "../assets/foundation";
 
@@ -38,9 +39,19 @@ class AboutUs extends PureComponent {
               "The Earth Foundation will take this enthused youth and​ inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation."
             ]} />
 
-          <Switcher title="The Earth Foundation Board" data={foundation.board} />
 
-          <Switcher title="The Earth Foundation Team" data={foundation.team} />
+          <Switcher 
+            title="The Earth Foundation Board" 
+            data={foundation.board} 
+            themeColor="#16172C" 
+            titleColor="#16172C" 
+            boardTitleColor="#CFAA7A"/>
+
+          <Switcher 
+            title="The Earth Foundation Team" 
+            data={foundation.team} 
+            titleColor="#CFAA7A" />
+
 
           <Subscribe />
         </Layout>
