@@ -3,7 +3,7 @@ import React, { PureComponent } from "react";
 
 import Head from "next/head";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Section from "../components/Section";
 import Boards from "../components/Boards";
 import Slide from "../components/Slide";

@@ -3,14 +3,16 @@
 
 .footer {
     position: relative;
-    background: whitesmoke;
+    background: #ECECEB;
     display: flex;
+    justify-content: center;
     width: 100%;
+    padding: 40px 0px;
     .block {
+        max-width: 820px;
         flex-grow: 1;
         display: flex;
-        margin: 30px 30px 30px 30px;
-        @media (min-width: $breakpoint) { margin: 30px 30px 30px 100px; }
+        @media (max-width: $breakpoint) { margin: 40px 40px 40px 40px; }
         .logo {
             min-width: 60px;
             width: 60px;
@@ -35,30 +37,38 @@
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
+            align-items: flex-start;
+            @media (min-width: $breakpoint) {
+
+            }
             .links {
                 display: flex;
                 align-items: flex-start;
+                justify-content: space-between;
                 flex-direction: column;
-                justify-content: center;
                 width: 100%;
-                margin: 0px 0px 20px 0px;
+                margin: 0px 0px 10px 0px;
                 @media (min-width: $breakpoint) {
                     flex-direction: row;
                     align-items: center;
                 }
-                .link {
-                    flex-grow: 1;
-                    font-size: 10px;
-                    font-weight: bold;
-                    letter-spacing: 1px;
-                    color: rgb(48, 48, 48);
-                    margin: 0px 0px 10px 0px;
-                    &:hover {
-                        cursor: pointer;
-                        color: grey;
+                .routes {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    .route {
+                        font-size: 10px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        color: rgb(48, 48, 48);
+                        margin: 0px 0px 10px 0px;
+                        &:hover {
+                            cursor: pointer;
+                            color: grey;
+                        }
                     }
-                    @media (min-width: $breakpoint) { margin: 0px 0px 0px 0px; }
+                    @media (min-width: $breakpoint) { flex-direction: row; }
                 }
                 .socials {
                     display: flex;

@@ -8,23 +8,25 @@ import styles from "../styles/footer.module.scss";
 const Card = props => {
     return (
         <section className = {styles.footer}>
-            < div className = {styles.block}>
+            <div className = {styles.block}>
                 <div className = {styles.logo}>
                     <img className = {styles.logo} src = "/images/logo.png" />
                 </div>
                 <div className = {styles.information}>
                     <div className = {styles.links}>
-                        <div className = {styles.link}>
-                            <span>About</span>
-                        </div>
-                        <div className = {styles.link}>
-                            <span>Contact Us</span>
-                        </div>
-                        <div className = {styles.link}>
-                            <span>Data Protection Policy</span>
-                        </div>
-                        <div className = {styles.link}>
-                            <span>Terms & Conditions</span>
+                        <div className = {styles.routes}>
+                            <div className = {styles.route}>
+                                <span>About</span>
+                            </div>
+                            <div className = {styles.route}>
+                                <span>Contact Us</span>
+                            </div>
+                            <div className = {styles.route}>
+                                <span>Data Protection Policy</span>
+                            </div>
+                            <div className = {styles.route}>
+                                <span>Terms & Conditions</span>
+                            </div>
                         </div>
                         <div className = {styles.socials}>
                             <div className = {styles.social}>
