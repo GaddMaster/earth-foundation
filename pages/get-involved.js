@@ -1,4 +1,4 @@
 
-export default function GetInvolved() {
-  return <h1>Get Involved</h1>;
-};
+const GetInvolved = () => <h1>Get Involved</h1>;
+
+export default GetInvolved;

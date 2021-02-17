@@ -1,9 +1,7 @@
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
-export default function OurInitiatives(props) {
-  console.log(props);
-  let isVisible = true;
+const OurInitiatives = () => {
   return (
     <motion.div
       initial = {{ opacity: 0 }}
@@ -13,3 +11,5 @@ export default function OurInitiatives(props) {
     </motion.div>
   );
 };
+
+export default OurInitiatives;
