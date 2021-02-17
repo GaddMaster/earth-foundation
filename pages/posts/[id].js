@@ -24,7 +24,7 @@ export default function Post({
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = async () => {
   const paths = getAllPostIds()
   return {
     paths,
@@ -32,8 +32,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id as string)
+export const getStaticProps = async ({ params }) => {
+  const postData = await getPostData(params.id)
   return {
     props: {
       postData
