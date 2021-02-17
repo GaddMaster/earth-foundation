@@ -1,6 +1,6 @@
 
 import Head from "next/head";
-import Layout from "../components/_Layout";
+import Layout from "../components/Layout";
 import Switcher from "../components/Switcher";
 
 import { motion } from "framer-motion";
