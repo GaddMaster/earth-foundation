@@ -1,7 +1,4 @@
 
-// NEXT JS
-import Link from "next/link";
-
 import styles from "../styles/content.section.module.scss";
 
 const ContentSection = props => {

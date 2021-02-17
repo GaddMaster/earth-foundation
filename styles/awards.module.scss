@@ -19,9 +19,17 @@
         @media (min-width: $breakpoint) { flex-direction: row; }
         .header {
             display: flex;
-            .label {
-                width: 60%;
-                h1 { font-size: 50px; }
+            .label { 
+                width: 100%;
+                @media (min-width: $breakpoint) { width: 260px; }
+                h1 { 
+                    font-size: 40px;
+                    line-height: 50px;
+                    font-weight: bold;
+                    color: #064C40;
+                    padding: 0px;
+                    text-align: left;
+                }
             }
             .line {
                 width: 40%;
@@ -29,11 +37,6 @@
                 height: 1px;
                 background: #C7BDA5;
                 margin: 40px 0px 0px 0px;
-            }
-            h1 {
-                color: #064C40;
-                padding: 0px;
-                text-align: left;
             }
             padding: 0px 0px 0px 0px;
             margin: 0px 0px 40px 0px;
@@ -58,6 +61,11 @@
         .image {
             position: relative;
             margin: 0px 0px 40px 0px;
+            @media (max-width: $breakpoint) {
+                img { 
+                    min-width: calc(100% + 40px); 
+                }
+            }
             @media (min-width: $breakpoint) {
                 width: 50%;
             }
@@ -116,15 +124,14 @@
                     }
                 }
                 .text {
-                    padding: 40px 20px 60px 20px;
-                    color: grey;
+                    padding: 40px 20px 40px 20px;
                     font-size: 14px;
                 }
             }
         }
     }
     .theme {
-        font-size: 24px;
+        font-size: 26px;
         max-width: 900px;
         width: calc(100% - 40px);
         margin: 60px 40px 40px 40px;
@@ -179,7 +186,15 @@
                 margin: 0px 0px 40px 0px;
                 color: #CDAC76;
                 text-transform: uppercase;
-                svg { margin: 0px 0px 0px 10px; }
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                span { width: 220px; }
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0px 0px 2px 0px;
+                }
             }
             .eligible {
                 font-size: 14px;
@@ -218,7 +233,7 @@
                 background-position: center;
                 @media (min-width: $breakpoint) {
                     width: 100%;
-                    height: 160%;
+                    height: 140%;
                     position: relative;
                     top: -80px;                }
             }
@@ -228,146 +243,22 @@
         width: calc(100%);
         max-width: 900px;
         padding: 0px 40px 0px 40px;
-        margin: 0px 0px 40px 0px;
-        @media (min-width: $breakpoint) { margin: 0px 0px 80px 0px; }
+        margin: 0px 0px 80px 0px;
+        @media (min-width: $breakpoint) { margin: 0px 0px 120px 0px; }
         .header {
-            font-size: 30px;
+            width: 220px;
+            font-size: 40px;
+            line-height: 50px;
             color: #CFAA7E;
             margin: 0px 0px 40px 0px;
-        }
-    }
-    .avatar_swiper {
-        max-width: calc(900px - 80px);
-        width: calc(100%);
-        @media (min-width: $breakpoint) {
-            position: relative;
-            margin: 0px 0px 40px 0px;
-        }
-        .label {
-            width: calc(100% - 80px);
-            color: #064D3F;
-            font-size: 26px;
             font-weight: bold;
-            margin: 0px 40px 20px 40px;
             @media (min-width: $breakpoint) {
-                float: left;
-                width: 25%;
-                margin: 0px 0px 0px 0px;
+                width: 320px;
             }
         }
-        .swiper {
-            width: calc(100% - 80px);
-            margin: 0px 40px 20px 40px;
-            @media (min-width: $breakpoint) {
-                float: left;
-                width: 75%;
-                margin: 0px 0px 0px 0px;
-            }
-            .con {
-                overflow: visible;
-                padding: 0px 0px 0px 0px;
-            }
-            .avatar {
-                width: 60px;
-                height: 60px;
-                padding: 5px;
-                border: 1px solid #064D3F;
-                border-radius: 50%;
-                overflow: hidden;
-                @media (min-width: $breakpoint) {
-                    width: 80px;
-                    height: 80px;
-                    padding: 10px;
-                }
-                img {
-                    width: 100%;
-                    border-radius: 50%;;
-                }
-            }
-            .item {
-                @media (min-width: $breakpoint) {
-                    width: 80px !important;
-                    height: 80px;
-                    padding: 10px;
-                    margin: 0px 20px 0px 0px;
-                }
-            }
-        }
-    }
-    .panel_board {
-        max-width: calc(900px - 80px);
-        width: calc(100% - 40px);
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        align-self: flex-end;
-        @media (min-width: $breakpoint) {
-            flex-direction: row;
-            align-self: center;
-        }
-        .details {
-            background: #064D3F;
-            color: white;
-            padding: 40px;
-            position: relative;
-            @media (min-width: $breakpoint) {
-                
-            }
-            .header {
-                font-size: 24px;
-                font-weight: bold;
-                margin: 0px 0px 10px 0px;
-            }
-            .op {
-                font-size: 18px;
-                margin: 0px 0px 10px 0px;
-            }
-            .br {
-                width: 200px;
-                height: 1px;
-                background: white;
-                margin: 0px 0px 20px 0px;
-            }
-            .summary {
-                font-size: 16px;
-                line-height: 24px;
-                margin: 0px 0px 20px 0px;
-            }
-            .description {
-                font-size: 16px;
-                line-height: 24px;
-            }
-            .bar {
-                @media (max-width: $breakpoint) {
-                    width: 100%;
-                    height: 100px;
-                    position: absolute;
-                    bottom: -100px;
-                    background: #064D3F;
-                    left: 0px;
-                }
-                @media (min-width: $breakpoint) {
-                    width: 100px;
-                    height: 100%;
-                    position: absolute;
-                    right: -100px;
-                    background: #064D3F;
-                    bottom: 0px;
-                }
-            }
-        }
-        .portrait {
-            width: 60%;
-            position: relative;
-            left: 40px;
-            z-index: 1;
-            .image {}
-            @media (min-width: $breakpoint) {
-                min-width: 220px;
-                position: static;
-                display: flex;
-                align-items: center;
-            }
+        .text {
+            color: black;
+            font-size: 14px;
         }
     }
 }
