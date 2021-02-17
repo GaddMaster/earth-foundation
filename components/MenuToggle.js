@@ -1,8 +1,6 @@
 
 import * as React from "react";
 
-import ButtonBase from "@material-ui/core/ButtonBase";
-
 import { motion } from "framer-motion";
 
 const Path = props => (
@@ -15,7 +13,14 @@ const Path = props => (
 );
 
 const MenuToggle = ({ toggle }) => (
-    <ButtonBase onClick = {toggle}>
+    <div 
+        onClick = {toggle}
+        style = {{
+            position: "absolute",
+            zIndex: 2,
+            top: 37,
+            right: 34
+        }}>
         <svg width = "23" height = "23" viewBox = "0 0 23 23">
             <Path
                 variants = {{
@@ -43,7 +48,7 @@ const MenuToggle = ({ toggle }) => (
                     }
                 }} />
         </svg>
-    </ButtonBase>
+    </div>
 );
 
 export default MenuToggle;

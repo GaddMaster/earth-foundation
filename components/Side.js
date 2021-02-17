@@ -3,6 +3,8 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import MenuItem from "./MenuItem";
 
+import styles from "../styles/side.module.scss";
+
 const variants = {
     open: {
         transition: { 
@@ -20,10 +22,12 @@ const variants = {
 
 const itemsIDs = [0, 1, 2, 3, 4];
 
-const Navigation = () => (
-    <motion.ul variants = {variants}>
+const Side = () => (
+    <motion.ul 
+        className = {styles.side}
+        variants = {variants}>
         {itemsIDs.map(i => <MenuItem i = {i} key = {i} />)}
     </motion.ul>
 );
 
-export default Navigation;
+export default Side;

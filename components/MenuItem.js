@@ -31,10 +31,35 @@ const MenuItem = ({ i }) => {
     return (
         <motion.li
             variants = {variants}
+            style = {{
+                listStyle: "none",
+                marginBottom: 20,
+                display: "flex",
+                alignItems: "center",
+                cursor: "pointer",
+                color: "grey"
+            }}
             whileHover = {{ scale: 1.1 }}
             whileTap = {{ scale: 0.95 }}>
-            <div className = "icon-placeholder" style = {style} />
-            <div className = "text-placeholder" style = {style} />
+            <div 
+                className = "icon-placeholder" 
+                style = {{
+                    width: 40,
+                    height: 40,
+                    borderRadius: "50%",
+                    flex: "40px 0",
+                    marginRight: 20,
+                    ...style
+                }} />
+            <div 
+                className = "text-placeholder" 
+                style = {{
+                    borderRadius: 5,
+                    width: 200,
+                    height: 20,
+                    flex: 1,
+                    ...style
+                }} />
         </motion.li>
     );
 };

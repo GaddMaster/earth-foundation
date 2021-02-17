@@ -3,26 +3,26 @@
 
 .header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background: white;
-    @media (min-width: $breakpoint) {
-        height: 100px;
-    }
     .wrapper {
         max-width: 900px;
         width: 100%;
         display: flex;
         align-items: center;
         background: white;
+        margin: 0px auto 0 auto;
+        @media (min-width: $breakpoint) { height: 120px; }
         .logo {
-            width: 40px;
+            width: 70px;
             height: 40px;
-            margin: 20px;
+            margin: 20px 0px 0px 30px;
+            overflow: visible;
+            z-index: 1;
             @media (min-width: $breakpoint) {
-                width: 60px;
+                width: 120px;
                 height: 60px;
-                margin: 20px 20px 20px 20px;
+                margin: 20px 0px 0px 30px;
+                overflow: visible;
+                z-index: 1;
             }
         }
         .nav {
@@ -31,7 +31,16 @@
             align-items: center;
             justify-content: flex-end;
             padding: 0px 0px 0px 0px;
-            .link {
+            .dropdown {
+                font-size: 16px;
+                color: black;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    margin: -5px 0px 0px 10px;
+                }
+            }
+            .link, .dropdown {
                 margin: 0px 0px 0px 40px;
                 font-size: 20px;
                 color: rgb(43, 43, 43);
@@ -44,7 +53,7 @@
             .icon {
                 width: 50px;
                 height: 50px;
-                margin: 15px;
+                margin: 20px 20px 0px 0px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -57,5 +66,8 @@
                 @media (min-width: $breakpoint) { display: none; }
             }
         }
+    }
+    .curve {
+        svg { background: #ECECEB; }
     }
 }
