@@ -1,11 +1,9 @@
 
 import { useState } from "react";
-
+import Carousel from "react-multi-carousel";
 import ButtonBase from "@material-ui/core/ButtonBase";
 
-import Carousel from "react-multi-carousel";
-
-import adjudication from "../assets/adjudication";
+import "react-multi-carousel/lib/styles.css";
 
 import styles from "../styles/switcher.module.scss";
 
@@ -30,11 +28,15 @@ const responsive = {
 
 const Switcher = props => {
     let [index, setIndex] = useState(0);
+    
+    const title = props.title;
+    const data = props.data;
+
     return (
         <div className = {styles.switcher}>
             <div className = {styles.control}>
                 <div className = {styles.label}>
-                    <span>Adjudication Panel</span>
+                    <span>{title}</span>
                 </div>
                 <div className = {styles.swiper}>
                     <Carousel 
@@ -43,7 +45,7 @@ const Switcher = props => {
                         containerClass = {styles.con}
                         itemClass = {styles.item}
                         responsive = {responsive}>
-                        {adjudication.map((item, i) => (
+                        {data.map((item, i) => (
                             <ButtonBase 
                                 className = {`${styles.avatar} ${index === i ? styles.true : ""}`}
                                 onClick = {setIndex.bind(this, i)}
@@ -57,23 +59,23 @@ const Switcher = props => {
             <div className = {styles.panel_board}>
                 <div className = {styles.details}>
                     <div className = {styles.header}>
-                        <span>{adjudication[index].first} {adjudication[index].last}</span>
+                        <span>{data[index].first} {data[index].last}</span>
                     </div>
                     <div className = {styles.op}>
-                        <span>{adjudication[index].position}</span>
+                        <span>{data[index].position}</span>
                     </div>
                     <div className = {styles.br}></div>
                     <div className = {styles.summary}>
-                        <span>{adjudication[index].summary}</span>
+                        <span>{data[index].summary}</span>
                     </div>
                     <div className = {styles.description}>
-                        <span>{adjudication[index].description}</span>
+                        <span>{data[index].description}</span>
                     </div>
                     <div className = {styles.bar}></div>
                 </div>
                 <div className = {styles.portrait}>
                     <div className = {styles.image}>
-                        <img src = {adjudication[index].image} />
+                        <img src = {data[index].image} />
                     </div>
                 </div>
             </div>

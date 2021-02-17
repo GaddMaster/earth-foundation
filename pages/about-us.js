@@ -1,13 +1,13 @@
 import React, { PureComponent } from "react";
 import Head from "next/head";
 
+import Switcher from "../components/Switcher";
 import Section from "../components/Section";
 import ContentSection from "../components/ContentSection";
 import Subscribe from "../components/Subscribe";
 import Footer from "../components/Footer";
-import Team from "../components/Team";
 
-import styles from "../styles/about.module.scss";
+import foundation from "../assets/foundation";
 
 class AboutUs extends PureComponent {
 
@@ -32,13 +32,9 @@ class AboutUs extends PureComponent {
             "The Earth Foundation will take this enthused youth and​ inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation."
           ]} />
 
-        <div className={styles.section}>
-          <div className={styles.title}>
-            <p>The Earth</p>
-            <p>Foundation Board</p>
-          </div>
-          <Team />
-        </div>
+        <Switcher title="The Earth Foundation Board" data={foundation.board} />
+
+
         
 
         <Subscribe />

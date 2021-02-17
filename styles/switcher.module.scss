@@ -37,6 +37,7 @@
             width: calc(100% - 80px);
             height: 60px;
             margin: 0px 40px 0px 40px;
+
             @media (min-width: $breakpoint) {
                 float: left;
                 width: 75%;
@@ -46,6 +47,10 @@
             .con {
                 overflow: visible;
                 padding: 0px 0px 0px 0px;
+                
+                ul {
+                    width: 100%;
+                }
             }
             .avatar {
                 width: 60px;

@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
+import adjudication from "../assets/adjudication";
 import styles from "../styles/awards.module.scss";
-import "react-multi-carousel/lib/styles.css";
 
 const Awards = props => {
     return (
@@ -132,7 +132,7 @@ const Awards = props => {
                             <span>All recipients of The Earth Foundation Awards will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of inspiring individuals and organizations offering mentorship, networking, internships, professional placement opportunities.</span>
                         </div>
                     </div>
-                    <Switcher />
+                    <Switcher title="Adjudication Panel" data={adjudication} />
                 </div>
             </Layout>
         </motion.div>
