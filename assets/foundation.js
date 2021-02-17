@@ -34,10 +34,28 @@ export default {
       first: "Angela",
       last: "McCarthy",
       image: "/images/angela.jpg",
-      avatar: "/images/angela_avatar.jpg",
+      avatar: "/images/angela-avatar.jpg",
       position: "Head of Operations",
       summary: "Angela McCarthy was instrumental in the establishment of The Earth Foundation.",
       description: "Angela has held management, HR, and marketing positions with companies active in real estate, wealth management, and hospitality in Geneva and London.​ Angela also volunteers as​ PR and fundraising expert at The Naked Heart Foundation."
+    },
+    {
+      first: "Nunu",
+      last: "Tadesse",
+      image: "/images/nunu_tadesse.jpg",
+      avatar: "/images/nunu_avatar.jpg",
+      position: "Head of Finance & Administration",
+      summary: "Nunu Tadesse has over 25 years of experience across Europe, the United States and Africa",
+      description: "In financial leadership roles at MedTech, venture capital, non-profits, foundations, and audit firms. He is well versed in Swiss, European, and US regulatory, tax, GAAP, IP, and compliance laws​."
+    },
+    {
+      first: "Julie Maude",
+      last: "Rufino",
+      image: "/images/julie_maude_rufino.jpg",
+      avatar: "/images/julie_avatar.jpg",
+      position: "Strategy & Operations",
+      summary: "Julie Maude Rufino recently graduated in Business Administration at the University of St.",
+      description: "Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
     },
   ]
 }
