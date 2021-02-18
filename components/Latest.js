@@ -1,28 +1,33 @@
 
 import React, { PureComponent } from "react";
 
-import Carousel from "react-multi-carousel";
-import Card from "./Card";
+// import Carousel from "react-multi-carousel";
+// import Flickity from "react-flickity-component";
+// import Card from "./Card";
 
 import { motion } from "framer-motion";
-import Button from "@material-ui/core/ButtonBase";
+// import Button from "@material-ui/core/ButtonBase";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/latest.module.scss";
-import "react-multi-carousel/lib/styles.css";
+// import "react-multi-carousel/lib/styles.css";
 
-import content from "../assets/content";
-import responsive from "../assets/responsive";
+// import content from "../assets/content";
+// import responsive from "../assets/responsive";
+
+const options = {
+    initialIndex: 2
+};
 
 class Latest extends PureComponent {
 
-    onScroll = event => {};
+    // onScroll = event => {};
 
-    onPrev = () => this.myCarousel.previous();
+    // onPrev = () => this.myCarousel.previous();
 
-    onNext = () => this.myCarousel.next();
+    // onNext = () => this.myCarousel.next();
 
     render = () => {
         return (
@@ -62,26 +67,23 @@ class Latest extends PureComponent {
                     <div className = {styles.wall}></div>
                 </div>
                 <div className = {styles.carousel}>
-                    <Carousel
-                        ref = {el => this.myCarousel = el}
-                        containerClass = {styles.list}
-                        additionalTransfrom = {0}
-                        swipeable
-                        dragable
-                        ssr
-                        arrows = {false}
-                        minimumTouchDrag = {0}
-                        responsive = {responsive}>
-                        {content.home.concat(content.home).map((item, index) => (
-                            <div
-                                className = {styles.wrapper}
-                                key = {index}>
-                                <Card
-                                    image = {item.image}
-                                    label = {item.label} />
-                            </div>
-                        ))}
-                    </Carousel>
+                {/*<Flickity
+                    className = {"carousel"}
+                    elementType = {"div"}
+                    options = {flickityOptions}
+                    disableImagesLoaded = {false}
+                    reloadOnUpdate 
+                    static>
+                    {content.home.concat(content.home).map((item, index) => (
+                        <div
+                            className = {styles.wrapper}
+                            key = {index}>
+                            <Card
+                                image = {item.image}
+                                label = {item.label} />
+                        </div>
+                    ))}
+                    </Flickity>*/}
                 </div>
             </section>
         );

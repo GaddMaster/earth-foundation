@@ -7,7 +7,7 @@
     @media (min-width: $breakpoint) {}
     .control {
         width: 60%;
-        background: #CFAA7A;
+        background: #CEAA7A;
         position: relative;
         height: 200px;
         margin: 40px 0px 0px 0px;
@@ -40,18 +40,23 @@
             }
             .label {
                 font-size: 24px;
+                line-height: 24px;
                 color: white;
                 font-weight: bold;
                 margin: 0px 0px 20px 0px;
             }
             .all {
-                font-size: 12px;
+                font-size: 16px;
                 display: flex;
                 align-items: center;
                 color: #16172C;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-weight: bold;
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
             }
         }
         .wall {
@@ -65,39 +70,14 @@
         }
     }
     .carousel {
-        width: calc(100% - 20px);
-        height: 380px;
-        position: relative;
-        float: right;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        overflow: visible;
-        display: none;
-        @media (max-width: $breakpoint) { 
-            top: -80px; 
-            .list{ overflow: visible; }
-        }
-        @media (min-width: $breakpoint) {
-            width: 70%;
-            float: left;
-            margin: 130px 0px 0px 0px;
-        }
+        display: block;
+        @media (max-width: $breakpoint) {}
+        @media (min-width: $breakpoint) {}
         .wrapper {
-            padding: 10px;
-            height: 380px;
+
         }
     }
     .block {
-        width: 90%;
-        height: 100px;
-        margin: 20px 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: black;
+
     }
 }
