@@ -2,11 +2,9 @@
 @import "./variables";
 
 .latest {
-    max-width: 100%;
-    overflow-x: hidden;
+    width: 100%;
     background: whitesmoke;
-    display: none;
-    @media (min-width: $breakpoint) { position: relative; }
+    @media (min-width: $breakpoint) {}
     .control {
         width: 60%;
         background: #CFAA7A;
@@ -78,9 +76,10 @@
         -ms-user-select: none;
         user-select: none;
         overflow: visible;
+        display: none;
         @media (max-width: $breakpoint) { 
             top: -80px; 
-            .list{overflow: visible; }
+            .list{ overflow: visible; }
         }
         @media (min-width: $breakpoint) {
             width: 70%;

@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    padding-top: 140px;
     @media (min-width: $breakpoint) { margin-top: -50px; }
     .top {
         display: flex;
