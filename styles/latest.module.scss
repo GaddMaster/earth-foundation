@@ -2,8 +2,10 @@
 @import "./variables";
 
 .latest {
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     background: whitesmoke;
+    display: none;
     @media (min-width: $breakpoint) { position: relative; }
     .control {
         width: 60%;

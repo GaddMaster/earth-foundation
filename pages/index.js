@@ -4,6 +4,7 @@ import React, { PureComponent } from "react";
 import Head from "next/head";
 
 import Layout from "../components/Layout";
+import Latest from "../components/Latest";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle as solid, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -38,7 +39,7 @@ const Home = () => {
                         </div>
                     </div>
                     {content.home.map((item, index) => (
-                        <div className = {styles.board}>
+                        <div className = {styles.board} key = {index}>
                             <div className = {styles.banner} style = {{background:`url(${item.image})`}}></div>
                             <div className = {styles.block} style = {{background:item.background||"white"}}>
                                 <div className = {styles.padding}>
@@ -51,9 +52,9 @@ const Home = () => {
                                         </div>
                                         <div className = {styles.dots}>
                                             <FontAwesomeIcon icon = {index===0?solid:hollow} className = {styles.dot} />
-                                            <FontAwesomeIcon icon = {hollow} className = {styles.dot} />
-                                            <FontAwesomeIcon icon = {hollow} className = {styles.dot} />
-                                            <FontAwesomeIcon icon = {hollow} className = {styles.dot} />
+                                            <FontAwesomeIcon icon = {index===1?solid:hollow} className = {styles.dot} />
+                                            <FontAwesomeIcon icon = {index===2?solid:hollow} className = {styles.dot} />
+                                            <FontAwesomeIcon icon = {index===3?solid:hollow} className = {styles.dot} />
                                         </div>
                                     </div>
                                     <div className = {styles.label}>
@@ -70,6 +71,7 @@ const Home = () => {
                             </div>
                         </div>
                     ))}
+                    <Latest />
                 </div>
             </Layout>
         </motion.div>
