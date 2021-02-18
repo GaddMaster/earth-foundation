@@ -17,6 +17,8 @@ html, body {
     user-select: none;
     overscroll-behavior: contain;
     letter-spacing: 1px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

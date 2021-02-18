@@ -27,7 +27,7 @@ const Header = props => {
     };
     const [open, setOpen] = useState(false);
     return (
-        <header className = {styles.header}>
+        <div className = {styles.header}>
             <div className = {styles.wrapper}>
                 <div className = {styles.logo}>
                     <Link href = "/">
@@ -65,16 +65,8 @@ const Header = props => {
                 </nav>
             </div>
             <div className = {styles.curve}>
-                <svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 1440 320">
-                    <path 
-                        fill = "white" 
-                        fillOpacity = "1" 
-                        style = {{
-                            fillRule: "nonzero",
-                            stroke: "none"
-                        }}
-                        d = "M0,256L120,218.7C240,181,480,107,720,80C960,53,1200,75,1320,85.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
-                </svg>
+                <div className = {styles.image}>
+                </div>
             </div>
             <Menu
                 id = "simple-menu"
@@ -95,7 +87,7 @@ const Header = props => {
                 <MenuItem onClick = {onClose}>My Menu Item I</MenuItem>
                 <MenuItem onClick = {onClose}>My Menu Item I</MenuItem>
             </Menu>
-        </header>
+        </div>
     );
 };
 
