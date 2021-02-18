@@ -95,7 +95,7 @@
     
         .panel_board {
             max-width: 800px;
-            width: calc(100% - 0px);
+            width: calc(100% - 40px);
             display: flex;
             flex-direction: column;
             
@@ -105,12 +105,14 @@
             @media (min-width: $breakpoint) {
                 flex-direction: row;
                 align-self: center;
+                width: 100%;
             }
             .details {
                 background: #16172C;
                 color: white;
                 padding: 40px;
                 position: relative;
+
                 @media (min-width: $breakpoint) {
                     height: 450px;
                 }
