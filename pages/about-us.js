@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import Layout from "../components/Layout";
 import Switcher from "../components/Switcher";
+import BlueSwitcher from "../components/BlueSwitcher";
 import Section from "../components/Section";
 import ContentSection from "../components/ContentSection";
 import Subscribe from "../components/Subscribe";
@@ -41,20 +42,15 @@ class AboutUs extends PureComponent {
             ]} />
 
 
-          <Switcher 
+          <BlueSwitcher 
             title = "The Earth Foundation Board" 
-            data = {foundation.board} 
-            themeColor = "#16172C" 
             titleColor = "#16172C" 
-            boardTitleColor = "#CFAA7A" />
+            data = {foundation.board} />
 
           <Switcher 
             title = "The Earth Foundation Team" 
-            data = {foundation.team} 
-            titleColor = "#CFAA7A" />
-
-
-          <Subscribe />
+            titleColor = "#CFAA7A"
+            data = {foundation.team} />
 
         </Layout>
         

@@ -5,7 +5,7 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 
 import "react-multi-carousel/lib/styles.css";
 
-import styles from "../styles/switcher.module.scss";
+import styles from "../styles/blue.switcher.module.scss";
 
 const responsive = {
     superLargeDesktop: {
@@ -26,7 +26,7 @@ const responsive = {
     }
 };
 
-const Switcher = props => {
+const BlueSwitcher = props => {
     let [index, setIndex] = useState(0);
 
     const title = props.title;
@@ -36,11 +36,11 @@ const Switcher = props => {
 
     return (
         <div className={styles.switcher}>
-            <div className={styles.control}>
-                <div className={styles.label}>
-                    <span style={{ color: titleColor }}>{title}</span>
-                </div>
+            <div className={styles.label}>
+                <span style={{ color: titleColor }}>{title}</span>
+            </div>
 
+            <div className={styles.control}>
                 <div className={styles.swiper}>
                     <Carousel
                         showDots={false}
@@ -58,28 +58,28 @@ const Switcher = props => {
                         ))}
                     </Carousel>
                 </div>
-            </div>
 
-            <div className={styles.panel_board}>
-                <div className={styles.details} >
-                    <div className={styles.header} >
-                        <span>{data[index].first} {data[index].last}</span>
+                <div className={styles.panel_board}>
+                    <div className={styles.details}>
+                        <div className={styles.header}>
+                            <span>{data[index].first} {data[index].last}</span>
+                        </div>
+                        <div className={styles.op}>
+                            <span>{data[index].position}</span>
+                        </div>
+                        <div className={styles.br}></div>
+                        <div className={styles.summary}>
+                            <span>{data[index].summary}</span>
+                        </div>
+                        <div className={styles.description}>
+                            <span>{data[index].description}</span>
+                        </div>
+                        <div className={styles.bar}></div>
                     </div>
-                    <div className={styles.op} >
-                        <span>{data[index].position}</span>
-                    </div>
-                    <div className={styles.br}></div>
-                    <div className={styles.summary}>
-                        <span>{data[index].summary}</span>
-                    </div>
-                    <div className={styles.description}>
-                        <span>{data[index].description}</span>
-                    </div>
-                    <div className={styles.bar} ></div>
-                </div>
-                <div className={styles.portrait}>
-                    <div className={styles.image}>
-                        <img src={data[index].image} />
+                    <div className={styles.portrait}>
+                        <div className={styles.image}>
+                            <img src={data[index].image} />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,4 +87,4 @@ const Switcher = props => {
     );
 };
 
-export default Switcher;
+export default BlueSwitcher;
