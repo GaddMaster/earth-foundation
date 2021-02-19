@@ -3,6 +3,7 @@
 .section {
   position: relative;
   width: 100%;
+  max-width: 820px;
 
   .cover {
       width: 100%;
@@ -27,7 +28,7 @@
 
           .summary {
               width: 100%;
-              font-size: 20px;
+              font-size: 16px;
               color: #16172C;
               align-self: flex-start;
               max-width: 500px;
@@ -36,8 +37,11 @@
 
           .image {
               width: 70%;
-              max-width: 400px;
               align-self: flex-end;
+
+              @media (min-width: $breakpoint) {
+                width: 100%;
+              }
           }
       }
   }
