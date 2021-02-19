@@ -64,7 +64,7 @@ const Home = () => {
                                         <p>{item.summary}</p>
                                     </div>
                                     <div className = {styles.route}>
-                                        <span>Read More</span>
+                                        <span>Read More.</span>
                                         <FontAwesomeIcon icon = {faArrowRight} />
                                     </div>
                                 </div>
