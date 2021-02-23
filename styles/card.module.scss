@@ -13,21 +13,37 @@
     }
     .label {
         flex-grow: 1;
+        color: black;
         background: white;
         padding: 0px 20px 0px 20px;
         display: flex;
         align-items: center;
+        font-size: 16px;
     }
     .more {
         display: flex;
+        color: black;
         background: white;
         padding: 0px 20px 20px 20px;
         display: flex;
         align-items: center;
-        font-size: 10px;
-        text-transform: uppercase !important;
-        letter-spacing: 1px;
-        font-weight: bold;
-        svg { margin: 0px 0px 0px 10px; }
+
+
+        .button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            letter-spacing: 1px;
+
+            span {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+    
+            svg { 
+                width: 12px;
+                margin: 0px 0px 0px 10px; 
+            }
+        }
     }
 }

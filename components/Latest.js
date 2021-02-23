@@ -18,7 +18,7 @@ import responsive from "../assets/responsive";
 
 class Latest extends PureComponent {
 
-    onScroll = event => {};
+    onScroll = event => { };
 
     onPrev = () => this.myCarousel.previous();
 
@@ -26,63 +26,61 @@ class Latest extends PureComponent {
 
     render = () => {
         return (
-            <section className = {styles.latest}>
-                <div className = {styles.control}>
-                    <div className = {styles.centered}>
-                        <div className = {styles.spacer}>
+            <section className={styles.latest}>
+                <div className={styles.control}>
+                    <div className={styles.centered}>
+                        <div className={styles.spacer}>
                             <motion.button
-                                whileHover = {{ scale: 1.1 }}
-                                whileTap = {{ scale: 0.8 }}
-                                onClick = {this.onNext}>
-                                <div className = {styles.icon}>
-                                    <FontAwesomeIcon icon = {faArrowRight} />
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.8 }}
+                                onClick={this.onNext}>
+                                <div className={styles.icon}>
+                                    <FontAwesomeIcon icon={faArrowRight} />
                                 </div>
                             </motion.button>
                         </div>
-                        <div className = {styles.spacer}>
+                        <div className={styles.spacer}>
                             <motion.button
-                                whileHover = {{ scale: 1.1 }}
-                                whileTap = {{ scale: 0.8 }}
-                                onClick = {this.onPrev}>
-                                <div className = {styles.icon}>
-                                    <FontAwesomeIcon icon = {faArrowLeft} />
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.8 }}
+                                onClick={this.onPrev}>
+                                <div className={styles.icon}>
+                                    <FontAwesomeIcon icon={faArrowLeft} />
                                 </div>
                             </motion.button>
                         </div>
-                        <div className = {styles.label}>
+                        <div className={styles.label}>
                             <span>Latest News</span>
                         </div>
-                        <div className = {styles.all}>
-                            <div>
-                                <span style = {{marginRight:10}}>Read All</span>
-                                <FontAwesomeIcon icon = {faArrowRight} />
-                            </div>
+                        <div className={styles.all}>
+                            <span style={{ marginRight: 10 }}>Read All</span>
+                            <FontAwesomeIcon icon={faArrowRight} />
                         </div>
                     </div>
-                    <div className = {styles.wall}></div>
+                    <div className={styles.wall}></div>
                 </div>
-                <div className = {styles.carousel}>
+                <div className={styles.carousel}>
                     <Carousel
-                        ref = {el => this.myCarousel = el}
-                        containerClass = {styles.list}
-                        additionalTransfrom = {0}
+                        ref={el => this.myCarousel = el}
+                        containerClass={styles.list}
+                        additionalTransfrom={0}
                         swipeable
                         dragable
                         ssr
-                        arrows = {false}
-                        minimumTouchDrag = {0}
-                        responsive = {responsive}>
-                        {content.home.concat(content.home).map((item, index) => (
+                        arrows={false}
+                        minimumTouchDrag={0}
+                        responsive={responsive}>
+                        {content.home.map((item, index) => (
                             <div
-                                className = {styles.wrapper}
-                                key = {index}>
+                                className={styles.wrapper}
+                                key={index}>
                                 <Card
-                                    image = {item.image}
-                                    label = {item.label} />
+                                    image={item.image}
+                                    label={item.label} />
                             </div>
                         ))}
                     </Carousel>
-                </div>
+                </div> 
             </section>
         );
     };

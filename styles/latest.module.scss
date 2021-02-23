@@ -4,7 +4,13 @@
 .latest {
     width: 100%;
     background: whitesmoke;
-    @media (min-width: $breakpoint) {}
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    @media (min-width: $breakpoint) {
+        flex-direction: row;
+    }
     .control {
         width: 60%;
         background: #CFAA7A;
@@ -37,21 +43,37 @@
                 color: #16172C;
                 font-size: 12px;
                 outline: none;
+
+                svg {
+                    width: 10px;
+                }
             }
             .label {
-                font-size: 24px;
+                font-size: 36px;
                 color: white;
                 font-weight: bold;
                 margin: 0px 0px 20px 0px;
             }
             .all {
-                font-size: 12px;
+                font-size: 16px;
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 color: #16172C;
                 text-transform: uppercase;
                 letter-spacing: 2px;
-                font-weight: bold;
+
+                @media (min-width: $breakpoint) {
+                    font-size: 10px;
+                }
+
+                svg {
+                    width: 16px;
+
+                    @media (min-width: $breakpoint) {
+                        width: 10px;
+                    }
+                }
             }
         }
         .wall {
@@ -65,7 +87,7 @@
         }
     }
     .carousel {
-        width: calc(100% - 20px);
+        width: 100%;
         height: 380px;
         position: relative;
         float: right;
@@ -76,28 +98,27 @@
         -ms-user-select: none;
         user-select: none;
         overflow: visible;
-        display: none;
+
         @media (max-width: $breakpoint) { 
             top: -80px; 
-            .list{ overflow: visible; }
         }
         @media (min-width: $breakpoint) {
             width: 70%;
             float: left;
-            margin: 130px 0px 0px 0px;
+            margin: 130px 0px 0px;
         }
-        .wrapper {
-            padding: 10px;
-            height: 380px;
+
+        .list {
+            width: calc(100vw - 1px);
+
+            @media (min-width: $breakpoint) {
+                width: calc(70vw - 1px);
+            }
+
+            .wrapper {
+                padding: 15px;
+                height: 380px;
+            }
         }
-    }
-    .block {
-        width: 90%;
-        height: 100px;
-        margin: 20px 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: black;
     }
 }
