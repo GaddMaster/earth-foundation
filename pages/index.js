@@ -3,7 +3,6 @@ import React, { PureComponent } from "react";
 
 import Head from "next/head";
 
-import Layout from "../components/Layout";
 import Section from "../components/Section";
 import Boards from "../components/Boards";
 import Slide from "../components/Slide";
@@ -17,6 +16,10 @@ import { getSortedPostsData } from "../lib/posts";
 import { motion } from "framer-motion";
 
 import styles from "../styles/home.module.scss";
+import Layout from "../components/layout";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import HomeNav from "../containers/HomeNav";
 
 class Home extends PureComponent {
 
@@ -104,14 +107,14 @@ class Home extends PureComponent {
     };
 
     onDragging = (direction, percentage) => {
-        this.setState({ 
-            direction, 
+        this.setState({
+            direction,
             percentage
         });
     };
 
     onLock = (name, value) => this.setState({ [name]: value });
-    
+
     render = () => {
 
         console.clear();
@@ -131,8 +134,6 @@ class Home extends PureComponent {
                     <Head>
                         <title>The Earth Foundation | Home | Landing</title>
                     </Head>
-                    <h1>The Earth Foundation</h1>
-                    <h2>Coming Soon</h2>
                     <Slide
                         index = {0}
                         current = {this.state.current}
@@ -141,7 +142,7 @@ class Home extends PureComponent {
                         pull = {false}
                         push = {false}
                         background = "yellow">
-                        <Section 
+                        <Section
                             cover = "/images/nasa-Q1p7bh3SHj8-unsplash.webp"
                             title = "The Earth Foundation"
                             subtitle = "Inspire. Educate. Mentor. Empower."
@@ -175,7 +176,7 @@ class Home extends PureComponent {
                         pull = {this.state.pull && this.state.current === 1}
                         push = {this.state.push && this.state.current === 2}>
                         <div className = {styles.last}>
-                            <div 
+                            <div
                                 id = "end"
                                 className = {styles.wrapper}>
                                 <Latest onLock = {this.onLock} />
@@ -184,7 +185,7 @@ class Home extends PureComponent {
                             </div>
                         </div>
                     </Slide>
-                    <TouchControl 
+                    <TouchControl
                         onTouch = {this.onTouch}
                         onDragging = {this.onDragging}
                         onGesture = {this.onGesture}
