@@ -13,6 +13,8 @@ const Subscribe = props => {
     const onChange = () => e => onEmail(e.target.value);
     const onSubscribe = () => {
         http.request("PUT", "/api/subscribe", { email });
+        onEmail("");
+        alert("Subscribed");
     };
     return (
         <section className = {styles.subscribe}>
@@ -23,6 +25,7 @@ const Subscribe = props => {
                 <InputBase
                     placeholder = "Your Email Here"
                     className = {styles.input}
+                    value = {email}
                     onChange = {onChange()} />
                 <ButtonBase
                     className = {styles.button}
