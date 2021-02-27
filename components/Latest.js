@@ -1,21 +1,21 @@
 
 import React, { PureComponent } from "react";
 
-// import Carousel from "react-multi-carousel";
-// import Flickity from "react-flickity-component";
-// import Card from "./Card";
+import Card from "./Card";
 
 import { motion } from "framer-motion";
-// import Button from "@material-ui/core/ButtonBase";
+import Button from "@material-ui/core/ButtonBase";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import styles from "../styles/latest.module.scss";
-// import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
 
-// import content from "../assets/content";
-// import responsive from "../assets/responsive";
+import styles from "../styles/latest.module.scss";
+import "react-multi-carousel/lib/styles.css";
+
+import content from "../assets/content";
+import responsive from "../assets/responsive";
 
 const options = {
     initialIndex: 2
@@ -23,11 +23,20 @@ const options = {
 
 class Latest extends PureComponent {
 
-    // onScroll = event => {};
+    constructor (props) {
+        super(props);
+        this.state = {
+            width: 360
+        };
+    };
 
-    // onPrev = () => this.myCarousel.previous();
+    componentDidMount = () => this.setState({ width: window.screen.width });
 
-    // onNext = () => this.myCarousel.next();
+    onScroll = event => {};
+
+    onPrev = () => this.myCarousel.previous();
+
+    onNext = () => this.myCarousel.next();
 
     render = () => {
         return (
@@ -58,32 +67,34 @@ class Latest extends PureComponent {
                             <span>Latest News</span>
                         </div>
                         <div className = {styles.all}>
-                            <div>
-                                <span style = {{marginRight:10}}>Read All</span>
-                                <FontAwesomeIcon icon = {faArrowRight} />
-                            </div>
+                            <span style = {{marginRight:10}}>Read All</span>
+                            <FontAwesomeIcon icon = {faArrowRight} />
                         </div>
                     </div>
                     <div className = {styles.wall}></div>
                 </div>
-                <div className = {styles.carousel}>
-                {/*<Flickity
-                    className = {"carousel"}
-                    elementType = {"div"}
-                    options = {flickityOptions}
-                    disableImagesLoaded = {false}
-                    reloadOnUpdate 
-                    static>
-                    {content.home.concat(content.home).map((item, index) => (
-                        <div
-                            className = {styles.wrapper}
-                            key = {index}>
-                            <Card
-                                image = {item.image}
-                                label = {item.label} />
-                        </div>
-                    ))}
-                    </Flickity>*/}
+                <div 
+                    className = {styles.carousel}
+                    style = {{
+                        width: this.state.width - 40
+                    }}>
+                    <Carousel
+                        containerClass = {styles.c}
+                        sliderClass = {styles.s}
+                        ref = {el => this.myCarousel = el}
+                        arrows = {false}
+                        responsive = {responsive}>
+                        {content.home.concat(content.home).map((item, index) => (
+                            <div
+                                className = {styles.wrapper}
+                                key = {index}>
+                                <Card
+                                    image = {item.image}
+                                    label = {item.label}
+                                    summary = {item.summary} />
+                            </div>
+                        ))}
+                    </Carousel>
                 </div>
             </section>
         );

@@ -65,8 +65,7 @@ const Header = props => {
                 </nav>
             </div>
             <div className = {styles.curve}>
-                <div className = {styles.image}>
-                </div>
+                <img src = "/images/divider.png" alt = "" />
             </div>
             <Menu
                 id = "simple-menu"

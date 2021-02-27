@@ -7,21 +7,19 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/card.module.scss";
 
 const Card = props => {
+    console.log(props);
     return (
             <section className = {styles.card}>
                 <div className = {styles.cover} style = {{background:`url(${props.image})`}}></div>
                 <div className = {styles.label}>
                     <span>{props.label}</span>
                 </div>
+                <div className = {styles.summary}>
+                    <span>{props.summary}</span>
+                </div>
                 <div className = {styles.more}>
-                <motion.button
-                    whileHover = {{ scale: 1.1 }}
-                    whileTap = {{ scale: 0.9 }}>
-                    <div>
-                        <span>Read More</span>
-                        <FontAwesomeIcon icon = {faArrowRight} />
-                    </div>
-                    </motion.button>
+                    <span>Read More</span>
+                    <FontAwesomeIcon icon = {faArrowRight} />
                 </div>
             </section>
     );
