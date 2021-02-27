@@ -3,29 +3,26 @@ import Link from "next/link";
 
 import { useState } from "react";
 
-import ExpandMenuIcon from "./ExpandMenuIcon";
+import Side from "./Side";
 
-import ButtonBase from "@material-ui/core/ButtonBase";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
+import IconButton from "@material-ui/core/IconButton";
+import Drawer from "@material-ui/core/Drawer";
+import { withStyles } from "@material-ui/styles";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/header.module.scss";
 
+const style = {
+    drawerPaper: {
+        width: '100%',
+        background: "#16172C"
+    }
+};
+
 const Header = props => {
-    const [anchor, setAnchor] = useState(null);
-    const [index, setIndex] = useState(null);
-    const onAnchor = (index, event) => {
-        setAnchor(event.currentTarget);
-        setIndex(index);
-    };
-    const onClose = () => {
-        setAnchor(null);
-        setIndex(null);
-    };
-    const [open, setOpen] = useState(false);
+    const [open, onOpen] = useState(false);
     return (
         <div className = {styles.header}>
             <div className = {styles.wrapper}>
@@ -35,59 +32,38 @@ const Header = props => {
                     </Link>
                 </div>
                 <nav className = {styles.nav}>
-                    <div 
-                        className = {styles.dropdown} 
-                        onClick = {onAnchor.bind(this, 0)} 
-                        aria-controls = "simple-menu" >
+                    <div className = {styles.dropdown}>
                         <span>About Us</span>
-                        <FontAwesomeIcon icon = {index===0?faAngleDown:faAngleUp} />
                     </div>
-                    <div 
-                        className = {styles.dropdown} 
-                        onClick = {onAnchor.bind(this, 1)} 
-                        aria-controls = "simple-menu" >
+                    <div className = {styles.dropdown}>
                         <span>Our Initiatives</span>
-                        <FontAwesomeIcon icon = {index===1?faAngleDown:faAngleUp} />
                     </div>
                     <div className = {styles.dropdown}>
                         <span>News</span>
                     </div>
-                    <div 
-                        className = {styles.dropdown} 
-                        onClick = {onAnchor.bind(this, 2)} 
-                        aria-controls = "simple-menu" >
+                    <div className = {styles.dropdown}>
                         <span>Get Involved</span>
-                        <FontAwesomeIcon icon = {index===2?faAngleDown:faAngleUp} />
                     </div>
-                    <div className = {`${styles.icon}`}>
-                        <ExpandMenuIcon />
-                    </div>
+                    <IconButton 
+                        className = {`${styles.icon}`}
+                        onClick = {onOpen.bind(this, !open)}>
+                        <FontAwesomeIcon icon = {faBars} />
+                    </IconButton>
                 </nav>
             </div>
             <div className = {styles.curve}>
                 <img src = "/images/divider.png" alt = "" />
             </div>
-            <Menu
-                id = "simple-menu"
-                anchorEl = {anchor}
-                keepMounted
-                open = {Boolean(anchor)}
-                getContentAnchorEl = {null}
-                anchorOrigin = {{
-                    vertical: "bottom",
-                    horizontal: "center"
-                }}
-                transformOrigin = {{
-                    vertical: "top",
-                    horizontal: "center"
-                }}
-                onClose = {onClose}>
-                <MenuItem onClick = {onClose}>My Menu Item I</MenuItem>
-                <MenuItem onClick = {onClose}>My Menu Item I</MenuItem>
-                <MenuItem onClick = {onClose}>My Menu Item I</MenuItem>
-            </Menu>
+            <Drawer 
+                open = {open}
+                anchor = "right" 
+                classes = {{ paper: props.classes.drawerPaper }}
+                style = {{ zIndex: 1 }}
+                onClose = {onOpen.bind(this, false)}>
+                <Side />
+            </Drawer>
         </div>
     );
 };
 
-export default Header;
+export default withStyles(style)(Header);

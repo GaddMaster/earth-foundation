@@ -1,7 +1,4 @@
 
-@tailwind base;
-@tailwind components;
-
 html, body {
     padding: 0;
     margin: 0;
@@ -45,5 +42,3 @@ img {
   width: 100%;
   display: block;
 }
-
-@tailwind utilities;

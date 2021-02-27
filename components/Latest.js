@@ -3,8 +3,7 @@ import React, { PureComponent } from "react";
 
 import Card from "./Card";
 
-import { motion } from "framer-motion";
-import Button from "@material-ui/core/ButtonBase";
+import ButtonBase from "@material-ui/core/ButtonBase";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -17,10 +16,6 @@ import "react-multi-carousel/lib/styles.css";
 import content from "../assets/content";
 import responsive from "../assets/responsive";
 
-const options = {
-    initialIndex: 2
-};
-
 class Latest extends PureComponent {
 
     constructor (props) {
@@ -30,7 +25,7 @@ class Latest extends PureComponent {
         };
     };
 
-    componentDidMount = () => this.setState({ width: window.screen.width });
+    componentDidMount = () => this.setState({ width: window.innerWidth });
 
     onScroll = event => {};
 
@@ -39,55 +34,51 @@ class Latest extends PureComponent {
     onNext = () => this.myCarousel.next();
 
     render = () => {
+        let { width } = this.state;
+        let mobile = this.state.width < 600;
+        let style = {
+            control: mobile ? 240 : (width * 0.3),
+            carousel: mobile ? (width - 40) : (width * 0.7)
+        };
         return (
             <section className = {styles.latest}>
-                <div className = {styles.control}>
+                <div className = {styles.control} style = {{width:style.control}}>
                     <div className = {styles.centered}>
                         <div className = {styles.spacer}>
-                            <motion.button
-                                whileHover = {{ scale: 1.1 }}
-                                whileTap = {{ scale: 0.8 }}
+                            <ButtonBase 
+                                className = {styles.button}
                                 onClick = {this.onNext}>
-                                <div className = {styles.icon}>
-                                    <FontAwesomeIcon icon = {faArrowRight} />
-                                </div>
-                            </motion.button>
+                                <FontAwesomeIcon icon = {faArrowRight} />
+                            </ButtonBase>
                         </div>
                         <div className = {styles.spacer}>
-                            <motion.button
-                                whileHover = {{ scale: 1.1 }}
-                                whileTap = {{ scale: 0.8 }}
+                            <ButtonBase 
+                                className = {styles.button}
                                 onClick = {this.onPrev}>
-                                <div className = {styles.icon}>
-                                    <FontAwesomeIcon icon = {faArrowLeft} />
-                                </div>
-                            </motion.button>
+                                <FontAwesomeIcon icon = {faArrowLeft} />
+                            </ButtonBase>
                         </div>
                         <div className = {styles.label}>
                             <span>Latest News</span>
                         </div>
                         <div className = {styles.all}>
                             <span style = {{marginRight:10}}>Read All</span>
+                            <span className = {styles.news}>News</span>
                             <FontAwesomeIcon icon = {faArrowRight} />
                         </div>
                     </div>
                     <div className = {styles.wall}></div>
                 </div>
-                <div 
-                    className = {styles.carousel}
-                    style = {{
-                        width: this.state.width - 40
-                    }}>
+                <div className = {styles.carousel} style = {{width:style.carousel}}>
                     <Carousel
-                        containerClass = {styles.c}
-                        sliderClass = {styles.s}
+                        containerClass = {mobile ? styles.container : null}
+                        sliderClass = {styles.slider}
                         ref = {el => this.myCarousel = el}
                         arrows = {false}
+                        ssr
                         responsive = {responsive}>
                         {content.home.concat(content.home).map((item, index) => (
-                            <div
-                                className = {styles.wrapper}
-                                key = {index}>
+                            <div className = {styles.wrapper} key = {index}>
                                 <Card
                                     image = {item.image}
                                     label = {item.label}

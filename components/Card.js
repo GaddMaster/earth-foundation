@@ -7,7 +7,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/card.module.scss";
 
 const Card = props => {
-    console.log(props);
     return (
             <section className = {styles.card}>
                 <div className = {styles.cover} style = {{background:`url(${props.image})`}}></div>

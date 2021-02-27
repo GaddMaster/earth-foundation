@@ -1,12 +1,19 @@
 
+import { useState } from "react";
 
 import InputBase from "@material-ui/core/InputBase";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import { motion } from "framer-motion";
+
+import http from "../utils/http";
 
 import styles from "../styles/subscribe.module.scss";
 
 const Subscribe = props => {
+    let [email, onEmail] = useState("");
+    const onChange = () => e => onEmail(e.target.value);
+    const onSubscribe = () => {
+        http.request("PUT", "/api/subscribe", { email });
+    };
     return (
         <section className = {styles.subscribe}>
             <div className = {styles.block}>
@@ -15,11 +22,11 @@ const Subscribe = props => {
                 </div>
                 <InputBase
                     placeholder = "Your Email Here"
-                        className = {styles.input}
-                        onChange = {()=>{}} />
+                    className = {styles.input}
+                    onChange = {onChange()} />
                 <ButtonBase
                     className = {styles.button}
-                    onClick = {()=>{}}>
+                    onClick = {onSubscribe}>
                     <span>Join Us</span>
                 </ButtonBase>
             </div>

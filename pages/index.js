@@ -5,6 +5,7 @@ import Head from "next/head";
 
 import Layout from "../components/Layout";
 import Latest from "../components/Latest";
+import Subscribe from "../components/Subscribe";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle as solid, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -72,6 +73,7 @@ const Home = () => {
                         </div>
                     ))}
                     <Latest />
+                    <Subscribe />
                 </div>
             </Layout>
         </motion.div>
