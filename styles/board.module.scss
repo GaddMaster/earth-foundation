@@ -23,7 +23,10 @@
         bottom: 0px;
         right: 0px;
         @media (max-width: $breakpoint) { width: calc(100% - 40px); }
-        @media (min-width: $breakpoint) { max-width: 400px; }
+        @media (min-width: $breakpoint) {
+            width: 40%;
+            max-width: 440px;
+        }
         .padding {
             padding: 20px;
             @media (min-width: $breakpoint) { padding: 40px; }

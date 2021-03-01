@@ -1,5 +1,5 @@
 
-import { PureComponent } from "react";
+import React, { PureComponent } from "react";
 
 import ScrollListener from "./ScrollListener";
 
