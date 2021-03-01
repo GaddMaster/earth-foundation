@@ -22,7 +22,7 @@
         margin: 0px 0px 0px 0px;
     }
     .title h1 {
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
         text-align: left;
         padding: 0px 0px 0px 0px;
@@ -31,7 +31,7 @@
         @media (min-width: $breakpoint) { font-size: 80px; }
     }
     .sub h2 {
-        font-size: 22px;
+        font-size: 26px;
         font-weight: bold;
         text-align: left; 
         padding: 0px 0px 0px 0px;
@@ -40,7 +40,7 @@
         @media (min-width: $breakpoint) { font-size: 32px; }
     }
     .para {
-        font-size: 12px;
+        font-size: 14px;
         font-family: lato;
         color: white;
         text-align: left;

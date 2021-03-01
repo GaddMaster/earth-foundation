@@ -8,11 +8,9 @@ import styles from "styles/board.module.scss";
 const Board = props => {
     let { item, index } = props;
     return (
-        <div c
+        <div
             className = {styles.board} 
-            style = {{
-                marginTop: index === 0 ? 80 : 0
-            }}
+            style = {{ marginTop: index === 0 ? 80 : 0 }}
             key = {index}>
             <div className = {styles.banner} style = {{background:`url(${item.image})`}}></div>
             <div className = {styles.block} style = {{background:item.background||"white"}}>
