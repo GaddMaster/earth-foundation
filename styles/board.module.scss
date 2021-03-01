@@ -22,14 +22,15 @@
         position: absolute;
         bottom: 0px;
         right: 0px;
+        border-radius: 2px;
         @media (max-width: $breakpoint) { width: calc(100% - 40px); }
         @media (min-width: $breakpoint) {
-            width: 40%;
-            max-width: 440px;
+            width: 50%;
+            max-width: 520px;
         }
         .padding {
-            padding: 20px;
-            @media (min-width: $breakpoint) { padding: 40px; }
+            padding: 15px;
+            @media (min-width: $breakpoint) { padding: 30px; }
             .pagination {
                 display: flex;
                 align-items: flex-end;
@@ -60,11 +61,12 @@
             .label {
                 margin: 0px 0px 20px 0px;
                 h1 {
-                    font-size: 30px;
+                    font-size: 28px;
                     color: #CEAA7A;
                     font-weight: bold;
                     text-align: left;
                     padding: 0px;
+                    line-height: 36px;
                 }
             }
             .summary {
