@@ -77,7 +77,7 @@ class Latest extends PureComponent {
                         arrows = {false}
                         ssr
                         responsive = {responsive}>
-                        {content.home.concat(content.home).map((item, index) => (
+                        {content.home.blocks.concat(content.home.blocks).map((item, index) => (
                             <div className = {styles.wrapper} key = {index}>
                                 <Card
                                     image = {item.image}

@@ -33,7 +33,9 @@ const Header = props => {
                 </div>
                 <nav className = {styles.nav}>
                     <div className = {styles.dropdown}>
-                        <span>About Us</span>
+                        <Link href = "/about-us" >
+                            <span>About Us</span>
+                        </Link>
                     </div>
                     <div className = {styles.dropdown}>
                         <span>Our Initiatives</span>
