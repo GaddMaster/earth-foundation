@@ -15,6 +15,8 @@ import ScrollSnap from "scroll-snap";
 import content from "../assets/content";
 import foundation from "../assets/foundation";
 
+import styles from "styles/about.module.scss";
+
 class AboutUs extends PureComponent {
 
     constructor (props) {
@@ -31,7 +33,7 @@ class AboutUs extends PureComponent {
         const snapElement = new ScrollSnap(element, {
           snapDestinationY: "90%"
         });
-        snapElement.bind(onCallback);
+        snapElement.bind(this.onCallback);
     };
 
     render = () => {
@@ -48,7 +50,7 @@ class AboutUs extends PureComponent {
 
                 <Layout title = "The Earth Foundation Background">
 
-                    <div id = "container" ref = {this.container}>
+                    <div id = "container" ref = {this.ref}>
 
                         <Cover cover = {content.about.cover} />
 

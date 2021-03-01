@@ -1,8 +1,6 @@
 
 import React, { PureComponent } from "react";
 
-import ScrollListener from "./ScrollListener";
-
 import { AnimatePresence, motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 
