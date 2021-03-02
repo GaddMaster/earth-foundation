@@ -11,8 +11,8 @@ const Subscribe = props => {
         <section className = {styles.subscribe}>
             <div className = {styles.block}>
                 <div className = {styles.label}>
-                    <span>Passionate about our initiatives?</span>
-                </div>
+                    <span className = {styles.labels}>Passionate about our initiatives?</span>
+             
                 <InputBase
                     placeholder = "Your Email Here"
                         className = {styles.input}
@@ -22,6 +22,7 @@ const Subscribe = props => {
                     onClick = {()=>{}}>
                     <span>Join Us</span>
                 </ButtonBase>
+                </div>
             </div>
         </section>
     );
