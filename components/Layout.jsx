@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 import styles from "../styles/layout.module.scss";
 
-const Layout = ({ children, home }) => {
+const Layout = props => {
         return (
             <div className = {styles.layout}>
             <Head>
@@ -15,9 +15,9 @@ const Layout = ({ children, home }) => {
                 <meta name = "description" content = "The Earth Foundation Was Founded To Help The Planet Recover" />
                 <link href = "https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel = "stylesheet" />
             </Head>
-            <Header />
-            {children}
-            <Footer />
+            {props.header && <Header />}
+            {props.children}
+            {props.footer.show && <Footer background = {props.footer.background} />}
             </div>
         );
 };

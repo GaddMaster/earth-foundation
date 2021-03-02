@@ -9,6 +9,7 @@ import http from "../utils/http";
 import styles from "../styles/subscribe.module.scss";
 
 const Subscribe = props => {
+    console.log(props);
     let [email, onEmail] = useState("");
     const onChange = () => e => onEmail(e.target.value);
     const onSubscribe = () => {
@@ -17,8 +18,8 @@ const Subscribe = props => {
         alert("Subscribed");
     };
     return (
-        <section className = {styles.subscribe}>
-            <div className = {styles.block}>
+        <section className = {styles.subscribe} style = {{background:props.background.outer||"whitesmoke"}}>
+            <div className = {styles.block} style = {{background:props.background.inner||"white"}}>
                 <div className = {styles.label}>
                     <span>Passionate about our initiatives?</span>
                 </div>

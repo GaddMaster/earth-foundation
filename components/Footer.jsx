@@ -5,9 +5,9 @@ import { faFacebookF, faTwitter, faInstagram, faYoutube } from "@fortawesome/fre
 
 import styles from "../styles/footer.module.scss";
 
-const Card = props => {
+const Footer = props => {
     return (
-        <section className = {styles.footer}>
+        <section className = {styles.footer} style = {{background:props.background||"whitesmoke"}}>
             <div className = {styles.block}>
                 <div className = {styles.logo}>
                     <img className = {styles.logo} src = "/images/logo.png" />
@@ -52,4 +52,4 @@ const Card = props => {
     );
 };
 
-export default Card;
+export default Footer;

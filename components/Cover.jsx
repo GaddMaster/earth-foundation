@@ -1,9 +1,12 @@
 
+import Header from "./Header";
+
 import styles from "styles/cover.module.scss";
 
 const Cover = props => {
     return (
         <div className = {styles.cover} style = {{backgroundImage:`url(${props.cover.image})`}}>
+            <Header />
             <div className = {styles.title}>
                 <h1>{props.cover.title}</h1>
             </div>

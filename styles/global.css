@@ -1,5 +1,5 @@
 
-html, body, #__next {
+html, body {
     padding: 0;
     margin: 0;
     font-family: "lato", cursive;
@@ -14,7 +14,6 @@ html, body, #__next {
     user-select: none;
     overscroll-behavior: contain;
     letter-spacing: 1px;
-    height: 100%;
     width: 100%;
     overflow-x: hidden;
 }

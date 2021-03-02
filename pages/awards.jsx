@@ -1,7 +1,7 @@
 
 import Head from "next/head";
 import Layout from "../components/Layout";
-import Switcher from "../components/Switcher";
+import Switcher from "../components/PersonViewer";
 
 import { motion } from "framer-motion";
 

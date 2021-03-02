@@ -6,11 +6,9 @@
     display: flex;
     margin: 0px 0px 0px 0px;
     width: 100%;
-    background: whitesmoke;
     @media (min-width: $breakpoint) { margin: 0px 0px 0px 0px; }
     .block {
         flex-grow: 1;
-        background: white;
         display: flex;
         align-items: center;
         flex-direction: column;

@@ -1,10 +1,14 @@
 
 import React, { PureComponent } from "react";
 
+import CircleSlide from "./CircleSlide";
+
 import { AnimatePresence, motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 
 import styles from "../styles/pause.scroller.module.scss";
+
+import content from "assets/content";
 
 var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
@@ -15,7 +19,9 @@ class PauseScroller extends PureComponent {
         this.ref = React.createRef()
         this.state = {
             index: 0,
-            scroll: true
+            lock: false,
+            set: false,
+            inView: false
         };
     };
 
@@ -28,19 +34,28 @@ class PauseScroller extends PureComponent {
         } catch(e) {}
         this.wheelOpt = supportsPassive ? { passive: false } : false;
         this.wheelEvent = "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
-        var lastScrollPosition = 0, tick = false;
-        window.addEventListener("scroll", function(e) {
-            lastScrollPosition = window.scrollY;
-            if (!tick) {
-              setTimeout(function () {
-                tick = false;
-              }, 1000)
-            }
-            tick = true;
-          });
+        window.addEventListener("touchstart", this.onTouchStart);
+        if (window.innerWidth > 900) window.addEventListener("mousedown", this.onTouchStart);
     };
 
-    componentDidUpdate = (pp, ps) => {};
+    onTouchStart = e => {
+        console.log("Touch Start");
+        if (this.state.lock) {
+            console.log("T");
+            let index = this.state.index < 2 ? this.state.index + 1 : this.state.index;
+            let lock = index < 2;
+            this.setState({
+                index,
+                lock 
+            });
+            if (!lock) {
+                this.onEnableScroll();
+                this.setState({
+                    set: true
+                });
+            }
+        }
+    };
 
     onPreventDefault = e => e.preventDefault();
 
@@ -66,34 +81,61 @@ class PauseScroller extends PureComponent {
     }
 
     onChange = inView => {
+        // console.log("Changed : ", inView);
+        this.setState({ inView });
         if (inView) {
-            // this.setState({ scroll: false });
-            // this.onDisableScroll()
+            if (!this.state.set) {
+                this.setState({ lock: true });
+                this.onDisableScroll();
+            }
         }
     };
 
     render = () => {
+        // console.log("");
+        // console.log("Index : ", this.state.index);
+        // console.log("Lock : ", this.state.lock);
+        // console.log("Set : ", this.state.set);
+        // console.log("In View : ", this.state.inView);
         return (
             <section className = {styles.container}>
                 <InView 
                     as = "div" 
-                    style = {{
-                        width: "100%",
-                        height: "100%"
-                    }}
-                    threshold = {1}
+                    threshold = {0.9}
                     onChange = {this.onChange}>
                     <AnimatePresence exitBeforeEnter>
                         {this.state.index === 0 &&
                             <motion.div
-                                key = "slide1"
+                                key = "slide0"
+                                style = {{ width: "100%", height: "100%" }}
                                 initial = {{ x: 300, opacity: 0 }}
                                 animate = {{ x: 0, opacity: 1 }}
-                                exit = {{ x: -300, opacity: 0 }}
-                                transition = {{ duration: process.env.ANIMATION_SPEED }}>
-                                <div className = {styles.slide}>
-                                    
-                                </div>
+                                exit = {{ x: -300, opacity: 0 }}>
+                                <CircleSlide
+                                    paragraph = {content.about.slides[0].paragraph}
+                                    image = {content.about.slides[0].image} />
+                            </motion.div> }
+                        {this.state.index === 1 &&
+                            <motion.div
+                                key = "slide1"
+                                style = {{ width: "100%", height: "100%" }}
+                                initial = {{ x: 300, opacity: 0 }}
+                                animate = {{ x: 0, opacity: 1 }}
+                                exit = {{ x: -300, opacity: 0 }}>
+                                <CircleSlide
+                                    paragraph = {content.about.slides[1].paragraph}
+                                    image = {content.about.slides[1].image} />
+                            </motion.div> }
+                        {this.state.index === 2 &&
+                            <motion.div
+                                key = "slide2"
+                                style = {{ width: "100%", height: "100%" }}
+                                initial = {{ x: 300, opacity: 0 }}
+                                animate = {{ x: 0, opacity: 1 }}
+                                exit = {{ x: -300, opacity: 0 }}>
+                                <CircleSlide
+                                    paragraph = {content.about.slides[2].paragraph}
+                                    image = {content.about.slides[2].image} />
                             </motion.div> }
                     </AnimatePresence>
                 </InView >
