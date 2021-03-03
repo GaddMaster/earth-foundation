@@ -35,8 +35,7 @@ import {
       color: whiteColor,
       textDecoration: "none",
       marginBottom: "25px",
-     
-     marginRight: '250px',
+      marginRight: '270px',
       fontFamily: `"Roboto Slab", "Times New Roman", serif`
     },
     
