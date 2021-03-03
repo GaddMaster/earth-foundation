@@ -39,9 +39,9 @@ class PauseScroller extends PureComponent {
     };
 
     onTouchStart = e => {
-        console.log("Touch Start");
+        // console.log("Touch Start");
         if (this.state.lock) {
-            console.log("T");
+            // console.log("T");
             let index = this.state.index < 2 ? this.state.index + 1 : this.state.index;
             let lock = index < 2;
             this.setState({
