@@ -46,7 +46,6 @@ class TouchControl extends PureComponent {
     onTouchStart = e => {
         let startX = e.clientX >= 0 ? e.clientX : (e.touches[0]||{}).clientX;
         let startY = e.clientY >= 0 ? e.clientY : (e.touches[0]||{}).clientY;
-        this.props.onTouch(true, startX, startY);
         this.setState({
             touch: true,
             direction: "",
@@ -59,15 +58,19 @@ class TouchControl extends PureComponent {
     onTouchEnd = e => {
         let endX = e.clientX >= 0 ? e.clientX : (e.touches[0]||{}).clientX;
         let endY = e.clientY >= 0 ? e.clientY : (e.touches[0]||{}).clientY;
-        this.props.onTouch(false);
+        let diffX = this.state.startX - endX;
+        let diffY = this.state.startX - endY;
+        console.log(diffY);
         this.setState({
             touch: false,
             endX,
             endY,
-            diffX: this.state.startX - endX,
-            diffY: this.state.startX - endY,
+            diffX,
+            diffY,
             em: new Date().getTime()
         });
+        let gesture = diffY > 10 ? "UP" : diffY < -10 ? "DOWN" : "NONE";
+        console.log("Gesture : ", gesture);
     };
 
     onDragging = e => {
@@ -77,7 +80,6 @@ class TouchControl extends PureComponent {
             let diffY = this.state.startY - posY;
             let percentage = parseInt((diffY / this.state.percent).toFixed(2));
             let direction = posY < this.state.prevY ? "up" : posY === this.state.prevY ? this.state.direction : "down";
-            this.props.onDragging(direction, percentage);
             this.setState({
                 prevX: posX,
                 prevY: posY,
@@ -95,25 +97,14 @@ class TouchControl extends PureComponent {
         if (e.wheelDelta) delta = e.wheelDelta / 60;
         else if ( e.detail ) delta = -e.detail / 2;
         if ( delta !== null ) direction = delta > 0 ? 'up' : 'down';
-        this.props.onCurrent(direction);
         setTimeout(() => this.lock = false, 500);
+        console.log("Wheel : ", direction);
     };
     
     render = () => {
         return (
             <div className = {styles.touch}>
 
-                {this.state.touch && 
-                    <div style = {{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        opacity: 0.25
-                    }}>
-                        {/*<span>{this.state.direction.toUpperCase()}</span>
-                        <span>{this.state.percentage}</span>
-                <span><FontAwesomeIcon icon = {faFingerprint} /></span>*/}
-                    </div> }
             </div>
         );
     };

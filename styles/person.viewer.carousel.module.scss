@@ -1,0 +1,163 @@
+
+@import "./variables";
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    @media (min-width: $breakpoint) {}
+    .spacing {
+        flex-grow: 1;
+        @media (min-width: $breakpoint) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 40px 40px 40px;
+        }
+        .title {
+            font-size: 34px;
+            font-weight: bold;
+            @media (max-width: $breakpoint) { margin: 40px; }
+            @media (min-width: $breakpoint) {
+                width: 30%;
+                margin: 0px 0px 40px 0px;
+            }
+        }
+        .avatars {
+            .list{ overflow: visible; }
+            @media (max-width: $breakpoint) {
+                width: calc(100% - 40px);
+                margin: 0px 0px 20px 40px;
+            }
+            @media (min-width: $breakpoint) {
+                width: 70%;
+                margin: 0px 0px 0px 0px;
+            }
+            .avatar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @media (max-width: $breakpoint) { margin: 0px 20px 0px 0px; }
+                .button {
+                    width: 80px;
+                    height: 80px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    border: 2px solid transparent;
+                    margin: 0px 0px 10px 0px;
+                    img {
+                        border-radius: 50%;
+                        min-width: 60px;
+                        min-height: 60px;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .name {
+                    color: #16172C;
+                    font-size: 8px;
+                    max-width: 80px;
+                    text-align: center;
+                    height: 30px;
+                }
+                .true {
+                    border: 2px solid $blue;
+                    font-weight: bold;
+                }
+            }
+        }
+        .block {
+            @media (min-width: $breakpoint) {
+                display: flex;
+            }
+            .details {
+                padding: 40px 40px 40px 40px;
+                @media (max-width: $breakpoint) { margin: 0px 0px 0px 40px; }
+                @media (min-width: $breakpoint) {
+                    flex-grow: 1;
+                    padding: 40px 180px 40px 40px;
+                }
+                .header {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .position { font-size: 14px; }
+                .break {
+                    height: 1px;
+                    width: 100px;
+                    background: rgba(255, 255, 255, 0.5);
+                    margin: 10px 0px 10px 0px;
+                }
+                .paragraph { 
+                    font-size: 14px;
+                    margin: 0px 0px 20px 0px;
+                }
+            }
+            .portrait {
+                display: flex;
+                position: relative;
+                @media (max-width: $breakpoint) {
+                    padding: 0px 40px 0px 40px;
+                    margin: 0px 0px 0px 40px;
+                }
+                @media (min-width: $breakpoint) {
+                    min-width: 200px;
+                    width: 200px;
+                    align-items: center;
+                }
+                .image {
+                    flex-grow: 1;
+                    z-index: 1;
+                    @media (min-width: $breakpoint) {}
+                }
+                .buttons {
+                    width: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    float: left;
+                    margin: 0px 0px 0px 20px;
+                    z-index: 1;
+                    .button {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 3px;
+                        border: 1px solid #ceaa7a7d;
+                        svg {
+                            width: 12px;
+                            height: 12px;
+                            color: #ceaa7a7d;
+                        }
+                    }
+                    .first { margin: 0px 0px 10px 0px; }
+                    @media (min-width: $breakpoint) { display: none; }
+                }
+                .blue {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 50%;
+                    background: $blue;
+                    @media (min-width: $breakpoint) {
+                        width: 50%;
+                        height: 100%;
+                    }
+                }
+                .white {
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    width: 100%;
+                    height: 50%;
+                    background: white;
+                    @media (min-width: $breakpoint) {
+                        top: 0px;
+                        left: 50%;
+                        width: 50%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,26 +3,33 @@
 
 .header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background: white;
-    @media (min-width: $breakpoint) {
-        height: 100px;
-    }
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     .wrapper {
-        max-width: 900px;
-        width: 100%;
+        width: calc(100%);
         display: flex;
         align-items: center;
         background: white;
+        margin: 0px auto 0 auto;
+        z-index: 3;
+        @media (min-width: $breakpoint) {
+            height: calc(120px);
+            padding: 0px 80px;
+        }
         .logo {
-            width: 40px;
-            height: 40px;
-            margin: 20px;
+            width: 60px;
+            height: 50px;
+            margin: 20px 0px 0px 30px;
+            overflow: visible;
+            z-index: 3;
             @media (min-width: $breakpoint) {
-                width: 60px;
+                width: 100px;
                 height: 60px;
-                margin: 20px 20px 20px 20px;
+                margin: 20px 0px 0px 30px;
+                overflow: visible;
+                z-index: 3;
             }
         }
         .nav {
@@ -31,7 +38,20 @@
             align-items: center;
             justify-content: flex-end;
             padding: 0px 0px 0px 0px;
-            .link {
+            z-index: 4;
+            height: 60px;
+            .dropdown {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                color: black;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0px 0px -5px 10px;
+                }
+            }
+            .link, .dropdown {
                 margin: 0px 0px 0px 40px;
                 font-size: 20px;
                 color: rgb(43, 43, 43);
@@ -44,17 +64,37 @@
             .icon {
                 width: 50px;
                 height: 50px;
-                margin: 15px;
+                margin: 20px 20px 0px 0px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: grey;
                 border-radius: 50%;
+                z-index: 4;
                 svg {
                     width: 20px;
                     height: 20px;
                 }
                 @media (min-width: $breakpoint) { display: none; }
+            }
+        }
+    }
+    .curve {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 2;
+        .image {
+            width: 100%;
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            z-index: 2;
+            @media (min-width: $breakpoint) {
+                height: 260px;
+                background-position: center;
             }
         }
     }

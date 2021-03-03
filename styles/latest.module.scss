@@ -3,30 +3,37 @@
 
 .latest {
     width: 100%;
+    padding: 60px 0px 60px 0px;
     background: whitesmoke;
-    @media (min-width: $breakpoint) { position: relative; }
-    .control {
-        width: 60%;
-        background: #CFAA7A;
+    position: relative;
+    @media (min-width: $breakpoint) {
         position: relative;
-        height: 200px;
-        margin: 40px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+    }
+    .control {
+        background: #CEAA7A;
+        position: relative;
+        @media (max-width: $breakpoint) {
+            height: 200px;
+            margin: 40px 0px 0px 0px;
+        }
         @media (min-width: $breakpoint) {
-            width: 30%;
+            height: 460px;
             float: left;
-            height: 60vh;
-            margin: 80px 0px 0px 0px;
         }
         .centered {
-            padding: 20px 0px 0px 30px;
+            padding: 40px 0px 0px 40px;
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
             @media (min-width: $breakpoint) { padding: 50px 0px 0px 80px; }
             .spacer {
-                margin: 10px;
+                margin: 0px 0px 20px 0px;
                 outline: none;
                 @media (max-width: $breakpoint) { display: none; }
             }
-            .icon {
+            .button {
                 width: 50px;
                 height: 50px;
                 border-radius: 3px;
@@ -37,21 +44,35 @@
                 color: #16172C;
                 font-size: 12px;
                 outline: none;
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
             }
             .label {
                 font-size: 24px;
+                line-height: 24px;
                 color: white;
                 font-weight: bold;
-                margin: 0px 0px 20px 0px;
+                margin: 10px 0px 20px 0px;
             }
             .all {
-                font-size: 12px;
+                font-size: 10px;
                 display: flex;
                 align-items: center;
                 color: #16172C;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-weight: bold;
+                .news {
+                    margin: 0px 10px 0px 0px;
+                    @media (max-width: $breakpoint) { display: none; }
+                }
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
+                
             }
         }
         .wall {
@@ -65,38 +86,14 @@
         }
     }
     .carousel {
-        width: calc(100% - 20px);
-        height: 380px;
         position: relative;
-        float: right;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        overflow: visible;
-        @media (max-width: $breakpoint) { 
-            top: -80px; 
-            .list{overflow: visible; }
+        @media (max-width: $breakpoint) {
+            top: -40px;
+            left: 40px;
         }
-        @media (min-width: $breakpoint) {
-            width: 70%;
-            float: left;
-            margin: 130px 0px 0px 0px;
-        }
-        .wrapper {
-            padding: 10px;
-            height: 380px;
-        }
-    }
-    .block {
-        width: 90%;
-        height: 100px;
-        margin: 20px 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: black;
+        @media (min-width: $breakpoint) { float: left; }
+        .container { overflow: visible; }
+        .slider { margin: 0px 20px 0px 0px; }
+        .wrapper { margin: 0px 20px 0px 0px; }
     }
 }

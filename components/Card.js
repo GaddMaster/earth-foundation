@@ -13,15 +13,12 @@ const Card = props => {
                 <div className = {styles.label}>
                     <span>{props.label}</span>
                 </div>
+                <div className = {styles.summary}>
+                    <span>{props.summary}</span>
+                </div>
                 <div className = {styles.more}>
-                <motion.button
-                    whileHover = {{ scale: 1.1 }}
-                    whileTap = {{ scale: 0.9 }}>
-                    <div>
-                        <span>Read More</span>
-                        <FontAwesomeIcon icon = {faArrowRight} />
-                    </div>
-                    </motion.button>
+                    <span>Read More</span>
+                    <FontAwesomeIcon icon = {faArrowRight} />
                 </div>
             </section>
     );

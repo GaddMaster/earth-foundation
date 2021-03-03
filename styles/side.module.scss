@@ -1,0 +1,38 @@
+
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 40px 40px 40px;
+    height: calc(100%);
+    letter-spacing: 1px;
+    .title {
+        font-size: 26px;
+        color: white;
+        font-weight: bold;
+        margin: 0px 0px 10px 0px;
+    }
+    .item {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.637);
+        margin: 0px 0px 10px 0px;
+    }
+    .socials {
+        display: flex;
+        .social {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin: 0px 20px 0px 0px;
+            svg {
+                color: white;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
