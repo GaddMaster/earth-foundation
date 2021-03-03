@@ -1,0 +1,295 @@
+
+@import "./variables";
+
+.circles {
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    margin: 0px 0px 40px 0px;
+    @media (min-width: $breakpoint) { height: 1300px; }
+    .circle {
+        width: 100%;
+        height: 0px;
+        padding: 50% 0px 50% 0px;
+        background: lightblue;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $breakpoint) { margin: 0px 0px -20px 0px; }
+        @media (min-width: $breakpoint) {
+            height: 300px;
+            width: 300px;
+            padding: 0px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            padding: 40px 40px 80px 40px;
+            text-align: center;
+            .index {
+                color: $gold;
+                font-size: 20px;
+            }
+            .header {
+                color: $gold;
+                font-size: 20px;
+            }
+            .timeline {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 12px;
+            }
+            .divider {
+                min-height: 1px;
+                width: 120px;
+                margin: 10px 0px;
+                background: white;
+                margin: 10px auto;
+            }
+            .desc {
+                color: rgb(255, 255, 255);
+                font-size: 8px;
+            }
+        }
+    }
+    .image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+    }
+    .tree {
+        z-index: 1;
+        @media (min-width: $breakpoint) {
+            height: 600px;
+            width: 600px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    }
+    .register {
+        z-index: 2;
+        background: #17182D;
+        @media (min-width: $breakpoint) {
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 200px;
+            left: 478px;
+        }
+    }
+    .submit {
+        z-index: 3;
+        background: #064D3F;
+        @media (min-width: $breakpoint) {
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 400px;
+            left: 132px;
+        }
+    }
+    .final {
+        background: #02314F;
+        z-index: 4;
+        @media (min-width: $breakpoint) {
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 600px;
+            left: 478px;
+        }
+    }
+    .adjudicating {
+        background: #CFAA7B;
+        z-index: 3;
+        .index, .header { color: white !important; } 
+        @media (min-width: $breakpoint) {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 730px;
+            left: -28px;
+        }
+    }
+    .ceremony {
+        background: #1A3326;
+        z-index: 2;
+        @media (min-width: $breakpoint) {
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 1020px;
+            left: 20px;
+        }
+    }
+    .deer {
+        z-index: 1;
+        @media (min-width: $breakpoint) {
+            height: 700px;
+            width: 700px;
+            position: absolute;
+            top: 620px;
+            left: 120px;
+        }
+    }
+}
+
+.ready {
+    width: 100%;
+    padding: 40px;
+    @media (min-width: $breakpoint) {
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        color: #302F3D;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0px 0px 20px 0px;
+        width: 220px;
+    }
+    .link {
+        display: flex;
+        align-items: flex-end;
+        color: $gold;
+        font-weight: bold;
+        width: 220px;
+        .label {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px 0px 0px;
+        }
+        .icon {
+            margin: 0px 0px -6px 0px;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .line { margin: 0px 0px 0px 0px; }
+}
+
+.become {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0px 0px 40px 0px;
+    padding: 40px;
+    .header {
+        font-size: 32px;
+        font-weight: bold;
+        color: $gold;
+        margin: 0px 0px 20px 0px;
+    }
+    .desc {
+        font-size: 14px;
+        color: black;
+    }
+}
+
+.bass {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 900px;
+    @media (min-width: $breakpoint) {
+        flex-direction: row;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 40px 0px;
+        .header {
+            font-size: 32px;
+            color: #0A4E42;
+            font-weight: bold;
+            margin: 0px 0px 20px 0px
+        }
+        .desc {
+            font-size: 14px;
+            color: black;
+            margin: 0px 0px 20px 0px
+        }
+        .meet {
+            color: #0A4E42;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            text-transform: uppercase;
+            svg {
+                width: 16px;
+                height: 16px;
+                margin: 0px 0px 0px 10px;
+            }
+        }
+    }
+    .clues {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        .clue {
+            background: grey;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            position: absolute;
+        }
+        .father {
+            width: 150px;
+            height: 150px;
+            top: 0px;
+            left: 0px;
+            @media (min-width: $breakpoint) {
+                top: 0px;
+                left: 160px;
+            }
+        }
+        .mother {
+            width: 120px;
+            height: 120px;
+            top: 140px;
+            left: 100px;
+            @media (min-width: $breakpoint) {
+                top: 140px;
+                left: 100px;
+            }
+        }
+        .baby {
+            width: 80px;
+            height: 80px;
+            top: 50px;
+            left: 160px;
+            @media (min-width: $breakpoint) {
+                top: 50px;
+                left: 50px;
+            }  
+        }
+    }
+
+}
