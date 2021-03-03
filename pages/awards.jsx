@@ -1,15 +1,16 @@
 
-import Head from "next/head";
+
 import Layout from "../components/Layout";
-import Switcher from "../components/PersonViewer";
+import PersonViewer from "../components/PersonViewerCarousel";
 
 import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
-import adjudication from "../assets/adjudication.js";
 import styles from "../styles/awards.module.scss";
+
+import content from "assets/content";
 
 const Awards = props => {
     return (
@@ -17,8 +18,11 @@ const Awards = props => {
             initial = {{ opacity: 0 }}
             animate = {{ opacity: 1 }}
             exit = {{ opacity: 0 }}>
-            <Layout title = "The Earth Foundation Awards">
-                <div className = {styles.awards}>
+            <Layout 
+                title = "The Earth Foundation Awards"
+                header
+                footer>
+                <div className = {styles.container}>
                     <div className = {styles.top}>
                         <div className = {styles.header}>
                             <div className = {styles.label}>
@@ -132,7 +136,16 @@ const Awards = props => {
                             <span>All recipients of The Earth Foundation Awards will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of inspiring individuals and organizations offering mentorship, networking, internships, professional placement opportunities.</span>
                         </div>
                     </div>
-                    <Switcher title="Adjudication Panel" data={adjudication} />
+                    <PersonViewer 
+                        title = "Adjudication Panel"
+                        items = {content.about.team}
+                        theme = {{
+                            title : "#CFAB79",
+                            header : "#FDFEFE",
+                            position: "#FDFEFE",
+                            paragraph: "#FDFEFE",
+                            background: "#064D3F"
+                        }} />
                 </div>
             </Layout>
         </motion.div>

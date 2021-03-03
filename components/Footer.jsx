@@ -1,4 +1,6 @@
 
+import PropTypes from "prop-types";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faTwitter, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -50,6 +52,17 @@ const Footer = props => {
             </div>
         </section>
     );
+};
+
+Footer.propTypes = {
+    background: PropTypes.object
+};
+
+Footer.defaultProps = {
+    background: {
+        outer: "whitesmoke",
+        inner: "white"
+    }
 };
 
 export default Footer;

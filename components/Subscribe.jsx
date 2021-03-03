@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 import InputBase from "@material-ui/core/InputBase";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -36,6 +37,17 @@ const Subscribe = props => {
             </div>
         </section>
     );
+};
+
+Subscribe.propTypes = {
+    background: PropTypes.object
+};
+
+Subscribe.defaultProps = {
+    background: {
+        outer: "whitesmoke",
+        inner: "white"
+    }
 };
 
 export default Subscribe;

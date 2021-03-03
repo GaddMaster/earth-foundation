@@ -17,7 +17,7 @@ const Layout = props => {
             </Head>
             {props.header && <Header />}
             {props.children}
-            {props.footer.show && <Footer background = {props.footer.background} />}
+            {props.footer && <Footer />}
             </div>
         );
 };

@@ -1,4 +1,17 @@
 
-const GetInvolved = () => <h1>Get Involved</h1>;
+import Layout from "../components/Layout";
+import Subscribe from "../components/Subscribe";
 
-export default GetInvolved;
+const Home = () => {
+    return (
+        <Layout 
+            title = "Get Involved | Survey | The Earth Foundation"
+            header
+            footer>
+            Get Involved Coming Soon
+            <Subscribe />
+        </Layout>
+    );
+};
+
+export default Home;

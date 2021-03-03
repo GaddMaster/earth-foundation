@@ -9,7 +9,13 @@ import content from "../assets/content";
 
 const Home = () => {
     return (
-        <Layout title = "The Earth Foundation | Home | Landing">
+        <Layout 
+            title = "The Earth Foundation | Home | Landing"
+            header
+            footer = {{
+                show: true,
+                background: "white"
+            }}>
             <Cover cover = {content.home.cover} />
             {content.home.blocks.map((item, index) =>
                 <Board
@@ -18,7 +24,11 @@ const Home = () => {
                     key = {index} />
             )}
             <Latest />
-            <Subscribe />
+            <Subscribe
+                background = {{
+                    outer: "whitesmoke",
+                    inner: "white"
+                }} />
         </Layout>
     );
 };
