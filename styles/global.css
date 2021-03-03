@@ -42,3 +42,9 @@ img {
   width: 100%;
   display: block;
 }
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
