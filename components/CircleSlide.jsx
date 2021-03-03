@@ -12,9 +12,9 @@ const CircleSlide = props => {
             <div className = {styles.image}>
                 <img src = {props.image} alt = "" />
             </div>
-            <div className = {styles.overlay}>
+            {/*<div className = {styles.overlay}>
                 <img src = "/images/circle-overlap.png" />     
-            </div>
+            </div>*/}
         </div>
     );
 };
