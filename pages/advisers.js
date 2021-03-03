@@ -16,8 +16,10 @@ const Advisers = props => {
             initial = {{ opacity: 0 }}
             animate = {{ opacity: 1 }}
             exit = {{ opacity: 0 }}>
-            <Layout title = "The Earth Foundation Advisers">
-                <div className = {styles.advisers}>
+            <Layout title = "The Earth Foundation Advisers"
+                    header
+                    footer>
+                <div className = {styles.container}>
                     <div className = {styles.top}>
                         <div className = {styles.header}>
                             <div className = {styles.label}>
@@ -31,8 +33,8 @@ const Advisers = props => {
                         <div>
                       </div>
                    </div>
-              <div>
-                <GridItem xs={12} sm={4} md={12} >
+              <div className = {styles.cards}>
+                <GridItem  >
                     <CardAdvisers />
                     </GridItem>
              </div>           

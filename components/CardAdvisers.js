@@ -7,7 +7,6 @@ import CardAvatar from "./Card/CardAvatar";
 import CardBody from "./Card/CardBody";
 import cardStyles from "../assets/jss/cardStyles";
 
-import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles(cardStyles);
 
@@ -21,7 +20,7 @@ export default function TempCard () {
               <Card profile style={{backgroundColor: "#040136"}}>
                 <CardAvatar profile  >
                   <a  onClick={e => e.preventDefault()}>
-                    <img src='/images/william.jpg' alt="..." />
+                    <img src='/images/william/avatar.jpg' alt="..." />
                   </a>
                 </CardAvatar>
                 <CardBody style={{backgroundColor: "#040136"}}>
@@ -40,11 +39,12 @@ export default function TempCard () {
 
               </Card>
               </GridItem>
+              <div className = {classes.secondCard}>
               <GridItem xs={10} sm={4} md={2}>
               <Card profile style={{backgroundColor: "#124720", marginTop: "180px"}}>
               <CardAvatar profile  >
                 <a  onClick={e => e.preventDefault()}>
-                  <img src='images/bjane.jpg' alt="..." />
+                  <img src='images/bjane/avatar.jpg' alt="..." />
                 </a>
               </CardAvatar>
               <CardBody style={{backgroundColor: "#124720"}}>
@@ -62,6 +62,7 @@ export default function TempCard () {
              
             </Card>
             </GridItem>
+            </div>
             </GridContainer>
             
           

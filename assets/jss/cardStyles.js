@@ -28,7 +28,9 @@ import {
       textAlign: "center"
     },
    
-   
+    secondCard: {
+      marginTop: "-60px"
+    },
     cardCategory: {
       color: whiteColor,
       textDecoration: "none",
