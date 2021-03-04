@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   box-sizing: border-box;
   margin: -200px 0 0;
-  height: 100%;
+  height: 1200px;
   width: 100%;
 }
 
@@ -25,6 +25,15 @@
     width: 90%;
     display: grid;
     grid-template-columns: 100%;
+  }
+  .wrapper {
+    background-image: url("/images/camals.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: -200px 0 0;
+    height: 1500px;
+    width: 100%;
   }
 }
 
@@ -86,12 +95,12 @@
 
   .main > * {
     margin: 0 auto;
-    width: 410px;
+    width: 250px;
   }
 
   .title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
     margin-bottom: 10px;
   }
@@ -113,19 +122,19 @@
     margin-top: 25px;
     cursor: pointer;
     text-align: center;
-    padding-top: 25px;
-    height: 80px;
-    width: 300px;
+    padding-top: 18px;
+    height: 60px;
+    width: 220px;
     background-color: #16172c;
     color: white;
   }
   .backHomeBtn {
     cursor: pointer;
     text-align: center;
-    font-size: 1rem;
     font-weight: bold;
     padding-top: 15px;
-    width: 220px;
+    font-size: 0.9rem;
+    width: 200px;
     color: white;
   }
 }
