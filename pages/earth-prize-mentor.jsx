@@ -4,9 +4,11 @@ import TitleDesc from "components/TitleDesc";
 import Subscribe from "../components/Subscribe";
 import MentorshipCircles from '../components/MentorshipCircles'
 
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "styles/prize.mentor.module.scss";
+
 
 
 const EarthPrize = () => {
@@ -92,10 +94,25 @@ const EarthPrize = () => {
                         </div>
                     </div>
           </div>
-         
+                <div className = {styles.card}>
                 <div className = {styles.img}>
                     <img src = '/images/bird.png' />
-                   
+                    </div>
+                    <div className = {styles.become}>
+                         <div className = {styles.becomeheader}>
+                         <div>
+                                 <span>BECOME</span>
+                                 </div>
+                                <div> <span> A MENTOR</span>
+                                </div>
+                                 <div className = {styles.icon}>
+                                 <FontAwesomeIcon icon = {faArrowRight} />
+                             </div>
+                             </div>
+                          <div className = {styles.becomebody}>
+                         <span>The Earth Foundation will select a limited number of mentors with different areas of expertise, from all over the world.</span>
+                             </div>
+                    </div>
                 </div>
          
             <Subscribe

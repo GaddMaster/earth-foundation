@@ -195,5 +195,39 @@
     }
 
     
+    }
+    .card {
+        display: flex;
+        float: right;
+        flex-direction: row;
+        max-height: 500px;
+        .img {
+            height: 500px;
+            width: 500px;
+        }
+        .become {
+            background-color:#02314F;
+            height: 300px;
+            width: 500px;
+            .becomeheader {
+                margin-top: 20px;
+                margin-left: 30px;
+                color: $gold;
+                font-size: 25px;
+            }
+            .becomebody {
+                color: white;
+                margin-left: 30px;
+            }
+            .icon {
+                margin: 0px 0px -6px 0px;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            
+            
+        }
    
 }
