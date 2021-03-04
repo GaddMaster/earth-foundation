@@ -69,6 +69,9 @@
     height: 60px;
     text-transform: uppercase;
     margin: 0px 0px 20px 0px;
+    @media (max-width: $breakpoint) {
+      height: 45px;
+    }
   }
   .textInput {
     background: transparent;
@@ -79,6 +82,10 @@
     text-transform: uppercase;
     margin: 0px 10px 20px 0px;
     padding-left: 20px;
+    @media (max-width: $breakpoint) {
+      width: 200px;
+      height: 45px;
+    }
   }
   .textInput::placeholder {
     color: white;
