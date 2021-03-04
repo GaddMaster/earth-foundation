@@ -29,15 +29,15 @@ const Layout = ({children, home}) => {
                 <ButtonBase
                     onClick={() => setMenu(true)}
                     style={{
-                    width: "50px",
-                    height: "50px",
-                    margin: "15px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "grey",
-                    borderRadius: "50%",
-                }}>
+                        width: "50px",
+                        height: "50px",
+                        margin: "15px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: "grey",
+                        borderRadius: "50%",
+                    }}>
                     <FontAwesomeIcon icon={faBars}/>
                 </ButtonBase>
             </div>
