@@ -8,7 +8,7 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 
 import http from "utils/http";
 
-import styles from "styles/mentor.program.module.scss";
+import styles from "styles/mentor.application.module.scss";
 
 import topics from "assets/topics";
 
