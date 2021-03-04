@@ -16,7 +16,7 @@ const Welcome = () => {
         header>
         <div className = {styles.container}>
             <div className = {styles.title}>
-                <h1> Welcome to our community</h1>
+                <h1> Welcome to our community !</h1>
             </div>
             <div className={styles.divider}></div>
             <div className = {styles.sub}>
