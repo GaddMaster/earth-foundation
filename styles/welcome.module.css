@@ -1,0 +1,189 @@
+.wrapper {
+  background-image: url("/images/camals.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin: -200px 0 0;
+  height: 1200px;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .wrapper {
+    background-image: url("/images/camals.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: -200px 0 0;
+    height: 1500px;
+    width: 100%;
+  }
+}
+
+/* styling related to the main content */
+.main {
+  margin: 19% auto;
+  width: 90%;
+}
+
+.main > * {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.textBody {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #16172c;
+}
+
+.imageSpliter {
+  width: 200px;
+  margin-top: 25px;
+}
+
+.takeSurveyBtn {
+  margin-top: 25px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 25px;
+  height: 80px;
+  width: 330px;
+  background-color: #16172c;
+  color: white;
+}
+
+.backHomeBtn {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 15px;
+  width: 270px;
+  color: white;
+}
+@media (max-width: 600px) {
+  .main {
+    margin: 60% auto;
+    width: 80%;
+  }
+
+  .main > * {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .textBody {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #16172c;
+  }
+
+  .imageSpliter {
+    width: 100px;
+    margin-top: 25px;
+  }
+
+  .takeSurveyBtn {
+    margin-top: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 18px;
+    height: 60px;
+    width: 220px;
+    background-color: #16172c;
+    color: white;
+  }
+  .backHomeBtn {
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    width: 200px;
+    color: white;
+  }
+}
+/* end of styling related to the main content */
+
+/* styling related to the right side bad */
+.iconsList {
+  list-style: none;
+}
+
+.iconsList > li {
+  margin-top: 20%;
+}
+
+.icons {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+}
+.rightAside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .icons,
+  .iconsList,
+  .rightAside {
+    display: none;
+  }
+}
+
+/* end of right side styling */
+
+/* styling related to the left side bar */
+.leftAside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.welcomeImage {
+  width: 15px;
+  height: 400px;
+}
+@media (max-width: 600px) {
+  .leftAside,
+  .welcomeImage {
+    display: none;
+  }
+}
+/* end of the left side bar styling */
