@@ -84,7 +84,7 @@ const EarthPrizeMentor = () => {
                     <div className = {styles.details}>
                         <div className = {styles.link}>
                             <div className = {styles.label}>
-                                <div classname = {styles.line}>Become</div>
+                                <div classnName = {styles.line}>Become</div>
                                 <div className = {styles.line}>A Mentor</div>
                             </div>
                             <FontAwesomeIcon icon = {faArrowRight} />
