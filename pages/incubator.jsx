@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {motion} from "framer-motion";
-import Layout from "components/layout";
+import Layout from "components/Layout";
 import styles from "../styles/incubator.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLongArrowAltRight, faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
