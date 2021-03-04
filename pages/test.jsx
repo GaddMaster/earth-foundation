@@ -4,6 +4,7 @@ import Link from "next/link";
 import Layout from "components/Layout";
 import TitleDesc from "components/TitleDesc";
 import MentorshipCircles from "components/MentorshipCircles";
+import CircleTextLink from "components/CircleTextLink";
 import Subscribe from "components/Subscribe";
 
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -21,7 +22,7 @@ const Test = () => {
         header
         footer>
         <div className = {styles.container}>
-             <TitleDesc
+            <TitleDesc
                 title = "The Earth Prize Mentors"
                 desc = "Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19 years. Mentors will contribute to the development of students’ innovative project proposals by offering them guidance on their ideas and answering their questions. Mentors who will have demonstrated the highest levels of engagement will be given the chance to work individually with one of the ten The Earth Prize Finalists"
                 color = {{
@@ -29,6 +30,11 @@ const Test = () => {
                     desc: "#000210" 
                 }} />   
             <MentorshipCircles />
+            <CircleTextLink
+                text = "The Earth Prize M entorship"
+                link = "Learn More About The Earth Prize"
+                radius = {120}
+                onClick = {() => console.log("You Have Clicked")} />
         </div>
         <Subscribe />
     </Layout>
