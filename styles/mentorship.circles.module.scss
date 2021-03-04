@@ -1,0 +1,116 @@
+
+@import "./variables";
+
+.container {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    @media (min-width: $breakpoint) { height: 1000px; }
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        .padding {
+            height: 100%;
+            width: 100%;
+            padding: 40px;
+            .header {
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                color: $gold;
+                @media (min-width: $breakpoint) { font-size: 14px; }
+            }
+            .divider {
+                height: 1px;
+                width: 120px;
+                background: $gold;
+                margin: 10px auto 10px auto;
+            }
+            .desc {
+                font-size: 8px;
+                text-align: center;
+                color: white;
+                @media (min-width: $breakpoint) { font-size: 10px; }
+            }
+        }
+    }
+    .giraffe {
+        width: 320px;
+        height: 320px;
+        @media (min-width: $breakpoint) {
+            width: 420px;
+            height: 420px;
+        }
+    }
+    .boabab {
+        width: 420px;
+        height: 420px;
+        position: absolute;
+        top: 340px;
+        left: 20px;
+        @media (min-width: $breakpoint) {
+            width: 520px;
+            height: 520px;
+            top: 180px;
+            left: 380px;
+        }
+    }
+    .when {
+        width: 180px;
+        height: 180px;
+        background: #17182D;
+        position: absolute;
+        top: 180px;
+        left: 170px;
+        @media (min-width: $breakpoint) {
+            width: 200px;
+            height: 200px;
+            top: 200px;
+            left: 300px;
+        }
+    }
+    .how {
+        width: 160px;
+        height: 160px;
+        background: #064D3F;
+        position: absolute;
+        top: 290px;
+        left: 40px;
+        @media (min-width: $breakpoint) {
+            width: 180px;
+            height: 180px;
+            top: 340px;
+            left: 140px;
+        }
+    }
+    .role {
+        width: 220px;
+        height: 220px;
+        background: #02314F;
+        position: absolute;
+        top: 620px;
+        left: 20px;
+        @media (min-width: $breakpoint) {
+            width: 300px;
+            height: 300px;
+            top: 400px;
+            left: 300px;
+        }
+    }
+    .profile {
+        width: 220px;
+        height: 220px;
+        background: #1A3326;
+        position: absolute;
+        top: 800px;
+        left: 120px;
+        @media (min-width: $breakpoint) {
+            width: 280px;
+            height: 280px;
+            top: 500px;
+            left: 600px;
+        }
+    }
+}
