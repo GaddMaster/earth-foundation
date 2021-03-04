@@ -1,48 +1,42 @@
-import Layout from "../components/Layout";
+
 import Link from "next/link";
-import WelcomeHomeIconsList from "../components/WelcomeHomeIconsList";
 
-import welcomeStyle from "../styles/welcome.module.css";
+import Layout from "components/Layout";
 
-export default function welcome() {
+import ButtonBase from "@material-ui/core/ButtonBase";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+import styles from "styles/welcome.module.scss";
+
+const Welcome = () => {
   return (
-    <Layout header>
-      <div className={welcomeStyle.wrapper}>
-        <div className={welcomeStyle.container}>
-          <div className={welcomeStyle.leftAside}>
-            <img
-              className={welcomeStyle.welcomeImage}
-              src="images/welcome-left-side.png"
-              alt=""
-            />
-          </div>
-          <div className={welcomeStyle.main}>
-            <h1 className={welcomeStyle.title}>
-              Welcome to <br /> our community
-            </h1>
-            <div className={welcomeStyle.imageSpliter}>
-              <img src="images/welcome-page-line-spliter.png" alt="" />
+    <Layout 
+        title = "Welcome to our community"
+        header>
+        <div className = {styles.container}>
+            <div className = {styles.title}>
+                <h1> Welcome to our community</h1>
             </div>
-            <h2 className={welcomeStyle.textBody}>
-              We are exited to have you on board. <br />
-              How would you like to get involved?
-            </h2>
-            <Link href="/">
-              <div className={welcomeStyle.takeSurveyBtn}>
-                TAKE A SHORT SURVEY
-              </div>
+            <div className={styles.divider}></div>
+            <div className = {styles.sub}>
+                <span>We are exited to have you on board. <br /> How would you like to get involved?</span>
+            </div>
+            <ButtonBase 
+                className = {styles.button}
+                onClick = {()=>{}}>
+                <span>take a short survey</span>
+            </ButtonBase>
+            <Link href = "/">
+                <div className={styles.back}>
+                    <span>back to home page</span>
+                    <FontAwesomeIcon icon = {faArrowRight} />
+                </div>
             </Link>
-            <Link href="/">
-              <div className={welcomeStyle.backHomeBtn}>
-                BACK TO THE HOME PAGE
-              </div>
-            </Link>
-          </div>
-          <div className={welcomeStyle.rightAside}>
-            <WelcomeHomeIconsList />
-          </div>
         </div>
-      </div>
     </Layout>
   );
-}
+};
+
+export default Welcome;

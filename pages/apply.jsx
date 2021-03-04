@@ -58,12 +58,15 @@ const MentorApplication = () => {
             footer>
 
             <div className = {styles.container}>
+
                 <div className = {styles.sub}>
                     <span>become a mentor to the next generation</span>
                 </div>
+
                 <div className = {styles.title}>
                     <span>the earth prize program mentorship application form</span>
                 </div>
+                
                 <div className = {styles.divider}></div>
 
                 <div className = {`${styles.box} ${styles.wrap}`}>
