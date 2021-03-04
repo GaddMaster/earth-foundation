@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import Layout from "components/Layout";
 import TitleDesc from "components/TitleDesc";
+import MentorshipCircles from "components/MentorshipCircles";
 import Subscribe from "components/Subscribe";
 
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -16,6 +17,7 @@ const Test = () => {
   return (
     <Layout 
         title = "The Earth Prize Mentor"
+        background = "whitesmoke"
         header
         footer>
         <div className = {styles.container}>
@@ -26,6 +28,7 @@ const Test = () => {
                     title: "#CEAB79",
                     desc: "#000210" 
                 }} />   
+            <MentorshipCircles />
         </div>
         <Subscribe />
     </Layout>
