@@ -2,9 +2,9 @@
 import Layout from "../components/Layout";
 import TitleDesc from "components/TitleDesc";
 import Subscribe from "../components/Subscribe";
+import MentorshipCircles from '../components/MentorshipCircles'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 import styles from "styles/prize.mentor.module.scss";
 
@@ -27,33 +27,23 @@ const EarthPrize = () => {
                     title: "#CEAA7A",
                     desc: "#17152B"
                 }} />
-            <div className = {styles.circles}>
-                <div className = {`${styles.circle} ${styles.image} ${styles.giraffe}`}>
-                    <img src = "/images/giraffe-temp.jpg" alt = "giraffe" />
-                </div>
-                <div className = {`${styles.circle} ${styles.when}`}>
-                    <div className = {styles.wrapper}>
-                        <div className = {styles.index}>
-                            <span>When?</span>
-                        </div>
-                        
-                        <div className = {styles.divider}></div>
-                        <div className = {styles.desc}>
-                        <span>The Earth Prize Mentorship Program will take place between September 1st, 2021 and January 31st, 2022.</span>
-                        </div>
-                    </div>
-                </div>
-             </div>
+
+
+             <div className = {styles.circles}>
+           <MentorshipCircles />
+           </div>
                
           <div className = {styles.body}>
                     <div className = {styles.title}>
-                <span>What is in it for you?</span>
+                <span>What is</span><br /><span> in it for you?</span>
                      </div>
+                     <div className = {styles.line}></div>
                      <div className = {styles.opportunity}>
-                        <div className = {styles.title}>
+                     <div className = {styles.lineandcircle}></div>
+                        <div className = {styles.opptitle}>
                             <span>Opportunity to grow your network.</span>
                         </div>
-                        <div className = {styles.body}>
+                        <div className = {styles.oppbody}>
                       <span>All mentors will become part of The Earth Prize Alumni Association, a community of inspiring
                             individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.
                       </span>
@@ -61,10 +51,10 @@ const EarthPrize = () => {
                      </div>
 
                      <div className = {styles.discover}>
-                      <div className = {styles.title}>
+                      <div className = {styles.distitle}>
                         <span>Discover promising start-ups.</span>
                       </div>
-                      <div className = {styles.body}>
+                      <div className = {styles.disbody}>
                             <span>By becoming a mentor you will be able to connect with The Earth Foundation Incubator Initiative's top
                                 entrepreneurs and have access to inspiring new start-ups leading the way in environmental sustainability.
                             </span>
@@ -72,20 +62,20 @@ const EarthPrize = () => {
                     </div>
 
                     <div className = {styles.boost}>
-                        <div className = {styles.title}>
+                        <div className = {styles.boosttitle}>
                             <span>Boost your CV.</span>
                         </div>
-                    <div className = {styles.body}>
+                    <div className = {styles.boostbody}>
                         <span>The Earth Prize Mentorship Program offers an excellent opportunity to develop and showcase transferable skills such as project
                                 management, problem-solving, and consulting. Each mentor will also receive a certificate upon completion.</span>
                         </div>                    
                     </div>
 
                     <div className = {styles.expand}>
-                        <div className = {styles.title}>
+                        <div className = {styles.expandtitle}>
                             <span>Expand your expertise.</span>
                         </div>
-                        <div className = {styles.body}>
+                        <div className = {styles.expandbody}>
                             <span>All mentors will have access to The Earth Prize learning platform featuring bespoke online materials on environmental issues, interviews
                                 with activists and social entrepreneurs, and real-world practical skill training on how to effect change.
                             </span>
@@ -93,15 +83,21 @@ const EarthPrize = () => {
                     </div>
 
                     <div className = {styles.impact}>
-                        <div className = {styles.title}>
+                        <div className = {styles.impacttitle}>
                             <span>Make an impact.</span>
                         </div>
-                        <div className = {styles.body}>
+                        <div className = {styles.impactbody}>
                             <span>Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and 
                                 to serve as a role model for younger students, inspiring them to become future changemakers.</span>
                         </div>
                     </div>
           </div>
+         
+                <div className = {styles.img}>
+                    <img src = '/images/bird.png' />
+                   
+                </div>
+         
             <Subscribe
                 background = {{
                     outer: "whitesmoke",

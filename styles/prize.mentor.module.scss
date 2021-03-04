@@ -66,28 +66,134 @@
         }
     }
 }
-.giraffe {
-    z-index: 1;
-    @media (min-width: $breakpoint) {
-        height: 400px;
-        width: 400px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-}
 .body {
+    max-width: 900px;
     width: 100%;
     color: grey;
-    background: #ECECEB;
     display: flex;
     flex-direction: column;
-    align-items: center;
     overflow-x: hidden;
-    padding-top: 140px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
 
     .title {
-        size: 50px;
-        color: #17152B
+      
+        font-weight: bold;
+        font-size: 40px;
+        color: #17152B;
+        
     }
+    .line {
+        width: 40%;
+        width:80px;
+        height: 1px;
+        background: #C7BDA5;
+        margin: 20px 0px 100px 0px;
+        
+        
+    }
+
+    .lineandcircle {
+
+    }
+    .opportunity {
+        
+        align-items: left;
+        margin-left: 150px;
+        margin-bottom: 100px;
+
+        .opptitle {
+            font-size: 25px;
+            color: #17152B;
+            margin-bottom: 35px;
+        }
+        .oppbody {
+            font-size: 15px;
+            color: black;
+            margin-left: 60px;
+            max-width: 500px;
+        }
+
+    }
+
+    .discover {
+        margin-left: 400px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+      
+
+        .distitle {
+            margin-left: auto;
+            font-size: 25px;
+            color: #094b25;
+            margin-bottom: 35px;
+           
+        }
+        .disbody {
+           
+            max-width: 500px;
+            font-size: 15px;
+            color: black;
+            text-align: right;
+
+            
+        }
+    }
+    .boost {
+        align-items: left;
+        margin-left: 150px;
+        margin-bottom: 50px;
+        .boosttitle {
+            font-size: 25px;
+            color: #094b25;
+            margin-bottom: 15px;
+        }
+        .boostbody {
+            font-size: 15px;
+            color: black;
+            max-width: 500px;
+            
+        }
+    }
+
+    .expand {
+        margin-left: 500px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .expandtitle {
+            margin-left: auto;
+            font-size: 25px;
+            color: #150e5f;
+            margin-bottom: 15px;
+        }
+        .expandbody {
+            
+            font-size: 15px;
+            color: black;
+            text-align: right;
+            max-width: 500px;
+        }
+    }
+    .impact {
+        align-items: left;
+        margin-left: 150px;
+        margin-bottom: 50px;
+        .impacttitle {
+            font-size: 25px;
+            color: #17152B;
+            margin-bottom: 15px;
+        }
+        .impactbody {
+            font-size: 15px;
+            color: black;
+            max-width: 500px;
+        }
+    }
+
+    
+   
 }
