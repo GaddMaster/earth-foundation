@@ -4,7 +4,6 @@ import Link from "next/link";
 import Layout from "components/Layout";
 
 import ButtonBase from "@material-ui/core/ButtonBase";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,7 +11,7 @@ import styles from "styles/welcome.module.scss";
 
 const Welcome = () => {
   return (
-    <Layout 
+    <Layout
         title = "Welcome to our community"
         header>
         <div className = {styles.container}>
@@ -23,7 +22,7 @@ const Welcome = () => {
             <div className = {styles.sub}>
                 <span>We are exited to have you on board. <br /> How would you like to get involved?</span>
             </div>
-            <ButtonBase 
+            <ButtonBase
                 className = {styles.button}
                 onClick = {()=>{}}>
                 <span>take a short survey</span>
