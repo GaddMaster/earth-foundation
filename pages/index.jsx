@@ -1,5 +1,5 @@
 
-import Layout from "../components/Layout";
+import Layout from "components/Layout";
 import Cover from "components/Cover";
 import Board from "components/Board";
 import Latest from "../components/Latest";
@@ -9,7 +9,7 @@ import content from "../assets/content";
 
 const Home = () => {
     return (
-        <Layout 
+        <Layout
             title = "The Earth Foundation | Home | Landing"
             header
             footer = {{
