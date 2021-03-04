@@ -1,0 +1,90 @@
+@import "./variables";
+
+.homeNavMenu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background: #e3e2e2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .homeNavHeader{
+    display: flex;
+    margin: 3vh 7vw;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    .logo{
+      width: 40px;
+      height: 40px;
+      margin: 20px;
+      @media (min-width: $breakpoint) {
+        width: 60px;
+        height: 60px;
+        margin: 20px 20px 20px 20px;
+      }
+    }
+    .actions{
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      box-sizing: border-box;
+      .actionsItem{
+        margin-left: 5vw;
+        color: #111111;
+        cursor: pointer;
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: #111111;
+        }
+      }
+    }
+  }
+  .menuItems{
+    background: #17182D;
+    flex: 1;
+    box-sizing: border-box;
+    .menuItemList{
+      margin: 3vh 7vw;
+      box-sizing: border-box;
+      .menuItem{
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
+      .menuList{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        span{
+          font-size: 12px;
+          color: #acaaaa;
+          margin: 5px 10px;
+        }
+      }
+      box-sizing: border-box;
+    }
+    .socialIcons{
+      margin: 7vw;
+      box-sizing: border-box;
+      display: flex;
+      .socialItem{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-left: 10px;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
