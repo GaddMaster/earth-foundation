@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6058e8-e9a2-4cec-b898-7e5fe9f21c05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/incubator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/incubator/birds.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/incubator/road.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/incubator.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/thank-you.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/thank-you.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/subscribe.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/subscribe.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
@@ -39,7 +44,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/incubator" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -51,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614859817637</updated>
-      <workItem from="1614859825601" duration="4536000" />
+      <workItem from="1614859825601" duration="9989000" />
     </task>
     <servers />
   </component>
@@ -62,5 +71,17 @@
         <option value="$PROJECT_DIR$/components/Layout.jsx" />
       </list>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/incubator.jsx</url>
+          <line>115</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
