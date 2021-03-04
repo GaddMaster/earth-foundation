@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6058e8-e9a2-4cec-b898-7e5fe9f21c05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/thankyou.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/thank-you.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/thank-you.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/thankyou.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/thank-you.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/thank-you.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/thank-you.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pI9c8l4fo9nFBlnpADBzI2oXtZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,6 +38,11 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,11 +51,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614859817637</updated>
-      <workItem from="1614859825601" duration="1918000" />
+      <workItem from="1614859825601" duration="2364000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/components/Layout.jsx" />
+      </list>
+    </option>
   </component>
 </project>
