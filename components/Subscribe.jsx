@@ -10,7 +10,6 @@ import http from "../utils/http";
 import styles from "../styles/subscribe.module.scss";
 
 const Subscribe = props => {
-    console.log(props);
     let [email, onEmail] = useState("");
     const onChange = () => e => onEmail(e.target.value);
     const onSubscribe = () => {
