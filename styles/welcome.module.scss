@@ -1,0 +1,67 @@
+
+@import "./variables";
+
+.container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/camals.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    .title {
+        color: white;
+        font-size: 26px;
+        margin: 0px 0px 40px 0px;
+        @media (max-width: $breakpoint) {
+            font-size: 18px;
+            h1 { text-align: center; }
+        }
+    }
+    .divider {
+        width: 120px;
+        height: 1px;
+        background: white;
+        margin: 0px 0px 40px 0px;
+    }
+    .sub {
+        font-size: 16px;
+        color: $blue;
+        margin: 0px 0px 40px 0px;
+        font-weight: bold;
+        @media (max-width: $breakpoint) {
+            font-size: 14px;
+            text-align: center;
+
+        }
+    }
+    .button {
+            background: $blue;
+            width: 240px;
+            color: white;
+            height: 70px;
+            text-transform: uppercase;
+            margin: 0px 0px 20px 0px;
+    }
+    .back {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+        svg {
+            width: 16px;
+            height: 16px;
+            margin: 0px 0pox 0px 10px;
+        }
+    }
+}
