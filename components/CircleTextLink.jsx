@@ -6,7 +6,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "styles/circle.text.link.module.scss";
 import misc from "utils/misc";
-import camel from "lodash.camelcase";
 
 const CircleTextLink = props => {
     let { text, link, radius, onClick } = props;
@@ -15,7 +14,7 @@ const CircleTextLink = props => {
     let offset = 110;
     let diamter = radius * 2;
     return (
-        <div className = {styles.container}>
+        <div className = {styles.container} style = {{justifyContent:props.justify}}>
             <div 
                 className = {styles.circle}
                 style = {{
@@ -31,7 +30,9 @@ const CircleTextLink = props => {
                                 transform: `rotate(${p}deg)`
                             }}
                             key = {i}>
-                            <span>{c}</span>
+                            <div className = {styles.marker}>
+                                <span>{c}</span>
+                            </div>
                         </div>
                     );
                 })}

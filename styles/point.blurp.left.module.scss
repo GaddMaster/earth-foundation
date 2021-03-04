@@ -1,0 +1,68 @@
+
+@import "./variables";
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px 40px 0px 80px;
+    margin: 0px 0px 40px 0px;
+    position: relative;
+    @media (min-width: $breakpoint) { padding: 0px 40px 0px 120px; }
+    .point {
+        position: absolute;
+        top: 17px;
+        left: 88px;
+        height: 1px;
+        width: 1px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        @media (min-width: $breakpoint) { left: 128px; }
+        .circle {
+            min-width: 50px;
+            min-height: 50px;
+            border: 1px solid #ceaa7aa1;
+            border-radius: 50%;
+            background: whitesmoke;
+            z-index: 2;
+        }
+        .line {
+            position: absolute;
+            min-width: 90px;
+            min-height: 1px;
+            background: #ceaa7aa1;
+            top: 0px;
+            left: -100px;
+            z-index: 1;
+        } 
+        .dot {
+            width: 6px;
+            height: 6px;
+            background: #CEAA7A;
+            border-radius: 50%;
+            position: absolute;
+            top: -2px;
+            left: -100px;
+        }
+    }
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        color: $blue;
+        margin: 0px 0px 20px 0px;
+        position: relative;
+        z-index: 2;
+    }
+    .right {
+        text-align: right;
+    }
+    .desc {
+        font-size: 14px;
+        max-width: 650px;
+        @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px; }
+    }
+}

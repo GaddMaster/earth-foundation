@@ -17,7 +17,10 @@ const MentorshipCircles = props => {
                     </div>
                     <div className = {styles.divider}></div>
                     <div className = {styles.desc}>
-                        <spa>The mentoring will take place between September 1st, 2021 and January 31st, 2022</spa>
+                        <div>The mentoring will</div>
+                        <div>take place between</div>
+                        <div>September 1st, 2021 and</div>
+                        <div>January 31st, 2022</div>
                     </div>
                 </div>
             </div>
@@ -39,7 +42,12 @@ const MentorshipCircles = props => {
                     </div>
                     <div className = {styles.divider}></div>
                     <div className = {styles.desc}>
-                        <span>Mentors will spend about an hour a week on The Earth Prize platform, answering questions from participants relating to mentors’ fields of expertise and interest, and providing advice on student project proposals</span>
+                        <div>Mentors will spend about an hour a week</div>
+                        <div>on The Earth Prize platform, answering</div>
+                        <div>questions from participants relating</div>
+                        <div>to mentors’ fields of expertise and interest,</div>
+                        <div>and providing advice on student</div>
+                        <div>project proposals</div>
                     </div>
                 </div>
             </div>
@@ -51,7 +59,12 @@ const MentorshipCircles = props => {
                     </div>
                     <div className = {styles.divider}></div>
                     <div className = {styles.desc}>
-                        <span>The Earth Prize mentoring is open to all university students who are passionate about sustainability, entrepreneurship and looking for an opportunity to share their knowledge</span>
+                        <div>The Earth Prize mentoring</div>
+                        <div>is open to all university students</div>
+                        <div>who are passionate about</div>
+                        <div>sustainability, entrepreneurship</div>
+                        <div>and looking for an opportunity to</div>
+                        <div>share their knowledge</div>
                     </div>
                 </div>
             </div>

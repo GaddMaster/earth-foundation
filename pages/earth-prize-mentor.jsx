@@ -1,127 +1,110 @@
 
-import Layout from "../components/Layout";
+import Layout from "components/Layout";
 import TitleDesc from "components/TitleDesc";
-import Subscribe from "../components/Subscribe";
-import MentorshipCircles from '../components/MentorshipCircles'
+import Subscribe from "components/Subscribe";
+import MentorshipCircles from "components/MentorshipCircles";
+import PointBlurp from "components/PointBlurp";
+import CircleTextLink from "components/CircleTextLink";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import styles from "styles/prize.mentor.module.scss";
+import styles from "styles/earth.prize.mentor.module.scss";
 
-
-
-const EarthPrize = () => {
+const EarthPrizeMentor = () => {
     return (
         <Layout 
-            title = "The Earth Prize"
+            title = "The Earth Prize Mentorship Program"
             background = "whitesmoke"
             header
             footer>
-            <TitleDesc
-                title = "The Earth Prize Mentorship Program"
-                desc = "The Earth Prize Mentorship Program offers a unique opportunity for university students to share and
-                        expand their knowledge on environmental sustainability and entrepreneurship, by mentoring participants
-                        in the Earth Prize. Mentors will contribute to the development of students' innovative project proposals by
-                        offering them guidance on on their ideas and answering their questions. Mentors who will have demonstrated the
-                        highest levels of engagement will be given the chance to work individually with one of the ten The Earth Prize Finalists."
-                color = {{
-                    title: "#CEAA7A",
-                    desc: "#17152B"
-                }} />
 
+            <div className = {styles.container}>
 
-             <div className = {styles.circles}>
-           <MentorshipCircles />
-           </div>
-               
-          <div className = {styles.body}>
-                    <div className = {styles.title}>
-                <span>What is</span><br /><span> in it for you?</span>
-                     </div>
-                     <div className = {styles.line}></div>
-                     <div className = {styles.opportunity}>
-                     <div className = {styles.lineandcircle}></div>
-                        <div className = {styles.opptitle}>
-                            <span>Opportunity to grow your network.</span>
-                        </div>
-                        <div className = {styles.oppbody}>
-                      <span>All mentors will become part of The Earth Prize Alumni Association, a community of inspiring
-                            individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.
-                      </span>
-                      </div>
-                     </div>
+                <TitleDesc
+                    title = "The Earth Prize Mentorship Program"
+                    paragraphs = {[
+                        "Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19 years",
+                        "Mentors will contribute to the development of students’ innovative project proposals by offering them guidance on their ideas and answering their questions. Mentors who will have demonstrated the highest levels of engagement will be given the chance to work individually with one of the ten The Earth Prize Finalists"
+                    ]}
+                    color = {{
+                        title: "#CEAA7A",
+                        desc: "#17152B"
+                    }}  
+                />
 
-                     <div className = {styles.discover}>
-                      <div className = {styles.distitle}>
-                        <span>Discover promising start-ups.</span>
-                      </div>
-                      <div className = {styles.disbody}>
-                            <span>By becoming a mentor you will be able to connect with The Earth Foundation Incubator Initiative's top
-                                entrepreneurs and have access to inspiring new start-ups leading the way in environmental sustainability.
-                            </span>
-                         </div>
+                <MentorshipCircles />
+
+                <div className = {styles.what}>
+                    <div className = {styles.label}>
+                        <div className = {styles.line}>What is</div>
+                        <div className = {styles.line}>in it for you?</div>
                     </div>
+                    <div className = {styles.divider}></div>
+                </div>
 
-                    <div className = {styles.boost}>
-                        <div className = {styles.boosttitle}>
-                            <span>Boost your CV.</span>
-                        </div>
-                    <div className = {styles.boostbody}>
-                        <span>The Earth Prize Mentorship Program offers an excellent opportunity to develop and showcase transferable skills such as project
-                                management, problem-solving, and consulting. Each mentor will also receive a certificate upon completion.</span>
-                        </div>                    
-                    </div>
+                <PointBlurp
+                    title = "Opportunity to grow your network"
+                    desc = "All mentors will become part of The Earth Prize Alumni Association, a community of inspiring individuals and organizations offering mentorship, networking, internships, and professional placement opportunities"
+                    lean = "left" />
 
-                    <div className = {styles.expand}>
-                        <div className = {styles.expandtitle}>
-                            <span>Expand your expertise.</span>
-                        </div>
-                        <div className = {styles.expandbody}>
-                            <span>All mentors will have access to The Earth Prize learning platform featuring bespoke online materials on environmental issues, interviews
-                                with activists and social entrepreneurs, and real-world practical skill training on how to effect change.
-                            </span>
-                        </div>
-                    </div>
+                <PointBlurp
+                    title = "Discover promising start-ups"
+                    desc = "By becoming a mentor you will be able to connect with The Earth Foundation Incubator’s top entrepreneurs and have access to inspiring new start-ups leading the way towards environmental sustainability"
+                    lean = "right" />
 
-                    <div className = {styles.impact}>
-                        <div className = {styles.impacttitle}>
-                            <span>Make an impact.</span>
+                <PointBlurp
+                    title = "Boost your CV"
+                    desc = "Mentoring for the The Earth Prize offers an excellent opportunity to develop and showcase transferable skills such as project management, problem-solving, and consulting. Each mentor will receive a certificate upon completion"
+                    lean = "left" />
+
+                <PointBlurp
+                    title = "Expand your knowledge"
+                    desc = "All mentors will have access to The Earth Prize learning platform featuring bespoke online materials on environmental issues, interviews with activists and social entrepreneurs, and real-world practical skill training on how to effect change"
+                    lean = "right" />
+
+                <PointBlurp
+                    title = "Make an impact"
+                    desc = "Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and to serve as a role model for younger children, inspiring them to become future changemakers"
+                    lean = "left" />
+
+                <br />
+
+                <CircleTextLink
+                    text = "The Earth Prize Mentorship"
+                    link = "Leanr More About The prize"
+                    radius = {80}
+                    onClick = {() => console.log("CLICKED")}
+                    justify = "flex-end" />
+
+                <br />
+
+                <div className = {styles.become}>
+                    <div className = {styles.image}></div>
+                    <div className = {styles.details}>
+                        <div className = {styles.link}>
+                            <div className = {styles.label}>
+                                <div classname = {styles.line}>Become</div>
+                                <div classname = {styles.line}>A Mentor</div>
+                            </div>
+                            <FontAwesomeIcon icon = {faArrowRight} />
                         </div>
-                        <div className = {styles.impactbody}>
-                            <span>Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and 
-                                to serve as a role model for younger students, inspiring them to become future changemakers.</span>
+                        <div className = {styles.desc}>
+                            <span>The Earth Foundation will select a limited number of mentors with different areas of expertise from all over the world</span>
                         </div>
-                    </div>
-          </div>
-                <div className = {styles.card}>
-                <div className = {styles.img}>
-                    <img src = '/images/bird.png' />
-                    </div>
-                    <div className = {styles.become}>
-                         <div className = {styles.becomeheader}>
-                         <div>
-                                 <span>BECOME</span>
-                                 </div>
-                                <div> <span> A MENTOR</span>
-                                </div>
-                                 <div className = {styles.icon}>
-                                 <FontAwesomeIcon icon = {faArrowRight} />
-                             </div>
-                             </div>
-                          <div className = {styles.becomebody}>
-                         <span>The Earth Foundation will select a limited number of mentors with different areas of expertise, from all over the world.</span>
-                             </div>
                     </div>
                 </div>
+
+            </div>
          
             <Subscribe
                 background = {{
                     outer: "whitesmoke",
                     inner: "white"
                 }} />
+
         </Layout>
     );
 };
 
-export default EarthPrize;
+export default EarthPrizeMentor;

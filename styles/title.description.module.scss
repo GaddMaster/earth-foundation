@@ -7,12 +7,13 @@
     width: 100%;
 
     .padding {
-        padding: 40px;
         display: flex;
         flex-direction: column;
+        padding: 40px 40px 40px 40px;
         @media (min-width: $breakpoint) {
             flex-direction: row;
             justify-content: space-between;
+            padding: 40px 40px 40px 80px;
         }
         .title {
             font-size: 20px;
@@ -37,7 +38,13 @@
                 margin: 0px 20px 0px 20px;
             }
         }
-        .desc { margin: 0px 0px 0px 0px; }
+        .paragraphs {
+            font-weight: bold;
+            font-size: 14px;
+            .paragraph {
+                
+            }
+        }
     }
 
 }
