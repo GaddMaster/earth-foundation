@@ -1,0 +1,93 @@
+@import "./variables";
+
+.circles {
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    margin: 0px 0px 40px 0px;
+    @media (min-width: $breakpoint) { height: 1300px; }
+    .circle {
+        width: 100%;
+        height: 0px;
+        padding: 50% 0px 50% 0px;
+        background: lightblue;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $breakpoint) { margin: 0px 0px -20px 0px; }
+        @media (min-width: $breakpoint) {
+            height: 300px;
+            width: 300px;
+            padding: 0px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            padding: 40px 40px 80px 40px;
+            text-align: center;
+            .index {
+                color: $gold;
+                font-size: 20px;
+            }
+            .header {
+                color: $gold;
+                font-size: 20px;
+            }
+            .timeline {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 12px;
+            }
+            .divider {
+                min-height: 1px;
+                width: 120px;
+                margin: 10px 0px;
+                background: white;
+                margin: 10px auto;
+            }
+            .desc {
+                color: rgb(255, 255, 255);
+                font-size: 8px;
+            }
+        }
+    }
+}
+.giraffe {
+    z-index: 1;
+    @media (min-width: $breakpoint) {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+.body {
+    width: 100%;
+    color: grey;
+    background: #ECECEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-top: 140px;
+
+    .title {
+        size: 50px;
+        color: #17152B
+    }
+}
