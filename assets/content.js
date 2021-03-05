@@ -9,19 +9,21 @@ const home = {
             "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability"
         ]
     },
-    blocks: [
+    boards: [
         {
             image : "/images/annie-spratt-Tno1Zd3T6yY-unsplash.webp",
             label: "The Earth Prize",
             summary: "A $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19 years",
             links: [
                 {
-                    label: "Find out about The Earth Prize Mentors",
-                    link: "/#"
+                    label: "Read More",
+                    link: "/#",
+                    color: "#CEAA7A"
                 },
                 {
                     label: "Find out about The Earth Prize Mentors",
-                    link: "/#"
+                    link: "/#",
+                    color: "white"
                 }
             ],
             path: "/",

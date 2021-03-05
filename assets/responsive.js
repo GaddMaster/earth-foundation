@@ -6,7 +6,7 @@ export default {
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3.4,
+        items: 4.4,
         partialVisibilityGutter: 30
     },
     tablet: {

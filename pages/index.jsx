@@ -12,14 +12,11 @@ const Home = () => {
         <Layout
             title = "The Earth Foundation | Home | Landing"
             header
-            footer = {{
-                show: true,
-                background: "white"
-            }}>
+            footer>
             <Cover cover = {content.home.cover} />
-            {content.home.blocks.map((item, index) =>
+            {content.home.boards.map((board, index) =>
                 <Board
-                    item = {item}
+                    board = {board}
                     index = {index}
                     key = {index} />
             )}

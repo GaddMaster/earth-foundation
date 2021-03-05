@@ -9,8 +9,9 @@ import styles from "../styles/footer.module.scss";
 
 const Footer = props => {
     return (
-        <section className = {styles.footer} style = {{background:props.background||"whitesmoke"}}>
-            <div className = {styles.block}>
+        <section className = {styles.container} style = {{background:props.background}}>
+            <div className = {styles.inner}>
+            <div className = {styles.padding}>
                 <div className = {styles.logo}>
                     <img className = {styles.logo} src = "/images/logo.png" />
                 </div>
@@ -50,6 +51,7 @@ const Footer = props => {
                     </div>
                 </div>
             </div>
+            </div>
         </section>
     );
 };
@@ -60,7 +62,7 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
     background: {
-        outer: "whitesmoke",
+        outer: "white",
         inner: "white"
     }
 };

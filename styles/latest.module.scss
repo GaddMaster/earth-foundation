@@ -1,99 +1,116 @@
 
 @import "./variables";
 
-.latest {
+.container {
     width: 100%;
-    padding: 60px 0px 60px 0px;
+    padding: 40px 0px;
     background: whitesmoke;
-    position: relative;
-    @media (min-width: $breakpoint) {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    .control {
-        background: #CEAA7A;
-        position: relative;
-        @media (max-width: $breakpoint) {
+    @media (min-width: $breakpoint) {}
+    .inner {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        @media (min-width: $breakpoint) { height: 460px; }
+        .control {
+            width: 200px;
             height: 200px;
-            margin: 40px 0px 0px 0px;
-        }
-        @media (min-width: $breakpoint) {
-            height: 460px;
-            float: left;
-        }
-        .centered {
-            padding: 40px 0px 0px 40px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            @media (min-width: $breakpoint) { padding: 50px 0px 0px 80px; }
-            .spacer {
-                margin: 0px 0px 20px 0px;
-                outline: none;
-                @media (max-width: $breakpoint) { display: none; }
+            background: #CEAA7A;
+            position: relative;
+            @media (max-width: $breakpoint) {
+                height: 200px;
+                margin: 40px 0px 0px 0px;
             }
-            .button {
-                width: 50px;
-                height: 50px;
-                border-radius: 3px;
-                border: 1px solid #16172C;
+            @media (min-width: $breakpoint) {
+                height: 460px;
+                float: left;
+            }
+            .centered {
+                padding: 40px 0px 0px 40px;
+                flex-grow: 1;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #16172C;
-                font-size: 12px;
-                outline: none;
-                svg {
-                    width: 12px;
-                    height: 12px;
-                }
-            }
-            .label {
-                font-size: 24px;
-                line-height: 24px;
-                color: white;
-                font-weight: bold;
-                margin: 10px 0px 20px 0px;
-            }
-            .all {
-                font-size: 10px;
-                display: flex;
-                align-items: center;
-                color: #16172C;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                font-weight: bold;
-                .news {
-                    margin: 0px 10px 0px 0px;
+                flex-direction: column;
+                @media (min-width: $breakpoint) { padding: 50px 0px 0px 80px; }
+                .spacer {
+                    margin: 0px 0px 20px 0px;
+                    outline: none;
                     @media (max-width: $breakpoint) { display: none; }
                 }
-                svg {
-                    width: 12px;
-                    height: 12px;
+                .button {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 3px;
+                    border: 1px solid #16172C;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #16172C;
+                    font-size: 12px;
+                    outline: none;
+                    svg {
+                        width: 12px;
+                        height: 12px;
+                    }
                 }
-                
+                .label {
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: white;
+                    font-weight: bold;
+                    margin: 10px 0px 20px 0px;
+                }
+                .all {
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    color: #16172C;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    .news {
+                        margin: 0px 10px 0px 0px;
+                        @media (max-width: $breakpoint) { display: none; }
+                    }
+                    svg {
+                        width: 12px;
+                        height: 12px;
+                    }
+                    
+                }
+            }
+            .wall {
+                height: 100%;
+                position: absolute;
+                background: #CFAA7A;
+                @media (max-width: $breakpoint) { display: none; }
+            }
+            .wallA {
+                width: 100px;
+                position: absolute;
+                right: -100px;
+                top: 0px;
+            }
+            .wallB {
+                height: 100%;
+                width: 500px;
+                position: absolute;
+                left: -500px;
+                top: 0px;
             }
         }
-        .wall {
-            height: 100%;
-            width: 100px;
-            position: absolute;
-            right: -100px;
-            top: 0px;
-            background: #CFAA7A;
-            @media (max-width: $breakpoint) { display: none; }
+        .carousel {
+            position: relative;
+            @media (max-width: $breakpoint) {
+                top: -60px;
+                left: 40px;
+            }
+            @media (min-width: $breakpoint) {
+                float: left;
+                margin: 50px 0px;
+            }
+            .carcon { overflow: visible; }
+            .carmo { width: 100vw; }
+            .slider { margin: 0px 20px 0px 0px; }
+            .wrapper { margin: 0px 20px 0px 0px; }
         }
-    }
-    .carousel {
-        position: relative;
-        @media (max-width: $breakpoint) {
-            top: -40px;
-            left: 40px;
-        }
-        @media (min-width: $breakpoint) { float: left; }
-        .container { overflow: visible; }
-        .slider { margin: 0px 20px 0px 0px; }
-        .wrapper { margin: 0px 20px 0px 0px; }
     }
 }
