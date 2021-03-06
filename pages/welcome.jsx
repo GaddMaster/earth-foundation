@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import Layout from "components/Layout";
 
@@ -10,33 +11,34 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "styles/welcome.module.scss";
 
 const Welcome = () => {
-  return (
-    <Layout
-        title = "Welcome to our community"
-        header>
-        <div className = {styles.container}>
-            <div className = {styles.title}>
-                <div>Welcome to</div>
-                <div>our community!</div>
-            </div>
-            <div className={styles.divider}></div>
-            <div className = {styles.sub}>
-                <span>We are exited to have you on board. <br /> How would you like to get involved?</span>
-            </div>
-            <ButtonBase
-                className = {styles.button}
-                onClick = {()=>{}}>
-                <span>take a short survey</span>
-            </ButtonBase>
-            <Link href = "/">
-                <div className={styles.back}>
-                    <span>back to home page</span>
-                    <FontAwesomeIcon icon = {faArrowRight} />
+    const router = useRouter();
+    return (
+        <Layout
+            title = "Welcome to our community"
+            header>
+            <div className = {styles.container}>
+                <div className = {styles.title}>
+                    <div>Welcome to</div>
+                    <div>our community!</div>
                 </div>
-            </Link>
-        </div>
-    </Layout>
-  );
+                <div className={styles.divider}></div>
+                <div className = {styles.sub}>
+                    <span>We are exited to have you on board. <br /> How would you like to get involved?</span>
+                </div>
+                <ButtonBase
+                    className = {styles.button}
+                    onClick = {() => router.push("https://theearthfoundation.typeform.com/to/iuEsLDX4")}>
+                    <span>take a short survey</span>
+                </ButtonBase>
+                <Link href = "/">
+                    <div className={styles.back}>
+                        <span>back to home page</span>
+                        <FontAwesomeIcon icon = {faArrowRight} />
+                    </div>
+                </Link>
+            </div>
+        </Layout>
+    );
 };
 
 export default Welcome;
