@@ -34,7 +34,7 @@ const PersonViewer = props => {
                         </div>
                     ))}
                 </div>
-                <div className = {styles.block}>
+                <div className = {`${styles.block} ${styles[props.stripped]}`}>
                     <div 
                         className = {styles.details} 
                         style = {{background:props.theme.background}}> 

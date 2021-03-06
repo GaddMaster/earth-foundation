@@ -165,5 +165,8 @@
                 }
             }
         }
+        .stripped {
+            @media (min-width: $breakpoint) { display: none; }
+        }
     }
 }

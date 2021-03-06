@@ -7,6 +7,10 @@ const PointBlurp = props => {
     let styles = props.lean === "left" ? left : right;
     return (
         <div className = {styles.container}>
+            {props.image &&
+                <div className = {styles.image}>
+                    <img src = {props.image} />
+                </div> }
             <div className = {styles.point}>
                 <div className = {styles.circle}></div>
                 <div className = {styles.line}></div>

@@ -10,6 +10,22 @@
     margin: 0px 0px 40px 0px;
     position: relative;
     @media (min-width: $breakpoint) { padding: 0px 40px 0px 120px; }
+    .image {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 10px;
+        top: -40px;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 0;
+        opacity: 0.5;
+        @media (max-width: $breakpoint) {
+            width: 240px;
+            height: 240px;
+            left: -60px;
+        }
+    }
     .point {
         position: absolute;
         top: 17px;
@@ -63,6 +79,7 @@
     .desc {
         font-size: 14px;
         max-width: 650px;
+        z-index: 10;
         @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px; }
     }
 }

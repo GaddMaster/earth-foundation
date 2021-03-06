@@ -1,116 +1,120 @@
 
-import Head from "next/head";
-
-import React, { PureComponent, createRef } from "react";
-
 import Layout from "components/Layout";
 import Cover from "components/Cover";
 import PersonViewer from "components/PersonViewer";
+import PointBlurp from "components/PointBlurp";
 import PersonViewerCarousel from "components/PersonViewerCarousel";
-import PauseScroller from "components/PauseScroller";
 import Subscribe from "components/Subscribe";
-import TouchControl from "components/TouchControl";
 
 import { motion } from "framer-motion";
-import ScrollSnap from "scroll-snap";
+
+import styles from "styles/about.module.scss";
 
 import content from "assets/content";
 
-class AboutUs extends PureComponent {
+const AboutUs = () => {
+    return (
+        <motion.div
+            initial = {{ opacity: 0 }}
+            animate = {{ opacity: 1 }}
+            exit = {{ opacity: 0 }}>
 
-    constructor (props) {
-        super(props);
-        // this.ref = createRef();
-    };
+            <Layout 
+                title = "The Earth Foundation Background"
+                footer
+                header>
 
-    // componentDidMount = () => this.onBind();
+                <Cover cover = {content.about.cover} />
 
-    // onCallback = () => {};
+                <div className = {styles.container}>
+                    <div className = {styles.padding}>
+                        <PointBlurp
+                            image = "/images/about/slide1.jpg"
+                            title = "Awakening"
+                            desc = "For The Earth Foundation founder, seeing thousands of students outside his office window taking to the streets of Geneva, Switzerland, to protest the lack of progress towards environmental sustainability was an awakening"
+                            lean = "left" />
+                        <br />
+                        <PointBlurp
+                            image = "/images/about/slide2.jpg"
+                            title = "Goals & Passion"
+                            desc = "The Earth Foundation was founded with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it"
+                            lean = "right" />
+                        <br />
+                        <PointBlurp
+                            image = "/images/about/slide3.jpg"
+                            title = "The Youth Are Key"
+                            desc = "The Earth Foundation will take this enthused youth and inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation"
+                            lean = "left" />
+                    </div>
+                </div>
 
-    onBind = () => {
-        // const element = this.ref.current;
-        // const snapElement = new ScrollSnap(element, { snapDestinationY: "100vh" });
-        // snapElement.bind(this.onCallback);
-    };
+                <PersonViewer 
+                    title = "The Earth Foundation Board" 
+                    items = {content.about.board}
+                    striped
+                    theme = {{
+                        title : "#17182D",
+                        header : "#D4AC75",
+                        position: "#AA9487",
+                        paragraph: "#FEFEFE",
+                        background: "#17182D"
+                    }} />
 
-    render = () => {
+                <PersonViewerCarousel 
+                    title = "The Earth Foundation Team"
+                    items = {content.about.team}
+                    striped
+                    theme = {{
+                        title : "#CFAB79",
+                        header : "#FDFEFE",
+                        position: "#FDFEFE",
+                        paragraph: "#FDFEFE",
+                        background: "#064D3F"
+                    }} />
 
-        return (
-            <motion.div
-                initial = {{ opacity: 0 }}
-                animate = {{ opacity: 1 }}
-                exit = {{ opacity: 0 }}>
+                <br />
 
-                <Head>
-                    <title>About Us | The Earth Foundation Background</title>
-                </Head>
+                <Subscribe 
+                    background = {{
+                        outer: "white",
+                        inner: "whitesmoke"
+                    }} />
 
-                <Layout 
-                    title = "The Earth Foundation Background"
-                    footer = {{
-                        show: true,
-                        background: "white"
-                    }}
-                    header>
-
-                    <Cover cover = {content.about.cover} />
-
-                    <PauseScroller />
-
-                    <PersonViewer 
-                        title = "The Earth Foundation Board" 
-                        items = {content.about.board}
-                        theme = {{
-                            title : "#17182D",
-                            header : "#D4AC75",
-                            position: "#AA9487",
-                            paragraph: "#FEFEFE",
-                            background: "#17182D"
-                        }} />
-
-                    <PersonViewerCarousel 
-                        title = "The Earth Foundation Team"
-                        items = {content.about.team}
-                        theme = {{
-                            title : "#CFAB79",
-                            header : "#FDFEFE",
-                            position: "#FDFEFE",
-                            paragraph: "#FDFEFE",
-                            background: "#064D3F"
-                        }} />
-
-                    <br />
-
-                    <Subscribe 
-                        background = {{
-                            outer: "white",
-                            inner: "whitesmoke"
-                        }} />
-
-                </Layout>
-            
-            </motion.div>
-        );
-
-    }
-}
-
+            </Layout>
+        
+        </motion.div>
+    );
+};
 
 export default AboutUs;
 
-{/* 
-    <Cover cover = {content.about.cover} />
-     <PauseScroller />
-    <Switcher 
-title = "The Earth Foundation Board" 
-data = {foundation.board} 
-themeColor = "#16172C" 
-titleColor = "#16172C" 
-boardTitleColor = "#CFAA7A" />
+{/* <div className = {styles.boards}>
 
-<Switcher 
-title = "The Earth Foundation Team" 
-data = {foundation.team} 
-titleColor = "#CFAA7A" />
+<div className = {styles.board}>
+    <div className = {styles.image}>
+        <img src = "/images/about/slide1.jpg" />
+    </div>
+    <div className = {styles.summary}>
+        <span>For The Earth Foundation founder, seeing thousands of students outside his office window taking to the streets of Geneva, Switzerland, to protest the lack of progress towards environmental sustainability was an awakening</span>
+    </div>
+</div>
 
-<Subscribe /> */}
+<div className = {styles.board}>
+    <div className = {styles.image}>
+        <img src = "/images/about/slide2.jpg" />
+    </div>
+    <div className = {styles.summary}>
+        <span>The Earth Foundation was founded with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it</span>
+    </div>
+</div>
+
+<div className = {styles.board}>
+    <div className = {styles.image}>
+        <img src = "/images/about/slide3.jpg" />
+    </div>
+    <div className = {styles.summary}>
+        <span>The Earth Foundation will take this enthused youth and inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation</span>
+    </div>
+</div>
+
+</div> */}
