@@ -6,6 +6,8 @@ import Footer from "./Footer";
 import styles from "../styles/layout.module.scss";
 
 const Layout = props => {
+    let show = Boolean(props.footer);
+    let params = props.footer.background ? props.footer : {}; 
     return (
         <div className = {styles.layout} style = {{background:props.background}}>
             <Head>
@@ -16,7 +18,7 @@ const Layout = props => {
             </Head>
             {props.header && <Header />}
             {props.children}
-            {props.footer && <Footer />}
+            {show && <Footer {...params} />}
         </div>
     );
 };

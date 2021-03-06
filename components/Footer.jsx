@@ -8,49 +8,50 @@ import { faFacebookF, faTwitter, faInstagram, faYoutube } from "@fortawesome/fre
 import styles from "../styles/footer.module.scss";
 
 const Footer = props => {
+    console.log(props);
     return (
-        <section className = {styles.container} style = {{background:props.background}}>
-            <div className = {styles.inner}>
-            <div className = {styles.padding}>
-                <div className = {styles.logo}>
-                    <img className = {styles.logo} src = "/images/logo.png" />
-                </div>
-                <div className = {styles.information}>
-                    <div className = {styles.links}>
-                        <div className = {styles.routes}>
-                            <div className = {styles.route}>
-                                <span>About</span>
+        <section className = {styles.container} style = {{background:props.background.outer}}>
+            <div className = {styles.inner} style = {{background:props.background.inner}}>
+                <div className = {styles.padding}>
+                    <div className = {styles.logo}>
+                        <img className = {styles.logo} src = "/images/logo.png" />
+                    </div>
+                    <div className = {styles.information}>
+                        <div className = {styles.links}>
+                            <div className = {styles.routes}>
+                                <div className = {styles.route}>
+                                    <span>About</span>
+                                </div>
+                                <div className = {styles.route}>
+                                    <span>Contact Us</span>
+                                </div>
+                                <div className = {styles.route}>
+                                    <span>Data Protection Policy</span>
+                                </div>
+                                <div className = {styles.route}>
+                                    <span>Terms & Conditions</span>
+                                </div>
                             </div>
-                            <div className = {styles.route}>
-                                <span>Contact Us</span>
-                            </div>
-                            <div className = {styles.route}>
-                                <span>Data Protection Policy</span>
-                            </div>
-                            <div className = {styles.route}>
-                                <span>Terms & Conditions</span>
+                            <div className = {styles.socials}>
+                                <div className = {styles.social}>
+                                    <FontAwesomeIcon icon = {faFacebookF} />
+                                </div>
+                                <div className = {styles.social}>
+                                    <FontAwesomeIcon icon = {faTwitter} />
+                                </div>
+                                <div className = {styles.social}>
+                                    <FontAwesomeIcon icon = {faInstagram} />
+                                </div>
+                                <div className = {styles.social}>
+                                    <FontAwesomeIcon icon = {faYoutube} />
+                                </div>
                             </div>
                         </div>
-                        <div className = {styles.socials}>
-                            <div className = {styles.social}>
-                                <FontAwesomeIcon icon = {faFacebookF} />
-                            </div>
-                            <div className = {styles.social}>
-                                <FontAwesomeIcon icon = {faTwitter} />
-                            </div>
-                            <div className = {styles.social}>
-                                <FontAwesomeIcon icon = {faInstagram} />
-                            </div>
-                            <div className = {styles.social}>
-                                <FontAwesomeIcon icon = {faYoutube} />
-                            </div>
+                        <div className = {styles.rights}>
+                            <span>2021 The Earth Foundation. All Rights Reserved</span>
                         </div>
                     </div>
-                    <div className = {styles.rights}>
-                        <span>2021 The Earth Foundation. All Rights Reserved</span>
-                    </div>
                 </div>
-            </div>
             </div>
         </section>
     );

@@ -21,7 +21,12 @@ const AboutUs = () => {
 
             <Layout 
                 title = "The Earth Foundation Background"
-                footer
+                footer = {{
+                    background: {
+                        outer: "white",
+                        inner: "white"
+                    }
+                }}
                 header>
 
                 <Cover cover = {content.about.cover} />
