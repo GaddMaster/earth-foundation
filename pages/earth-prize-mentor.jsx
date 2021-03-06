@@ -73,7 +73,7 @@ const EarthPrizeMentor = () => {
                 <CircleTextLink
                     text = "The Earth Prize Mentorship"
                     link = "Leanr More About The prize"
-                    radius = {80}
+                    radius = {60}
                     onClick = {() => console.log("CLICKED")}
                     justify = "flex-end" />
 
@@ -84,7 +84,7 @@ const EarthPrizeMentor = () => {
                     <div className = {styles.details}>
                         <div className = {styles.link}>
                             <div className = {styles.label}>
-                                <div classnName = {styles.line}>Become</div>
+                                <div className = {styles.line}>Become</div>
                                 <div className = {styles.line}>A Mentor</div>
                             </div>
                             <FontAwesomeIcon icon = {faArrowRight} />
