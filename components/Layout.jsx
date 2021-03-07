@@ -7,7 +7,7 @@ import styles from "../styles/layout.module.scss";
 
 const Layout = props => {
     let show = Boolean(props.footer);
-    let params = props.footer.background ? props.footer : {}; 
+    let params = show && props.footer.background ? props.footer : {}; 
     return (
         <div className = {styles.layout} style = {{background:props.background}}>
             <Head>
