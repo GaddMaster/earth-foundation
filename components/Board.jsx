@@ -32,7 +32,7 @@ const Board = props => {
                         </div>
                     </div>
                     <div className = {styles.header}>
-                        <h1>{board.label}</h1>
+                        <h1>{board.label}<br/>{board.label_2}</h1>
                     </div>
                     <div className = {styles.summary}>
                         <p>{board.summary}</p>

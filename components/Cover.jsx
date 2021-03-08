@@ -8,7 +8,7 @@ const Cover = props => {
         <div className = {styles.cover} style = {{backgroundImage:`url(${props.cover.image})`}}>
             <Header />
             <div className = {styles.title}>
-                <h1>{props.cover.title}</h1>
+                <h1>{props.cover.title}<br />{props.cover.title_2}</h1>
             </div>
             <div className = {styles.sub}>
                 <h2>{props.cover.sub}</h2>

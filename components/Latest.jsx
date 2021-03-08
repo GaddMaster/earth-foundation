@@ -48,14 +48,17 @@ class Latest extends PureComponent {
                             <div className = {styles.spacer}>
                                 <ButtonBase 
                                     className = {styles.button}
-                                    onClick = {this.onNext}>
+                                    onClick = {this.onNext}
+                                    ontouchend = {this.onNext}>
                                     <FontAwesomeIcon icon = {faArrowRight} />
                                 </ButtonBase>
                             </div>
                             <div className = {styles.spacer}>
                                 <ButtonBase 
                                     className = {styles.button}
-                                    onClick = {this.onPrev}>
+                                    onClick = {this.onPrev}
+                                    ontouchend = {this.onPrev}
+                                    >
                                     <FontAwesomeIcon icon = {faArrowLeft} />
                                 </ButtonBase>
                             </div>

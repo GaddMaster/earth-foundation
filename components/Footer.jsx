@@ -19,9 +19,7 @@ const Footer = props => {
                     <div className = {styles.information}>
                         <div className = {styles.links}>
                             <div className = {styles.routes}>
-                                <div className = {styles.route}>
-                                    <span>About</span>
-                                </div>
+                                
                                 <div className = {styles.route}>
                                     <span>Contact Us</span>
                                 </div>

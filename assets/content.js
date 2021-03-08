@@ -2,18 +2,19 @@
 const home = {
     cover: {
         image: "/images/space.jpg",
-        title: "The Earth Foundation",
-        sub: "Inspire. Educate. Mentor. Empower",
+        title: "The Earth",
+        title_2: " Foundation",
+        sub: "Inspire. Educate. Mentor. Empower.",
         paragraphs: [
-            "The Earth Foundation aims to distribute $1 million annually to students, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges",
-            "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability"
+            "The Earth Foundation aims to distribute $1 million annually to students, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
+            "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
         ]
     },
     boards: [
         {
             image : "/images/annie-spratt-Tno1Zd3T6yY-unsplash.webp",
             label: "The Earth Prize",
-            summary: "A $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19 years",
+            summary: "A $200,000 youth environmental sustainability competition for students between the ages of 13 and 19 years",
             links: [
                 {
                     label: "Read More",
@@ -22,8 +23,8 @@ const home = {
                 },
                 {
                     label: "Find out about The Earth Prize Mentors",
-                    link: "/#",
-                    color: "white"
+                    link: "/earth-prize-mentor",
+                    color: "#CEAA7A"
                 }
             ],
             path: "/",
@@ -31,12 +32,13 @@ const home = {
         },
         {
             image : "/images/geran-de-klerk-qzgN45hseN0-unsplash.webp",
-            label: "The Earth Foundation Awards",
+            label: "The Earth ",
+            label_2: "Foundation Awards",
             summary: "$300,000 in research grants and scholarships for university students and researchers​",
             links: [
                 {
                     label: "Read more about the initiative",
-                    link: "/#"
+                    link: "/awards"
                 }
             ],
             path: "/",
@@ -44,12 +46,13 @@ const home = {
         },
         {
             image : "/images/magnezis-magnestic-TW62wXQ6Omc-unsplash.webp",
-            label: "The Earth Foundation Incubator",
-            summary: "The Foundation will distribute $500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide",
+            label: "The Earth ",
+            label_2: "Foundation Incubator",
+            summary: "$500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide",
             links: [
                 {
                     label: "Read more about the initiative",
-                    link: "/#"
+                    link: "/incubator"
                 }
             ],
             path: "/",
@@ -62,7 +65,7 @@ const home = {
             links: [
                 {
                     label: "Read more about the initiative",
-                    link: "/#"
+                    link: "/earth-prize"
                 }
             ],
             path: "/",
