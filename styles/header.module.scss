@@ -52,13 +52,17 @@
                 }
             }
             .link, .dropdown {
+                text-transform: capitalize;
                 margin: 0px 0px 0px 40px;
                 font-size: 20px;
                 color: rgb(43, 43, 43);
+                font-family: "lato", cursive;
+                line-height: 1.6;
                 @media (max-width: $breakpoint) { display: none; }
                 &:hover {
                     cursor: pointer;
                     color: $gold;
+                    background-color: transparent;
                 }
             }
             .icon {

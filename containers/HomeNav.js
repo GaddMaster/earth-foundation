@@ -15,6 +15,8 @@ const HomeNav = (props) => {
             initial={{
                 y: 50
             }}
+
+            
             animate={{
                 y: 0
             }}
