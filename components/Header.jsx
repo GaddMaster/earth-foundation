@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Side from "./Side";
 
@@ -23,20 +23,33 @@ const style = {
 
 const Header = (props) => {
   const [open, onOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add('locked');
+    } else {
+      document.body.classList.remove('locked');
+    }
+  }, [open]);
+
  const InitiativesMenu = {
     name: "Our Initiatives",
     subItems: [
       {
         name: "The Earth Prize",
-        route: "about",
+        route: "earth-prize",
+      },
+      {
+        name: "The Earth Prize Mentors",
+        route: "earth-prize-mentor",
       },
       {
         name: "The Earth Foundation Awards",
-        route: "about",
+        route: "awards",
       },
       {
         name: "The Earth Foundation Incubator",
-        route: "about",
+        route: "incubator",
       },
     ],
   };
@@ -44,12 +57,12 @@ const Header = (props) => {
     name: "Get Involved",
     subItems: [
       {
-        name: "The Earth Foundation",
-        route: "about",
+        name: "Become part of our network",
+        route: "become-part",
       },
       {
-        name: "Become a mentor (for The Earth Prize)",
-        route: "about",
+        name: "Become an Earth Prize Mentor",
+        route: "earth-prize-mentor",
       },
     ],
   };
@@ -58,20 +71,20 @@ const Header = (props) => {
     subItems: [
       {
         name: "The Earth Foundation",
-        route: "about",
+        route: "about-us",
       },
       {
         name: "The Adjudicating Panel",
-        route: "about",
+        route: "about-us",
       },
       {
         name: "Our Advisors",
-        route: "about",
+        route: "advisers",
       },
     ],
   };
   return (
-    <div className={styles.header}>
+    <div className={styles.header} style={{ position: open ? 'fixed' : 'absolute' }}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <Link href="/">
@@ -89,9 +102,9 @@ const Header = (props) => {
             {/* <span>Our Initiatives</span> */}
             <CustomizedMenus item={InitiativesMenu} />
           </div>
-          <div className={styles.dropdown}>
+          {/*<div className={styles.dropdown}>
             <span>News</span>
-          </div>
+          </div>*/}
           <div className={styles.dropdown}>
             {/* <span>Get Involved</span> */}
             <CustomizedMenus item={GetInvolvedMenu} />

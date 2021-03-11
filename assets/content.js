@@ -8,17 +8,21 @@ const home = {
         paragraphs: [
             "The Earth Foundation aims to distribute $1 million annually to students, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
             "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
-        ]
+        ],
+        section: "Discover More",
+        section_height: 30,
+        section_color: "#FFFFFF",
+        socials_color: "#FFFFFF"
     },
     boards: [
         {
             image : "/images/annie-spratt-Tno1Zd3T6yY-unsplash.webp",
             label: "The Earth Prize",
-            summary: "A $200,000 youth environmental sustainability competition for students between the ages of 13 and 19 years",
+            summary: "A $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19 years",
             links: [
                 {
                     label: "Read More",
-                    link: "/#",
+                    link: "/earth-prize",
                     color: "#CEAA7A"
                 },
                 {
@@ -28,6 +32,10 @@ const home = {
                 }
             ],
             path: "/",
+            section: "The Earth Foundation Has Four Initiatives",
+            section_height: 30,
+            section_color: "#000000",
+            socials_color: "#CEAA7A",
             background: "#16172C"
         },
         {
@@ -42,6 +50,10 @@ const home = {
                 }
             ],
             path: "/",
+            section: "The Earth Foundation Has Four Initiatives",
+            section_height: 30,
+            section_color: "#CEAA7A",
+            socials_color: "#CEAA7A",
             background: "#074D3F"
         },
         {
@@ -56,19 +68,29 @@ const home = {
                 }
             ],
             path: "/",
+            section: "The Earth Foundation Has Four Initiatives",
+            section_height: 30,
+            section_color: "#000000",
+            socials_color: "#CEAA7A",
             background: "#1A3324"
         },
         {
             image : "/images/pam-ivey-c0Y30cWbyEc-unsplash.webp",
-            label: "The Earth Foundation Alumni Association",
+            label: "The Earth ",
+            label_2: "Foundation ",
+            label_3: "Alumni Association",
             summary: "A networking platform that connects our participants, mentors, partners, and ambassadors",
             links: [
                 {
                     label: "Read more about the initiative",
-                    link: "/earth-prize"
+                    link: "/incubator"
                 }
             ],
             path: "/",
+            section: "The Earth Foundation Has Four Initiatives",
+            section_height: 30,
+            section_color: "#000000",
+            socials_color: "#CEAA7A",
             background: "#02304F"
         }
     ]

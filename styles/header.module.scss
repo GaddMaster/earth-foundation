@@ -7,9 +7,6 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    @media (max-width: $breakpoint) {
-        position: fixed;
-    }
     .wrapper {
         width: calc(100%);
         display: flex;
@@ -27,6 +24,7 @@
             margin: 20px 0px 0px 30px;
             overflow: visible;
             z-index: 3;
+            cursor: pointer;
             @media (min-width: $breakpoint) {
                 width: 100px;
                 height: 60px;
@@ -52,6 +50,10 @@
                     width: 20px;
                     height: 20px;
                     margin: 0px 0px -5px 10px;
+                }
+
+                span {
+                    font-weight: 400;
                 }
             }
             .link, .dropdown {
@@ -92,6 +94,10 @@
         align-items: flex-start;
         justify-content: center;
         z-index: 2;
+        img {
+            height: 60px;
+            @media (min-width: $breakpoint) { height: 160px; }
+        }
         .image {
             width: 100%;
             background-position: inherit;
