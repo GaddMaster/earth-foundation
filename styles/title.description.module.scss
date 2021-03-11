@@ -9,18 +9,22 @@
     .padding {
         display: flex;
         flex-direction: column;
-        padding: 40px 40px 40px 40px;
+        padding: 40px 30px 10px;
         @media (min-width: $breakpoint) {
             flex-direction: row;
             justify-content: space-between;
             padding: 40px 40px 40px 80px;
         }
         .title {
-            font-size: 20px;
-            line-height: 50px;
-            margin: 0px 0px 40px 0px;
-            font-weight: bold;
+            margin: 0px 0px 30px 0px;
+
+            h1 {
+                font-weight: 900;
+                font-size: 34px;
+                line-height: 40px;
+            }
             @media (min-width: $breakpoint) {
+                margin: 0px 0px 40px 0px;
                 min-width: 182px;
                 position: relative;
                 top: -16px;
@@ -28,21 +32,26 @@
         }
         .divider {
             height: 1px;
-            width: 100px;
-            min-width: 100px;
+            width: 120px;
+            min-width: 120px;
             background: $gold;
-            margin: 0px 0px 40px 0px;
+            margin: 0px 0px 30px 0px;
             @media (min-width: $breakpoint) {
                 position: relative;
                 top: 12px;
+                width: 60px;
+                min-width: 60px;
                 margin: 0px 20px 0px 20px;
             }
         }
         .paragraphs {
-            font-weight: bold;
-            font-size: 14px;
-            .paragraph {
-                
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 28px;
+
+            @media (max-width: $breakpoint) {
+                line-height: 24px;
+                font-size: 12px;
             }
         }
     }

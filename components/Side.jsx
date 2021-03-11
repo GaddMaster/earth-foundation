@@ -40,9 +40,9 @@ const Side = () => (
 
         <br />
 
-      {/*<div className = {styles.title}>
+        <div className = {styles.title}>
             <span>News</span>
-        </div>*/}
+        </div>
 
         <div className = {styles.title}>
             <span>Get Involved</span>

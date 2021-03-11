@@ -88,7 +88,7 @@ const Header = (props) => {
       <div className={styles.wrapper}>
         <div className={styles.logo}>
           <Link href="/">
-            <img src="/images/logo.png" />
+            <img src="/images/logotype.png" />
           </Link>
         </div>
         <nav className={styles.nav}>
@@ -102,9 +102,9 @@ const Header = (props) => {
             {/* <span>Our Initiatives</span> */}
             <CustomizedMenus item={InitiativesMenu} />
           </div>
-          {/*<div className={styles.dropdown}>
+          <div className={styles.dropdown}>
             <span>News</span>
-          </div>*/}
+          </div>
           <div className={styles.dropdown}>
             {/* <span>Get Involved</span> */}
             <CustomizedMenus item={GetInvolvedMenu} />
