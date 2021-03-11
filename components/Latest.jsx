@@ -37,8 +37,8 @@ class Latest extends PureComponent {
         let width = this.state.width < 900 ? this.state.width : 900;
         let mobile = this.state.width < 600;
         let style = {
-            control: mobile ? 200 : (width * 0.3),
-            carousel: mobile ? (width - 40) : (width * 0.7)
+            control: mobile ? 200 : (width * 0.45),
+            carousel: mobile ? (width - 40) : (width * 0.55)
         };
         return (
             <section className = {styles.container}>

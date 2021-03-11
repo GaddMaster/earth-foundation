@@ -9,9 +9,14 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import SendIcon from '@material-ui/icons/Send';
 import styles from "../styles/header.module.scss";
+import Link from 'next/link';
 const StyledMenu = withStyles({
   paper: {
-    border: '1px solid #d3d4d5',
+    border: '0',
+    borderRadius: '0',
+    boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+    padding: '10px 35px',
+    marginTop: '10px',
   },
 })((props) => (
   <Menu
@@ -31,6 +36,12 @@ const StyledMenu = withStyles({
 
 const StyledMenuItem = withStyles((theme) => ({
   root: {
+    marginBottom: '15px',
+    fontFamily: 'Lato',
+    fontWeight: '400',
+    '&:last-child': {
+      marginBottom: '0',
+    },
     '&:focus': {
       backgroundColor: 'transparent',
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
@@ -71,10 +82,12 @@ const CustomizedMenus = ({item}) =>{
     
      { item.subItems.map((link,index) =>{
          return (
-            <StyledMenuItem key={index} className={styles.dropdown}>
-            {/* <ListItemText primary={link.name} /> */}
-            <span>{link.name}</span>
-          </StyledMenuItem>
+           <Link href={link.route}>
+              <StyledMenuItem key={index} className={styles.dropdown}>
+                {/* <ListItemText primary={link.name} /> */}
+                <span>{link.name}</span>
+              </StyledMenuItem>
+           </Link>
          )
      })}
        

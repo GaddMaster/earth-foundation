@@ -19,7 +19,6 @@ const Footer = props => {
                     <div className = {styles.information}>
                         <div className = {styles.links}>
                             <div className = {styles.routes}>
-                                
                                 <div className = {styles.route}>
                                     <span>Contact Us</span>
                                 </div>
@@ -61,8 +60,8 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
     background: {
-        outer: "white",
-        inner: "white"
+        outer: "whitesmoke",
+        inner: "whitesmoke"
     }
 };
 

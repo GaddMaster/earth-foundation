@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 
 import InputBase from "@material-ui/core/InputBase";
@@ -9,14 +9,25 @@ import http from "utils/http";
 
 import styles from "styles/subscribe.module.scss";
 
+const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 const Subscribe = props => {
     let [email, onEmail] = useState("");
+    let [isDisabled, disable] = useState(true);
     const onChange = () => e => onEmail(e.target.value);
     const onSubscribe = () => {
         http.request("PUT", "/api/subscribe", { email });
         onEmail("");
         alert("Subscribed");
     };
+    useEffect(() => {
+        if (regExp.test(email)) {
+            disable(false);
+        } else {
+            disable(true);
+        }
+    }, [email]);
+
     return (
         <section className = {styles.container} style = {{background:props.background.outer}}>
             <div className = {styles.inner}>
@@ -31,6 +42,7 @@ const Subscribe = props => {
                         onChange = {onChange()} />
                     <ButtonBase
                         className = {styles.button}
+                        disabled = {isDisabled}
                         onClick = {onSubscribe}>
                         <span>Join Us</span>
                     </ButtonBase>

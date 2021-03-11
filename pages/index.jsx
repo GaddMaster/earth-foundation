@@ -6,6 +6,7 @@ import Latest from "../components/Latest";
 import Subscribe from "../components/Subscribe";
 
 import content from "../assets/content";
+import SlideSection from 'components/SlideSection';
 
 const Home = () => {
     return (
@@ -22,10 +23,10 @@ const Home = () => {
             )}
             <Latest />
             <Subscribe
-                background = {{
-                    outer: "whitesmoke",
-                    inner: "white"
-                }} />
+              background = {{
+                outer: "whitesmoke",
+                inner: "white"
+              }} />
         </Layout>
     );
 };

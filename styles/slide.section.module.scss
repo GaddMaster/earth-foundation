@@ -1,0 +1,35 @@
+@import "./variables";
+
+@import "./variables";
+
+.section {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    left: 100px;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    bottom: 0;
+    width: 1px;
+
+    @media (max-width: $breakpoint) {
+        display: none;
+    }
+
+    .name {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+        transform: rotate(-90deg) translateX(50%);
+    }
+
+    .line {
+        flex-grow: 1;
+        width: 1px;
+        margin-top: 40px;
+    }
+}
+
