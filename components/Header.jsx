@@ -73,10 +73,10 @@ const Header = (props) => {
         name: "The Earth Foundation",
         route: "about-us",
       },
-      {
-        name: "The Adjudicating Panel",
-        route: "about-us",
-      },
+      // {
+      //   name: "The Adjudicating Panel",
+      //   route: "about-us",
+      // },
       {
         name: "Our Advisors",
         route: "advisers",

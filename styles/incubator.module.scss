@@ -3,8 +3,7 @@
 
 .container {
     width: 100%;
-    color: grey;
-    background: #ECECEB;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +28,7 @@
                 h1 {
                     font-size: 40px;
                     line-height: 50px;
-                    font-weight: bold;
+                    font-weight: 900;
                     color: #064C40;
                     padding: 0px;
                     text-align: left;
@@ -48,7 +47,7 @@
             @media (min-width: $breakpoint) { width: 50%; }
         }
         .summary {
-            color: #1C192B;
+            font-weight: 400;
             @media (min-width: $breakpoint) {
                 width: calc(50% - 30px);
                 padding: 20px 0px 0px 0px;
@@ -62,16 +61,24 @@
         max-width: 900px;
         margin: 0px 40px 0px 40px;
         @media (min-width: $breakpoint) { flex-direction: row-reverse; }
+
+        @media (max-width: $breakpoint) {
+            width: 100%;
+            padding: 0 40px;
+        }
         .image {
             position: relative;
+            width: 50%;
+            height: 500px;
             margin: 0px 0px 40px 0px;
+            background-image: url("/images/incubator/birds.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
             @media (max-width: $breakpoint) {
-                img {
-                    min-width: calc(100% + 40px);
-                }
-            }
-            @media (min-width: $breakpoint) {
-                width: 50%;
+                width: 100%;
+                height: 400px;
             }
         }
         .points {
@@ -85,6 +92,9 @@
             .point {
                 display: flex;
                 position: relative;
+                @media (max-width: $breakpoint) {
+                    min-height: 60px;
+                }
                 .block {
                     display: flex;
                     flex-direction: column;
@@ -112,6 +122,14 @@
                                 position: relative;
                                 min-width: 300px;
                             }
+
+                            svg {
+                                width: 13px;
+                                height: 13px;
+                                margin: 0 0 -1px 10px;
+
+                                @media (min-width: $breakpoint) { display: none }
+                            }
                         }
                     }
                     .guide {
@@ -135,13 +153,13 @@
         }
     }
     .theme {
-        font-size: 26px;
+        font-size: 32px;
         max-width: 900px;
         width: calc(100% - 40px);
         margin: 60px 40px 40px 40px;
         color: #172d21;
-        font-weight: bold;
-        @media (max-width: $breakpoint) { align-self: flex-start; }
+        font-weight: 900;
+        @media (max-width: $breakpoint) { align-self: flex-start; margin: 30px 40px 40px 40px; }
     }
     .carbon {
         display: flex;
@@ -189,6 +207,7 @@
                 letter-spacing: 2px;
                 margin: 0px 0px 40px 0px;
                 color: #CDAC76;
+                font-weight: 400;
                 text-transform: uppercase;
                 display: flex;
                 align-items: flex-end;
@@ -197,11 +216,12 @@
                 svg {
                     width: 20px;
                     height: 20px;
-                    margin: 0px 0px 2px 0px;
+                    margin: 0 0 -3px 10px;
                 }
             }
             .eligible {
                 font-size: 14px;
+                font-weight: 400;
                 color: #bdbdbd;
             }
             .wall {
@@ -231,10 +251,10 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
-                background-image: url("/images/incubator/road.jpeg");
+                background-image: url("/images/incubator/road.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: center top;
                 @media (min-width: $breakpoint) {
                     width: 100%;
                     height: 140%;
@@ -255,7 +275,7 @@
             line-height: 50px;
             color: #CFAA7E;
             margin: 0px 0px 40px 0px;
-            font-weight: bold;
+            font-weight: 900;
             @media (min-width: $breakpoint) {
                 width: 320px;
             }
@@ -263,65 +283,7 @@
         .text {
             color: black;
             font-size: 14px;
-        }
-    }
-    .newsLetter{
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 50px;
-        .block{
-            flex: 1;
-            margin-left: 20vw;
-            padding: 40px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-items: center;
-            background: white;
-            box-sizing: border-box;
-            .label {
-                font-size: 24px;
-                font-weight: bold;
-                color: black;
-                margin: 0 20px 0 0;
-                @media (min-width: $breakpoint) {
-                    margin: 0 20px 0 0;
-                    text-align: center;
-                }
-            }
-            .newsLetterForm{
-                flex: 1;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-items: center;
-                .input{
-                    flex: 1;
-                    height: 50px;
-                    border: 1px solid rgb(122, 122, 122);
-                    text-align: center;
-                    margin: 0px 0px 20px 0px;
-                    @media (min-width: $breakpoint) {
-                        width: 260px;
-                        margin: 0px 10px 0px 0px;
-                    }
-                    input {
-                        text-align: center;
-                        font-size: 12px;
-                    }
-                }
-                .button{
-                    width: 100%;
-                    height: 50px;
-                    background: #CFAA7A;;
-                    color: white;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    @media (min-width: $breakpoint) {
-                        width: 100px;
-                    }
-                }
-            }
+            line-height: 26px;
         }
     }
 }

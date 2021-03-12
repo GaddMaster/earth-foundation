@@ -2,6 +2,8 @@
 import shared from "styles/point.blurp.shared.module.scss";
 import left from "styles/point.blurp.left.module.scss";
 import right from "styles/point.blurp.right.module.scss";
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const PointBlurp = props => {
     let styles = props.lean === "left" ? left : right;
@@ -17,7 +19,8 @@ const PointBlurp = props => {
                 <div className = {styles.dot}></div>
             </div>
             <div className = {styles.title}>
-                <span>{props.title}</span>
+              <span>{props.title}</span>
+              <FontAwesomeIcon icon = {faArrowRight} />
             </div>
             <div className = {styles.desc}>
                 <span>{props.desc}</span>
