@@ -6,6 +6,7 @@ const SlideSection = ({ name, color, height, style }) => (
     className = {styles.section}
     style = {{
       maxHeight: `${height}vh`,
+      ...style,
     }}
   >
     <span className = {styles.name} style = {{ color: color }}>{name}</span>

@@ -66,12 +66,22 @@
         }
     }
     .title {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: bold;
         color: $blue;
         margin: 0px 0px 20px 0px;
         position: relative;
         z-index: 2;
+
+        @media (min-width: $breakpoint) { font-size: 22px; }
+
+        svg {
+            display: inline;
+            height: 14px;
+            width: 14px;
+            margin-left: 15px;
+            @media (min-width: $breakpoint) { display: none; }
+        }
     }
     .right {
         text-align: right;
@@ -80,6 +90,7 @@
         font-size: 14px;
         max-width: 650px;
         z-index: 10;
-        @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px; }
+        display: none;
+        @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px; display: block; }
     }
 }

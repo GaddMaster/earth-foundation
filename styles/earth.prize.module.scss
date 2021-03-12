@@ -2,7 +2,7 @@
 @import "./variables";
 
 .container {
-
+    position: relative;
     max-width: 900px;
     width: 100%;
     padding-top: 120px;
@@ -62,6 +62,9 @@
                 .timeline {
                     color: rgba(255, 255, 255, 0.5);
                     font-size: 12px;
+                    @media (max-width: $breakpoint) {
+                        font-size: 13px;
+                    }
                 }
                 .divider {
                     min-height: 1px;
@@ -74,6 +77,35 @@
                     font-size: 11px;
                     font-weight: 400;
                     line-height: 18px;
+                    @media (max-width: $breakpoint) {
+                        font-size: 12px;
+                    }
+                }
+                .link {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    color: $gold;
+                    font-weight: bold;
+                    margin: 15px auto 0;
+                    width: 220px;
+                    cursor: pointer;
+                    .label {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0px 16px 0px 0px;
+                        line-height: 20px;
+                        font-size: 12px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+                    .icon {
+                        margin: 5px 0px -2px 0px;
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -107,6 +139,8 @@
         .submit {
             z-index: 3;
             background: #064D3F;
+            height: 450px;
+            width: 450px;
             @media (min-width: $breakpoint) {
                 height: 400px;
                 width: 400px;
@@ -131,22 +165,25 @@
             z-index: 3;
             .index, .header { color: white !important; } 
             @media (min-width: $breakpoint) {
-                height: 300px;
-                width: 300px;
+                height: 330px;
+                width: 330px;
                 position: absolute;
-                top: 730px;
+                top: 740px;
                 left: -28px;
             }
         }
         .ceremony {
             background: #1A3326;
-            z-index: 2;
+            z-index: 4;
+            height: 410px;
+            width: 410px;
             @media (min-width: $breakpoint) {
                 height: 400px;
                 width: 400px;
                 position: absolute;
-                top: 1020px;
+                top: 1060px;
                 left: 20px;
+                z-index: 2;
             }
         }
         .deer {
@@ -259,7 +296,7 @@
             height: 300px;
             position: relative;
             .clue {
-                background: grey;
+                background: #ccc;
                 color: white;
                 border-radius: 50%;
                 display: flex;
@@ -267,6 +304,7 @@
                 align-items: center;
                 font-size: 30px;
                 position: absolute;
+                font-weight: 900;
             }
             .father {
                 width: 150px;

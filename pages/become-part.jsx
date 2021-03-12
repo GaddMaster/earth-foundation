@@ -10,6 +10,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "styles/become.part.module.scss";
+import SlideSection from 'components/SlideSection';
+import SlideSocials from 'components/SlideSocials';
 
 const BecomePart = () => {
     return (
@@ -17,16 +19,18 @@ const BecomePart = () => {
             title = "Welcome to our community" 
             header>
             <div className = {styles.container}>
+                <SlideSection height={40} name="Become part of out network" color="#FFFFFF" />
+                <SlideSocials color="#FFFFFF" />
                 <div className = {styles.title}>
                     <div>Become part</div>
                     <div>of out network</div>
                 </div>
                 <div className = {styles.divider}></div>
                 <div className = {styles.sub}>
-                    <span>The Earth Foundation is always looking for people passionate about environmental sustainability who are seeking to connect with others</span>
+                    <span>The Earth Foundation is always looking for people passionate about environmental sustainability who are seeking to connect with others.</span>
                 </div>
                 <div className = {styles.sub}>
-                    <span>Join us to get the latest updates on what our community of inspiring individuals is up to, share your ideas, or simply chat with us</span>
+                    <span>Join us to get the latest updates on what our community of inspiring individuals is up to, share your ideas, or simply chat with us.</span>
                 </div>
                 <div className = {styles.form}>
                     <InputBase

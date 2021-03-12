@@ -8,6 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "styles/earth.prize.module.scss";
+import SlideSection from 'components/SlideSection';
+import SlideSocials from 'components/SlideSocials';
+import Link from 'next/link';
 
 const EarthPrize = () => {
     return (
@@ -15,7 +18,13 @@ const EarthPrize = () => {
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
             header
-            footer>
+            footer
+        >
+            <SlideSection height={65} name="The Earth Prize" color="#CEAA7A" style={{ top: '550px' }} />
+            <SlideSection height={45} name="The Earth Prize" color="#CEAA7A" style={{ top: '1650px' }} />
+            <SlideSection height={55} name="The Earth Prize" color="#CEAA7A" />
+            <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
+            <SlideSocials color="#CEAA7A" style={{ top: '1220px' }} />
             <div className = {styles.container}>
                 <TitleDesc
                     title = "The Earth Prize"
@@ -26,7 +35,8 @@ const EarthPrize = () => {
                     color = {{
                         title: "#17152B",
                         desc: "#17152B"
-                    }} />
+                    }}
+                />
                 <div className = {styles.circles}>
                     <div className = {`${styles.circle} ${styles.image} ${styles.tree}`}>
                         <img src = "/images/trees.jpg" alt = "trees" />
@@ -63,6 +73,17 @@ const EarthPrize = () => {
                             <div className = {styles.desc}>
                                 <span>Registered teams will continue to work on their environmental sustainability ideas with the guidance of The Earth Prize mentors. They will then submit their Project Proposal describing their chosen solution, which could be a new idea with implementation potential or an already existing project, with local, national or global reach.</span>
                             </div>
+                            <Link href = "/earth-prize-mentor">
+                                <div className = {styles.link}>
+                                    <div className = {styles.label}>
+                                        <div className = {styles.line}>Find out more</div>
+                                        <div className = {styles.line}>about the mentors</div>
+                                    </div>
+                                    <div className = {styles.icon}>
+                                        <FontAwesomeIcon icon = {faArrowRight} />
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className = {`${styles.circle} ${styles.final}`}>
@@ -141,7 +162,7 @@ const EarthPrize = () => {
                         <div>our network</div>
                     </div>
                     <div className = {styles.desc}>
-                        <span>All participants recognized with The Earth Prize Fellow distinction will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of passionate individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.</span>
+                        <span>All participants recognized with The Earth Prize Fellows distinction will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of passionate individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.</span>
                     </div>
                 </div>
                 <div className = {styles.bass}>
