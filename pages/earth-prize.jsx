@@ -176,19 +176,19 @@ const EarthPrize = () => {
                     </div>
                     <div className = {styles.clues}>
                         <div className = {`${styles.clue} ${styles.baby}`}>
-                            <span>?</span>
+                            <span>To be announced</span>
                         </div>
                         <div className = {`${styles.clue} ${styles.mother}`}>
-                            <span>?</span>
+                            <span>To be announced</span>
                         </div>
                         <div className = {`${styles.clue} ${styles.father}`}>
-                            <span>?</span>
+                            <span>To be announced</span>
                         </div>
                     </div>
                     <div className = {styles.meet}>
                         <CircleTextLink
                             text = "The Earth Prize Ambassadors"
-                            link = "Meet All Ambassadors"
+                            link = "Coming soon"
                             radius = {70}
                             onClick = {() => alert("Why Hello There")} />
                     </div>

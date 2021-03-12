@@ -302,7 +302,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 30px;
+                text-align: center;
+                font-size: 18px;
+                line-height: 20px;
                 position: absolute;
                 font-weight: 900;
             }
@@ -321,6 +323,8 @@
                 height: 120px;
                 top: 140px;
                 left: 100px;
+                font-size: 14px;
+                line-height: 16px;
                 @media (min-width: $breakpoint) {
                     top: 140px;
                     left: 100px;
@@ -331,6 +335,8 @@
                 height: 80px;
                 top: 50px;
                 left: 160px;
+                font-size: 10px;
+                line-height: 12px;
                 @media (min-width: $breakpoint) {
                     top: 50px;
                     left: 50px;
