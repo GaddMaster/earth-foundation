@@ -12,7 +12,7 @@ const Cover = props => {
             <SlideSocials color={props.cover.socials_color} />
             <div className = {styles.wrapper}>
               <div className = {styles.title}>
-                <h1>{props.cover.title}<br />{props.cover.title_2}</h1>
+                <h1>{props.cover.title}<br />{props.cover.title_2}<br />{props.cover.title_3}</h1>
               </div>
               <div className = {styles.sub}>
                 <h2>{props.cover.sub}</h2>

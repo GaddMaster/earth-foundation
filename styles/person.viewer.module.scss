@@ -14,14 +14,15 @@
         }
         .title {
             font-size: 40px;
-            font-weight: bold;
+            font-weight: 900;
+            line-height: 50px;
             @media (max-width: $breakpoint) { margin: 40px; }
             @media (min-width: $breakpoint) {
                 width: 100%;
                 margin: 0px 0px 40px 0px;
             }
             .capper {
-                @media (min-width: $breakpoint) { width: 350px; }
+                @media (min-width: $breakpoint) { width: 400px; }
             }
         }
         .avatars {
