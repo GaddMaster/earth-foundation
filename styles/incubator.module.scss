@@ -107,6 +107,12 @@
                         justify-content: center;
                         border: 1px solid #e4ded3;
                         border-radius: 50%;
+                        > span {
+                            color: #CDAC76;
+                            font-size: 18px;
+                            font-weight: 400;
+                            margin: 0 25px 0 27px;
+                        }
                         .marker {
                             width: 0px;
                             height: 0px;
@@ -121,14 +127,6 @@
                                 width: 300px !important;
                                 position: relative;
                                 min-width: 300px;
-                            }
-
-                            svg {
-                                width: 13px;
-                                height: 13px;
-                                margin: 0 0 -1px 10px;
-
-                                @media (min-width: $breakpoint) { display: none }
                             }
                         }
                     }

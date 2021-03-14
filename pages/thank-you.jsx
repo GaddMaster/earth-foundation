@@ -4,6 +4,8 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import SlideSection from 'components/SlideSection';
+import SlideSocials from 'components/SlideSocials';
 
 const ThankYou = () => {
     return (
@@ -12,15 +14,17 @@ const ThankYou = () => {
             header
         >
             <div className={styles.container}>
+                <SlideSection height={40} name="the Earth Foundation Awards" color="#FFFFFF" />
+                <SlideSocials color="#FFFFFF" />
                 <div className = {styles.title}>
                     <h1>Thank you!</h1>
                 </div>
                 <div className={styles.divider}></div>
                 <div className = {styles.sub}>
-                    <span>Thank you for your interest in The Earth Foundation Awards</span>
+                    <span>Thank you for your interest in The Earth Foundation Awards.</span>
                 </div>
                 <div className={styles.description}>
-                    <span> The application will open in June 2021. Sign up below to receive a reminder so you do not miss the deadline</span>
+                    <span> The application will open in June 2021. Sign up below to receive a reminder so you do not miss the deadline.</span>
                 </div>
                 <div className={styles.buttonArea}>
                     <ButtonBase

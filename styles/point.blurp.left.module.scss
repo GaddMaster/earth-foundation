@@ -69,18 +69,22 @@
         font-size: 20px;
         font-weight: bold;
         color: $blue;
-        margin: 0px 0px 20px 0px;
+        margin: 3px 0px 20px 0px;
         position: relative;
         z-index: 2;
+        display: flex;
+        align-items: flex-start;
 
         @media (min-width: $breakpoint) { font-size: 22px; }
 
-        svg {
-            display: inline;
-            height: 14px;
-            width: 14px;
-            margin-left: 15px;
-            @media (min-width: $breakpoint) { display: none; }
+        @media (max-width: $breakpoint) {
+            > span {
+                &:nth-child(1) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin: 0 35px 0 4px;
+                }
+            }
         }
     }
     .right {
@@ -90,7 +94,6 @@
         font-size: 14px;
         max-width: 650px;
         z-index: 10;
-        display: none;
-        @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px; display: block; }
+        @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px; }
     }
 }

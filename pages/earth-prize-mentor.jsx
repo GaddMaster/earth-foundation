@@ -12,8 +12,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "styles/earth.prize.mentor.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
+import React, {useState} from 'react';
+import {useMediaQuery} from 'react-responsive';
 
 const EarthPrizeMentor = () => {
+    const isMobile = useMediaQuery({
+        query: `(max-width: 600px)`,
+    });
     return (
         <Layout 
             title = "The Earth Prize Mentors"
@@ -27,7 +32,6 @@ const EarthPrizeMentor = () => {
             <div className = {styles.container}>
 
                 <TitleDesc
-                    title = "The Earth Prize Mentors"
                     paragraphs = {[
                         "Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19 years.",
                         "Mentors will contribute to the development of students’ innovative project proposals by offering them guidance on their ideas and answering their questions. Mentors who will have demonstrated the highest levels of engagement will be given the chance to work individually with one of the ten The Earth Prize Finalists."
@@ -36,7 +40,12 @@ const EarthPrizeMentor = () => {
                         title: "#CEAA7A",
                         desc: "#17152B"
                     }}  
-                />
+                >
+                    {isMobile
+                      ? <h1>The Earth Prize Mentors</h1>
+                      : <h1>The Earth Prize<br /> Mentors</h1>
+                    }
+                </TitleDesc>
 
                 <MentorshipCircles />
 
@@ -76,8 +85,8 @@ const EarthPrizeMentor = () => {
                 <br />
 
                 <CircleTextLink
-                    text = "The Earth Prize Mentorship"
-                    link = "Learn More About The prize"
+                    text = "The Earth Prize Mentors"
+                    link = "Read More About it"
                     radius = {60}
                     onClick = {() => console.log("CLICKED")}
                     justify = "flex-end" />
