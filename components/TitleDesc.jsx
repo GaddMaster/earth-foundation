@@ -8,7 +8,7 @@ const TitleDesc = props => {
         <div className = {styles.container}>
             <div className = {styles.padding}>
                 <div className = {styles.title}>
-                    <h1 style = {{color:props.color.title}}>{props.title}</h1>
+                    {props.children}
                 </div>
                 <div className = {styles.divider}></div>
                 <div className = {styles.paragraphs} style = {{color:props.color.desc}}>

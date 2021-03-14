@@ -11,8 +11,14 @@ import styles from "styles/earth.prize.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
 import Link from 'next/link';
+import React from 'react';
+import {useMediaQuery} from 'react-responsive';
 
 const EarthPrize = () => {
+    const isMobile = useMediaQuery({
+        query: `(max-width: 600px)`,
+    });
+
     return (
         <Layout 
             title = "The Earth <br/> Prize"
@@ -27,7 +33,6 @@ const EarthPrize = () => {
             <SlideSocials color="#CEAA7A" style={{ top: '1220px' }} />
             <div className = {styles.container}>
                 <TitleDesc
-                    title = "The Earth Prize"
                     paragraphs = {[
                         "A $200,000 global youth environmental sustainability competition open to all students worldwide between the ages of 13 and 19, with rewards in the form of university scholarships for students and grants for schools.",
                         "Through The Earth Prize, students are challenged, mentored, and inspired to effect real change by designing their own environmental sustainability projects, products, organizations or enterprises."
@@ -36,7 +41,12 @@ const EarthPrize = () => {
                         title: "#17152B",
                         desc: "#17152B"
                     }}
-                />
+                >
+                    {isMobile
+                      ? <h1>The Earth Prize</h1>
+                      : <h1>The Earth <br /> Prize</h1>
+                    }
+                </TitleDesc>
                 <div className = {styles.circles}>
                     <div className = {`${styles.circle} ${styles.image} ${styles.tree}`}>
                         <img src = "/images/trees.jpg" alt = "trees" />

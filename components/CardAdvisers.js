@@ -1,14 +1,9 @@
 import React from 'react'
-import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from './Card/GridContainer'
 import GridItem from "./Card/GridItem";
 import Card from "./Card/CardAdvisers";
 import CardAvatar from "./Card/CardAvatar";
 import CardBody from "./Card/CardBody";
-import cardStyles from "../assets/jss/cardStyles";
-
-
-const useStyles = makeStyles(cardStyles);
 
 export default function TempCard () {
     const classes = useStyles();

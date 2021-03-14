@@ -99,20 +99,26 @@ const home = {
 const about = {
     cover: {
         image: "/images/jeremy-bishop-dR_q93lfaTw-unsplash.jpg",
-        title: "The Earth Foundation Background",
-        paragraphs: ["The passion and concern that young people have about environmental sustainability became very evident during the series of global school strikes which spread across the world in 2019, inspired by the actions of environmental activist Greta Thunberg"]
+        title: "The Earth",
+        title_2: " Foundation",
+        title_3: " Background",
+        paragraphs: ["The passion and concern that young people have about environmental sustainability became very evident during the series of global school strikes which spread across the world in 2019, inspired by the actions of environmental activist Greta Thunberg."],
+        section: "About Us",
+        section_height: 40,
+        section_color: "#FFFFFF",
+        socials_color: "#FFFFFF",
     },
     slides: [
         {
-            paragraph: "For The Earth Foundation founder, seeing thousands of students outside his office window taking to the streets of Geneva, Switzerland, to protest the lack of progress towards environmental sustainability was an awakening",
+            paragraph: "For The Earth Foundation founder, seeing thousands of students outside his office window taking to the streets of Geneva, Switzerland, to protest the lack of progress towards environmental sustainability was an awakening.",
             image: "/images/about/slidea1.jpg"
         },
         {
-            paragraph: "The Earth Foundation was founded with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it",
+            paragraph: "The Earth Foundation was founded with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it.",
             image: "/images/about/slidea2.jpg"
         },
         {
-            paragraph: "The Earth Foundation will take this enthused youth and inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation",
+            paragraph: "The Earth Foundation will take this enthused youth and inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation.",
             image: "/images/about/slidea3.jpg"
         }
     ],
@@ -124,7 +130,7 @@ const about = {
             position: "Founder & President of the Board",
             paragraphs: [
                 "Peter McGarry is an Irishman based in Switzerland, father of four, entrepreneur, macro portfolio manager and extreme runner.",
-                " His passion for environmental sustainability was sparked through his children’s enthusiasm and from his first-hand experiences running marathons on all 7 continents and the North Pole. He decided that he could leverage the passion he saw in his own children, and his experience in global financial markets to create a force for positive change"
+                " His passion for environmental sustainability was sparked through his children’s enthusiasm and from his first-hand experiences running marathons on all 7 continents and the North Pole. He decided that he could leverage the passion he saw in his own children, and his experience in global financial markets to create a force for positive change."
             ]
         },
         {
@@ -133,7 +139,7 @@ const about = {
             name: "Frits Bontekoe",
             position: "Independent member of the Board ",
             paragraphs: [
-                "Frits Bontekoe is the Legal Counsel of the World Intellectual Property Organization (WIPO). Prior to joining WIPO, Mr Bontekoe spent more than 20 years as a legal advisor to international organizations. As a parent and committed internationalist, Mr Bontekoe brings his legal expertise to The Earth Foundation to inspire young people from around the world to seek and develop solutions to resolving the world’s environmental crisis"
+                "Frits Bontekoe is the Legal Counsel of the World Intellectual Property Organization (WIPO). Prior to joining WIPO, Mr Bontekoe spent more than 20 years as a legal advisor to international organizations. As a parent and committed internationalist, Mr Bontekoe brings his legal expertise to The Earth Foundation to inspire young people from around the world to seek and develop solutions to resolving the world’s environmental crisis."
             ]
         },
         {
@@ -142,7 +148,7 @@ const about = {
             name: "Jean-Christophe Hocke",
             position: "Independent member of the Board ",
             paragraphs: [
-                "Jean-Christophe Hocke has been a Partner at the law firm Python in Geneva since 2004. Prior to joining Python, he was a visiting lawyer at the law firm Golenbock Eiseman in New York. While assisting The Earth Foundation in its organization, Jean-Christophe will bring his expertise to the Foundation and to the winners of The Earth Prize to properly structure their startup ventures. Jean-Christophe is a Swiss Citizen, living in Geneva with his wife and two children"
+                "Jean-Christophe Hocke has been a Partner at the law firm Python in Geneva since 2004. Prior to joining Python, he was a visiting lawyer at the law firm Golenbock Eiseman in New York. While assisting The Earth Foundation in its organization, Jean-Christophe will bring his expertise to the Foundation and to the winners of The Earth Prize to properly structure their startup ventures. Jean-Christophe is a Swiss Citizen, living in Geneva with his wife and two children."
             ]
         }
     ],

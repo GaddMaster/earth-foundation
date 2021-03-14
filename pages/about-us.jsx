@@ -36,19 +36,19 @@ const AboutUs = () => {
                         <PointBlurp
                             image = "/images/about/slide1.jpg"
                             title = "Awakening"
-                            desc = "For The Earth Foundation founder, seeing thousands of students outside his office window taking to the streets of Geneva, Switzerland, to protest the lack of progress towards environmental sustainability was an awakening"
+                            desc = "For The Earth Foundation founder, seeing thousands of students outside his office window taking to the streets of Geneva, Switzerland, to protest the lack of progress towards environmental sustainability was an awakening."
                             lean = "left" />
                         <br />
                         <PointBlurp
                             image = "/images/about/slide2.jpg"
-                            title = "Goals & Passion"
-                            desc = "The Earth Foundation was founded with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it"
+                            title = "Vision and Mission"
+                            desc = "The Earth Foundation was founded with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it."
                             lean = "right" />
                         <br />
                         <PointBlurp
                             image = "/images/about/slide3.jpg"
-                            title = "The Youth Are Key"
-                            desc = "The Earth Foundation will take this enthused youth and inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation"
+                            title = "Empowering the youth"
+                            desc = "The Earth Foundation will take this enthused youth and inspire, educate, mentor, and empower it to effect real change and hopefully, in turn, embolden the following generation."
                             lean = "left" />
                     </div>
                 </div>
@@ -64,6 +64,7 @@ const AboutUs = () => {
                         paragraph: "#FEFEFE",
                         background: "#17182D"
                     }} />
+                    <br /><br />
 
                 <PersonViewerCarousel 
                     title = "The Earth Foundation Team"

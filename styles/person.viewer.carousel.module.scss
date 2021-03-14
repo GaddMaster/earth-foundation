@@ -12,150 +12,131 @@
             flex-wrap: wrap;
             padding: 40px 40px 40px 40px;
         }
-        .title {
-            font-size: 34px;
-            font-weight: bold;
-            @media (max-width: $breakpoint) { margin: 40px; }
-            @media (min-width: $breakpoint) {
-                width: 30%;
+        .top {
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            @media (min-width: $breakpoint) { flex-direction: row; }
+            .header {
+                display: flex;
+                .label {
+                    width: 100%;
+                    @media (min-width: $breakpoint) { width: 260px; }
+                    h1 {
+                        font-size: 28px;
+                        line-height: 40px;
+                        font-weight: 900;
+                        color: #064C40;
+                        padding: 0px;
+                        text-align: center;
+                        @media (min-width: $breakpoint) { text-align: left; }
+                    }
+                }
+                .line {
+                    width: 100px;
+                    height: 1px;
+                    background: #CFAA7E;
+                    margin: 30px 0px 0px 0px;
+
+                    @media (min-width: $breakpoint) { width: 90px; margin: 25px 10px 0px 0px; }
+                }
+                padding: 0px 0px 0px 0px;
                 margin: 0px 0px 40px 0px;
+                @media (max-width: $breakpoint) { flex-direction: column; }
+                @media (min-width: $breakpoint) { width: 50%; }
+            }
+            .summary {
+                color: #1C192B;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 28px;
+                @media (min-width: $breakpoint) {
+                    width: calc(50% - 30px);
+                    padding: 10px 0px 0px 0px;
+                }
+
+                .header {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 0 0 10px;
+                    width: 100%;
+                }
+                .position {
+                    font-size: 17px;
+                    margin: 0 0 20px;
+                }
+                .paragraph {
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin: 0px 0px 20px 0px;
+                }
             }
         }
         .avatars {
-            .list{ overflow: visible; }
+            display: grid;
+            grid-template-columns: 150px 90px 90px 90px 90px;
+            justify-content: space-between;
+            width: 100%;
+            margin: 100px 0 50px;
+
             @media (max-width: $breakpoint) {
-                width: calc(100% - 40px);
-                margin: 0px 0px 20px 40px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0 0 50px;
             }
-            @media (min-width: $breakpoint) {
-                width: 70%;
-                margin: 0px 0px 0px 0px;
-            }
+
             .avatar {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                @media (max-width: $breakpoint) { margin: 0px 20px 0px 0px; }
+                position: relative;
+
+                @media (min-width: $breakpoint) {
+                    &:nth-child(1) {
+                        top: -130px;
+
+                        .button {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        top: -50px;
+                    }
+
+                    &:nth-child(3) {
+                        top: -15px;
+                    }
+                }
+
+                @media (max-width: $breakpoint) {
+                    width: 33%;
+                    margin-bottom: 30px;
+                }
                 .button {
-                    width: 80px;
-                    height: 80px;
-                    padding: 10px;
+                    width: 90px;
+                    height: 90px;
                     border-radius: 50%;
-                    border: 2px solid transparent;
                     margin: 0px 0px 10px 0px;
+                    filter: grayscale(1);
                     img {
                         border-radius: 50%;
-                        min-width: 60px;
-                        min-height: 60px;
-                        width: 60px;
-                        height: 60px;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
                 .name {
-                    color: #16172C;
-                    font-size: 8px;
-                    max-width: 80px;
                     text-align: center;
-                    height: 30px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    width: 65%;
                 }
                 .true {
-                    border: 2px solid $blue;
-                    font-weight: bold;
-                }
-            }
-        }
-        .block {
-            @media (min-width: $breakpoint) {
-                display: flex;
-            }
-            .details {
-                padding: 40px 40px 40px 40px;
-                @media (max-width: $breakpoint) { margin: 0px 0px 0px 40px; }
-                @media (min-width: $breakpoint) {
-                    flex-grow: 1;
-                    padding: 40px 180px 40px 40px;
-                }
-                .header {
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-                .position { font-size: 14px; }
-                .break {
-                    height: 1px;
-                    width: 100px;
-                    background: rgba(255, 255, 255, 0.5);
-                    margin: 10px 0px 10px 0px;
-                }
-                .paragraph { 
-                    font-size: 14px;
-                    margin: 0px 0px 20px 0px;
-                }
-            }
-            .portrait {
-                display: flex;
-                position: relative;
-                @media (max-width: $breakpoint) {
-                    padding: 0px 40px 0px 40px;
-                    margin: 0px 0px 0px 40px;
-                }
-                @media (min-width: $breakpoint) {
-                    min-width: 200px;
-                    width: 200px;
-                    align-items: center;
-                }
-                .image {
-                    flex-grow: 1;
-                    z-index: 1;
-                    @media (min-width: $breakpoint) {}
-                }
-                .buttons {
-                    width: 60px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    float: left;
-                    margin: 0px 0px 0px 20px;
-                    z-index: 1;
-                    .button {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 3px;
-                        border: 1px solid #ceaa7a7d;
-                        svg {
-                            width: 12px;
-                            height: 12px;
-                            color: #ceaa7a7d;
-                        }
-                    }
-                    .first { margin: 0px 0px 10px 0px; }
-                    @media (min-width: $breakpoint) { display: none; }
-                }
-                .blue {
-                    position: absolute;
-                    top: 0px;
-                    left: 0px;
-                    width: 100%;
-                    height: 50%;
-                    background: $blue;
-                    @media (min-width: $breakpoint) {
-                        width: 50%;
-                        height: 100%;
-                    }
-                }
-                .white {
-                    position: absolute;
-                    top: 50%;
-                    left: 0px;
-                    width: 100%;
-                    height: 50%;
-                    background: white;
-                    @media (min-width: $breakpoint) {
-                        top: 0px;
-                        left: 50%;
-                        width: 50%;
-                        height: 100%;
-                    }
+                    filter: grayscale(0);
                 }
             }
         }

@@ -3,17 +3,13 @@ import {motion} from "framer-motion";
 import Layout from "components/Layout";
 import styles from "../styles/incubator.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowRight, faLongArrowAltRight, faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
-import InputBase from "@material-ui/core/InputBase";
-import ButtonBase from "@material-ui/core/ButtonBase";
-import http from "utils/http";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
 import { useMediaQuery } from 'react-responsive';
 import Subscribe from 'components/Subscribe';
 
 const Incubator = () => {
-    let [email, onEmail] = useState("");
     const isMobile = useMediaQuery({
         query: `(max-width: 600px)`,
     });
@@ -21,13 +17,7 @@ const Incubator = () => {
     const [isPoint2Opened, openPoint2] = useState(!isMobile);
     const [isPoint3Opened, openPoint3] = useState(!isMobile);
     const [isPoint4Opened, openPoint4] = useState(!isMobile);
-    const [isPoint5Opened, openPoint5] = useState(!isMobile);
-    const onChange = () => e => onEmail(e.target.value);
-    const onSubscribe = () => {
-        http.request("PUT", "/api/subscribe", { email });
-        onEmail("");
-        alert("Subscribed");
-    };
+
     return (
         <motion.div
             initial = {{ opacity: 0 }}
@@ -64,8 +54,9 @@ const Incubator = () => {
                             <div className = {styles.point}>
                                 <div className = {styles.block} onClick={() => isMobile && openPoint1(!isPoint1Opened)}>
                                     <div className = {styles.circle}>
+                                        {isMobile && <span>{isPoint1Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>1.Launch <FontAwesomeIcon icon = {faArrowRight} /></span>
+                                            <span>1.Launch</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
@@ -81,8 +72,9 @@ const Incubator = () => {
                             <div className = {styles.point}>
                                 <div className = {styles.block} onClick={() => isMobile && openPoint2(!isPoint2Opened)}>
                                     <div className = {styles.circle}>
+                                        {isMobile && <span>{isPoint2Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>2.Evaluation <FontAwesomeIcon icon = {faArrowRight} /></span>
+                                            <span>2.Evaluation</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
@@ -98,8 +90,9 @@ const Incubator = () => {
                             <div className = {styles.point}>
                                 <div className = {styles.block} onClick={() => isMobile && openPoint3(!isPoint3Opened)}>
                                     <div className = {styles.circle}>
+                                        {isMobile && <span>{isPoint3Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>3.Awards <FontAwesomeIcon icon = {faArrowRight} /></span>
+                                            <span>3.Awards</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
@@ -115,8 +108,9 @@ const Incubator = () => {
                             <div className = {styles.point}>
                                 <div className = {styles.block} onClick={() => isMobile && openPoint4(!isPoint4Opened)}>
                                     <div className = {styles.circle}>
+                                        {isMobile && <span>{isPoint4Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>4.Alumni Association <FontAwesomeIcon icon = {faArrowRight} /></span>
+                                            <span>4.Alumni Association</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
