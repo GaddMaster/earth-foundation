@@ -7,9 +7,11 @@
     justify-content: flex-start;
     flex-direction: column;
     padding: 0px 40px 0px 80px;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 0px 0px;
     position: relative;
-    @media (min-width: $breakpoint) { padding: 0px 40px 0px 120px; }
+    min-height: 87px;
+    @media (min-width: $breakpoint) { padding: 0px 40px 0px 120px;         margin: 0px 0px 40px 0px;
+    }
     .image {
         position: absolute;
         width: 300px;
@@ -94,6 +96,8 @@
         font-size: 14px;
         max-width: 650px;
         z-index: 10;
-        @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px; }
+        margin-bottom: 40px;
+        @media (min-width: $breakpoint) { padding: 0px 0px 0px 40px;             margin-bottom: 0px;
+        }
     }
 }

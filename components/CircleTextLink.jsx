@@ -37,10 +37,12 @@ const CircleTextLink = props => {
                     );
                 })}
             </div>
-            <div className = {styles.link}>
+            <button disabled={props.disabled} className = {styles.link}>
                 <span>{link}</span>
-                <FontAwesomeIcon icon = {faArrowRight} />
-            </div>
+                {!props.disabled && (
+                  <FontAwesomeIcon icon = {faArrowRight} />
+                )}
+            </button>
         </div>
     );
 };

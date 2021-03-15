@@ -6,11 +6,13 @@
     display: flex;
     flex-direction: column;
     padding: 0px 40px 0px 80px;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 0px 0px;
     position: relative;
+    min-height: 87px;
     @media (min-width: $breakpoint) {
         align-items: flex-end;
         padding: 0px 40px 0px 120px;
+        margin: 0px 0px 40px 0px;
     }
     .image {
         position: absolute;
@@ -108,8 +110,10 @@
         max-width: 650px;
         z-index: 10;
         padding-right: 40px;
+        margin-bottom: 40px;
         @media (min-width: $breakpoint) {
             text-align: right;
+            margin-bottom: 0px;
         }
     }
 }

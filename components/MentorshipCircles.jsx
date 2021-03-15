@@ -62,7 +62,7 @@ const MentorshipCircles = props => {
                         <div>The Earth Prize mentoring</div>
                         <div>is open to all university students</div>
                         <div>who are passionate about</div>
-                        <div>sustainability, entrepreneurship</div>
+                        <div>sustainability and entrepreneurship</div>
                         <div>and looking for an opportunity to</div>
                         <div>share their knowledge.</div>
                     </div>

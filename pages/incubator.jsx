@@ -28,8 +28,7 @@ const Incubator = () => {
                 header
                 footer
             >
-                <SlideSection height={55} name="The Earth Foundation Incubator" color="#CEAA7A" style={{ top: '700px' }} />
-                <SlideSection height={55} name="The Earth Foundation Incubator" color="#CEAA7A" />
+                <SlideSection height={30} name="The Earth Foundation Incubator" color="#CEAA7A" />
                 <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
                 <div className = {styles.container}>
                     <div className = {styles.top}>
@@ -130,7 +129,8 @@ const Incubator = () => {
                     <div className = {styles.carbon}>
                         <div className = {styles.details}>
                             <div className = {styles.apply}>
-                                <span>Apply To The Earth Foundation Incubator <FontAwesomeIcon icon = {faArrowRight} /></span>
+                                {/*<span>Apply To The Earth Foundation Incubator <FontAwesomeIcon icon = {faArrowRight} /></span>*/}
+                                <span>Launching in 2022</span>
                             </div>
                             <div className = {styles.eligible}>
                                 <span>The Earth Foundation Incubator is open to all start-ups interested in sustainability and innovation.</span>

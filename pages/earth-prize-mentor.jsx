@@ -26,8 +26,7 @@ const EarthPrizeMentor = () => {
             header
             footer
         >
-            <SlideSection height={35} name="The Earth Prize Mentors" color="#CEAA7A" style={{ top: '950px' }} />
-            <SlideSection height={90} name="The Earth Prize Mentors" color="#CEAA7A" />
+            <SlideSection height={35} name="The Earth Prize Mentors" color="#CEAA7A" />
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.container}>
 
@@ -42,8 +41,8 @@ const EarthPrizeMentor = () => {
                     }}  
                 >
                     {isMobile
-                      ? <h1>The Earth Prize Mentors</h1>
-                      : <h1>The Earth Prize<br /> Mentors</h1>
+                      ? <h1 style={{ color: '#CEAA7A' }}>The Earth Prize Mentors</h1>
+                      : <h1 style={{ color: '#CEAA7A' }}>The Earth Prize<br /> Mentors</h1>
                     }
                 </TitleDesc>
 
@@ -86,7 +85,8 @@ const EarthPrizeMentor = () => {
 
                 <CircleTextLink
                     text = "The Earth Prize Mentors"
-                    link = "Read More About it"
+                    link = "Coming soon"
+                    disabled
                     radius = {60}
                     onClick = {() => console.log("CLICKED")}
                     justify = "flex-end" />
