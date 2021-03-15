@@ -16,10 +16,10 @@ const Card = props => {
                 <div className = {styles.summary}>
                     <span>{props.summary}</span>
                 </div>
-                <div className = {styles.more}>
+              {/* <div className = {styles.more}>
                     <span>Read More</span>
                     <FontAwesomeIcon icon = {faArrowRight} />
-                </div>
+                </div> */}
             </section>
     );
 };

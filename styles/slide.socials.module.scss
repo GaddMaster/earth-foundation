@@ -3,13 +3,13 @@
 @import "./variables";
 
 .section {
-    position: absolute;
+    position: fixed;
     display: flex;
     right: 70px;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
     top: 30%;
 
     @media (max-width: $breakpoint) {

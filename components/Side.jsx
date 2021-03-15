@@ -1,6 +1,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 import styles from "../styles/side.module.scss";
 
@@ -11,13 +12,13 @@ const Side = () => (
             <span>About Us</span>
         </div>
         <div className = {styles.item}>
-            <span>The Earth Foundation</span>
+          <Link href="earth-prize">The Earth Foundation</Link>
         </div>
+      {/*<div className = {styles.item}>
+          <Link href="earth-prize">The Adjudicating Panel</Link>
+        </div>*/}
         <div className = {styles.item}>
-            <span>The Adjudicating Panel</span>
-        </div>
-        <div className = {styles.item}>
-            <span>Our Ambassadors</span>
+          <Link href="advisers">Our Advisors</Link>
         </div>
 
         <br />
@@ -26,16 +27,16 @@ const Side = () => (
             <span>Our Initiatives</span>
         </div>
         <div className = {styles.item}>
-            <span>The Earth Prize</span>
+          <Link href="earth-prize">The Earth Prize</Link>
         </div>
         <div className = {styles.item}>
-            <span>The Earth Foundation Awards</span>
+          <Link href="earth-prize-mentor">The Earth Prize Mentors</Link>
         </div>
         <div className = {styles.item}>
-            <span>The Earth Foundation Incubator Iniatives</span>
+          <Link href="awards">The Earth Foundation Awards</Link>
         </div>
         <div className = {styles.item}>
-            <span>The Earth Foundation Alumni</span>
+          <Link href="incubator">The Earth Foundation Incubator Iniatives</Link>
         </div>
 
         <br />
@@ -44,14 +45,16 @@ const Side = () => (
             <span>News</span>
         </div>
 
+      <br />
+
         <div className = {styles.title}>
             <span>Get Involved</span>
         </div>
         <div className = {styles.item}>
-            <span>Become a mentor</span>
+          <Link href="earth-prize-mentor">Become a mentor</Link>
         </div>
         <div className = {styles.item}>
-            <span>Become part of our network</span>
+          <Link href="become-part">Become part of our network</Link>
         </div>
 
         <br />

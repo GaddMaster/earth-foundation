@@ -19,7 +19,7 @@ const Welcome = () => {
             title = "Welcome to our community"
             header>
             <div className = {styles.container}>
-                <SlideSection height={50} name="Welcome" color="#FFFFFF" />
+                <SlideSection height={45} name="Welcome" color="#FFFFFF" />
                 <SlideSocials color="#FFFFFF" />
                 <div className = {styles.title}>
                     <div>Welcome to</div>

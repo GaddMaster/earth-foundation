@@ -20,7 +20,7 @@ const Advisers = () => {
           header
           footer
         >
-          <SlideSection height={70} name="The Earth Foundation Advisors" color="#CEAA7A" />
+          <SlideSection height={35} name="The Earth Foundation Advisors" color="#CEAA7A" />
           <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
           <div className = {styles.container}>
             <TitleDesc

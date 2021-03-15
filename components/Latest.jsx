@@ -65,11 +65,11 @@ class Latest extends PureComponent {
                             <div className = {styles.label}>
                                 <span>Latest News</span>
                             </div>
-                            <div className = {styles.all}>
+                            {/*<div className = {styles.all}>
                                 <span style = {{marginRight:10}}>Read All</span>
                                 <span className = {styles.news}>News</span>
                                 <FontAwesomeIcon icon = {faArrowRight} />
-                            </div>
+                            </div>*/}
                         </div>
                         <div className = {`${styles.wall} ${styles.wallA}`}></div>
                         <div className = {`${styles.wall} ${styles.wallB}`}></div>
@@ -82,7 +82,7 @@ class Latest extends PureComponent {
                             arrows = {false}
                             ssr
                             responsive = {responsive}>
-                            {content.home.boards.concat(content.home.boards).map((item, index) => (
+                            {content.home.news.map((item, index) => (
                                 <div className = {styles.wrapper} key = {index}>
                                     <Card
                                         image = {item.image}

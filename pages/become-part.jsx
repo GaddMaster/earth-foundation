@@ -19,7 +19,7 @@ const BecomePart = () => {
             title = "Welcome to our community" 
             header>
             <div className = {styles.container}>
-                <SlideSection height={40} name="Become part of out network" color="#FFFFFF" />
+                <SlideSection height={35} name="Become part of out network" color="#FFFFFF" />
                 <SlideSocials color="#FFFFFF" />
                 <div className = {styles.title}>
                     <div>Become part</div>

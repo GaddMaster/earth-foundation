@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0px 40px 20px 40px;
-    height: calc(100%);
+    padding: 160px 40px 40px 40px;
     letter-spacing: 1px;
-    overflow: hidden;
+    height: 100%;
+    min-height: 760px;
     .title {
         font-size: 26px;
         color: white;
@@ -15,8 +15,13 @@
     }
     .item {
         font-size: 14px;
-        color: rgba(255, 255, 255, 0.637);
         margin: 0px 0px 10px 0px;
+        color: rgba(255, 255, 255, 0.637) !important;
+
+        a {
+            color: rgba(255, 255, 255, 0.637) !important;
+            text-decoration: none;
+        }
     }
     .socials {
         display: flex;

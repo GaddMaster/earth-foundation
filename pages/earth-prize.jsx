@@ -26,11 +26,8 @@ const EarthPrize = () => {
             header
             footer
         >
-            <SlideSection height={65} name="The Earth Prize" color="#CEAA7A" style={{ top: '550px' }} />
-            <SlideSection height={45} name="The Earth Prize" color="#CEAA7A" style={{ top: '1650px' }} />
-            <SlideSection height={55} name="The Earth Prize" color="#CEAA7A" />
+            <SlideSection height={35} name="The Earth Prize" color="#CEAA7A" />
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
-            <SlideSocials color="#CEAA7A" style={{ top: '1220px' }} />
             <div className = {styles.container}>
                 <TitleDesc
                     paragraphs = {[
@@ -43,7 +40,7 @@ const EarthPrize = () => {
                     }}
                 >
                     {isMobile
-                      ? <h1>The Earth Prize</h1>
+                      ? <h1>The <br /> Earth Prize</h1>
                       : <h1>The Earth <br /> Prize</h1>
                     }
                 </TitleDesc>
@@ -83,7 +80,7 @@ const EarthPrize = () => {
                             <div className = {styles.desc}>
                                 <span>Registered teams will continue to work on their environmental sustainability ideas with the guidance of The Earth Prize mentors. They will then submit their Project Proposal describing their chosen solution, which could be a new idea with implementation potential or an already existing project, with local, national or global reach.</span>
                             </div>
-                            <Link href = "/earth-prize-mentor">
+                            {/*<Link href = "/earth-prize-mentor">
                                 <div className = {styles.link}>
                                     <div className = {styles.label}>
                                         <div className = {styles.line}>Find out more</div>
@@ -93,7 +90,7 @@ const EarthPrize = () => {
                                         <FontAwesomeIcon icon = {faArrowRight} />
                                     </div>
                                 </div>
-                            </Link>
+                            </Link>*/}
                         </div>
                     </div>
                     <div className = {`${styles.circle} ${styles.final}`}>
@@ -199,6 +196,7 @@ const EarthPrize = () => {
                         <CircleTextLink
                             text = "The Earth Prize Ambassadors"
                             link = "Coming soon"
+                            disabled
                             radius = {70}
                             onClick = {() => alert("Why Hello There")} />
                     </div>

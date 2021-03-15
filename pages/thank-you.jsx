@@ -14,7 +14,7 @@ const ThankYou = () => {
             header
         >
             <div className={styles.container}>
-                <SlideSection height={40} name="the Earth Foundation Awards" color="#FFFFFF" />
+                <SlideSection height={35} name="the Earth Foundation Awards" color="#FFFFFF" />
                 <SlideSocials color="#FFFFFF" />
                 <div className = {styles.title}>
                     <h1>Thank you!</h1>

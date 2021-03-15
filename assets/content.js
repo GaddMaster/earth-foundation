@@ -1,7 +1,7 @@
 
 const home = {
     cover: {
-        image: "/images/space.jpg",
+        image: "linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)), url(\"/images/space.jpg\")",
         title: "The Earth",
         title_2: " Foundation",
         sub: "Inspire. Educate. Mentor. Empower.",
@@ -9,16 +9,12 @@ const home = {
             "The Earth Foundation aims to distribute $1 million annually to students, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
             "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
         ],
-        section: "Discover More",
-        section_height: 30,
-        section_color: "#FFFFFF",
-        socials_color: "#FFFFFF"
     },
     boards: [
         {
             image : "/images/annie-spratt-Tno1Zd3T6yY-unsplash.webp",
             label: "The Earth Prize",
-            summary: "A $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19 years",
+            summary: "A $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19 years.",
             links: [
                 {
                     label: "Read More",
@@ -42,7 +38,7 @@ const home = {
             image : "/images/geran-de-klerk-qzgN45hseN0-unsplash.webp",
             label: "The Earth ",
             label_2: "Foundation Awards",
-            summary: "$300,000 in research grants and scholarships for university students and researchers​",
+            summary: "$300,000 in research grants and scholarships for university students and researchers.",
             links: [
                 {
                     label: "Read more about the initiative",
@@ -60,7 +56,7 @@ const home = {
             image : "/images/magnezis-magnestic-TW62wXQ6Omc-unsplash.webp",
             label: "The Earth ",
             label_2: "Foundation Incubator",
-            summary: "$500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide",
+            summary: "$500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide.",
             links: [
                 {
                     label: "Read more about the initiative",
@@ -79,12 +75,12 @@ const home = {
             label: "The Earth ",
             label_2: "Foundation ",
             label_3: "Alumni Association",
-            summary: "A networking platform that connects our participants, mentors, partners, and ambassadors",
+            summary: "A networking platform that connects our participants, mentors, partners, and ambassadors.",
             links: [
-                {
-                    label: "Read more about the initiative",
-                    link: "/incubator"
-                }
+                // {
+                //     label: "Read more about the initiative",
+                //     link: "/incubator"
+                // }
             ],
             path: "/",
             section: "The Earth Foundation Has Four Initiatives",
@@ -93,12 +89,19 @@ const home = {
             socials_color: "#CEAA7A",
             background: "#02304F"
         }
+    ],
+    news: [
+        {
+            image: "/images/logotype.png",
+            label: "The Earth Prize",
+            summary: "The Earth Foundation will launch April 19th, 2021.",
+        },
     ]
 };
 
 const about = {
     cover: {
-        image: "/images/jeremy-bishop-dR_q93lfaTw-unsplash.jpg",
+        image: "url(/images/jeremy-bishop-dR_q93lfaTw-unsplash.jpg)",
         title: "The Earth",
         title_2: " Foundation",
         title_3: " Background",
