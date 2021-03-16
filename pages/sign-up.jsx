@@ -12,8 +12,30 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "styles/become.part.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
+import {useEffect, useState} from 'react';
+import http from 'utils/http';
+import {useRouter} from 'next/router';
 
-const BecomePart = () => {
+const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+const SignUp = () => {
+    const router = useRouter();
+    let [email, onEmail] = useState("");
+    let [isDisabled, disable] = useState(true);
+    const onChange = () => e => onEmail(e.target.value);
+    const onSubscribe = () => {
+        http.request("PUT", "/api/subscribe", { email });
+        onEmail("");
+        router.push('/welcome');
+    };
+    useEffect(() => {
+        if (regExp.test(email)) {
+            disable(false);
+        } else {
+            disable(true);
+        }
+    }, [email]);
+
     return (
         <Layout 
             title = "Welcome to our community" 
@@ -23,7 +45,7 @@ const BecomePart = () => {
                 <SlideSocials color="#FFFFFF" />
                 <div className = {styles.title}>
                     <div>Become part</div>
-                    <div>of out network</div>
+                    <div>of our network</div>
                 </div>
                 <div className = {styles.divider}></div>
                 <div className = {styles.sub}>
@@ -37,10 +59,13 @@ const BecomePart = () => {
                         className = {styles.input}
                         name = "email"
                         type = "text"
+                        value = {email}
+                        onChange = {onChange()}
                         placeholder = "Your Email Here" />
                     <ButtonBase 
-                        className = {styles.button} 
-                        onClick = {() => {}}>
+                        className = {styles.button}
+                        disabled = {isDisabled}
+                        onClick = {onSubscribe}>
                         <span>join us</span>
                     </ButtonBase>
                 </div>
@@ -55,4 +80,4 @@ const BecomePart = () => {
     );
 };
 
-export default BecomePart;
+export default SignUp;

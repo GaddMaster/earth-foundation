@@ -23,7 +23,7 @@ const home = {
                 },
                 {
                     label: "Find out about The Earth Prize Mentors",
-                    link: "/earth-prize-mentor",
+                    link: "/mentors",
                     color: "#CEAA7A"
                 }
             ],
@@ -159,48 +159,66 @@ const about = {
         {
             avatar: "/images/angela/avatar.jpg",
             image: "/images/angela/portrait.jpg",
-            name: "Angela Beany",
-            position: "Landlord & Prime Creator",
+            name: "Rina Kupferschmid-Rojas",
+            position: "Head of the Adjudicating Panel",
             paragraphs: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia enim turpis, et posuere justo vehicula nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum facilisis egestas. Nunc convallis, justo eget elementum scelerisque, eros ipsum dapibus turpis, nec aliquam est tortor sit amet felis"
             ]
         },
         {
-            avatar: "/images/bjane/avatar.jpg",
-            image: "/images/bjane/portrait.jpg",
-            name: "Bjane Bonkers",
-            position: "Driller Of Ice & Steal",
+            avatar: "/images/angela/avatar.jpg",
+            image: "/images/angela/portrait.jpg",
+            name: "Karen Wilson",
+            position: "Member of the Panel",
             paragraphs: [
-                "Nam malesuada nibh ex, vitae interdum mauris sagittis sit amet. Vivamus congue semper ipsum id auctor. Nulla a dictum nisl. Nulla id nibh et neque lacinia laoreet. Etiam scelerisque leo quis porta semper. Phasellus iaculis porta libero eget porttitor. Cras consectetur sapien sit amet elit convallis aliquet"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia enim turpis, et posuere justo vehicula nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum facilisis egestas. Nunc convallis, justo eget elementum scelerisque, eros ipsum dapibus turpis, nec aliquam est tortor sit amet felis"
             ]
         },
-        {
-            avatar: "/images/genio/avatar.jpg",
-            image: "/images/genio/portrait.jpg",
-            name: "Genio Marrious",
-            position: "Director & Creator",
-            paragraphs: [
-                "Pellentesque sed placerat est, at mollis nunc. Sed aliquet nunc fringilla, venenatis dolor non, varius purus. Vestibulum in dapibus elit, quis laoreet purus. Vivamus pretium risus eu nulla laoreet convallis. Nunc interdum ipsum dignissim orci dictum, a tristique justo rutrum. Cras euismod sollicitudin urna vel tempor"
-            ]
-        },
-        {
-            avatar: "/images/fredrik/avatar.jpg",
-            image: "/images/fredrik/portrait.jpg",
-            name: "Fredrik Henry",
-            position: "Ship Master & Explorer",
-            paragraphs: [
-                "Nam malesuada nibh ex, vitae interdum mauris sagittis sit amet. Vivamus congue semper ipsum id auctor. Nulla a dictum nisl. Nulla id nibh et neque lacinia laoreet. Etiam scelerisque leo quis porta semper. Phasellus iaculis porta libero eget porttitor. Cras consectetur sapien sit amet elit convallis aliquet"
-            ]
-        },
-        {
-            avatar: "/images/julie/avatar.jpg",
-            image: "/images/julie/portrait.jpg",
-            name: "Julie Maude Rufino",
-            position: "Management & Research",
-            paragraphs: [
-                "Pellentesque sed placerat est, at mollis nunc. Sed aliquet nunc fringilla, venenatis dolor non, varius purus. Vestibulum in dapibus elit, quis laoreet purus. Vivamus pretium risus eu nulla laoreet convallis. Nunc interdum ipsum dignissim orci dictum, a tristique justo rutrum. Cras euismod sollicitudin urna vel tempor"
-            ]
-        }
+        // {
+        //     avatar: "/images/angela/avatar.jpg",
+        //     image: "/images/angela/portrait.jpg",
+        //     name: "Angela Beany",
+        //     position: "Landlord & Prime Creator",
+        //     paragraphs: [
+        //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia enim turpis, et posuere justo vehicula nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum facilisis egestas. Nunc convallis, justo eget elementum scelerisque, eros ipsum dapibus turpis, nec aliquam est tortor sit amet felis"
+        //     ]
+        // },
+        // {
+        //     avatar: "/images/bjane/avatar.jpg",
+        //     image: "/images/bjane/portrait.jpg",
+        //     name: "Bjane Bonkers",
+        //     position: "Driller Of Ice & Steal",
+        //     paragraphs: [
+        //         "Nam malesuada nibh ex, vitae interdum mauris sagittis sit amet. Vivamus congue semper ipsum id auctor. Nulla a dictum nisl. Nulla id nibh et neque lacinia laoreet. Etiam scelerisque leo quis porta semper. Phasellus iaculis porta libero eget porttitor. Cras consectetur sapien sit amet elit convallis aliquet"
+        //     ]
+        // },
+        // {
+        //     avatar: "/images/genio/avatar.jpg",
+        //     image: "/images/genio/portrait.jpg",
+        //     name: "Genio Marrious",
+        //     position: "Director & Creator",
+        //     paragraphs: [
+        //         "Pellentesque sed placerat est, at mollis nunc. Sed aliquet nunc fringilla, venenatis dolor non, varius purus. Vestibulum in dapibus elit, quis laoreet purus. Vivamus pretium risus eu nulla laoreet convallis. Nunc interdum ipsum dignissim orci dictum, a tristique justo rutrum. Cras euismod sollicitudin urna vel tempor"
+        //     ]
+        // },
+        // {
+        //     avatar: "/images/fredrik/avatar.jpg",
+        //     image: "/images/fredrik/portrait.jpg",
+        //     name: "Fredrik Henry",
+        //     position: "Ship Master & Explorer",
+        //     paragraphs: [
+        //         "Nam malesuada nibh ex, vitae interdum mauris sagittis sit amet. Vivamus congue semper ipsum id auctor. Nulla a dictum nisl. Nulla id nibh et neque lacinia laoreet. Etiam scelerisque leo quis porta semper. Phasellus iaculis porta libero eget porttitor. Cras consectetur sapien sit amet elit convallis aliquet"
+        //     ]
+        // },
+        // {
+        //     avatar: "/images/julie/avatar.jpg",
+        //     image: "/images/julie/portrait.jpg",
+        //     name: "Julie Maude Rufino",
+        //     position: "Management & Research",
+        //     paragraphs: [
+        //         "Pellentesque sed placerat est, at mollis nunc. Sed aliquet nunc fringilla, venenatis dolor non, varius purus. Vestibulum in dapibus elit, quis laoreet purus. Vivamus pretium risus eu nulla laoreet convallis. Nunc interdum ipsum dignissim orci dictum, a tristique justo rutrum. Cras euismod sollicitudin urna vel tempor"
+        //     ]
+        // }
     ]
 };
 

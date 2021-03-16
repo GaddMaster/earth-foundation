@@ -14,7 +14,7 @@ const ThankYou = () => {
             header
         >
             <div className={styles.container}>
-                <SlideSection height={35} name="the Earth Foundation Awards" color="#FFFFFF" />
+                <SlideSection height={20} name="the Earth Foundation Awards" color="#FFFFFF" />
                 <SlideSocials color="#FFFFFF" />
                 <div className = {styles.title}>
                     <h1>Thank you!</h1>
@@ -24,7 +24,7 @@ const ThankYou = () => {
                     <span>Thank you for your interest in The Earth Foundation Awards.</span>
                 </div>
                 <div className={styles.description}>
-                    <span> The application will open in June 2021. Sign up below to receive a reminder so you do not miss the deadline.</span>
+                    <span> The application will open in Fall 2021. Sign up below to receive a reminder so you do not miss the deadline.</span>
                 </div>
                 <div className={styles.buttonArea}>
                     <ButtonBase

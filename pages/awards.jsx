@@ -36,7 +36,7 @@ const Awards = props => {
                 title = "The Earth Foundation Awards"
                 header
                 footer>
-                <SlideSection height={35} name="The Earth Foundation Awards" color="#CEAA7A" />
+                <SlideSection height={25} name="The Earth Foundation Awards" color="#CEAA7A" />
                 <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
                 <div className = {styles.container}>
                     <div className = {styles.top}>
@@ -161,7 +161,7 @@ const Awards = props => {
                     </div>
                     <div className = {styles.become}>
                         <div className = {styles.header}>
-                            <span>Become part of the network</span>
+                            <span>Become part of our network</span>
                         </div>
                         <div className = {styles.text}>
                             <span>By joining The Earth Foundation Alumni Association, you will be part of an inspiring network that connects mentors, partners and participants. The Alumni Association will strengthen ties among its members, offering them support through access to educational content, mentorship, social events, and professional opportunities.</span>

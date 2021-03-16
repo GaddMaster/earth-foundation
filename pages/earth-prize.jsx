@@ -80,7 +80,7 @@ const EarthPrize = () => {
                             <div className = {styles.desc}>
                                 <span>Registered teams will continue to work on their environmental sustainability ideas with the guidance of The Earth Prize mentors. They will then submit their Project Proposal describing their chosen solution, which could be a new idea with implementation potential or an already existing project, with local, national or global reach.</span>
                             </div>
-                            {/*<Link href = "/earth-prize-mentor">
+                            {/*<Link href = "/mentors">
                                 <div className = {styles.link}>
                                     <div className = {styles.label}>
                                         <div className = {styles.line}>Find out more</div>

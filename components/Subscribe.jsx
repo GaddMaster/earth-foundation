@@ -8,17 +8,19 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import http from "utils/http";
 
 import styles from "styles/subscribe.module.scss";
+import {useRouter} from 'next/router';
 
 const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const Subscribe = props => {
+    const router = useRouter();
     let [email, onEmail] = useState("");
     let [isDisabled, disable] = useState(true);
     const onChange = () => e => onEmail(e.target.value);
     const onSubscribe = () => {
         http.request("PUT", "/api/subscribe", { email });
         onEmail("");
-        alert("Subscribed");
+        router.push('/welcome');
     };
     useEffect(() => {
         if (regExp.test(email)) {

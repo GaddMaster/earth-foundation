@@ -15,7 +15,7 @@ import SlideSocials from 'components/SlideSocials';
 import React, {useState} from 'react';
 import {useMediaQuery} from 'react-responsive';
 
-const EarthPrizeMentor = () => {
+const Mentors = () => {
     const isMobile = useMediaQuery({
         query: `(max-width: 600px)`,
     });
@@ -101,7 +101,7 @@ const EarthPrizeMentor = () => {
                                 <div className = {styles.line}>Become</div>
                                 <div className = {styles.line}>A Mentor</div>
                             </div>
-                            <FontAwesomeIcon icon = {faArrowRight} />
+                            {/*<FontAwesomeIcon icon = {faArrowRight} />*/}
                         </div>
                         <div className = {styles.desc}>
                             <span>The Earth Foundation will select a limited number of mentors with different areas of expertise from all over the world.</span>
@@ -121,4 +121,4 @@ const EarthPrizeMentor = () => {
     );
 };
 
-export default EarthPrizeMentor;
+export default Mentors;
