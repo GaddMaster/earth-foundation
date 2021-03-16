@@ -74,10 +74,11 @@
         }
         .avatars {
             display: grid;
-            grid-template-columns: 150px 90px 90px 90px 90px;
-            justify-content: space-between;
+            grid-template-columns: 150px 150px;
+            justify-content: center;
             width: 100%;
-            margin: 100px 0 50px;
+            margin: 30px 0 50px;
+            min-height: 160px;
 
             @media (max-width: $breakpoint) {
                 display: flex;
@@ -94,24 +95,24 @@
                 justify-content: center;
                 position: relative;
 
-                @media (min-width: $breakpoint) {
-                    &:nth-child(1) {
-                        top: -130px;
-
-                        .button {
-                            width: 150px;
-                            height: 150px;
-                        }
-                    }
-
-                    &:nth-child(2) {
-                        top: -50px;
-                    }
-
-                    &:nth-child(3) {
-                        top: -15px;
-                    }
-                }
+                //@media (min-width: $breakpoint) {
+                //    &:nth-child(1) {
+                //        top: -130px;
+                //
+                //        .button {
+                //            width: 150px;
+                //            height: 150px;
+                //        }
+                //    }
+                //
+                //    &:nth-child(2) {
+                //        top: -50px;
+                //    }
+                //
+                //    &:nth-child(3) {
+                //        top: -15px;
+                //    }
+                //}
 
                 @media (max-width: $breakpoint) {
                     width: 33%;
@@ -123,6 +124,8 @@
                     border-radius: 50%;
                     margin: 0px 0px 10px 0px;
                     filter: grayscale(1);
+                    transition: all 0.2s;
+
                     img {
                         border-radius: 50%;
                         width: 100%;
@@ -137,6 +140,8 @@
                 }
                 .true {
                     filter: grayscale(0);
+                    width: 150px;
+                    height: 150px;
                 }
             }
         }

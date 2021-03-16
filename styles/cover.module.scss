@@ -19,14 +19,15 @@
     padding: 0px 40px 40px 40px;
     margin: 0px 0px 0px 0px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 1;
     @media (min-width: $breakpoint) {
-        padding: 0px 20% 0 20%;
+        padding: 0px 10% 0 10%;
         align-items: flex-start;
         min-height: 750px;
         margin: 0px 0px 0px 0px;
         justify-content: flex-start;
         background-position: left bottom;
+        z-index: 2;
     }
     .wrapper {
         flex-grow: 1;

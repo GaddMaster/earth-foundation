@@ -12,7 +12,7 @@ import styles from "styles/about.module.scss";
 
 import content from "assets/content";
 
-const AboutUs = () => {
+const About = () => {
     return (
         <motion.div
             initial = {{ opacity: 0 }}
@@ -92,7 +92,7 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default About;
 
 {/* <div className = {styles.boards}>
 

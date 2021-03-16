@@ -41,7 +41,7 @@ const Header = (props) => {
       },
       {
         name: "The Earth Prize Mentors",
-        route: "earth-prize-mentor",
+        route: "mentors",
       },
       {
         name: "The Earth Foundation Awards",
@@ -58,11 +58,11 @@ const Header = (props) => {
     subItems: [
       {
         name: "Become part of our network",
-        route: "become-part",
+        route: "sign-up",
       },
       {
         name: "Become an Earth Prize Mentor",
-        route: "earth-prize-mentor",
+        route: "mentors",
       },
     ],
   };
@@ -71,11 +71,11 @@ const Header = (props) => {
     subItems: [
       {
         name: "The Earth Foundation",
-        route: "about-us",
+        route: "about",
       },
       // {
       //   name: "The Adjudicating Panel",
-      //   route: "about-us",
+      //   route: "about",
       // },
       {
         name: "Our Advisors",
@@ -93,7 +93,7 @@ const Header = (props) => {
         </div>
         <nav className={styles.nav}>
           <div className={styles.dropdown}>
-            {/* <Link href="/about-us">
+            {/* <Link href="/about">
               <span>About Us</span>
             </Link> */}
             <CustomizedMenus item={AboutUsMenu} />
@@ -102,9 +102,9 @@ const Header = (props) => {
             {/* <span>Our Initiatives</span> */}
             <CustomizedMenus item={InitiativesMenu} />
           </div>
-          <div className={styles.dropdown}>
+          {/*<div className={styles.dropdown}>
             <span>News</span>
-          </div>
+          </div>*/}
           <div className={styles.dropdown}>
             {/* <span>Get Involved</span> */}
             <CustomizedMenus item={GetInvolvedMenu} />
