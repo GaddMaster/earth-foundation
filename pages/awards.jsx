@@ -36,7 +36,7 @@ const Awards = props => {
                 title = "The Earth Foundation Awards"
                 header
                 footer>
-                <SlideSection height={25} name="The Earth Foundation Awards" color="#CEAA7A" />
+                <SlideSection height={21} name="The Earth Foundation Awards" color="#CEAA7A" />
                 <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
                 <div className = {styles.container}>
                     <div className = {styles.top}>
@@ -169,7 +169,7 @@ const Awards = props => {
                     </div>
                     <PersonViewer 
                         title = "The Adjudicating Panel"
-                        items = {content.about.team}
+                        items = {content.awards.team}
                         theme = {{
                             title : "#CFAB79",
                             header : "#FDFEFE",

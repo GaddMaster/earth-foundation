@@ -6,8 +6,32 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
+import {useEffect, useState} from 'react';
+import http from 'utils/http';
+import InputBase from '@material-ui/core/InputBase';
+import {useRouter} from 'next/router';
+
+const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const ThankYou = () => {
+    const router = useRouter();
+    let [email, onEmail] = useState("");
+    let [emailSubmitted, setEmailSubmitted] = useState(false);
+    let [isDisabled, disable] = useState(true);
+    const onChange = () => e => onEmail(e.target.value);
+    const onSubscribe = () => {
+        http.request("PUT", "/api/subscribe/awards-reminder", { email });
+        onEmail("");
+        setEmailSubmitted(true);
+    };
+    useEffect(() => {
+        if (regExp.test(email)) {
+            disable(false);
+        } else {
+            disable(true);
+        }
+    }, [email]);
+
     return (
         <Layout
             title = "Welcome to our community"
@@ -26,18 +50,26 @@ const ThankYou = () => {
                 <div className={styles.description}>
                     <span> The application will open in Fall 2021. Sign up below to receive a reminder so you do not miss the deadline.</span>
                 </div>
-                <div className={styles.buttonArea}>
-                    <ButtonBase
-                        className = {styles.buttonEmail}
-                        onClick = {()=>{}}>
-                        <span>your email here</span>
-                    </ButtonBase>
-                    <ButtonBase
-                        className = {styles.buttonSubmit}
-                        onClick = {()=>{}}>
-                        <span>Submit</span>
-                    </ButtonBase>
-                </div>
+                {emailSubmitted
+                    ? (
+                    <p className = {styles.success}>You have successfully signed-up for our reminder.</p>
+                  )
+                    : (
+                    <div className={styles.buttonArea}>
+                        <InputBase
+                          placeholder = "Your Email Here"
+                          className = {styles.input}
+                          value = {email}
+                          onChange = {onChange()} />
+                        <ButtonBase
+                          className = {styles.buttonSubmit}
+                          disabled = {isDisabled}
+                          onClick = {onSubscribe}>
+                            <span>Submit</span>
+                        </ButtonBase>
+                    </div>
+                  )
+                }
                 <Link href = "/">
                     <div className={styles.back}>
                         <span>back to home page</span>

@@ -6,13 +6,22 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import styles from "../styles/person.viewer.carousel.module.scss";
 import "react-multi-carousel/lib/styles.css";
 import {useMediaQuery} from 'react-responsive';
+import PersonModal from 'components/PersonModal';
 
 const PersonViewerCarousel = props => {
     let [index, onIndex] = useState(0);
+    let [isModalOpened, openModal] = useState(false);
     const isMobile = useMediaQuery({
         query: `(max-width: 600px)`,
     });
     let active = props.items[index];
+
+    const handleOnPersonClick = index => {
+        onIndex(index);
+        if (isMobile && !isModalOpened) {
+            openModal(true);
+        }
+    }
     return (
         <div className = {styles.container}>
             <div className = {styles.spacing}>
@@ -23,7 +32,19 @@ const PersonViewerCarousel = props => {
                         </div>
                         {!isMobile && <div className = {styles.line} />}
                     </div>
-                    {!isMobile && (
+                    {isMobile
+                      ? (
+                        <>
+                            {isModalOpened && (
+                              <PersonModal
+                                person={active}
+                                onCloseClick={() => openModal(false)}
+                                onNextClick={() => onIndex(index === props.items.length - 1 ? 0 : index + 1)}
+                                onBackClick={() => onIndex(index === 0 ? props.items.length - 1 : index - 1)}
+                              />
+                            )}
+                        </>
+                      ) : (
                         <div className = {styles.summary}>
                             <div className = {styles.header}>
                                 <span>{active.name}</span>
@@ -40,14 +61,15 @@ const PersonViewerCarousel = props => {
                               </div>
                             ))}
                         </div>
-                    )}
+                     )
+                    }
                 </div>
                 <div className = {styles.avatars}>
                     {props.items.map((person, i) => (
                       <div className = {styles.avatar} key = {i}>
                           <ButtonBase
-                            className = {`${styles.button} ${index === i ? styles.true : ""}`}
-                            onClick = {onIndex.bind(this, i)}
+                            className = {`${styles.button} ${(index === i && !isMobile) ? styles.true : ""}`}
+                            onClick = {isMobile ? () => handleOnPersonClick(i) : onIndex.bind(this, i)}
                             key = {i}>
                               <img src = {person.avatar} />
                           </ButtonBase>

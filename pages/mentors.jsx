@@ -7,6 +7,7 @@ import PointBlurp from "components/PointBlurp";
 import CircleTextLink from "components/CircleTextLink";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "styles/earth.prize.mentor.module.scss";
@@ -32,7 +33,7 @@ const Mentors = () => {
 
                 <TitleDesc
                     paragraphs = {[
-                        "Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19 years.",
+                        "Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19.",
                         "Mentors will contribute to the development of students’ innovative project proposals by offering them guidance on their ideas and answering their questions. Mentors who will have demonstrated the highest levels of engagement will be given the chance to work individually with one of the ten The Earth Prize Finalists."
                     ]}
                     color = {{
@@ -94,14 +95,16 @@ const Mentors = () => {
                 <br />
 
                 <div className = {styles.become}>
-                    <div className = {styles.image}></div>
+                    <div className = {styles.image} />
                     <div className = {styles.details}>
                         <div className = {styles.link}>
-                            <div className = {styles.label}>
-                                <div className = {styles.line}>Become</div>
-                                <div className = {styles.line}>A Mentor</div>
-                            </div>
-                            {/*<FontAwesomeIcon icon = {faArrowRight} />*/}
+                            <Link href="https://theearthfoundation.typeform.com/to/trELQBzU">
+                                  <div className = {styles.label}>
+                                    <div className = {styles.line}>Become</div>
+                                    <div className = {styles.line}>A Mentor</div>
+                                  </div>
+                            </Link>
+                            <FontAwesomeIcon icon = {faArrowRight} />
                         </div>
                         <div className = {styles.desc}>
                             <span>The Earth Foundation will select a limited number of mentors with different areas of expertise from all over the world.</span>
