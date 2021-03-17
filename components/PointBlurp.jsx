@@ -14,7 +14,7 @@ const PointBlurp = props => {
   const [isPointOpened, openPoint] = useState(!isMobile);
     let styles = props.lean === "left" ? left : right;
     return (
-        <div className = {styles.container} onClick={() => isMobile && openPoint(!isPointOpened)}>
+        <div className = {styles.container} onClick={() => isMobile && !props.isAlwaysOpened && openPoint(!isPointOpened)}>
             {props.image &&
                 <div className = {styles.image}>
                     <img src = {props.image} />
@@ -25,10 +25,10 @@ const PointBlurp = props => {
                 <div className = {styles.dot}></div>
             </div>
           <div className = {styles.title}>
-            {isMobile && <span>{isPointOpened ? '-' : '+'}</span>}
+            {isMobile && !props.isAlwaysOpened && <span>{isPointOpened ? '-' : '+'}</span>}
             <span>{props.title}</span>
             </div>
-            {isPointOpened && (
+            {(isPointOpened || props.isAlwaysOpened) && (
               <div className = {styles.desc}>
                 <span>{props.desc}</span>
               </div>

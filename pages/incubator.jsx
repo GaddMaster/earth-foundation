@@ -40,9 +40,9 @@ const Incubator = () => {
                         </div>
                         <div className = {styles.summary}>
                             <span>
-                                The Earth Foundation Incubator aim to seed-fund promising start-ups
+                                The Earth Foundation Incubator aims to seed-fund promising start-ups
                                 whose work or idea has the potential to accelerate positive change towards environmental sustainability. Every year, a total of $500,000
-                                will be distributed to projects proposing innovative and disruptive solutions. All participation start-ups will become part of the The Earth Foundation's
+                                will be distributed to projects proposing innovative and disruptive solutions. All participating start-ups will become part of the The Earth Foundation's
                                 special ecosystem and supported along their development path.
                             </span>
                         </div>
@@ -117,7 +117,7 @@ const Incubator = () => {
                                 </div>
                                 {isPoint4Opened && (
                                     <div className = {styles.text}>
-                                        <span>All recipients of The Earth Foundation Incubator will be automatically enrolled in the The Earth Foundation Alumni Association. </span>
+                                        <span>All recipients of The Earth Foundation Incubator seed-funding will be automatically enrolled in the The Earth Foundation Alumni Association. </span>
                                     </div>
                                 )}
                             </div>

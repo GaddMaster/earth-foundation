@@ -61,7 +61,8 @@
                 }
                 .timeline {
                     color: rgba(255, 255, 255, 0.5);
-                    font-size: 12px;
+                    font-size: 13px;
+                    font-weight: bold;
                     @media (max-width: $breakpoint) {
                         font-size: 13px;
                     }
