@@ -227,8 +227,153 @@ const awards = {
     ],
 };
 
+const FAQsEarthPrizeSections = {
+    GENERAL: "General FAQs",
+    FOR_TEACHERS: "FAQs for Teachers",
+    FOR_STUDENTS: "FAQs for Students",
+}
+
+const faqsEarthPrize = [
+    {
+        sectionName: 'General FAQs',
+        faqs: [
+            {
+                question: 'Is it free to sign up for The Earth Prize?',
+                answer: 'Yes, participation in The Earth Prize is free of charge. Participants will never be asked to make any payment at any stage of the competition.',
+            },
+            {
+                question: 'Are students from different grades allowed to participate in the same team?',
+                answer: 'Students from different classes and grades are welcome to form a team as long as they are between the ages of 13 and 19 and registered in the same institution.',
+            },
+            {
+                question: 'Are students from different schools allowed to participate in the same team?',
+                answer: 'All members of each team must be registered in the same school/institution.',
+            },
+            {
+                question: 'Are there consequences for dropping out of The Earth Prize?',
+                answer: 'Individual students or team members as well as entire teams are allowed to withdraw from The Earth Prize at any point without consequences. However, in such an event, the participant/s will no longer have access to The Earth Prize online learning platform. Participants who withdraw from the competition once they have already been recognized with The Earth Prize Fellow or The Earth Prize Finalist distinction can keep their distinctions and still get access to The Earth Prize Alumni network if they wish to do so.',
+            },
+            {
+                question: 'Can a team be disqualified?',
+                answer: 'The Earth Foundation reserves the right to disqualify any team or individual according to the Code of Conduct.',
+            },
+            {
+                question: 'Can a parent serve as team supervisor?',
+                answer: 'No, all students registered in an academic institution must have a teacher or a school administrator as their supervisor. A parent may serve as supervisor only in the case of an individual or a group of homeschooled students who wishes to participate in The Earth Prize. An official document certifying authorized homeschooling status will be requested during registration.',
+            },
+            {
+                question: 'Who are The Earth Prize mentors?',
+                answer: 'The Earth Prize mentors are university students who are passionate about sustainability and entrepreneurship and looking for an opportunity to share their knowledge. Mentors will answer participants’ questions on The Earth Prize platform and provide advice and support on students’ project proposals.',
+            },
+            {
+                question: 'How will the students and mentors interact?',
+                answer: 'All mentoring will take place through The Earth Prize platform exclusively.',
+            },
+            {
+                question: 'Can the same student/team participate more than once?',
+                answer: 'Past participants are welcome to register for The Earth Prize again, as long as they meet the eligibility criteria, with the exception of students who have been previously selected as The Earth Prize Winners and Runners-up.',
+            },
+            {
+                question: 'Where and when will The Earth Prize Ceremony take place?',
+                answer: 'The Earth Prize Ceremony will take place virtually at the end of March 2022.',
+            }
+        ]
+    },
+    {
+        sectionName: 'FAQs for Students',
+        faqs: [
+            {
+                question: 'Can I register for The Earth Prize without a teacher?',
+                answer: 'Participants must have an assigned adult supervisor for their team in order to successfully register for The Earth Prize. Eligible supervisors include teachers and school administrators. If an individual or a group of homeschooled students wishes to participate, a parent may serve as supervisor. In this case, an official document certifying authorized homeschooling status will be requested during registration.',
+            },
+            {
+                question: 'Can new team members join after the Registration Phase is over?',
+                answer: 'Once the Registration Phase is over, no new team members will be allowed to join existing teams.',
+            },
+            {
+                question: 'Can a team member be replaced?',
+                answer: 'Once the Registration Phase is over, no participant can be replaced by a new team member.',
+            },
+            {
+                question: 'Can a team member be removed?',
+                answer: 'Yes, team supervisors can decide to remove a team member if they deem it necessary. The Earth Foundation also reserves itself the right to remove any participant for breaching the Code of Conduct.',
+            },
+            {
+                question: 'Can my teacher help my team with the project?',
+                answer: 'Team supervisors are expected to serve as team facilitators, exclusively. Their duties will be limited to (a) helping students register for the competition individually or in teams, (b) helping students learn to navigate The Earth Prize online platform, (c) providing students with further academic guidance on the online learning material if necessary, and (d) supporting and supervising students’ work on their project proposals.',
+            },
+            {
+                question: 'How many hours per week will participating in The Earth Prize require?',
+                answer: 'There are no set hours for participation. Each team is responsible for their own project planning.',
+            },
+            {
+                question: 'What type of project proposal can I submit?',
+                answer: 'Submissions to The Earth Prize are expected to propose solutions aimed at accelerating positive change towards environmental sustainability. The Earth Prize will consider a wide range of projects: local, national as well as global ones; new ideas with implementation potential as well as existing student projects; products, organizations, enterprises, as well as campaigns.',
+            },
+            {
+                question: 'Am I required to go through all the online learning materials?',
+                answer: 'No, the participants are not required but highly encouraged to go through all the online learning materials available on The Earth Prize platform.',
+            },
+        ],
+    },
+    {
+        sectionName: 'FAQs for Teachers',
+        faqs: [
+            {
+                question: 'What does signing up for The Earth Prize require?',
+                answer: 'Students and teachers are required to register for The Earth Prize using the online platform. For the registration to be approved, teachers will need to (a) verify their teacher/administrator status via email and (b) individually accept each supervisee’s registration. Students under the age of eighteen (18) will also need to submit a copy of their parent or legal guardian’s signed permission to participate in The Earth Prize.',
+            },
+            {
+                question: 'What are my duties as a participating teacher in The Earth Prize?',
+                answer: 'Teachers acting as supervisors are expected to serve as team facilitators, exclusively. Their duties will be limited to (a) helping students register for the competition individually or in teams, (b) helping students learn to navigate The Earth Prize online platform, (c) providing students with further academic guidance on the online learning material if necessary, and (d) supporting and supervising students’ work on their project proposals.',
+            },
+            {
+                question: 'How many hours per week will participating in The Earth Prize require?',
+                answer: 'There are no set hours for participation. Supervisors can decide which amount of time is necessary for adequate support and supervision.',
+            },
+            {
+                question: 'Am I expected to integrate the learning material into my own course?',
+                answer: 'Teachers are not required to integrate The Earth Prize learning material into their own course. However, if they wish to do so, they should refer to their school for guidance.',
+            },
+            {
+                question: 'The school administration does not allow me to use my class time to participate in The Earth Prize, what can I do?',
+                answer: 'Participation in The Earth Prize can also take the form of an extracurricular or afterschool activity.',
+            },
+            {
+                question: 'Do students have to watch the online learning material in class?',
+                answer: 'The Earth Prize online learning material does not need to be watched during class. However, teachers are welcome to integrate the learning materials into their own course if they wish.',
+            },
+            {
+                question: 'Am I required to dedicate class time to the development of students’ project proposals?',
+                answer: 'No, teachers are not required to allot class time to the development of students’ project proposals. This work can be done after class, as an extracurricular activity, or in the students’ free time, depending on how the team and the supervisor decide to organize themselves.',
+            },
+            {
+                question: 'Am I allowed to help my students develop their project proposals?',
+                answer: 'Yes; however, teachers should primarily act as a supervisor and facilitator and only provide general guidance in the development of their students’ project proposals.',
+            },
+            {
+                question: 'If my group of students advances to the Finalists Phase, am I expected to supervise their calls with mentors?',
+                answer: 'If any of the students in the participating team is under the age of 18,  the supervisor must be present during the calls with the mentor.',
+            },
+            {
+                question: 'Can several teachers participate jointly?',
+                answer: 'Each team is only allowed to have one supervisor.',
+            },
+            {
+                question: 'If I can no longer supervise my group of students, can another teacher substitute me/take over the project?',
+                answer: 'A new supervisor can be assigned in such an event. However, the teacher should contact The Earth Foundation team as soon as possible.',
+            },
+            {
+                question: 'Can a supervisor be disqualified from The Earth Prize?',
+                answer: 'Yes, The Earth Foundation reserves itself the right to disqualify any participant who breaches The Earth Prize’s Code of Conduct.',
+            },
+        ],
+    },
+];
+
 export default {
     home,
     about,
     awards,
+    faqsEarthPrize,
 };
