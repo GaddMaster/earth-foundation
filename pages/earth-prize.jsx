@@ -153,15 +153,17 @@ const EarthPrize = () => {
                         <div className = {styles.line}>Ready for the</div>
                         <div className = {styles.line}>challenge?</div>
                     </div>
-                    <div className = {styles.link}>
-                        <div className = {styles.label}>
-                            <div className = {styles.line}>Discover</div>
-                            <div className = {styles.line}>the earth prize</div>
+                    <Link href="/faqs-earth-prize">
+                        <div className = {styles.link}>
+                            <div className = {styles.label}>
+                                <div className = {styles.line}>Discover</div>
+                                <div className = {styles.line}>the earth prize</div>
+                            </div>
+                            <div className = {styles.icon}>
+                                <FontAwesomeIcon icon = {faArrowRight} />
+                            </div>
                         </div>
-                        <div className = {styles.icon}>
-                            <FontAwesomeIcon icon = {faArrowRight} />
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className = {styles.become}>
                     <div className = {styles.header}>
