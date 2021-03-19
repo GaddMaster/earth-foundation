@@ -112,15 +112,15 @@
                     margin-right: 0px;
                 }
                 .button {
-                    width: 150px;
-                    height: 150px;
+                    max-width: 150px;
+                    max-height: 150px;
                     border-radius: 50%;
                     margin: 0px 0px 10px 0px;
                     filter: grayscale(1);
 
                     @media (max-width: $breakpoint) {
-                        width: 90px;
-                        height: 90px;
+                        max-width: 90px;
+                        max-height: 90px;
                     }
 
                     img {

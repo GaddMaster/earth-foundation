@@ -17,7 +17,7 @@ const home = {
             summary: "A $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19.",
             links: [
                 {
-                    label: "Read More",
+                    label: "Read more about the initiative",
                     link: "/earth-prize",
                     color: "#CEAA7A"
                 },
@@ -254,6 +254,50 @@ const earthPrize = {
     ],
 };
 
+const webinar = {
+    team: [
+        {
+            avatar: "/images/peter/avatar.jpg",
+            image: "/images/peter/portrait.jpg",
+            name: "Peter McGarry",
+            position: "Founder, The Earth Foundation",
+            isUnknown: false,
+            paragraphs: [
+                "Peter McGarry is an Irishman based in Switzerland, father of four, entrepreneur, macro portfolio manager and extreme runner. His passion for environmental sustainability was sparked through his children’s enthusiasm and from his first-hand experiences running marathons on all 7 continents and the North Pole. He decided that he could leverage the passion he saw in his own children, and his experience in global financial markets to create a force for positive change."
+            ]
+        },
+        {
+            avatar: "/images/angela/avatar.jpg",
+            image: "/images/angela/portrait.jpg",
+            name: "Angela McCarthy",
+            position: "Chief Executive Officer, The Earth Foundation",
+            isUnknown: false,
+            paragraphs: [
+                "Angela McCarthy was instrumental in the establishment of The Earth Foundation. Angela has held management, marketing, and fundraising positions with companies in wealth management and hospitality in Geneva and London."
+            ],
+        },
+        {
+            avatar: "/images/angela/avatar.jpg",
+            image: "/images/angela/portrait.jpg",
+            name: "Rina Kupferschmid-Rojas",
+            position: "Head, The Earth Prize’s Adjudicating Panel",
+            isUnknown: false,
+            paragraphs: [
+                "Karen is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
+            ],
+        },
+        {
+            isUnknown: true,
+        },
+        {
+            isUnknown: true,
+        },
+        {
+            isUnknown: true,
+        },
+    ],
+};
+
 const faqsEarthPrize = [
     {
         sectionName: 'General FAQs',
@@ -397,4 +441,5 @@ export default {
     about,
     earthPrize,
     faqsEarthPrize,
+    webinar,
 };
