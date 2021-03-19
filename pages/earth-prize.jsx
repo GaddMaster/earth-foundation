@@ -13,6 +13,8 @@ import SlideSocials from 'components/SlideSocials';
 import Link from 'next/link';
 import React from 'react';
 import {useMediaQuery} from 'react-responsive';
+import content from '../assets/content';
+import PersonViewer from 'components/PersonViewerCarousel';
 
 const EarthPrize = () => {
     const isMobile = useMediaQuery({
@@ -26,7 +28,7 @@ const EarthPrize = () => {
             header
             footer
         >
-            <SlideSection height={35} name="The Earth Prize" color="#CEAA7A" />
+            <SlideSection name="The Earth Prize" color="#CEAA7A" />
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.container}>
                 <TitleDesc
@@ -174,6 +176,16 @@ const EarthPrize = () => {
                         <span>All participants recognized with The Earth Prize Fellows distinction will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of passionate individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.</span>
                     </div>
                 </div>
+                <PersonViewer
+                  title = "The Adjudicating Panel"
+                  items = {content.earthPrize.team}
+                  theme = {{
+                      title : "#CFAB79",
+                      header : "#FDFEFE",
+                      position: "#FDFEFE",
+                      paragraph: "#FDFEFE",
+                      background: "#064D3F"
+                  }} />
                 <div className = {styles.bass}>
                     <div className = {styles.details}>
                         <div className = {styles.header}>

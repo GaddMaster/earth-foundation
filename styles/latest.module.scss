@@ -20,7 +20,8 @@
             background: #CEAA7A;
             position: relative;
             @media (max-width: $breakpoint) {
-                height: 170px;
+                height: 270px;
+                width: 100% !important;
                 margin: 40px 0px 0px 0px;
             }
             @media (min-width: $breakpoint) {
@@ -32,7 +33,11 @@
                 flex-grow: 1;
                 display: flex;
                 flex-direction: column;
-                @media (min-width: $breakpoint) { padding: 50px 0px 0px 60px; }
+                height: 100%;
+                @media (min-width: $breakpoint) { padding: 50px 0px 50px 60px; }
+                @media (max-width: $breakpoint) {
+                    padding: 20px;
+                }
                 .spacer {
                     margin: 0px 0px 20px 0px;
                     outline: none;
@@ -81,7 +86,68 @@
                         width: 12px;
                         height: 12px;
                     }
-                    
+                }
+
+                // webinar
+                .webinar {
+                    position: relative;
+                    z-index: 1;
+                    height: 100%;
+                    background-color: white;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100vw;
+                    max-width: 900px;
+                    justify-content: center;
+
+                    @media (max-width: $breakpoint) {
+                        width: 100%;
+                    }
+
+                    .announcement {
+                        font-weight: 900;
+                        margin: 0 0 25px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        max-width: 470px;
+                        text-align: center;
+
+                        @media (max-width: $breakpoint) {
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    .logo {
+                        background-image: url("/images/logotype2.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 80px;
+                        width: 300px;
+                        margin: 0 0 25px;
+                    }
+
+                    > button {
+                        height: 60px;
+                        border-radius: 12px;
+                        padding: 0 30px;
+                        background-color: rgb(206, 170, 122);
+                        color: white;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border: 0;
+                        cursor: pointer;
+
+                        @media (max-width: $breakpoint) {
+                            font-size: 13px;
+                            border-radius: 6px;
+                            height: 100px;
+                            padding: 0 8px;
+                        }
+                    }
                 }
             }
             .wall {

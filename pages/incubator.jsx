@@ -55,7 +55,7 @@ const Incubator = () => {
                                     <div className = {styles.circle}>
                                         {isMobile && <span>{isPoint1Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>1.Launch</span>
+                                            <span>{isMobile ? '1. Launch' : '1.Launch'}</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
@@ -73,7 +73,7 @@ const Incubator = () => {
                                     <div className = {styles.circle}>
                                         {isMobile && <span>{isPoint2Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>2.Evaluation</span>
+                                            <span>{isMobile ? '2. Evaluation' : '2.Evaluation'}</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
@@ -91,7 +91,7 @@ const Incubator = () => {
                                     <div className = {styles.circle}>
                                         {isMobile && <span>{isPoint3Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>3.Awards</span>
+                                            <span>{isMobile ? '3. Awards' : '3.Awards'}</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
@@ -109,7 +109,7 @@ const Incubator = () => {
                                     <div className = {styles.circle}>
                                         {isMobile && <span>{isPoint4Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>4.Alumni Association</span>
+                                            <span>{isMobile ? '4. Alumni Association' : '4.Alumni Association'}</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>

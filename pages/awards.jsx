@@ -142,7 +142,7 @@ const Awards = props => {
                                     <FontAwesomeIcon icon = {faQuoteRight} />
                                 </div>
                             </div>
-                            <Link href="thank-you">
+                            <Link href="awards-coming-soon">
                                 <div className = {styles.apply}>
                                     <span>Apply To The Earth Foundation Awards</span>
                                     <FontAwesomeIcon icon = {faArrowRight} />
@@ -167,16 +167,6 @@ const Awards = props => {
                             <span>By joining The Earth Foundation Alumni Association, you will be part of an inspiring network that connects mentors, partners and participants. The Alumni Association will strengthen ties among its members, offering them support through access to educational content, mentorship, social events, and professional opportunities.</span>
                         </div>
                     </div>
-                    <PersonViewer 
-                        title = "The Adjudicating Panel"
-                        items = {content.awards.team}
-                        theme = {{
-                            title : "#CFAB79",
-                            header : "#FDFEFE",
-                            position: "#FDFEFE",
-                            paragraph: "#FDFEFE",
-                            background: "#064D3F"
-                        }} />
                 </div>
                 <Subscribe
                   background = {{

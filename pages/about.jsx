@@ -11,8 +11,13 @@ import { motion } from "framer-motion";
 import styles from "styles/about.module.scss";
 
 import content from "assets/content";
+import {useMediaQuery} from 'react-responsive';
 
 const About = () => {
+    const isMobile = useMediaQuery({
+      query: `(max-width: 600px)`,
+    });
+
     return (
         <motion.div
             initial = {{ opacity: 0 }}
@@ -29,7 +34,7 @@ const About = () => {
                 }}
                 header>
 
-                <Cover cover = {content.about.cover} />
+                <Cover cover = {isMobile ? content.about.coverMobile : content.about.cover} />
 
                 <div className = {styles.container}>
                     <div className = {styles.padding}>

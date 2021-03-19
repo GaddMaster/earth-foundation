@@ -35,11 +35,10 @@
                 }
             }
             .line {
-                width: 40%;
                 width: 140px;
                 height: 1px;
                 background: #C7BDA5;
-                margin: 40px 0px 0px 0px;
+                margin: 29px 0px 0px 0px;
             }
             padding: 0px 0px 0px 0px;
             margin: 0px 0px 40px 0px;
@@ -53,7 +52,7 @@
 
             @media (min-width: $breakpoint) {
                 width: calc(50% - 30px);
-                padding: 20px 0px 0px 0px;
+                padding: 15px 0px 0px 0px;
             }
 
             @media (max-width: $breakpoint) {
@@ -101,7 +100,7 @@
                 display: flex;
                 position: relative;
                 @media (max-width: $breakpoint) {
-                    min-height: 60px;
+                    min-height: 80px;
                 }
                 .block {
                     display: flex;
@@ -152,8 +151,8 @@
                         align-items: center;
                         .line {
                             width: 1px;
-                            background-image: linear-gradient(to bottom, #BEB29C, white);
-                            height: 90%;
+                            background-image: linear-gradient(to bottom, #BEB29C, rgba(#BEB29C, 0.3));
+                            height: 100%;
                         }
                     }
                 }
