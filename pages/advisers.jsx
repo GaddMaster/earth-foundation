@@ -12,8 +12,8 @@ import PersonModal from 'components/PersonModal';
 
 const advisers = [
   {
-    avatar: "/images/mario/avatarr.jpg",
-    image: "/images/mario/portrait.jpg",
+    avatar: "/images/marioo/mario.jpg",
+    image: "/images/marioo/portrait.jpg",
     name: "Prof. Mario Salomone",
     isUnknown: false,
     paragraphs: [
