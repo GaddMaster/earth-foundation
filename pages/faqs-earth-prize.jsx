@@ -23,6 +23,18 @@ const FAQSEarthPrize = () => {
         }
     }, [isMobile]);
 
+    const handleOnSectionClick = index => {
+        if (isMobile) {
+            if (index === activeSectionIndex) {
+                setActiveSectionIndex(null);
+            } else {
+                setActiveSectionIndex(index);
+            }
+        } else {
+            setActiveSectionIndex(index);
+        }
+    }
+
     return (
         <Layout 
             title = "The Earth <br/> Prize"
@@ -34,7 +46,18 @@ const FAQSEarthPrize = () => {
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.wrapper}>
                 <div className = {styles.container}>
-                    <p className={styles.subtitle}>Frequently Asked Questions on The Earth Prize</p>
+                    {isMobile
+                      ? (
+                        <p className={styles.subtitle}>
+                            The Earth Prize <br /> Frequently Asked Questions
+                        </p>
+                      )
+                      : (
+                        <p className={styles.subtitle}>
+                            The Earth Prize - Frequently Asked Questions
+                        </p>
+                      )
+                    }
                     <h1 className={styles.title}>FAQs</h1>
                     <div className={styles.divider} />
                     <div className={styles.faqs}>
@@ -44,7 +67,7 @@ const FAQSEarthPrize = () => {
                                   <div
                                     key={item.sectionName}
                                     className = {`${styles.section} ${(index === activeSectionIndex) && styles.active}`}
-                                    onClick={() => setActiveSectionIndex(index)}
+                                    onClick={() => handleOnSectionClick(index)}
                                   >
                                       {item.sectionName}
                                   </div>

@@ -1,16 +1,12 @@
 
 import styles from "../styles/slide.section.module.scss";
 
-const SlideSection = ({ name, color, height, style }) => (
+const SlideSection = ({ name, color }) => (
   <div
     className = {styles.section}
-    style = {{
-      maxHeight: `${height}vh`,
-      ...style,
-    }}
   >
-    <span className = {styles.name} style = {{ color: color }}>{name}</span>
     <div className = {styles.line} style = {{ backgroundColor: color }} />
+    <span className = {styles.name} style = {{ color: color }}>{name}</span>
   </div>
 );
 

@@ -111,6 +111,17 @@ const about = {
         section_color: "#CEAA7A",
         socials_color: "#CEAA7A",
     },
+    coverMobile: {
+        image: "url(/images/jeremy-bishop-dR_q93lfaTw-unsplash-mobile.jpg)",
+        title: "The Earth",
+        title_2: " Foundation",
+        title_3: " Background",
+        paragraphs: ["The passion and concern that young people have about environmental sustainability became very evident during the series of global school strikes which spread across the world in 2019, inspired by the actions of environmental activist Greta Thunberg."],
+        section: "About Us",
+        section_height: 40,
+        section_color: "#CEAA7A",
+        socials_color: "#CEAA7A",
+    },
     slides: [
         {
             paragraph: "For The Earth Foundation founder, seeing thousands of students outside his office window taking to the streets of Geneva, Switzerland, to protest the lack of progress towards environmental sustainability was an awakening.",
@@ -137,12 +148,12 @@ const about = {
             ]
         },
         {
-            avatar: "/images/nunu/avatar.jpg",
-            image: "/images/nunu/portrait.jpg",
+            avatar: "/images/frits/avatar.jpg",
+            image: "/images/frits/portrait.jpg",
             name: "Frits Bontekoe",
             position: "Independent member of the Board ",
             paragraphs: [
-                "Frits Bontekoe is the Legal Counsel of the World Intellectual Property Organization (WIPO). Prior to joining WIPO, Mr Bontekoe spent more than 20 years as a legal advisor to international organizations. As a parent and committed internationalist, Mr. Bontekoe brings his legal expertise to The Earth Foundation to inspire young people from around the world to seek and develop solutions to resolving the world’s environmental crisis."
+                "Frits Bontekoe is the Legal Counsel of the World Intellectual Property Organization (WIPO). Prior to joining WIPO, Mr. Bontekoe spent more than 20 years as a legal advisor to international organizations. As a parent and committed internationalist, Mr. Bontekoe brings his legal expertise to The Earth Foundation to inspire young people from around the world to seek and develop solutions to resolving the world’s environmental crisis."
             ]
         },
         {
@@ -161,6 +172,7 @@ const about = {
             image: "/images/angela/portrait.jpg",
             name: "Angela McCarthy",
             position: "Chief Executive Officer",
+            isUnknown: false,
             paragraphs: [
                 "Angela McCarthy was instrumental in the establishment of The Earth Foundation. Angela has held management, marketing, and fundraising positions with companies in wealth management and hospitality in Geneva and London."
             ]
@@ -170,6 +182,7 @@ const about = {
             image: "/images/nunu/portrait.jpg",
             name: "Nunu Tadesse",
             position: "Head of Finance & Administration",
+            isUnknown: false,
             paragraphs: [
                 "Nunu Tadesse has over 25 years of experience across Europe, the United States and Africa in financial leadership roles at MedTech, venture capital, non-profits, foundations, and audit firms. He is well versed in Swiss, European, and US regulatory, tax, GAAP, IP, and compliance laws."
             ],
@@ -179,8 +192,9 @@ const about = {
             image: "/images/julie/portrait.jpg",
             name: "Julie Maude Rufino",
             position: "Head of Strategy",
+            isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino recently graduated in Business Administration at the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Maude Rufino recently graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -188,8 +202,9 @@ const about = {
             image: "/images/anett/portrait.jpg",
             name: "Anett Thomson",
             position: "Strategy & Operations Associate",
+            isUnknown: false,
             paragraphs: [
-                "Anett Thomson recently graduated in Real Estate from the University of Aberdeen. She has experience supporting complex projects with diverse multi-sector stakeholders and is passionate about sustainability and entrepreneurship. Originally from Estonia, Anett has lived and worked in Luxembourg, Switzerland, Singapore, the United Kingdom and Hong Kong."
+                "Anett Thomson graduated in Real Estate from the University of Aberdeen. She has experience supporting complex projects with diverse multi-sector stakeholders and is passionate about sustainability and entrepreneurship. Originally from Estonia, Anett has lived and worked in Luxembourg, Switzerland, Singapore, the United Kingdom and Hong Kong."
             ],
         },
         {
@@ -197,6 +212,7 @@ const about = {
             image: "/images/diana/portrait.jpg",
             name: "Diana Conde Moure",
             position: "Strategy & Operations Associate",
+            isUnknown: false,
             paragraphs: [
                 "Diana Conde Moure holds a master's degree in Comparative International Education from the University of Oslo, Norway. Her experience includes working and volunteering for numerous organizations in the nonprofit, government, academic, and legal sectors. Passionate about education, Diana brings her knowledge and expertise in the field to help the Foundation in its strategic development."
             ],
@@ -204,13 +220,14 @@ const about = {
     ]
 };
 
-const awards = {
+const earthPrize = {
     team: [
         {
             avatar: "/images/angela/avatar.jpg",
             image: "/images/angela/portrait.jpg",
             name: "Rina Kupferschmid-Rojas",
             position: "Head of the Adjudicating Panel",
+            isUnknown: false,
             paragraphs: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia enim turpis, et posuere justo vehicula nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum facilisis egestas. Nunc convallis, justo eget elementum scelerisque, eros ipsum dapibus turpis, nec aliquam est tortor sit amet felis"
             ]
@@ -220,18 +237,22 @@ const awards = {
             image: "/images/angela/portrait.jpg",
             name: "Karen Wilson",
             position: "Member of the Panel",
+            isUnknown: false,
             paragraphs: [
                 "Karen is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
             ],
         },
+        {
+            isUnknown: true,
+        },
+        {
+            isUnknown: true,
+        },
+        {
+            isUnknown: true,
+        },
     ],
 };
-
-const FAQsEarthPrizeSections = {
-    GENERAL: "General FAQs",
-    FOR_TEACHERS: "FAQs for Teachers",
-    FOR_STUDENTS: "FAQs for Students",
-}
 
 const faqsEarthPrize = [
     {
@@ -251,11 +272,11 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Are there consequences for dropping out of The Earth Prize?',
-                answer: 'Individual students or team members as well as entire teams are allowed to withdraw from The Earth Prize at any point without consequences. However, in such an event, the participant/s will no longer have access to The Earth Prize online learning platform. Participants who withdraw from the competition once they have already been recognized with The Earth Prize Fellow or The Earth Prize Finalist distinction can keep their distinctions and still get access to The Earth Prize Alumni network if they wish to do so.',
+                answer: 'Individual students or team members as well as entire teams are allowed to withdraw from The Earth Prize at any stage without consequences. However, in such an event, the participant/s will no longer have access to The Earth Prize online learning platform. Participants who withdraw from the competition once they have already been recognized with The Earth Prize Fellows or The Earth Prize Finalist distinction can keep their distinctions and still get access to The Earth Prize Alumni network if they wish to do so.',
             },
             {
                 question: 'Can a team be disqualified?',
-                answer: 'The Earth Foundation reserves the right to disqualify any team or individual according to the Code of Conduct.',
+                answer: 'The Earth Foundation reserves itself the right to disqualify any team or individual according to the Code of Conduct.',
             },
             {
                 question: 'Can a parent serve as team supervisor?',
@@ -374,6 +395,6 @@ const faqsEarthPrize = [
 export default {
     home,
     about,
-    awards,
+    earthPrize,
     faqsEarthPrize,
 };

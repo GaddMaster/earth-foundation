@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import Carousel from "react-multi-carousel";
+import Link from "next/link";
 
 import styles from "../styles/latest.module.scss";
 import "react-multi-carousel/lib/styles.css";
@@ -45,7 +46,7 @@ class Latest extends PureComponent {
                 <section className = {styles.inner}>
                     <div className = {styles.control} style = {{width:style.control,height:styles.control}}>
                         <div className = {styles.centered}>
-                            <div className = {styles.spacer}>
+                            {/*<div className = {styles.spacer}>
                                 <ButtonBase 
                                     className = {styles.button}
                                     onClick = {this.onNext}
@@ -65,16 +66,23 @@ class Latest extends PureComponent {
                             <div className = {styles.label}>
                                 <span>Latest News</span>
                             </div>
-                            {/*<div className = {styles.all}>
+                            <div className = {styles.all}>
                                 <span style = {{marginRight:10}}>Read All</span>
                                 <span className = {styles.news}>News</span>
                                 <FontAwesomeIcon icon = {faArrowRight} />
                             </div>*/}
+                            <div className={styles.webinar}>
+                                <p className={styles.announcement}>The Earth Foundation will be officially launching The Earth Prize on April 19th, 2021.</p>
+                                <div className={styles.logo} />
+                                <Link href="webinar">
+                                    <button>Learn more about The Earth Prize Launch Webinar</button>
+                                </Link>
+                            </div>
                         </div>
                         <div className = {`${styles.wall} ${styles.wallA}`}></div>
                         <div className = {`${styles.wall} ${styles.wallB}`}></div>
                     </div>
-                    <div className = {styles.carousel} style = {{width:style.carousel}}>
+                    {/*<div className = {styles.carousel} style = {{width:style.carousel}}>
                         <Carousel
                             containerClass = {mobile ? styles.carcon : styles.carmo}
                             sliderClass = {styles.slider}
@@ -91,7 +99,7 @@ class Latest extends PureComponent {
                                 </div>
                             ))}
                         </Carousel>
-                    </div>
+                    </div>*/}
                 </section>
             </section>
         );

@@ -15,6 +15,7 @@ const PersonViewerCarousel = props => {
         query: `(max-width: 600px)`,
     });
     let active = props.items[index];
+    const existingPeople = props.items.filter(person => !person.isUnknown);
 
     const handleOnPersonClick = index => {
         onIndex(index);
@@ -39,8 +40,8 @@ const PersonViewerCarousel = props => {
                               <PersonModal
                                 person={active}
                                 onCloseClick={() => openModal(false)}
-                                onNextClick={() => onIndex(index === props.items.length - 1 ? 0 : index + 1)}
-                                onBackClick={() => onIndex(index === 0 ? props.items.length - 1 : index - 1)}
+                                onNextClick={() => onIndex(index === existingPeople.length - 1 ? 0 : index + 1)}
+                                onBackClick={() => onIndex(index === 0 ? existingPeople.length - 1 : index - 1)}
                               />
                             )}
                         </>
@@ -67,12 +68,24 @@ const PersonViewerCarousel = props => {
                 <div className = {styles.avatars}>
                     {props.items.map((person, i) => (
                       <div className = {styles.avatar} key = {i}>
-                          <ButtonBase
-                            className = {`${styles.button} ${(index === i && !isMobile) ? styles.true : ""}`}
-                            onClick = {isMobile ? () => handleOnPersonClick(i) : onIndex.bind(this, i)}
-                            key = {i}>
-                              <img src = {person.avatar} />
-                          </ButtonBase>
+                          {person.isUnknown
+                            ? (
+                              <ButtonBase
+                                className = {styles.unknown}
+                                disabled
+                                key = {i}>
+                                  To be announced
+                              </ButtonBase>
+                            )
+                            : (
+                              <ButtonBase
+                                className = {`${styles.button} ${(index === i && !isMobile) ? styles.true : ""}`}
+                                onClick = {isMobile ? () => handleOnPersonClick(i) : onIndex.bind(this, i)}
+                                key = {i}>
+                                  <img src = {person.avatar} />
+                              </ButtonBase>
+                            )
+                          }
                           {isMobile && (
                               <div className = {styles.name}>
                                   <span>{person.name}</span>

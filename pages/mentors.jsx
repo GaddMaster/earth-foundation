@@ -27,7 +27,7 @@ const Mentors = () => {
             header
             footer
         >
-            <SlideSection height={35} name="The Earth Prize Mentors" color="#CEAA7A" />
+            <SlideSection name="The Earth Prize Mentors" color="#CEAA7A" />
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.container}>
 

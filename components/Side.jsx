@@ -12,7 +12,7 @@ const Side = () => (
             <span>About Us</span>
         </div>
         <div className = {styles.item}>
-          <Link href="earth-prize">The Earth Foundation</Link>
+          <Link href="about">The Earth Foundation</Link>
         </div>
       {/*<div className = {styles.item}>
           <Link href="earth-prize">The Adjudicating Panel</Link>
@@ -49,7 +49,7 @@ const Side = () => (
             <span>Get Involved</span>
         </div>
         <div className = {styles.item}>
-          <Link href="https://theearthfoundation.typeform.com/to/iuEsLDX4">Become a mentor</Link>
+          <Link href="mentors">Become a mentor</Link>
         </div>
         <div className = {styles.item}>
           <Link href="sign-up">Become part of our network</Link>

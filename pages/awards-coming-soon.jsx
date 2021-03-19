@@ -1,5 +1,5 @@
 import Layout from "components/Layout";
-import styles from "styles/thank-you.module.scss";
+import styles from "styles/awards-coming-soon.module.scss";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +13,7 @@ import {useRouter} from 'next/router';
 
 const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-const ThankYou = () => {
+const AwardsComingSoon = () => {
     const router = useRouter();
     let [email, onEmail] = useState("");
     let [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -81,4 +81,4 @@ const ThankYou = () => {
     );
 };
 
-export default ThankYou;
+export default AwardsComingSoon;

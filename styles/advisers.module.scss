@@ -82,10 +82,6 @@
         &:nth-child(1) {
             background-color: #16172c;
 
-            .photo {
-                background-image: url("/images/mario/avatar.jpg");
-            }
-
             @media (max-width: $breakpoint) {
                 background-color: transparent;
                 padding: 0;
@@ -95,10 +91,6 @@
         &:nth-child(2) {
             margin-top: 90px;
             background-color: #074d3f;
-
-            .photo {
-                background-image: url("/images/philippe/avatar.jpg");
-            }
 
             @media (max-width: $breakpoint) {
                 background-color: transparent;
