@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,7 +26,9 @@ const Footer = props => {
                                     <span>Data Protection Policy</span>
                                 </div>
                                 <div className = {styles.route}>
-                                    <span>Terms & Conditions</span>
+                                    <Link href="/terms-and-conditions">
+                                        <span>Terms & Conditions</span>
+                                    </Link>
                                 </div>
                             </div>
                             <div className = {styles.socials}>
