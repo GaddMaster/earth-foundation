@@ -10,7 +10,7 @@ import SlideSocials from 'components/SlideSocials';
 import {useMediaQuery} from 'react-responsive';
 import PersonModal from 'components/PersonModal';
 
-const advisers = [
+const advisors = [
   {
     avatar: "/images/marioo/mario.jpg",
     image: "/images/marioo/portrait.jpg",
@@ -31,14 +31,14 @@ const advisers = [
   },
 ];
 
-const Advisers = () => {
+const Advisors = () => {
     const isMobile = useMediaQuery({
       query: `(max-width: 600px)`,
     });
     let [index, onIndex] = useState(0);
     let [isModalOpened, openModal] = useState(false);
-    let active = advisers[index];
-    const existingPeople = advisers.filter(person => !person.isUnknown);
+    let active = advisors[index];
+    const existingPeople = advisors.filter(person => !person.isUnknown);
 
     const handleOnPersonClick = index => {
       onIndex(index);
@@ -49,7 +49,7 @@ const Advisers = () => {
 
     return (
         <Layout
-          title = "The Earth Foundation Advisers"
+          title = "The Earth Foundation Advisors"
           background = "whitesmoke"
           header
           footer
@@ -80,7 +80,7 @@ const Advisers = () => {
               />
             )}
             <div className = {styles.cards}>
-              {advisers.map((adviser, i) => (
+              {advisors.map((adviser, i) => (
                 <div className = {styles.card} onClick = {isMobile ? () => handleOnPersonClick(i) : onIndex.bind(this, i)}>
                   <div className = {styles.photo} style={{ backgroundImage: `url(${adviser.avatar})` }} />
                   <h4 className={styles.title}>{adviser.name}</h4>
@@ -99,4 +99,4 @@ const Advisers = () => {
     );
 };
 
-export default Advisers;
+export default Advisors;

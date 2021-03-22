@@ -105,7 +105,7 @@ const about = {
         title: "The Earth",
         title_2: " Foundation",
         title_3: " Background",
-        paragraphs: ["The passion and concern that young people have about environmental sustainability became very evident during the series of global school strikes which spread across the world in 2019, inspired by the actions of environmental activist Greta Thunberg."],
+        paragraphs: ["The passion and concern that young people have about environmental sustainability became very evident during the series of school strikes which spread across the world in 2019, inspired by the actions of environmental activist Greta Thunberg."],
         section: "About Us",
         section_height: 40,
         section_color: "#CEAA7A",
@@ -116,7 +116,7 @@ const about = {
         title: "The Earth",
         title_2: " Foundation",
         title_3: " Background",
-        paragraphs: ["The passion and concern that young people have about environmental sustainability became very evident during the series of global school strikes which spread across the world in 2019, inspired by the actions of environmental activist Greta Thunberg."],
+        paragraphs: ["The passion and concern that young people have about environmental sustainability became very evident during the series of school strikes which spread across the world in 2019, inspired by the actions of environmental activist Greta Thunberg."],
         section: "About Us",
         section_height: 40,
         section_color: "#CEAA7A",
@@ -194,7 +194,7 @@ const about = {
             position: "Head of Strategy",
             isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino recently graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -233,8 +233,8 @@ const earthPrize = {
             ]
         },
         {
-            avatar: "/images/angela/avatar.jpg",
-            image: "/images/angela/portrait.jpg",
+            avatar: "/images/karen/avatar.jpg",
+            image: "/images/karen/portrait.jpg",
             name: "Karen Wilson",
             position: "Member of the Panel",
             isUnknown: false,
@@ -320,7 +320,7 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Can a team be disqualified?',
-                answer: 'The Earth Foundation reserves itself the right to disqualify any team or individual according to the Code of Conduct.',
+                answer: 'The Earth Foundation reserves the right to disqualify any team or individual according to the Code of Conduct.',
             },
             {
                 question: 'Can a parent serve as team supervisor?',
@@ -361,7 +361,7 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Can a team member be removed?',
-                answer: 'Yes, team supervisors can decide to remove a team member if they deem it necessary. The Earth Foundation also reserves itself the right to remove any participant for breaching the Code of Conduct.',
+                answer: 'Yes, team supervisors can decide to remove a team member if they deem it necessary. The Earth Foundation also reserves the right to remove any participant for breaching the Code of Conduct.',
             },
             {
                 question: 'Can my teacher help my team with the project?',
@@ -401,7 +401,7 @@ const faqsEarthPrize = [
                 answer: 'Teachers are not required to integrate The Earth Prize learning material into their own course. However, if they wish to do so, they should refer to their school for guidance.',
             },
             {
-                question: 'The school administration does not allow me to use my class time to participate in The Earth Prize, what can I do?',
+                question: 'If the school administration does not allow me to use my class time to participate in The Earth Prize, what can I do?',
                 answer: 'Participation in The Earth Prize can also take the form of an extracurricular or afterschool activity.',
             },
             {
@@ -422,15 +422,15 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Can several teachers participate jointly?',
-                answer: 'Each team is only allowed to have one supervisor.',
+                answer: 'Each team is allowed to have only one supervisor.',
             },
             {
-                question: 'If I can no longer supervise my group of students, can another teacher substitute me/take over the project?',
+                question: 'If I can no longer supervise my group of students, can another teacher substitute for me/take over the project?',
                 answer: 'A new supervisor can be assigned in such an event. However, the teacher should contact The Earth Foundation team as soon as possible.',
             },
             {
                 question: 'Can a supervisor be disqualified from The Earth Prize?',
-                answer: 'Yes, The Earth Foundation reserves itself the right to disqualify any participant who breaches The Earth Prize’s Code of Conduct.',
+                answer: 'Yes, The Earth Foundation reserves the right to disqualify any participant who breaches The Earth Prize’s Code of Conduct.',
             },
         ],
     },

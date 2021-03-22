@@ -79,7 +79,7 @@ const Header = (props) => {
       // },
       {
         name: "Our Advisors",
-        route: "advisers",
+        route: "advisors",
       },
     ],
   };
