@@ -20,6 +20,7 @@
         font-size: 13px;
         letter-spacing: 0.6px;
         margin: 0 0 10px;
+        color: $blue;
 
         @media (max-width: $breakpoint) {
             margin: 0 0 5px;
@@ -32,13 +33,14 @@
         line-height: 14px;
         margin: 0 0 10px;
         font-weight: 400;
+        color: $blue;
 
         @media (max-width: $breakpoint) {
             margin: 0 0 10px;
         }
 
         > a {
-            color: black;
+            color: $blue;
             text-decoration: underline;
         }
     }
@@ -54,20 +56,20 @@
         .decline {
             margin-right: 10px;
             border: 0;
-            padding: 4px 12px;
+            padding: 5px 14px;
             border-radius: 4px;
             color: white;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 13px;
             cursor: pointer;
         }
 
         .accept {
-            background-color: darkgreen;
+            background-color: $blue;
         }
 
         .decline {
-            background-color: rgba(darkred, 0.5);
+            background-color: rgba(black, 0.2);
         }
     }
 }
