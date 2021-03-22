@@ -69,6 +69,44 @@
         }
     }
 
+    .table {
+        width: 100%;
+        overflow: scroll;
+
+        @media (max-width: $breakpoint) {
+            width: calc(100% + 60px);
+            margin-left: -30px;
+            padding: 0 30px;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        min-width: 600px;
+
+        @media (max-width: $breakpoint) {
+            min-width: 750px;
+        }
+    }
+
+    td, th {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: center;
+        letter-spacing: 1px;
+
+        &:nth-child(2) {
+            width: 180px;
+        }
+
+        @media (max-width: $breakpoint) {
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 0.5px;
+        }
+    }
+
     .centered {
         text-align: center;
         font-weight: 400;

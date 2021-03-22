@@ -18,7 +18,7 @@ const Side = () => (
           <Link href="earth-prize">The Adjudicating Panel</Link>
         </div>*/}
         <div className = {styles.item}>
-          <Link href="advisers">Our Advisors</Link>
+          <Link href="advisors">Our Advisors</Link>
         </div>
 
         <br />

@@ -24,7 +24,7 @@ const TermsAndConditions = () => {
                 <p>1.4 <b>Third-party links.</b> the Website may contain links to websites, applications, and other online sources owned and operated by third parties. We are not responsible or liable in any manner for the content of such third-party links, information, and advertisements, as well as the security and privacy practices deployed by the operators of the third-party websites. Please exercise your due diligence before clicking on any of such third-party links or advertisements.</p>
                 <p>1.5 <b>Support.</b> Any general requests for customer support should be addressed to us by email at info@earth-foundation.org.</p>
                 <p>1.6 <b>Minors.</b> The Website should not be accessed and used by persons under the age of 16.</p>
-                <p>1.7 <b>Privacy and other relevant terms.</b> The documents that include important provisions regarding your use of the Website and should be read and interpreted together with these Terms are:</p>
+                <p>1.7 <b>Privacy and other relevant terms.</b> The documents that include important provisions regarding your use of the Website and that should be read and interpreted together with these Terms are:</p>
                 <ul>
                     <li>Our <Link href="/privacy-policy">privacy policy</Link> and <Link href="/cookie-policy">cookie policy</Link>, which describe in detail how we handle your personal data collected through the Website;</li>
                     <li>Our <Link href="/copyright-policy">copyright policy</Link>; and</li>
@@ -74,8 +74,7 @@ const TermsAndConditions = () => {
                     <li>Commence a legal action against you.</li>
                 </ul>
                 <p>9.4 <b>Transfer of rights.</b> You are not allowed to assign your rights under these Terms. We are entitled to transfer our rights and obligations under these Terms entirely or partially to a third party by giving a prior notice to you. If you do not agree to the transfer, you can terminate these Terms with immediate effect by ceasing to use the Website.</p>
-                <p>9.5 <b>Merger or acquisition.</b> In the event we, during the term of these Terms, are acquired, merged, or sell all or substantially all of our assets, these Terms shall not automatically be terminated and we agree to use our best efforts to ensure that the transferee or surviving company shall assume and be bound by the provisions of these Terms.</p>
-                <p>9.6 <b>Entire agreement.</b> These Terms, together with the documents referred to therein, represent the entire agreement between you and us regarding your relationship with us and govern your use of the Website.</p>
+                <p>9.5 <b>Entire agreement.</b> These Terms, together with the documents referred to therein, represent the entire agreement between you and us regarding your relationship with us and govern your use of the Website.</p>
                 <h2><span>10.</span> CONTACT</h2>
                 <p>If you have any questions about these Terms, please contact us by using the following contact details:</p>
                 <div className={styles.contact}>

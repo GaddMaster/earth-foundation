@@ -105,7 +105,7 @@ const Awards = props => {
                                 </div>
                                 {isPoint3Opened && (
                                     <div className = {styles.text}>
-                                        <span>The Earth Foundation Awards grantees receive a share of the €300,000 towards research projects.</span>
+                                        <span>The Earth Foundation Awards grantees receive a share of the $300,000 towards research projects.</span>
                                     </div>
                                 )}
                             </div>
@@ -122,7 +122,7 @@ const Awards = props => {
                                 </div>
                                 {isPoint4Opened && (
                                     <div className = {styles.text}>
-                                        <span>All recipients of the Aeards are automatically enrolled in The Earth Foundation Alumni Association.</span>
+                                        <span>All recipients of the Awards are automatically enrolled in The Earth Foundation Alumni Association.</span>
                                     </div>
                                 )}
                             </div>
@@ -149,7 +149,7 @@ const Awards = props => {
                                 </div>
                             </Link>
                             <div className = {styles.eligible}>
-                                <span>All university students and research worldwide are eligible to apply to The Earth Foundation Awards.</span>
+                                <span>All university students and researchers worldwide are eligible to apply to The Earth Foundation Awards.</span>
                             </div>
                             <div className = {styles.wall} />
                         </div>
