@@ -4,7 +4,7 @@ import TitleDesc from "components/TitleDesc";
 
 import styles from "../styles/advisers.module.scss";
 import Subscribe from "../components/Subscribe";
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
 import {useMediaQuery} from 'react-responsive';
@@ -26,7 +26,7 @@ const advisors = [
     name: "Prof. Philippe Gillet",
     isUnknown: false,
     paragraphs: [
-      "Trained as a geologist, Philippe Gillet is genuinely passionate by the Earth and the Solar system from its origin to its current functioning. He was the Director of the CNRS Institut National des Sciences de l’Univers (France), involved in research projects aimed at responding to today’s major scientific and global challenges, such as the effects of climate change, sustainable development solutions or the evaluation of renewable energies.Gillet chairs the Scientific Advisory Board of INRAE (France), the world's number one institute for research on agriculture, food, and the environment. He is a prolific scientific author, with over 200 publications."
+      "A geologist by training, Philippe Gillet is genuinely passionate by the Earth and the Solar system from its origin to its current functioning. He was the Director of the CNRS Institut National des Sciences de l’Univers (France), involved in research projects aimed at responding to today’s major scientific and global challenges, such as the effects of climate change, sustainable development solutions or the evaluation of renewable energies. Gillet chairs the Scientific Advisory Board of INRAE (France), the world's number one institute for research on agriculture, food, and the environment. He is a prolific scientific author, with over 200 publications."
     ],
   },
 ];
@@ -46,6 +46,24 @@ const Advisors = () => {
         openModal(true);
       }
     }
+
+    useEffect(() => {
+      const body = document.body;
+      window.addEventListener('scroll', () => {
+        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+      });
+
+      if (isModalOpened) {
+        const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+        body.style.position = 'fixed';
+        body.style.top = `-${scrollY}`;
+      } else {
+        const scrollY = body.style.top;
+        body.style.position = '';
+        body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      }
+    }, [isModalOpened]);
 
     return (
         <Layout

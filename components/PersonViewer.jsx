@@ -1,5 +1,5 @@
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 import ButtonBase from "@material-ui/core/ButtonBase";
 
@@ -22,6 +22,24 @@ const PersonViewer = props => {
             openModal(true);
         }
     }
+
+    useEffect(() => {
+        const body = document.body;
+        window.addEventListener('scroll', () => {
+            document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+        });
+
+        if (isModalOpened) {
+            const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+            body.style.position = 'fixed';
+            body.style.top = `-${scrollY}`;
+        } else {
+            const scrollY = body.style.top;
+            body.style.position = '';
+            body.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        }
+    }, [isModalOpened]);
 
     return (
         <div className = {styles.container}>

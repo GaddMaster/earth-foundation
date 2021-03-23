@@ -119,6 +119,7 @@
                     filter: grayscale(1);
 
                     @media (max-width: $breakpoint) {
+                        filter: grayscale(0);
                         max-width: 90px;
                         max-height: 90px;
                     }
@@ -164,7 +165,6 @@
                     }
 
                     @media (max-width: $breakpoint) {
-                        filter: grayscale(1);
                         width: 90px;
                         height: 90px;
                     }

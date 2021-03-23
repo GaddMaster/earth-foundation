@@ -47,7 +47,6 @@
                 justify-content: center;
                 @media (max-width: $breakpoint) {
                     margin: 0 0 30px;
-                    filter: grayscale(1);
                 }
                 .button {
                     width: 80px;

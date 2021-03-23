@@ -6,6 +6,7 @@ import SlideSocials from "./SlideSocials";
 import styles from "styles/cover.module.scss";
 
 const Cover = props => {
+  console.log(props.cover.socials_color)
     return (
         <div className = {styles.cover} style = {{backgroundImage:`${props.cover.image}`}}>
           {props.cover.section && <SlideSection height={props.cover.section_height} name={props.cover.section} color={props.cover.section_color} />}

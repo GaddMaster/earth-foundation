@@ -6,8 +6,6 @@ import { faCircle as solid, faArrowRight } from "@fortawesome/free-solid-svg-ico
 import { faCircle as hollow } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "styles/board.module.scss";
-import SlideSection from 'components/SlideSection';
-import SlideSocials from 'components/SlideSocials';
 
 const Board = props => {
     let { board, index } = props;
@@ -15,8 +13,6 @@ const Board = props => {
         <div
             className = {styles.board}
             key = {index}>
-            <SlideSection height={board.section_height} name={board.section} color={board.section_color} />
-            <SlideSocials color={board.socials_color} />
             <div className = {styles.wrapper}>
                 <div className = {styles.banner} style = {{background:`url(${board.image})`}}></div>
                 <div className = {styles.block} style = {{background:board.background||"white"}}>
