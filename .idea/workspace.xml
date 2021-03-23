@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6058e8-e9a2-4cec-b898-7e5fe9f21c05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/incubator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/incubator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/earth-prize.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/earth-prize.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/awards.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/awards.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/cover.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/cover.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/slide.section.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/slide.section.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614859817637</updated>
       <workItem from="1614859825601" duration="10296000" />
+      <workItem from="1616529838981" duration="879000" />
     </task>
     <servers />
   </component>
@@ -74,7 +79,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/pages/incubator.jsx</url>
           <line>115</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
