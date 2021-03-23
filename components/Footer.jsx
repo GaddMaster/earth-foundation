@@ -30,6 +30,11 @@ const Footer = props => {
                                         <span>Terms & Conditions</span>
                                     </Link>
                                 </div>
+                                <div className = {styles.route}>
+                                    <Link href="/copyright-policy">
+                                        <span>Copyright Policy</span>
+                                    </Link>
+                                </div>
                             </div>
                             <div className = {styles.socials}>
                                 <div className = {styles.social}>

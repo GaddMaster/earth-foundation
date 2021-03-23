@@ -25,10 +25,20 @@ const Header = (props) => {
   const [open, onOpen] = useState(false);
 
   useEffect(() => {
+    const body = document.body;
+    window.addEventListener('scroll', () => {
+      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+    });
+
     if (open) {
-      document.body.classList.add('locked');
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
     } else {
-      document.body.classList.remove('locked');
+      const scrollY = body.style.top;
+      body.style.position = '';
+      body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }, [open]);
 

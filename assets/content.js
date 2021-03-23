@@ -9,6 +9,10 @@ const home = {
             "The Earth Foundation aims to distribute $1 million annually to students, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
             "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
         ],
+        section: "The Earth Foundation Has Four Initiatives",
+        section_height: 40,
+        section_color: "#CEAA7A",
+        socials_color: "#CEAA7A",
     },
     boards: [
         {
@@ -28,10 +32,6 @@ const home = {
                 }
             ],
             path: "/",
-            section: "The Earth Foundation Has Four Initiatives",
-            section_height: 30,
-            section_color: "#000000",
-            socials_color: "#CEAA7A",
             background: "#16172C"
         },
         {
@@ -46,10 +46,6 @@ const home = {
                 }
             ],
             path: "/",
-            section: "The Earth Foundation Has Four Initiatives",
-            section_height: 30,
-            section_color: "#CEAA7A",
-            socials_color: "#CEAA7A",
             background: "#074D3F"
         },
         {
@@ -64,10 +60,6 @@ const home = {
                 }
             ],
             path: "/",
-            section: "The Earth Foundation Has Four Initiatives",
-            section_height: 30,
-            section_color: "#000000",
-            socials_color: "#CEAA7A",
             background: "#1A3324"
         },
         {
@@ -83,10 +75,6 @@ const home = {
                 // }
             ],
             path: "/",
-            section: "The Earth Foundation Has Four Initiatives",
-            section_height: 30,
-            section_color: "#000000",
-            socials_color: "#CEAA7A",
             background: "#02304F"
         }
     ],
@@ -378,6 +366,10 @@ const faqsEarthPrize = [
             {
                 question: 'Am I required to go through all the online learning materials?',
                 answer: 'No, the participants are not required but highly encouraged to go through all the online learning materials available on The Earth Prize platform.',
+            },
+            {
+                question: 'Can my team submit more than one entry, or can I belong to more than one team?',
+                answer: 'No, each student may only belong to one team, and each team may only submit one entry.',
             },
         ],
     },
