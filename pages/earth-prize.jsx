@@ -101,14 +101,14 @@ const EarthPrize = () => {
                                 <span>3.</span>
                             </div>
                             <div className = {styles.header}>
-                                <span>Fellows Distinction Announcement</span>
+                                <span>The Earth Prize Distinction Announcement</span>
                             </div>
                             <div className = {styles.timeline}>
                                 <span>1st Feb. 2022 - 6th Feb. 2022</span>
                             </div>
                             <div className = {styles.divider}></div>
                             <div className = {styles.desc}>
-                                <span>Each team’s submission will be reviewed by the Adjudicating Panel, a group of highly renowned experts, based upon the official scoring rubric. The strongest Project Proposals will be awarded with The Earth Prize Fellow distinction, which recognizes submissions of outstanding quality.</span>
+                                <span>Each team’s submission will be reviewed by the Adjudicating Panel, a group of highly renowned experts, based upon the official scoring rubric. The strongest Project Proposals will be awarded with The Earth Prize Distinction, which recognizes submissions of outstanding quality.</span>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ const EarthPrize = () => {
                             </div>
                             <div className = {styles.divider} style = {{ background: "white" }} />
                             <div className = {styles.desc}>
-                                <span>The top 10 teams will be selected from The Earth Prize Fellows and invited onto the Finalists Phase, where they will receive the support of an assigned Earth Prize mentor and one of The Earth Prize Ambassadors to complete their Project Proposals.</span>
+                                <span>The top 10 teams will be selected and invited onto the Finalists Phase, where they will receive the support of an assigned Earth Prize mentor and one of The Earth Prize Ambassadors to complete their Project Proposals.</span>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ const EarthPrize = () => {
                             </div>
                             <div className = {styles.divider} />
                             <div className = {styles.desc}>
-                                <span>The top 5 teams will be selected and invited to The Earth Prize Ceremony, where each team will present their Final Project Proposal and The Earth Prize Winner will be announced. The winning team will receive a prize of $100,000, to be distributed equally between the team and their school. Four runner-up teams will be awarded $25,000 each to be distributed in the same fashion.</span>
+                                <span>The top three teams will be selected and invited to The Earth Prize Ceremony, where each team will present their Final Project Proposal and The Earth Prize Winner will be announced. The winning team will receive a prize of $100,000, to be distributed equally between the team and their school. Two runner-up teams will be awarded $40,000 each to be distributed in the same fashion.</span>
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@ const EarthPrize = () => {
                         <div>our network</div>
                     </div>
                     <div className = {styles.desc}>
-                        <span>All participants recognized with The Earth Prize Fellows distinction will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of passionate individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.</span>
+                        <span>All participants in The Earth Prize will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of passionate individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.</span>
                     </div>
                 </div>
                 <PersonViewer

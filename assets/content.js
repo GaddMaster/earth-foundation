@@ -304,7 +304,7 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Are there consequences for dropping out of The Earth Prize?',
-                answer: 'Individual students or team members as well as entire teams are allowed to withdraw from The Earth Prize at any stage without consequences. However, in such an event, the participant/s will no longer have access to The Earth Prize online learning platform. Participants who withdraw from the competition once they have already been recognized with The Earth Prize Fellows or The Earth Prize Finalist distinction can keep their distinctions and still get access to The Earth Prize Alumni network if they wish to do so.',
+                answer: 'Individual students or team members as well as entire teams are allowed to withdraw from The Earth Prize at any stage without consequences. However, in such an event, the participant/s will no longer have access to The Earth Prize online learning platform. Participants who withdraw from the competition can keep the distinctions obtained in it and still get access to The Earth Prize Alumni network if they wish to do so.',
             },
             {
                 question: 'Can a team be disqualified?',
