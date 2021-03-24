@@ -227,7 +227,7 @@ const earthPrize = {
             position: "Member of the Panel",
             isUnknown: false,
             paragraphs: [
-                "Karen is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
+                "Karen Wilson is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
             ],
         },
         {
@@ -278,7 +278,7 @@ const webinar = {
             avatar: "/images/julie/avatar.jpg",
             image: "/images/julie/portrait.jpg",
             name: "Julie Maude Rufino",
-            position: "Head of Strategy",
+            position: "Head of Strategy, The Earth Foundation",
             isUnknown: false,
             paragraphs: [
                 "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."

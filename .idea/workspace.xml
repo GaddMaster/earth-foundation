@@ -4,14 +4,6 @@
     <list default="true" id="4a6058e8-e9a2-4cec-b898-7e5fe9f21c05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Cookies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Cookies.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/copyright-policy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/copyright-policy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/privacy-policy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy-policy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/terms-and-conditions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/terms-and-conditions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/latest.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/latest.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/webinar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/webinar.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +42,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="issues-1-fixes-8" />
+                    <option name="lastUsedInstant" value="1616588622" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="issues-1-fixes-7" />
                     <option name="lastUsedInstant" value="1616575739" />
