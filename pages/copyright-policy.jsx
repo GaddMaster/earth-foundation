@@ -4,10 +4,15 @@ import Link from "next/link";
 
 import styles from "styles/legal.module.scss";
 import React from 'react';
+import Head from 'next/head';
 
 const CopyrightPolicy = () => {
 
     return (
+      <>
+          <Head>
+              <title>The Earth Foundation Copyright Policy</title>
+          </Head>
         <Layout 
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
@@ -18,7 +23,7 @@ const CopyrightPolicy = () => {
                 <h1>THE EARTH FOUNDATION COPYRIGHT POLICY</h1>
                 <p className={styles.centered}>This Earth Foundation Copyright Policy is incorporated by reference into <Link href="/terms-and-conditions">The Earth Foundation Terms and Conditions</Link> (the “<b>Terms</b>”) and form a part thereto. Any capitalised terms not defined herein have the meaning defined in the Terms.</p>
                 <h2><span>1.</span> YOUR CONTENT</h2>
-                <p>By submitting any content to us (other than personal data) like your CV and motivation letter (“Your Content”), you grant us unrestricted, sub-licensable, royalty-free, perpetual, and irrevocable rights to use, distribute, advertise, adapt, remix, modify, publicly display, excerpt, prepare derivative works of, and reproduce Your Content for the purposes of carrying out our legitimate interests (e.g., to offer, maintain, and promote the Website).</p>
+                <p>By submitting any content to us through the Website (other than personal data) (“Your Content”), you grant us unrestricted, sub-licensable, royalty-free, perpetual, and irrevocable rights to use, distribute, advertise, adapt, remix, modify, publicly display, excerpt, prepare derivative works of, and reproduce Your Content for the purposes of carrying out our legitimate interests (e.g., to offer, maintain, and promote the Website).</p>
                 <br />
                 <p>You agree not to submit Your Content that violates the Terms or any applicable laws, including intellectual property rights of others (copyright, trademarks, and alike) and you agree to pay all royalties, fees, and any other monies applicable to Your Content. You are not allowed to submit us  any content that you have not made or that you are not authorised to use. Also, Your Content should not contain any materials protected by copyright, including music tracks, photos, videos, programmes, and texts, if you do not have the necessary authorisation to use such materials.</p>
                 <br />
@@ -35,14 +40,15 @@ const CopyrightPolicy = () => {
                     <li>Identify with sufficient detail the copyrighted work that you believe has  been infringed;</li>
                     <li>Identify the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us to locate the material;</li>
                     <li>Provide us with information reasonably sufficient to permit us to contact the complaining party, such as an address, telephone number, and, if available, an email address at which the complaining party may be contacted;</li>
-                    <li>Add the following statement: “I have a good faith belief that use of the material in the manner complained of is not authorised by the copyright owner, its agent, or the law”;</li>
-                    <li>Add the following statement: “I swear, under penalty of perjury, that the information in the notification is accurate, and that I am the copyright owner or am authorised to act on behalf of the owner of an exclusive right that is allegedly infringed”;</li>
+                    <li>Add the following statement: <i>“I have a good faith belief that use of the material in the manner complained of is not authorised by the copyright owner, its agent, or the law”</i>;</li>
+                    <li>Add the following statement: <i>“I swear, under penalty of perjury, that the information in the notification is accurate, and that I am the copyright owner or am authorised to act on behalf of the owner of an exclusive right that is allegedly infringed”</i>;</li>
                     <li>Sign the document; and</li>
                     <li>Send the document to us by email (info@earth-foundation.org) or post: The Earth Foundation, 15 Rue de Rive, 1204 Genève, Switzerland.</li>
                 </ul>
                 <p>Please note that you will be liable for damages, including costs and attorney’s fees, if you materially misrepresent that material is infringing your copyright(s). Therefore, if you are not sure if you are the proper copyright holder or if copyright laws protect the material of yours, you may need to consult a lawyer.</p>
             </div>
         </Layout>
+      </>
     );
 };
 

@@ -7,9 +7,14 @@ import Subscribe from "../components/Subscribe";
 
 import content from "../assets/content";
 import SlideSection from 'components/SlideSection';
+import Head from 'next/head';
 
 const Home = () => {
     return (
+      <>
+        <Head>
+          <title>The Earth Foundation</title>
+        </Head>
         <Layout
             title = "The Earth Foundation | Home | Landing"
             header
@@ -28,6 +33,7 @@ const Home = () => {
                 inner: "white"
               }} />
         </Layout>
+      </>
     );
 };
 

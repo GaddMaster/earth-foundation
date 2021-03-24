@@ -12,6 +12,7 @@ import styles from "styles/about.module.scss";
 
 import content from "assets/content";
 import {useMediaQuery} from 'react-responsive';
+import Head from 'next/head';
 
 const About = () => {
     const isMobile = useMediaQuery({
@@ -19,6 +20,10 @@ const About = () => {
     });
 
     return (
+      <>
+        <Head>
+          <title>The Earth Foundation Background</title>
+        </Head>
         <motion.div
             initial = {{ opacity: 0 }}
             animate = {{ opacity: 1 }}
@@ -97,6 +102,7 @@ const About = () => {
             </Layout>
         
         </motion.div>
+      </>
     );
 };
 

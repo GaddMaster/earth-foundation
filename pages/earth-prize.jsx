@@ -15,6 +15,7 @@ import React from 'react';
 import {useMediaQuery} from 'react-responsive';
 import content from '../assets/content';
 import PersonViewer from 'components/PersonViewerCarousel';
+import Head from 'next/head';
 
 const EarthPrize = () => {
     const isMobile = useMediaQuery({
@@ -22,6 +23,10 @@ const EarthPrize = () => {
     });
 
     return (
+      <>
+          <Head>
+              <title>The Earth Prize</title>
+          </Head>
         <Layout 
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
@@ -222,6 +227,7 @@ const EarthPrize = () => {
                     }} />
             </div>
         </Layout>
+      </>
     );
 };
 

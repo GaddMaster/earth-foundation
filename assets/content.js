@@ -211,13 +211,13 @@ const about = {
 const earthPrize = {
     team: [
         {
-            avatar: "/images/angela/avatar.jpg",
-            image: "/images/angela/portrait.jpg",
+            avatar: "/images/rina/avatar.jpg",
+            image: "/images/rina/portrait.jpg",
             name: "Rina Kupferschmid-Rojas",
             position: "Head of the Adjudicating Panel",
             isUnknown: false,
             paragraphs: [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia enim turpis, et posuere justo vehicula nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum facilisis egestas. Nunc convallis, justo eget elementum scelerisque, eros ipsum dapibus turpis, nec aliquam est tortor sit amet felis"
+                "Rina Kupferschmid-Rojas is currently Global Head of Sustainable Finance at UBS. Whereas her professional focus has been on sustainability and impact investing, her engagement beyond her work is broader and spans the areas of environmental sustainability, education, promoting women, and integrating foreigners. She has launched more than 30 social initiatives, including iamthecode, gastromotiva, Water Scarcity, and Thirst. She was an adjunct Professor at Columbia University on Sustainable and Impact Investing and since 2013 has been one of the World Economic Forum's (WEF) Young Global Leaders."
             ]
         },
         {
@@ -265,17 +265,24 @@ const webinar = {
             ],
         },
         {
-            avatar: "/images/angela/avatar.jpg",
-            image: "/images/angela/portrait.jpg",
+            avatar: "/images/rina/avatar.jpg",
+            image: "/images/rina/portrait.jpg",
             name: "Rina Kupferschmid-Rojas",
             position: "Head, The Earth Prize’s Adjudicating Panel",
             isUnknown: false,
             paragraphs: [
-                "Karen is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
+                "Rina Kupferschmid-Rojas is currently Global Head of Sustainable Finance at UBS. Whereas her professional focus has been on sustainability and impact investing, her engagement beyond her work is broader and spans the areas of environmental sustainability, education, promoting women, and integrating foreigners. She has launched more than 30 social initiatives, including iamthecode, gastromotiva, Water Scarcity, and Thirst. She was an adjunct Professor at Columbia University on Sustainable and Impact Investing and since 2013 has been one of the World Economic Forum's (WEF) Young Global Leaders."
             ],
         },
         {
-            isUnknown: true,
+            avatar: "/images/julie/avatar.jpg",
+            image: "/images/julie/portrait.jpg",
+            name: "Julie Maude Rufino",
+            position: "Head of Strategy",
+            isUnknown: false,
+            paragraphs: [
+                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+            ],
         },
         {
             isUnknown: true,

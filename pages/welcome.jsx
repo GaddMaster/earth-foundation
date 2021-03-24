@@ -11,10 +11,16 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "styles/welcome.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
+import Head from 'next/head';
+import React from 'react';
 
 const Welcome = () => {
     const router = useRouter();
     return (
+      <>
+          <Head>
+              <title>Welcome to our community</title>
+          </Head>
         <Layout
             title = "Welcome to our community"
             header>
@@ -42,6 +48,7 @@ const Welcome = () => {
                 </Link>
             </div>
         </Layout>
+      </>
     );
 };
 
