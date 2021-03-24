@@ -13,6 +13,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../styles/header.module.scss";
 import CustomizedMenus from "./MenuItem";
+import {useRouter} from 'next/router';
 
 const style = {
   drawerPaper: {
@@ -23,6 +24,7 @@ const style = {
 
 const Header = (props) => {
   const [open, onOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const body = document.body;
@@ -41,6 +43,14 @@ const Header = (props) => {
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }, [open]);
+
+  const handleLogoClick = route => {
+    if (router.pathname === route) {
+      onOpen(false);
+    } else {
+      router.push(route);
+    }
+  }
 
  const InitiativesMenu = {
     name: "Our Initiatives",
@@ -96,10 +106,8 @@ const Header = (props) => {
   return (
     <div className={styles.header} style={{ position: open ? 'fixed' : 'absolute' }}>
       <div className={styles.wrapper}>
-        <div className={styles.logo}>
-          <Link href="/">
+        <div className={styles.logo} onClick={() => handleLogoClick("/")}>
             <img src="/images/logotype.png" />
-          </Link>
         </div>
         <nav className={styles.nav}>
           <div className={styles.dropdown}>
@@ -138,7 +146,7 @@ const Header = (props) => {
         style={{ zIndex: 1 }}
         onClose={onOpen.bind(this, false)}
       >
-        <Side />
+        <Side onOpen={onOpen} />
       </Drawer>
     </div>
   );
