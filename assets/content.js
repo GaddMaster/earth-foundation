@@ -275,7 +275,14 @@ const webinar = {
             ],
         },
         {
-            isUnknown: true,
+            avatar: "/images/julie/avatar.jpg",
+            image: "/images/julie/portrait.jpg",
+            name: "Julie Maude Rufino",
+            position: "Head of Strategy",
+            isUnknown: false,
+            paragraphs: [
+                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+            ],
         },
         {
             isUnknown: true,

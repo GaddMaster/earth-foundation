@@ -4,22 +4,14 @@
     <list default="true" id="4a6058e8-e9a2-4cec-b898-7e5fe9f21c05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/advisors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/advisors.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/awards-coming-soon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/awards-coming-soon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/awards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/awards.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/cookies-policy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cookies-policy.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Cookies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Cookies.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/copyright-policy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/copyright-policy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/earth-prize.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/earth-prize.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/faqs-earth-prize.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/faqs-earth-prize.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/incubator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/incubator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/mentors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mentors.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/privacy-policy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy-policy.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/terms-and-conditions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/terms-and-conditions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/webinar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webinar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/welcome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/welcome.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/latest.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/latest.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/webinar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/webinar.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

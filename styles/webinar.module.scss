@@ -2,9 +2,8 @@
 @import "./variables";
 
 .wrapper {
-    background-color: white;
+    background-color: whitesmoke;
     width: 100%;
-    margin-bottom: 100px;
     padding: 0 70px;
 
     @media (max-width: $breakpoint) {
