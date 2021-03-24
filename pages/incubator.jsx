@@ -8,6 +8,7 @@ import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
 import { useMediaQuery } from 'react-responsive';
 import Subscribe from 'components/Subscribe';
+import Head from 'next/head';
 
 const Incubator = () => {
     const isMobile = useMediaQuery({
@@ -19,6 +20,10 @@ const Incubator = () => {
     const [isPoint4Opened, openPoint4] = useState(!isMobile);
 
     return (
+      <>
+          <Head>
+              <title>The Earth Foundation Incubator</title>
+          </Head>
         <motion.div
             initial = {{ opacity: 0 }}
             animate = {{ opacity: 1 }}
@@ -159,6 +164,7 @@ const Incubator = () => {
                 </div>
             </Layout>
         </motion.div>
+      </>
     );
 };
 

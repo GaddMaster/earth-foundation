@@ -4,10 +4,15 @@ import Link from "next/link";
 
 import styles from "styles/legal.module.scss";
 import React from 'react';
+import Head from 'next/head';
 
 const TermsAndConditions = () => {
 
     return (
+      <>
+          <Head>
+              <title>The Earth Foundation Terms And Conditions</title>
+          </Head>
         <Layout 
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
@@ -91,6 +96,7 @@ const TermsAndConditions = () => {
                 </div>
             </div>
         </Layout>
+      </>
     );
 };
 

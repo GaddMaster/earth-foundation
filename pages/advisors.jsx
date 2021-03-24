@@ -9,6 +9,7 @@ import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
 import {useMediaQuery} from 'react-responsive';
 import PersonModal from 'components/PersonModal';
+import Head from 'next/head';
 
 const advisors = [
   {
@@ -66,6 +67,10 @@ const Advisors = () => {
     }, [isModalOpened]);
 
     return (
+      <>
+        <Head>
+          <title>The Earth Foundation Advisors</title>
+        </Head>
         <Layout
           title = "The Earth Foundation Advisors"
           background = "whitesmoke"
@@ -114,6 +119,7 @@ const Advisors = () => {
           </div>
         <Subscribe />
         </Layout>
+      </>
     );
 };
 

@@ -15,12 +15,17 @@ import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
 import React, {useState} from 'react';
 import {useMediaQuery} from 'react-responsive';
+import Head from 'next/head';
 
 const Mentors = () => {
     const isMobile = useMediaQuery({
         query: `(max-width: 600px)`,
     });
     return (
+      <>
+          <Head>
+              <title>The Earth Prize Mentors</title>
+          </Head>
         <Layout 
             title = "The Earth Prize Mentors"
             background = "whitesmoke"
@@ -30,7 +35,6 @@ const Mentors = () => {
             <SlideSection name="The Earth Prize Mentors" color="#CEAA7A" />
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.container}>
-
                 <TitleDesc
                     paragraphs = {[
                         "Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students worldwide between the ages of 13 and 19.",
@@ -121,6 +125,7 @@ const Mentors = () => {
                 }} />
 
         </Layout>
+      </>
     );
 };
 

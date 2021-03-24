@@ -14,9 +14,10 @@ import content from "assets/content";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
 import Subscribe from 'components/Subscribe';
-import {useState} from 'react';
+import React, {useState} from 'react';
 import {useMediaQuery} from 'react-responsive';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Awards = props => {
     const isMobile = useMediaQuery({
@@ -28,6 +29,10 @@ const Awards = props => {
     const [isPoint4Opened, openPoint4] = useState(!isMobile);
 
     return (
+      <>
+      <Head>
+          <title>The Earth Foundation Awards</title>
+      </Head>
         <motion.div
             initial = {{ opacity: 0 }}
             animate = {{ opacity: 1 }}
@@ -175,6 +180,7 @@ const Awards = props => {
                   }} />
             </Layout>
         </motion.div>
+      </>
     );
 };
 

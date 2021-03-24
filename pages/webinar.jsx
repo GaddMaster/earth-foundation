@@ -10,6 +10,7 @@ import content from "assets/content";
 import Subscribe from 'components/Subscribe';
 import Link from 'next/link';
 import PersonViewer from 'components/PersonViewerCarousel';
+import Head from 'next/head';
 
 
 const Webinar = () => {
@@ -25,6 +26,10 @@ const Webinar = () => {
     }, [isMobile]);
 
     return (
+      <>
+        <Head>
+          <title>Launch Webinar</title>
+        </Head>
         <Layout 
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
@@ -59,6 +64,7 @@ const Webinar = () => {
                   inner: "white"
               }} />
         </Layout>
+      </>
     );
 };
 

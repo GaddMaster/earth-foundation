@@ -3,13 +3,18 @@ import Layout from "../components/Layout";
 
 import styles from "styles/legal.module.scss";
 import React from 'react';
+import Head from 'next/head';
 
 
 const PrivacyPolicy = () => {
 
     return (
+      <>
+          <Head>
+              <title>The Earth Foundation Privacy Policy</title>
+          </Head>
         <Layout 
-            title = "The Earth <br/> Prize"
+            title = "The Earth Foundation Privacy Policy"
             background = "whitesmoke"
             header
             footer
@@ -115,6 +120,7 @@ const PrivacyPolicy = () => {
                 </div>
             </div>
         </Layout>
+      </>
     );
 };
 

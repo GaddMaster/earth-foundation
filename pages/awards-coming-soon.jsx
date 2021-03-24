@@ -6,10 +6,11 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import http from 'utils/http';
 import InputBase from '@material-ui/core/InputBase';
 import {useRouter} from 'next/router';
+import Head from 'next/head';
 
 const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -33,6 +34,10 @@ const AwardsComingSoon = () => {
     }, [email]);
 
     return (
+      <>
+          <Head>
+              <title>Thank you!</title>
+          </Head>
         <Layout
             title = "Welcome to our community"
             header
@@ -78,6 +83,7 @@ const AwardsComingSoon = () => {
                 </Link>
             </div>
         </Layout>
+      </>
     );
 };
 

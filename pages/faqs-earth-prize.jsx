@@ -9,6 +9,7 @@ import React, {useEffect, useState} from 'react';
 import {useMediaQuery} from 'react-responsive';
 import content from "assets/content";
 import Subscribe from 'components/Subscribe';
+import Head from 'next/head';
 
 
 const FAQSEarthPrize = () => {
@@ -36,6 +37,10 @@ const FAQSEarthPrize = () => {
     }
 
     return (
+      <>
+          <Head>
+              <title>FAQs The Earth Prize</title>
+          </Head>
         <Layout 
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
@@ -97,6 +102,7 @@ const FAQSEarthPrize = () => {
                   inner: "white"
               }} />
         </Layout>
+      </>
     );
 };
 

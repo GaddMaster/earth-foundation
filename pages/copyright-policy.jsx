@@ -4,10 +4,15 @@ import Link from "next/link";
 
 import styles from "styles/legal.module.scss";
 import React from 'react';
+import Head from 'next/head';
 
 const CopyrightPolicy = () => {
 
     return (
+      <>
+          <Head>
+              <title>The Earth Foundation Copyright Policy</title>
+          </Head>
         <Layout 
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
@@ -43,6 +48,7 @@ const CopyrightPolicy = () => {
                 <p>Please note that you will be liable for damages, including costs and attorney’s fees, if you materially misrepresent that material is infringing your copyright(s). Therefore, if you are not sure if you are the proper copyright holder or if copyright laws protect the material of yours, you may need to consult a lawyer.</p>
             </div>
         </Layout>
+      </>
     );
 };
 
