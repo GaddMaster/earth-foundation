@@ -77,6 +77,10 @@ const Header = (props) => {
     name: "Get Involved",
     subItems: [
       {
+        name: "The Earth Prize Launch Webinar",
+        route: "webinar",
+      },
+      {
         name: "Become part of our network",
         route: "sign-up",
       },
