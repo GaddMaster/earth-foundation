@@ -1,0 +1,119 @@
+
+@import "./variables";
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 0px 80px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    min-height: 87px;
+    @media (min-width: $breakpoint) {
+        align-items: flex-end;
+        padding: 0px 40px 0px 120px;
+        margin: 0px 0px 40px 0px;
+    }
+    .image {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        right: -200px;
+        top: -70px;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 1;
+        opacity: 0.5;
+        @media (max-width: $breakpoint) {
+            width: 240px;
+            height: 240px;
+            left: -60px;
+        }
+    }
+    .point {
+        position: absolute;
+        top: 17px;
+        height: 1px;
+        width: 1px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        @media (max-width: $breakpoint) { left: 88px; }
+        @media (min-width: $breakpoint) { right: 46px; }
+        .circle {
+            min-width: 50px;
+            min-height: 50px;
+            border: 1px solid #ceaa7aa1;
+            border-radius: 50%;
+            background: whitesmoke;
+            z-index: 2;
+            @media (max-width: $breakpoint) {}
+            @media (min-width: $breakpoint) {
+                
+            }
+        }
+        .line {
+            position: absolute;
+            min-width: 90px;
+            min-height: 1px;
+            background: #ceaa7aa1;
+            top: 0px;
+            left: -100px;
+            z-index: 1;
+            @media (max-width: $breakpoint) { left: -100px; }
+            @media (min-width: $breakpoint) { left: 0px; }
+        } 
+        .dot {
+            width: 6px;
+            height: 6px;
+            background: #CEAA7A;
+            border-radius: 50%;
+            position: absolute;
+            top: -2px;
+            left: -100px;
+            @media (max-width: $breakpoint) { left: -100px; }
+            @media (min-width: $breakpoint) {left: 88px; }
+        }
+    }
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $blue;
+        margin: 3px 0px 20px 0px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: flex-start;
+
+        @media (min-width: $breakpoint) { font-size: 22px; }
+
+        @media (max-width: $breakpoint) {
+            > span {
+                &:nth-child(1) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin: 0 35px 0 4px;
+                }
+            }
+        }
+        @media (min-width: $breakpoint) {
+            text-align: right;
+        }
+    }
+    .right {
+        text-align: right;
+    }
+    .desc {
+        font-size: 14px;
+        max-width: 650px;
+        z-index: 10;
+        padding-right: 40px;
+        margin-bottom: 40px;
+        @media (min-width: $breakpoint) {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+    }
+}

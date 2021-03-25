@@ -1,99 +1,113 @@
 
 @import "./variables";
 
-.footer {
-    position: relative;
-    background: #ECECEB;
+.container {
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding: 40px 0px;
-    .block {
-        max-width: 820px;
-        flex-grow: 1;
+    width: 100vw;
+    padding: 20px 0px 0px 0px;
+    .inner {
+        max-width: 900px;
+        width: 100vw;
         display: flex;
-        @media (max-width: $breakpoint) { margin: 40px 40px 40px 40px; }
-        .logo {
-            min-width: 60px;
-            width: 60px;
-            height: 60px;
-            margin: 0px 20px 0px 0px;
-            img {
-                width: 60px;
-                height: 60px;
-            }
+        .padding {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             @media (min-width: $breakpoint) {
-                min-width: 80px;
-                width: 80px;
-                height: 80px;
-                margin: 0px 40px 0px 0px;
-                img {
+                flex-direction: row;
+                margin: 0px 0px 0px 80px;
+            }
+            .logo {
+                min-width: 50px;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                @media (max-width: $breakpoint) { margin: 0px 0px 20px 0px; }
+                @media (min-width: $breakpoint) {
+                    min-width: 80px;
                     width: 80px;
                     height: 80px;
+                    margin: 0px 40px 0px 0px;
                 }
             }
-        }
-        .information {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            @media (min-width: $breakpoint) {
-
-            }
-            .links {
+            .information {
+                flex-grow: 1;
                 display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
                 flex-direction: column;
-                width: 100%;
-                margin: 0px 0px 10px 0px;
                 @media (min-width: $breakpoint) {
-                    flex-direction: row;
-                    align-items: center;
+                    height: 100%;
+                    flex-grow: 1;
+                    justify-content: space-evenly;
                 }
-                .routes {
+                .links {
                     display: flex;
-                    align-items: flex-start;
                     flex-direction: column;
-                    .route {
-                        font-size: 10px;
-                        font-weight: bold;
-                        letter-spacing: 1px;
-                        color: rgb(48, 48, 48);
-                        margin: 0px 0px 10px 0px;
-                        &:hover {
-                            cursor: pointer;
-                            color: grey;
-                        }
-                    }
-                    @media (min-width: $breakpoint) { flex-direction: row; }
-                }
-                .socials {
-                    display: flex;
-                    align-items: center;
-                    display: flex;
-                    .social {
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        border: 1px solid black;
-                        color: black;
-                        display: flex;
-                        justify-content: center;
+                    width: 100%;
+                    @media (max-width: $breakpoint) {
                         align-items: center;
-                        margin: 0px 10px 0px 0px;;
-                        svg {
-                            width: 16px;
-                            height: 16px;
+                        margin: 0px 0px 20px 0px;
+                    }
+                    @media (min-width: $breakpoint) {
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                    .routes {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        @media (max-width: $breakpoint) { margin: 0px 0px 15px 0px; }
+                        @media (min-width: $breakpoint) {
+                            flex-direction: row;
+                            flex-grow: 1;
+                        }
+                        .route {
+                            font-size: 10px;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                            color: rgb(48, 48, 48);
+                            &:hover {
+                                cursor: pointer;
+                                color: grey;
+                            }
+
+                            &.disabled {
+                                &:hover {
+                                    cursor: auto;
+                                    color: rgb(48, 48, 48);
+                                }
+                            }
+                            @media (max-width: $breakpoint) { margin: 0px 0px 10px 0px; }
+                            @media (min-width: $breakpoint) { flex-grow: 1; }
+                        }
+                    }
+                    .socials {
+                        display: flex;
+                        align-items: center;
+                        .social {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            border: 1px solid black;
+                            color: black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0px 10px 0px 0px;;
+                            svg {
+                                width: 16px;
+                                height: 16px;
+                            }
                         }
                     }
                 }
-            }
-            .rights {
-                font-size: 10px;
-                color: $gold;
+                .rights {
+                    font-size: 10px;
+                    color: #CECECE;
+                    @media (min-width: $breakpoint) { color: $gold; }
+                }
             }
         }
     }

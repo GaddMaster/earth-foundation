@@ -1,0 +1,70 @@
+
+@import "./variables";
+
+.container {
+
+    display: flex;
+    align-items: center;
+    @media (max-width: $breakpoint) {
+        justify-content: center !important;
+        padding: 0px 0px 0px 60px;
+    }
+
+    .circle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .character {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            height: 100%;
+            font-size: 18px;
+            line-height: 0px;
+            color: $gold;
+            font-weight: 900;
+            width: 0px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .marker {
+                position: relative;
+                top: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $blue;
+        height: 16px;
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        letter-spacing: 1px;
+        svg {
+            width: 14px;
+            height: 14px;
+            margin: 0px 0px 0px 10px;
+        }
+        &:hover {
+            color: grey;
+            cursor: pointer;
+        }
+        &:disabled {
+            &:hover {
+                color: $blue;
+                cursor: auto;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+
+@import "./variables";
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    .padding {
+        padding: 40px;
+        margin: 60px 0px;
+
+        @media (max-width: $breakpoint) {
+            margin: 30px 0px 0;
+        }
+
+        > div {
+            @media (max-width: $breakpoint) {
+                min-height: 160px;
+                padding: 0px 0px 0px 100px;
+            }
+
+            > div {
+               &:nth-child(1) {
+                   @media (max-width: $breakpoint) {
+                       width: 300px;
+                       height: 300px;
+                       left: -135px;
+                       top: -70px;
+                   }
+               }
+
+                &:nth-child(2) {
+                    @media (max-width: $breakpoint) {
+                        left: 108px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    @media (max-width: $breakpoint) {
+                        span {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    @media (max-width: $breakpoint) {
+                        padding-right: 0;
+                        padding-left: 45px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

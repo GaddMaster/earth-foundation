@@ -4,15 +4,12 @@
 .home {
     height: 100vh;
     width: 100%;
-    background: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
-    background-image: url("/images/nasa-Q1p7bh3SHj8-unsplash.webp");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: whitesmoke url("/images/nasa-Q1p7bh3SHj8-unsplash.webp") no-repeat center;
     background-size: cover;
     @media (max-width: $breakpoint) {
         h1 {
@@ -25,5 +22,19 @@
             padding: 0px 20px;
             text-align: center;
         }
+    }
+}
+
+.homeNav{
+    margin-top: 100px;
+    background: red;
+    .homeNavMenu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 999999999999;
+        background: green;
     }
 }
