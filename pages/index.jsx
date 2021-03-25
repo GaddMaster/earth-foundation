@@ -13,7 +13,9 @@ const Home = () => {
     return (
       <>
         <Head>
-          <title>The Earth Foundation</title>
+            <title>The Earth Foundation</title>
+            <meta property = "og:title" content="The Earth Foundation" key="title" />
+            <meta property = "og:description" content = "The Earth Foundation empowers youth to accelerate positive change towards environmental sustainability" key="description" />
         </Head>
         <Layout
             title = "The Earth Foundation | Home | Landing"
