@@ -31,7 +31,7 @@ const TermsAndConditions = () => {
                 <p>1.6 <b>Minors.</b> The Website should not be accessed and used by persons under the age of 16. If any minor between the age of 13 and 16 wishes to access the Website, that minor  needs to get his/her parent or legal guardian to approve the access to the Website and reach out to us on minor’s behalf. Minors below the age of 13 are not allowed to access the Website.</p>
                 <p>1.7 <b>Privacy and other relevant terms.</b> The documents that include important provisions regarding your use of the Website and that should be read and interpreted together with these Terms are:</p>
                 <ul>
-                    <li>Our <Link href="/privacy-policy">privacy policy</Link> and <Link href="/cookies-policy">cookie policy</Link>, which describe in detail how we handle your personal data collected through the Website;</li>
+                    <li>Our <Link href="/privacy-policy">privacy policy</Link> and <Link href="/cookie-policy">cookie policy</Link>, which describe in detail how we handle your personal data collected through the Website;</li>
                     <li>Our <Link href="/copyright-policy">copyright policy</Link>; and</li>
                     <li>Other individual terms and conditions made available by us on the Website.</li>
                 </ul>
