@@ -16,8 +16,8 @@ const Home = () => {
             <title>The Earth Foundation</title>
             <meta property = "og:title" content="The Earth Foundation" key="title" />
             <meta property = "og:description" content = "The Earth Foundation empowers youth to accelerate positive change towards environmental sustainability" key="description" />
-            <meta property = "og:image" content = "/images/nasa-Q1p7bh3SHj8-unsplash.jpg">
-            <link rel = "icon" type = "image/png" href = "/images/logo.png">
+            <meta property = "og:image" content = "/images/nasa-Q1p7bh3SHj8-unsplash.jpg" />
+            <link rel = "icon" type = "image/png" href = "/images/logo.png" />
         </Head>
         <Layout
             title = "The Earth Foundation | Home | Landing"
