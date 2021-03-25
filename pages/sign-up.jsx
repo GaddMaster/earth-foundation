@@ -12,7 +12,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "styles/become.part.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import http from 'utils/http';
 import {useRouter} from 'next/router';
 
@@ -55,13 +55,16 @@ const SignUp = () => {
                     <span>Join us to get the latest updates on what our community of inspiring individuals is up to, share your ideas, or simply chat with us.</span>
                 </div>
                 <div className = {styles.form}>
-                    <InputBase
-                        className = {styles.input}
-                        name = "email"
-                        type = "text"
-                        value = {email}
-                        onChange = {onChange()}
-                        placeholder = "Your Email Here" />
+                    <div className = {styles.inputWrapper}>
+                        <InputBase
+                          className = {styles.input}
+                          name = "email"
+                          type = "text"
+                          value = {email}
+                          onChange = {onChange()}
+                          placeholder = "Your Email Here" />
+                        <p className = {styles.agree}>By submitting your email you agree to our <Link href="/privacy-policy">Privacy Policy</Link>.</p>
+                    </div>
                     <ButtonBase 
                         className = {styles.button}
                         disabled = {isDisabled}
