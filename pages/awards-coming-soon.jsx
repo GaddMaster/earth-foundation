@@ -66,6 +66,7 @@ const AwardsComingSoon = () => {
                           className = {styles.input}
                           value = {email}
                           onChange = {onChange()} />
+                        <p className = {styles.agree}>By submitting your email you agree to our <Link href="/privacy-policy">Privacy Policy</Link>.</p>
                         <ButtonBase
                           className = {styles.buttonSubmit}
                           disabled = {isDisabled}

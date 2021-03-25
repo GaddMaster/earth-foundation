@@ -1,6 +1,7 @@
 
 import {useEffect, useState} from "react";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
 import InputBase from "@material-ui/core/InputBase";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -37,11 +38,14 @@ const Subscribe = props => {
                     <div className = {styles.label}>
                         <span>Passionate about our initiatives?</span>
                     </div>
-                    <InputBase
-                        placeholder = "Your Email Here"
-                        className = {styles.input}
-                        value = {email}
-                        onChange = {onChange()} />
+                    <div className = {styles.inputWrapper}>
+                        <InputBase
+                          placeholder = "Your Email Here"
+                          className = {styles.input}
+                          value = {email}
+                          onChange = {onChange()} />
+                        <p className = {styles.agree}>By submitting your email you agree to our <Link href="/privacy-policy">Privacy Policy</Link>.</p>
+                    </div>
                     <ButtonBase
                         className = {styles.button}
                         disabled = {isDisabled}

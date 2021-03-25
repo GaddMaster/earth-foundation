@@ -24,12 +24,12 @@ const Board = props => {
                             <div className = {styles.count}>
                                 <span>04</span>
                             </div>
-                            <div className = {styles.dots}>
+                            {/*<div className = {styles.dots}>
                                 <FontAwesomeIcon icon = {index===0?solid:hollow} className = {styles.dot} />
                                 <FontAwesomeIcon icon = {index===1?solid:hollow} className = {styles.dot} />
                                 <FontAwesomeIcon icon = {index===2?solid:hollow} className = {styles.dot} />
                                 <FontAwesomeIcon icon = {index===3?solid:hollow} className = {styles.dot} />
-                            </div>
+                            </div>*/}
                         </div>
                         <div className = {styles.header}>
                             <h1>

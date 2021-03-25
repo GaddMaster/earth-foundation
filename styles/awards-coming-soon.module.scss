@@ -87,7 +87,6 @@
       margin-top: 10px;
       background: $gold;
       padding: 15px;
-      width: 200px;
       text-transform: uppercase;
 
       &:disabled {
@@ -97,17 +96,31 @@
   }
   .input {
     width: 100%;
+    min-width: 250px;
     height: 45px;
     border: 1px solid rgb(122, 122, 122);
     text-align: center;
-    margin: 0px 0px 20px 0px;
     @media (min-width: $breakpoint) {
-      width: 200px;
       margin: 0px 10px 0px 0px;
     }
     input {
       text-align: center;
       font-size: 12px;
+    }
+  }
+  .agree {
+    font-size: 9px;
+    color: grey;
+    letter-spacing: 0.2px;
+    margin: 0;
+
+    a {
+      color: grey;
+      text-decoration: underline;
+    }
+
+    @media (max-width: $breakpoint) {
+      font-size: 10px;
     }
   }
   .back {
