@@ -48,6 +48,10 @@ html, body {
     height: 100vh;
 }
 
+#customized-menu {
+    position: absolute !important;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;

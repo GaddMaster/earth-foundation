@@ -82,10 +82,12 @@
   .buttonArea{
     display: flex;
     flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     .buttonSubmit{
       margin-top: 10px;
       background: $gold;
+      width: 100%;
       padding: 15px;
       text-transform: uppercase;
 
@@ -101,7 +103,7 @@
     border: 1px solid rgb(122, 122, 122);
     text-align: center;
     @media (min-width: $breakpoint) {
-      margin: 0px 10px 0px 0px;
+      margin: 0px 0px 0px 0px;
     }
     input {
       text-align: center;
