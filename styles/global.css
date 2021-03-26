@@ -18,10 +18,14 @@ html, body {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+body::-webkit-scrollbar {
+    overflow: hidden;
+    display: none;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
 
 *:focus { outline: 0 !important; }
 
