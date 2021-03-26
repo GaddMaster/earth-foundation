@@ -322,8 +322,8 @@ const faqsEarthPrize = [
                 answer: 'No, all students registered in an academic institution must have a teacher or a school administrator as their supervisor. A parent may serve as supervisor only in the case of an individual or a group of homeschooled students who wishes to participate in The Earth Prize. An official document certifying authorized homeschooling status will be requested during registration.',
             },
             {
-                question: 'Who are The Earth Prize mentors?',
-                answer: 'The Earth Prize mentors are university students who are passionate about sustainability and entrepreneurship and looking for an opportunity to share their knowledge. Mentors will answer participants’ questions on The Earth Prize platform and provide advice and support on students’ project proposals.',
+                question: 'Who are The Earth Prize Mentors?',
+                answer: 'The Earth Prize Mentors are university students who are passionate about sustainability and entrepreneurship and looking for an opportunity to share their knowledge. Mentors will answer participants’ questions on The Earth Prize platform and provide advice and support on students’ project proposals.',
             },
             {
                 question: 'How will the students and mentors interact?',
