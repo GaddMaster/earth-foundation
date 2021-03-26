@@ -14,3 +14,7 @@
     @media (min-width: $breakpoint) { padding: 0px 0px 0px 0px; }
 }
 
+.__hidden {
+    transform: translateY(200px);
+}
+

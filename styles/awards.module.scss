@@ -3,8 +3,7 @@
 
 .container {
     width: 100%;
-    color: grey;
-    background: #ECECEB;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,20 +26,21 @@
                 width: 100%;
                 @media (min-width: $breakpoint) { width: 260px; }
                 h1 { 
-                    font-size: 40px;
+                    font-size: 44px;
                     line-height: 50px;
-                    font-weight: bold;
+                    font-weight: 900;
                     color: #064C40;
                     padding: 0px;
                     text-align: left;
                 }
             }
             .line {
-                width: 40%;
                 width: 140px;
                 height: 1px;
                 background: #C7BDA5;
                 margin: 40px 0px 0px 0px;
+
+                @media (min-width: $breakpoint) { width: 140px; margin: 29px 10px 0px 10px; }
             }
             padding: 0px 0px 0px 0px;
             margin: 0px 0px 40px 0px;
@@ -49,9 +49,12 @@
         }
         .summary {   
             color: #1C192B;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
             @media (min-width: $breakpoint) {
                 width: calc(50% - 30px);
-                padding: 20px 0px 0px 0px;
+                padding: 15px 0px 0px 0px;
             }
         }
     }
@@ -67,7 +70,7 @@
             margin: 0px 0px 40px 0px;
             @media (max-width: $breakpoint) {
                 img { 
-                    min-width: calc(100% + 40px); 
+                    min-width: 100%;
                 }
             }
             @media (min-width: $breakpoint) {
@@ -85,28 +88,45 @@
             .point {
                 display: flex;
                 position: relative;
+
+                @media (max-width: $breakpoint) {
+                    min-height: 70px;
+                }
                 .block {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     .circle {
-                        width: 40px;
-                        height: 40px;
+                        width: 55px;
+                        height: 55px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        border: 1px solid #e4ded3;
+                        border: 1px solid #CDAC76;
                         border-radius: 50%;
+                        > span {
+                            color: #CDAC76;
+                            font-size: 18px;
+                            font-weight: 400;
+                            margin: 0 25px 0 27px;
+                        }
                         .marker {
                             width: 0px;
                             height: 0px;
                             display: flex;
                             align-items: center;
                             justify-content: flex-start;
-                            font-size: 14px;
-                            letter-spacing: 1px;
+                            font-size: 17px;
+                            letter-spacing: 1.2px;
                             color: #064C40;
                             font-weight: bold;
+                            position: relative;
+                            left: -4px;
+
+                            @media (max-width: $breakpoint) {
+                                left: 4px;
+                            }
+
                             span { 
                                 width: 300px !important;
                                 position: relative;
@@ -122,13 +142,13 @@
                         align-items: center;
                         .line {
                             width: 1px;
-                            background-image: linear-gradient(to bottom, #BEB29C, white);
-                            height: 90%;
+                            background-image: linear-gradient(to bottom, #BEB29C, rgba(#BEB29C, 0.3));
+                            height: 100%;
                         }
                     }
                 }
                 .text {
-                    padding: 40px 20px 40px 20px;
+                    padding: 45px 20px 40px 20px;
                     font-size: 14px;
                 }
             }
@@ -140,8 +160,18 @@
         width: calc(100% - 40px);
         margin: 60px 40px 40px 40px;
         color: #17182D;
-        font-weight: bold;
+        font-weight: 900;
+        letter-spacing: 1px;
         @media (max-width: $breakpoint) { align-self: flex-start; }
+
+        .line {
+            width: 100px;
+            height: 1px;
+            background: #C7BDA5;
+            margin: 15px 0px 0px 0px;
+
+            @media (min-width: $breakpoint) { width: 100px; margin: 15px 0px 0px 0px; }
+        }
     }
     .carbon {
         display: flex;
@@ -168,20 +198,31 @@
                 align-items: flex-start;
                 margin: 0px 0px 40px 0px;
                 letter-spacing: 1px;
-                svg {
-                    width: 20px;
-                    height: 20px;
-                    margin: 0px 20px 0px 0px;
-                    color: #CDAC76;
-                }
                 .text {
                     font-size: 30px;
                     font-weight: bold;
-                    width: 100px;
-                    display: flex;
-                    flex-direction: column;
                     line-height: 30px;
                     margin: -10px 0px 0px 0px;
+                    position: relative;
+                    padding-left: 30px;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        margin: 0px 20px 0px 0px;
+                        color: #CDAC76;
+
+                        &:nth-child(1) {
+                            position: absolute;
+                            left: 0;
+                        }
+
+                        &:nth-child(4) {
+                            position: relative;
+                            left: 10px;
+                            top: -5px;
+                        }
+                    }
                 }
             }
             .apply {
@@ -193,6 +234,7 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
+                cursor: pointer;
                 span { width: 220px; }
                 svg {
                     width: 20px;
@@ -248,14 +290,14 @@
         max-width: 900px;
         padding: 0px 40px 0px 40px;
         margin: 0px 0px 80px 0px;
-        @media (min-width: $breakpoint) { margin: 0px 0px 120px 0px; }
+        @media (min-width: $breakpoint) { margin: 0px 0px 70px 0px; }
         .header {
             width: 220px;
             font-size: 40px;
             line-height: 50px;
             color: #CFAA7E;
-            margin: 0px 0px 40px 0px;
-            font-weight: bold;
+            margin: 0px 0px 20px 0px;
+            font-weight: 900;
             @media (min-width: $breakpoint) {
                 width: 320px;
             }

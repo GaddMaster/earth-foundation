@@ -20,7 +20,7 @@ const MentorshipCircles = props => {
                         <div>The mentoring will</div>
                         <div>take place between</div>
                         <div>September 1st, 2021 and</div>
-                        <div>January 31st, 2022</div>
+                        <div>January 31st, 2022.</div>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@ const MentorshipCircles = props => {
                     </div>
                     <div className = {styles.divider}></div>
                     <div className = {styles.desc}>
-                        <span>The mentoring will take place virtually, through The Earth Prize platform</span>
+                        <span>The mentoring will take place virtually, through The Earth Prize platform.</span>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@ const MentorshipCircles = props => {
                         <div>questions from participants relating</div>
                         <div>to mentors’ fields of expertise and interest,</div>
                         <div>and providing advice on student</div>
-                        <div>project proposals</div>
+                        <div>project proposals.</div>
                     </div>
                 </div>
             </div>
@@ -62,9 +62,9 @@ const MentorshipCircles = props => {
                         <div>The Earth Prize mentoring</div>
                         <div>is open to all university students</div>
                         <div>who are passionate about</div>
-                        <div>sustainability, entrepreneurship</div>
+                        <div>sustainability and entrepreneurship</div>
                         <div>and looking for an opportunity to</div>
-                        <div>share their knowledge</div>
+                        <div>share their knowledge.</div>
                     </div>
                 </div>
             </div>

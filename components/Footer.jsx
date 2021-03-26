@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,28 +8,35 @@ import { faFacebookF, faTwitter, faInstagram, faYoutube } from "@fortawesome/fre
 import styles from "../styles/footer.module.scss";
 
 const Footer = props => {
-    console.log(props);
     return (
         <section className = {styles.container} style = {{background:props.background.outer}}>
             <div className = {styles.inner} style = {{background:props.background.inner}}>
                 <div className = {styles.padding}>
                     <div className = {styles.logo}>
-                        <img className = {styles.logo} src = "/images/logo.png" />
+                        <Link href="/">
+                            <img className = {styles.logo} src = "/images/logo.png" />
+                        </Link>
                     </div>
                     <div className = {styles.information}>
                         <div className = {styles.links}>
                             <div className = {styles.routes}>
-                                <div className = {styles.route}>
-                                    <span>About</span>
-                                </div>
-                                <div className = {styles.route}>
+                                <div className = {`${styles.route} ${styles.disabled}`}>
                                     <span>Contact Us</span>
                                 </div>
                                 <div className = {styles.route}>
-                                    <span>Data Protection Policy</span>
+                                    <Link href="/privacy-policy">
+                                        <span>Privacy Policy</span>
+                                    </Link>
                                 </div>
                                 <div className = {styles.route}>
-                                    <span>Terms & Conditions</span>
+                                    <Link href="/terms-and-conditions">
+                                        <span>Terms & Conditions</span>
+                                    </Link>
+                                </div>
+                                <div className = {styles.route}>
+                                    <Link href="/copyright-policy">
+                                        <span>Copyright Policy</span>
+                                    </Link>
                                 </div>
                             </div>
                             <div className = {styles.socials}>
@@ -63,8 +70,8 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
     background: {
-        outer: "white",
-        inner: "white"
+        outer: "whitesmoke",
+        inner: "whitesmoke"
     }
 };
 

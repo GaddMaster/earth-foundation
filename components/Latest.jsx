@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import Carousel from "react-multi-carousel";
+import Link from "next/link";
 
 import styles from "../styles/latest.module.scss";
 import "react-multi-carousel/lib/styles.css";
@@ -45,17 +46,20 @@ class Latest extends PureComponent {
                 <section className = {styles.inner}>
                     <div className = {styles.control} style = {{width:style.control,height:styles.control}}>
                         <div className = {styles.centered}>
-                            <div className = {styles.spacer}>
+                            {/*<div className = {styles.spacer}>
                                 <ButtonBase 
                                     className = {styles.button}
-                                    onClick = {this.onNext}>
+                                    onClick = {this.onNext}
+                                    ontouchend = {this.onNext}>
                                     <FontAwesomeIcon icon = {faArrowRight} />
                                 </ButtonBase>
                             </div>
                             <div className = {styles.spacer}>
                                 <ButtonBase 
                                     className = {styles.button}
-                                    onClick = {this.onPrev}>
+                                    onClick = {this.onPrev}
+                                    ontouchend = {this.onPrev}
+                                    >
                                     <FontAwesomeIcon icon = {faArrowLeft} />
                                 </ButtonBase>
                             </div>
@@ -66,12 +70,19 @@ class Latest extends PureComponent {
                                 <span style = {{marginRight:10}}>Read All</span>
                                 <span className = {styles.news}>News</span>
                                 <FontAwesomeIcon icon = {faArrowRight} />
+                            </div>*/}
+                            <div className={styles.webinar}>
+                                <p className={styles.announcement}>The Earth Foundation will be officially launching The Earth Prize on April 19th, 2021.</p>
+                                <div className={styles.logo} />
+                                <Link href="webinar">
+                                    <button>Learn more about The Earth Prize Launch Webinar</button>
+                                </Link>
                             </div>
                         </div>
                         <div className = {`${styles.wall} ${styles.wallA}`}></div>
                         <div className = {`${styles.wall} ${styles.wallB}`}></div>
                     </div>
-                    <div className = {styles.carousel} style = {{width:style.carousel}}>
+                    {/*<div className = {styles.carousel} style = {{width:style.carousel}}>
                         <Carousel
                             containerClass = {mobile ? styles.carcon : styles.carmo}
                             sliderClass = {styles.slider}
@@ -79,7 +90,7 @@ class Latest extends PureComponent {
                             arrows = {false}
                             ssr
                             responsive = {responsive}>
-                            {content.home.boards.concat(content.home.boards).map((item, index) => (
+                            {content.home.news.map((item, index) => (
                                 <div className = {styles.wrapper} key = {index}>
                                     <Card
                                         image = {item.image}
@@ -88,7 +99,7 @@ class Latest extends PureComponent {
                                 </div>
                             ))}
                         </Carousel>
-                    </div>
+                    </div>*/}
                 </section>
             </section>
         );

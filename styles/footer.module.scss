@@ -4,11 +4,11 @@
 .container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     padding: 20px 0px 0px 0px;
     .inner {
         max-width: 900px;
-        width: 100%;
+        width: 100vw;
         display: flex;
         .padding {
             flex-grow: 1;
@@ -24,6 +24,7 @@
                 min-width: 50px;
                 width: 50px;
                 height: 50px;
+                cursor: pointer;
                 @media (max-width: $breakpoint) { margin: 0px 0px 20px 0px; }
                 @media (min-width: $breakpoint) {
                     min-width: 80px;
@@ -71,6 +72,13 @@
                                 cursor: pointer;
                                 color: grey;
                             }
+
+                            &.disabled {
+                                &:hover {
+                                    cursor: auto;
+                                    color: rgb(48, 48, 48);
+                                }
+                            }
                             @media (max-width: $breakpoint) { margin: 0px 0px 10px 0px; }
                             @media (min-width: $breakpoint) { flex-grow: 1; }
                         }
@@ -78,7 +86,6 @@
                     .socials {
                         display: flex;
                         align-items: center;
-                        display: flex;
                         .social {
                             width: 30px;
                             height: 30px;

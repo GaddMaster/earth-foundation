@@ -1,0 +1,35 @@
+@import "./variables";
+
+@import "./variables";
+
+.section {
+    position: fixed;
+    display: flex;
+    right: 5%;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    top: 30%;
+
+    @media (max-width: $breakpoint) {
+        display: none;
+    }
+
+    .social {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid black;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 15px;
+        svg {
+            width: 13px;
+            height: 13px;
+        }
+    }
+}
+

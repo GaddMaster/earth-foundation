@@ -3,11 +3,21 @@
 
 .board {
     position: relative;
-    max-width: 900px;
     width: 100%;
-    height: 80vh;
-    margin: 0px 0px 40px 0px;
-    @media (min-width: $breakpoint) { margin: 0px auto 80px auto; }
+    height: 100vh;
+    padding: 0 130px;
+
+    @media (max-width: $breakpoint) {
+        padding: 0;
+    }
+
+    .wrapper {
+        max-width: 900px;
+        position: relative;
+        height: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
     .banner {
         position: absolute;
         width: 100%;
@@ -16,73 +26,113 @@
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        @media (min-width: $breakpoint) { width: 90%; }
+        @media (min-width: $breakpoint) {
+            width: calc(100% - 100px);
+        }
     }
     .block {
         position: absolute;
         bottom: 0px;
-        right: 0px;
-        @media (max-width: $breakpoint) { width: calc(100% - 40px); }
-        @media (min-width: $breakpoint) {
-            width: 50%;
-            max-width: 520px;
+        right: 0;
+        width: 100%;
+        max-width: 520px;
+
+        @media (max-width: $breakpoint) {
+            width: calc(100% - 40px);
+            max-width: none;
         }
         .padding {
             padding: 40px 40px 20px 40px;
-            @media (min-width: $breakpoint) { padding: 30px; }
+
+            @media (max-width: $breakpoint) {
+                padding: 30px;
+            }
             .pagination {
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 font-family: "lato";
-                margin: 0px 0px 20px 0px;
+                margin: 0px 0px 0px 0px;
                 .index {
                     font-size: 30px;
                     font-weight: bold;
                     line-height: 30px;
                     margin: 0px 5px 0px 0px;
                     color: white;
+
+                    @media (max-width: $breakpoint) {
+                        font-size: 24px;
+                    }
                 }
                 .count {
-                    font-size: 16px;
+                    font-size: 13px;
                     font-weight: bold;
                     line-height: 16px;
                     color: rgba(255, 255, 255, 0.404);
-                    margin: 0px 20px 0px 0px;
+                    margin: 13px 60px 0px 0px;
+
+                    @media (max-width: $breakpoint) {
+                        font-size: 12px;
+                    }
                 }
                 .dots {
                     display: flex;
                     flex-grow: 1;
                     justify-content: flex-start;
+                    margin-top: 13px;
                     .dot {
-                        width: 10px;
-                        height: 10px;
-                        margin: 0px 10px 0px 0px;
+                        width: 8px;
+                        height: 8px;
+                        margin: 0px 30px 0px 0px;
                         color: white;
+
+                        @media (max-width: $breakpoint) {
+                            margin: 0px 20px 0px 0px;
+                        }
                     }
                 }
             }
             .header {
-                margin: 0px 0px 20px 0px;
+                margin: 25px 0px 10px 0px;
+                @media (max-width: $breakpoint) {
+                    margin: 20px 0px 10px 0px;
+                }
                 h1 {
                     font-size: 28px;
                     color: #CEAA7A;
-                    font-weight: bold;
+                    font-weight: 900;
                     text-align: left;
                     padding: 0px;
                     line-height: 36px;
+                    @media (max-width: $breakpoint) {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
                 }
             }
             .summary {
                 color: white;
                 margin: 0px 0px 20px 0px;
+                line-height: 30px;
+
+                @media (max-width: $breakpoint) {
+                    font-size: 12px;
+                    line-height: 24px;
+                }
             }
             .link {
                 display: flex;
                 color: #CEAA7A;
                 align-items: center;
+                font-weight: 400;
+
                 .label {
                     text-transform: uppercase;
                     font-size: 14px;
+                    cursor: pointer;
+
+                    @media (max-width: $breakpoint) {
+                        font-size: 12px;
+                    }
                 }
                 .icon {
                     svg {

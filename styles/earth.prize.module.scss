@@ -2,11 +2,11 @@
 @import "./variables";
 
 .container {
-
+    position: relative;
     max-width: 900px;
     width: 100%;
     padding-top: 120px;
-    @media (min-width: $breakpoint) { padding-top: 260px; }
+    @media (min-width: $breakpoint) { padding-top: 286px; }
 
     .circles {
         width: 100%;
@@ -17,8 +17,8 @@
         justify-content: center;
         padding: 20px;
         position: relative;
-        margin: 0px 0px 40px 0px;
-        @media (min-width: $breakpoint) { height: 1300px; }
+        margin: 0 0px 40px 0px;
+        @media (min-width: $breakpoint) { height: 1300px; margin: 20px 0px 40px 0px; }
         .circle {
             width: 100%;
             height: 0px;
@@ -45,30 +45,68 @@
                 height: 100%;
                 position: absolute;
                 top: 0px;
-                padding: 40px 40px 80px 40px;
+                padding: 20px 40px 40px 40px;
                 text-align: center;
                 .index {
                     color: $gold;
-                    font-size: 20px;
+                    font-size: 18px;
+                    font-weight: 900;
                 }
                 .header {
                     color: $gold;
-                    font-size: 20px;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-bottom: 10px;
                 }
                 .timeline {
                     color: rgba(255, 255, 255, 0.5);
-                    font-size: 12px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    @media (max-width: $breakpoint) {
+                        font-size: 13px;
+                    }
                 }
                 .divider {
                     min-height: 1px;
-                    width: 120px;
-                    margin: 10px 0px;
-                    background: white;
-                    margin: 10px auto;
+                    width: 60px;
+                    background: $gold;
+                    margin: 10px auto 20px;
                 }
                 .desc {
                     color: rgb(255, 255, 255);
-                    font-size: 10px;
+                    font-size: 11px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    @media (max-width: $breakpoint) {
+                        font-size: 12px;
+                    }
+                }
+                .link {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    color: $gold;
+                    font-weight: bold;
+                    margin: 15px auto 0;
+                    width: 220px;
+                    cursor: pointer;
+                    .label {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0px 16px 0px 0px;
+                        line-height: 20px;
+                        font-size: 12px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+                    .icon {
+                        margin: 5px 0px -2px 0px;
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -102,6 +140,8 @@
         .submit {
             z-index: 3;
             background: #064D3F;
+            height: 450px;
+            width: 450px;
             @media (min-width: $breakpoint) {
                 height: 400px;
                 width: 400px;
@@ -126,22 +166,25 @@
             z-index: 3;
             .index, .header { color: white !important; } 
             @media (min-width: $breakpoint) {
-                height: 300px;
-                width: 300px;
+                height: 330px;
+                width: 330px;
                 position: absolute;
-                top: 730px;
+                top: 740px;
                 left: -28px;
             }
         }
         .ceremony {
             background: #1A3326;
-            z-index: 2;
+            z-index: 4;
+            height: 410px;
+            width: 410px;
             @media (min-width: $breakpoint) {
                 height: 400px;
                 width: 400px;
                 position: absolute;
-                top: 1020px;
+                top: 1060px;
                 left: 20px;
+                z-index: 2;
             }
         }
         .deer {
@@ -170,7 +213,8 @@
             flex-direction: column;
             color: #302F3D;
             font-size: 32px;
-            font-weight: bold;
+            line-height: 40px;
+            font-weight: 900;
             margin: 0px 0px 20px 0px;
             width: 220px;
         }
@@ -183,13 +227,14 @@
             .label {
                 display: flex;
                 flex-direction: column;
-                margin: 0px 20px 0px 0px;
+                margin: 0px 16px 0px 0px;
+                line-height: 30px;
+                text-transform: uppercase;
             }
             .icon {
-                margin: 0px 0px -6px 0px;
                 svg {
-                    width: 20px;
-                    height: 20px;
+                    width: 16px;
+                    height: 16px;
                 }
             }
         }
@@ -200,14 +245,21 @@
         display: flex;
         flex-direction: column;
         padding: 40px;
+        @media (max-width: $breakpoint) {
+           margin-bottom: 30px;
+        }
+
         .header {
             font-size: 32px;
-            font-weight: bold;
+            line-height: 40px;
+            font-weight: 900;
             color: $gold;
-            margin: 0px 0px 20px 0px;
+            margin: 0px 0px 30px 0px;
         }
         .desc {
             font-size: 14px;
+            line-height: 28px;
+            font-weight: 400;
             color: black;
         }
     }
@@ -219,7 +271,7 @@
         padding: 40px;
         position: relative;
         @media (max-width: $breakpoint) {
-            margin: 0px 0px 40px 0px;
+            margin: -40px 0px 40px 0px;
         }
         @media (min-width: $breakpoint) {
             flex-direction: row;
@@ -232,12 +284,14 @@
             .header {
                 font-size: 32px;
                 color: #0A4E42;
-                font-weight: bold;
+                font-weight: 900;
                 margin: 0px 0px 20px 0px
             }
             .desc {
                 font-size: 14px;
                 color: black;
+                line-height: 30px;
+                font-weight: 400;
                 margin: 0px 0px 20px 0px
             }
         }
@@ -245,15 +299,24 @@
             min-width: 300px;
             height: 300px;
             position: relative;
+
+            @media (max-width: $breakpoint) {
+                width: 290px;
+                min-width: 0;
+                margin: 0 auto;
+            }
             .clue {
-                background: grey;
+                background: #ccc;
                 color: white;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 30px;
+                text-align: center;
+                font-size: 18px;
+                line-height: 20px;
                 position: absolute;
+                font-weight: 900;
             }
             .father {
                 width: 150px;
@@ -270,6 +333,8 @@
                 height: 120px;
                 top: 140px;
                 left: 100px;
+                font-size: 14px;
+                line-height: 16px;
                 @media (min-width: $breakpoint) {
                     top: 140px;
                     left: 100px;
@@ -280,6 +345,8 @@
                 height: 80px;
                 top: 50px;
                 left: 160px;
+                font-size: 10px;
+                line-height: 12px;
                 @media (min-width: $breakpoint) {
                     top: 50px;
                     left: 50px;

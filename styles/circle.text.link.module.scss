@@ -23,7 +23,7 @@
             font-size: 18px;
             line-height: 0px;
             color: $gold;
-            font-weight: bold;
+            font-weight: 900;
             width: 0px;
             display: flex;
             align-items: flex-start;
@@ -46,6 +46,10 @@
         font-weight: bold;
         color: $blue;
         height: 16px;
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        letter-spacing: 1px;
         svg {
             width: 14px;
             height: 14px;
@@ -54,6 +58,12 @@
         &:hover {
             color: grey;
             cursor: pointer;
+        }
+        &:disabled {
+            &:hover {
+                color: $blue;
+                cursor: auto;
+            }
         }
     }
 

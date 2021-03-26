@@ -15,6 +15,8 @@ const HomeNav = (props) => {
             initial={{
                 y: 50
             }}
+
+            
             animate={{
                 y: 0
             }}
@@ -73,13 +75,13 @@ const HomeNav = (props) => {
                             About Us
                         </div>
                         <div className={styles.menuList}>
-                            <Link href="/about-us">
+                            <Link href="/about">
                                 <span>The Earth Foundation</span>
                             </Link>
-                            <Link href="/about-us">
+                            <Link href="/about">
                                 <span>The Adjudicating Panel</span>
                             </Link>
-                            <Link href="/about-us">
+                            <Link href="/about">
                                 <span>Our Ambassadors</span>
                             </Link>
                         </div>
