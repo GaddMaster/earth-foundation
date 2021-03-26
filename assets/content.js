@@ -334,7 +334,7 @@ const faqsEarthPrize = [
                 answer: 'All mentoring will take place through The Earth Prize platform exclusively.',
             },
             {
-                question: 'Can a team enter multiple projects?',
+                question: 'Can a team submit multiple projects?',
                 answer: 'Schools and teachers are allowed and encouraged to register more than one team to The Earth Prize; however, each team may submit one project only.',
             },
             {
