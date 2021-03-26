@@ -6,7 +6,7 @@ const home = {
         title_2: " Foundation",
         sub: "Inspire. Educate. Mentor. Empower.",
         paragraphs: [
-            "The Earth Foundation aims to distribute $1 million annually to students, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
+            "The Earth Foundation aims to distribute $1 million annually to students, schools, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
             "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
         ],
         section: "The Earth Foundation Has Four Initiatives",
@@ -302,6 +302,10 @@ const faqsEarthPrize = [
                 answer: 'Yes, participation in The Earth Prize is free of charge. Participants will never be asked to make any payment at any stage of the competition.',
             },
             {
+                question: 'How many students can there be on a team?',
+                answer: 'Students may sign-up as individuals or as a team of up to 5 people.',
+            },
+            {
                 question: 'Are students from different grades allowed to participate in the same team?',
                 answer: 'Students from different classes and grades are welcome to form a team as long as they are between the ages of 13 and 19 and registered in the same institution.',
             },
@@ -328,6 +332,10 @@ const faqsEarthPrize = [
             {
                 question: 'How will the students and mentors interact?',
                 answer: 'All mentoring will take place through The Earth Prize platform exclusively.',
+            },
+            {
+                question: 'Can a team enter multiple projects?',
+                answer: 'Schools and teachers are allowed and encouraged to register more than one team to The Earth Prize; however, each team may submit one project only.',
             },
             {
                 question: 'Can the same student/team participate more than once?',

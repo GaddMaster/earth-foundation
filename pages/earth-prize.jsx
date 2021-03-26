@@ -38,7 +38,7 @@ const EarthPrize = () => {
             <div className = {styles.container}>
                 <TitleDesc
                     paragraphs = {[
-                        "A $200,000 global youth environmental sustainability competition open to all students worldwide between the ages of 13 and 19, with rewards in the form of university scholarships for students and grants for schools.",
+                        "A $200,000 global youth environmental sustainability competition open to all students between the ages of 13 and 19, with rewards in the form of university scholarships for students and grants for schools.",
                         "Through The Earth Prize, students are challenged, mentored, and inspired to effect real change by designing their own environmental sustainability projects, products, organizations or enterprises."
                     ]}
                     color = {{
