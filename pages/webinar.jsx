@@ -42,7 +42,7 @@ const Webinar = () => {
                 <div className = {styles.container}>
                     <h1 className={styles.title}>Launch Webinar</h1>
                     <p className={styles.subtitle}>The Earth Foundation will officially launch The Earth Prize on April 19th, 2021.</p>
-                    <p className={styles.text}>Join our launch webinar to learn more about The Earth Foundation and The Earth Prize, and how we will encourage and support young students to come up with innovative ideas to accelerate positive change towards environmental sustainability.</p>
+                    <p className={styles.text}>Join our launch webinar to learn more about The Earth Foundation and The Earth Prize, and how we will encourage and support young students to develop innovative ideas to accelerate positive change towards environmental sustainability.</p>
                     <Link href="https://theearthfoundation.typeform.com/to/vGnZsu9o">
                         <button className={styles.button}>Register for The Earth Prize Launch Webinar!</button>
                     </Link>

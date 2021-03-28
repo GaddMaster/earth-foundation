@@ -17,7 +17,6 @@ const Incubator = () => {
     const [isPoint1Opened, openPoint1] = useState(!isMobile);
     const [isPoint2Opened, openPoint2] = useState(!isMobile);
     const [isPoint3Opened, openPoint3] = useState(!isMobile);
-    const [isPoint4Opened, openPoint4] = useState(!isMobile);
 
     return (
       <>
@@ -33,22 +32,21 @@ const Incubator = () => {
                 header
                 footer
             >
-                <SlideSection height={30} name="The Earth Foundation Incubator" color="#CEAA7A" />
+                <SlideSection height={30} name="The Incubator" color="#CEAA7A" />
                 <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
                 <div className = {styles.container}>
                     <div className = {styles.top}>
                         <div className = {styles.header}>
                             <div className = {styles.label}>
-                                <h1>The Earth Foundation Incubator</h1>
+                                <h1>The Incubator</h1>
                             </div>
                             <div className = {styles.line}></div>
                         </div>
                         <div className = {styles.summary}>
                             <span>
-                                The Earth Foundation Incubator aims to seed-fund promising start-ups
+                                The Incubator aims to seed-fund promising start-ups
                                 whose work or idea has the potential to accelerate positive change towards environmental sustainability. Every year, a total of $500,000
-                                will be distributed to projects proposing innovative and disruptive solutions. All participating start-ups will become part of the The Earth Foundation's
-                                special ecosystem and supported along their development path.
+                                will be distributed to projects proposing innovative and disruptive solutions. All participating start-ups will become part of The Earth Foundation's special ecosystem and supported along their development path.
                             </span>
                         </div>
                     </div>
@@ -69,7 +67,7 @@ const Incubator = () => {
                                 </div>
                                 {isPoint1Opened && (
                                   <div className = {styles.text}>
-                                      <span>The Earth Foundation Incubator will launch in May 2022.</span>
+                                      <span>The Incubator will launch in early 2022.</span>
                                   </div>
                                 )}
                             </div>
@@ -78,7 +76,7 @@ const Incubator = () => {
                                     <div className = {styles.circle}>
                                         {isMobile && <span>{isPoint2Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>{isMobile ? '2. Evaluation' : '2.Evaluation'}</span>
+                                            <span>{isMobile ? '2. Incubation' : '2.Incubation'}</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
@@ -87,7 +85,7 @@ const Incubator = () => {
                                 </div>
                                 {isPoint2Opened && (
                                     <div className = {styles.text}>
-                                        <span>Each project is assessed by The Earth Foundation Adjudicating Panel.</span>
+                                        <span>The seed-funded projects will receive a substantial share of capital to help them grow.</span>
                                     </div>
                                 )}
                             </div>
@@ -96,33 +94,15 @@ const Incubator = () => {
                                     <div className = {styles.circle}>
                                         {isMobile && <span>{isPoint3Opened ? '-' : '+'}</span>}
                                         <div className = {styles.marker}>
-                                            <span>{isMobile ? '3. Awards' : '3.Awards'}</span>
+                                            <span>{isMobile ? '3. Alumni Association' : '3.Alumni Association'}</span>
                                         </div>
                                     </div>
                                     <div className = {styles.guide}>
-                                        <div className = {styles.line}></div>
                                     </div>
                                 </div>
                                 {isPoint3Opened && (
                                     <div className = {styles.text}>
-                                        <span>The seed-funded projects will receive a substantial share of capital to help them grow.</span>
-                                    </div>
-                                )}
-                            </div>
-                            <div className = {styles.point}>
-                                <div className = {styles.block} onClick={() => isMobile && openPoint4(!isPoint4Opened)}>
-                                    <div className = {styles.circle}>
-                                        {isMobile && <span>{isPoint4Opened ? '-' : '+'}</span>}
-                                        <div className = {styles.marker}>
-                                            <span>{isMobile ? '4. Alumni Association' : '4.Alumni Association'}</span>
-                                        </div>
-                                    </div>
-                                    <div className = {styles.guide}>
-                                    </div>
-                                </div>
-                                {isPoint4Opened && (
-                                    <div className = {styles.text}>
-                                        <span>All recipients of The Earth Foundation Incubator seed-funding will be automatically enrolled in the The Earth Foundation Alumni Association. </span>
+                                        <span>All recipients of The Incubator’s seed-funding will be automatically enrolled in the The Earth Foundation Alumni Association. </span>
                                     </div>
                                 )}
                             </div>
@@ -138,7 +118,7 @@ const Incubator = () => {
                                 <span>Launching in 2022</span>
                             </div>
                             <div className = {styles.eligible}>
-                                <span>The Earth Foundation Incubator is open to all start-ups interested in sustainability and innovation.</span>
+                                <span>The Incubator is open to all start-ups interested in sustainability and innovation.</span>
                             </div>
                             <div className = {styles.wall}></div>
                         </div>

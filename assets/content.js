@@ -50,8 +50,7 @@ const home = {
         },
         {
             image : "/images/magnezis-magnestic-TW62wXQ6Omc-unsplash.webp",
-            label: "The Earth ",
-            label_2: "Foundation Incubator",
+            label: "The Incubator",
             summary: "$500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide.",
             links: [
                 {

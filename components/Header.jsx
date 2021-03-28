@@ -68,7 +68,7 @@ const Header = (props) => {
         route: "awards",
       },
       {
-        name: "The Earth Foundation Incubator",
+        name: "The Incubator",
         route: "incubator",
       },
     ],
