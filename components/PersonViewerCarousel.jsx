@@ -102,6 +102,7 @@ const PersonViewerCarousel = props => {
                                 onClick = {isMobile ? () => handleOnPersonClick(i) : onIndex.bind(this, i)}
                                 key = {i}>
                                   <img src = {person.avatar} />
+                                  <p>{person.name}</p>
                               </ButtonBase>
                             )
                           }

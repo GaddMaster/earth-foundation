@@ -92,7 +92,7 @@ const Awards = props => {
                                 </div>
                                 {isPoint2Opened && (
                                     <div className = {styles.text}>
-                                        <span>Each research proposal is assessed by the Adjudication Panel biannually.</span>
+                                        <span>Research proposals are assessed biannually by a panel of experts.</span>
                                     </div>
                                 )}
                             </div>

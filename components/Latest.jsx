@@ -104,7 +104,6 @@ class Latest extends PureComponent {
             </section>
         );
     };
-
 };
 
 export default Latest;

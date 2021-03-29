@@ -38,7 +38,7 @@ const MentorshipCircles = props => {
             <div className = {`${styles.circle} ${styles.role}`}>
                 <div className = {styles.padding}>
                     <div className = {styles.header}>
-                        <span>Your role</span>
+                        <span>Your Role</span>
                     </div>
                     <div className = {styles.divider}></div>
                     <div className = {styles.desc}>

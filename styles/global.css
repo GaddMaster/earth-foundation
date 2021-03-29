@@ -43,19 +43,14 @@ html, body {
     overflow-x: hidden;
 }
 
-.locked {
+body::-webkit-scrollbar {
     overflow: hidden;
-    height: 100vh;
-}
-
-#customized-menu {
-    position: absolute !important;
+    display: none;
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
+    display: none;
+  }
 
 *:focus { outline: 0 !important; }
 
