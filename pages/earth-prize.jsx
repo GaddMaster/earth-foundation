@@ -150,7 +150,7 @@ const EarthPrize = () => {
                             </div>
                             <div className = {styles.divider} />
                             <div className = {styles.desc}>
-                                <span>The top three teams will be selected and invited to The Earth Prize Ceremony, where each team will present their Final Project Proposal and The Earth Prize Winner will be announced. The winning team will receive a prize of $100,000, to be distributed equally between the team and their school. Two runner-up teams will be awarded $40,000 each to be distributed in the same fashion.</span>
+                                <span>The winning team will receive a prize of $100,000, to be split in half between the team and their school. Three runner-up schools will be awarded $25,000. The Earth Prize will also recognize a mentor and an educator, who will each receive $12,500.</span>
                             </div>
                         </div>
                     </div>

@@ -48,19 +48,19 @@ const home = {
             path: "/",
             background: "#074D3F"
         },
-        {
-            image : "/images/magnezis-magnestic-TW62wXQ6Omc-unsplash.webp",
-            label: "The Incubator",
-            summary: "$500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide.",
-            links: [
-                {
-                    label: "Read more about the initiative",
-                    link: "/incubator"
-                }
-            ],
-            path: "/",
-            background: "#1A3324"
-        },
+        // {
+        //     image : "/images/magnezis-magnestic-TW62wXQ6Omc-unsplash.webp",
+        //     label: "The Incubator",
+        //     summary: "$500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide.",
+        //     links: [
+        //         {
+        //             label: "Read more about the initiative",
+        //             link: "/incubator"
+        //         }
+        //     ],
+        //     path: "/",
+        //     background: "#1A3324"
+        // },
         {
             image : "/images/pam-ivey-c0Y30cWbyEc-unsplash.webp",
             label: "The Earth ",

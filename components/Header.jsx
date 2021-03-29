@@ -67,10 +67,10 @@ const Header = (props) => {
         name: "The Earth Foundation Awards",
         route: "awards",
       },
-      {
-        name: "The Incubator",
-        route: "incubator",
-      },
+      // {
+      //   name: "The Incubator",
+      //   route: "incubator",
+      // },
     ],
   };
  const GetInvolvedMenu = {
