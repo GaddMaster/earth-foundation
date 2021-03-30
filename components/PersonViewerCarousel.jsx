@@ -106,11 +106,6 @@ const PersonViewerCarousel = props => {
                               </ButtonBase>
                             )
                           }
-                          {isMobile && (
-                              <div className = {styles.name}>
-                                  <span>{person.name}</span>
-                              </div>
-                          )}
                       </div>
                     ))}
                 </div>
