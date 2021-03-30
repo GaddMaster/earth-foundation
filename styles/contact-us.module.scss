@@ -1,0 +1,180 @@
+
+@import "./variables";
+
+.wrapper {
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 750px;
+    background-image: url("/images/contact-us.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    padding: 0 70px;
+
+    @media (max-width: $breakpoint) {
+        margin-bottom: 0;
+        padding: 0 20px;
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    @media (min-width: $breakpoint) { padding-top: 200px; }
+
+    .text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        margin: 0 auto 20px;
+        letter-spacing: 1.5px;
+        line-height: 32px;
+        max-width: 600px;
+
+        @media (max-width: $breakpoint) {
+            padding: 0;
+            margin: 0 0 10px;
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+    }
+
+    .divider {
+        width: 140px;
+        height: 1px;
+        background: white;
+        margin: 20px 0px 30px 0px;
+    }
+
+    .address {
+        color: $blue;
+        text-align: center;
+        font-weight: 900;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        margin: 10px 0 50px;
+
+        @media (max-width: $breakpoint) {
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+    }
+
+    .title {
+        text-align: center;
+        color: $blue;
+        font-weight: 900;
+        font-size: 44px;
+        letter-spacing: 2px;
+
+        @media (max-width: $breakpoint) {
+            font-size: 34px;
+        }
+    }
+
+    form {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .inputsWrapper {
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 25px;
+
+        @media (max-width: $breakpoint) {
+            flex-direction: column;
+        }
+
+        > div {
+            flex-grow: 1;
+
+            &:nth-child(1) {
+                margin-right: 15px;
+
+                @media (max-width: $breakpoint) {
+                    margin: 0;
+                }
+
+                > div {
+                    &:last-child {
+                        input {
+                            margin-bottom: 0;
+
+                            @media (max-width: $breakpoint) {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                > div {
+                  height: 100%;
+
+                    textarea {
+                        height: 100%;
+
+                        @media (max-width: $breakpoint) {
+                            height: 150px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            input {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .buttonsWrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: $breakpoint) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .button {
+        margin: 0 0 20px;
+        background-color: #CFAB79;
+        border: 0;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: white;
+        width: 200px;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 20px;
+
+        @media (max-width: $breakpoint) {
+            width: 100%;
+        }
+
+        &:disabled {
+            background-color: grey;
+            cursor: auto;
+        }
+
+        @media (max-width: $breakpoint) {
+            margin: 30px 0 50px;
+        }
+    }
+}

@@ -31,7 +31,7 @@ const Welcome = () => {
                     <div>Welcome to</div>
                     <div>our community!</div>
                 </div>
-                <div className={styles.divider}></div>
+                <div className={styles.divider} />
                 <div className = {styles.sub}>
                     <span>We are excited to have you on board. <br /> How would you like to get involved?</span>
                 </div>
