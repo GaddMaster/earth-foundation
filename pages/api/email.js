@@ -7,7 +7,6 @@ export default async function handler(req, res) {
 
     console.log({ email, name, subject, message });
 
-    // , process.env.NODE_ENV = "production"
     let result = await mailjet.onEmail(email, name, subject, `<span>${message}</span>`);
 
     res.status(200).json({ error: false, message: "Email Submitted Possibily", result });

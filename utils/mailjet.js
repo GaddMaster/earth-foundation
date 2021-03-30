@@ -8,17 +8,18 @@ const onEmail = async (email, name, subject, part, html, send = true) => {
 				{
 					From: {
 						Email: process.env.MAILJET_EMAIL_SENDER,
-						Name: "The Earth Foundation"
+						Name: "The Earth Foundation Contact Form"
 					},
 					To: [
 						{
-							Email: email,
+							Email: "atomicdanielgadd@hotmail.com",
 							Name: name
 						}
 					],
 					Subject: subject,
 					TextPart: part || "The Earth Foundation PART !?",
-					HTMLPart: html
+					HTMLPart: html,
+                    Headers: { "Reply-To": email }
 				}
 			]
 		});

@@ -14,11 +14,11 @@ const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((
 
 const ContactUs = () => {
 
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [organization, setOrganization] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [firstName, setFirstName] = useState('Daniel');
+    const [lastName, setLastName] = useState('Gadd');
+    const [organization, setOrganization] = useState('GaddBox');
+    const [email, setEmail] = useState('danielgadd@outlook.com');
+    const [message, setMessage] = useState('Message');
     const [captcha, setCaptcha] = useState(false);
     const [submitDisabled, setSubmitDisabled] = useState(true);
 
