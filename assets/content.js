@@ -341,6 +341,10 @@ const faqsEarthPrize = [
                 answer: 'Past participants are welcome to register for The Earth Prize again, as long as they meet the eligibility criteria, with the exception of students who have been previously selected as The Earth Prize Winners and Runners-up.',
             },
             {
+              question: 'Are students required to implement their projects?',
+              answer: 'No, implementation is not required to participate in The Earth Prize. Valid submissions can range from project ideas or proposals to already implemented initiatives.',
+            },
+            {
                 question: 'Where and when will The Earth Prize Ceremony take place?',
                 answer: 'The Earth Prize Ceremony will take place virtually at the end of March 2022.',
             }

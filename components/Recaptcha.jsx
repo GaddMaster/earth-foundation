@@ -3,7 +3,7 @@ import React from 'react';
 
 const Recaptcha = ({ onChange }) => (
   <ReCAPTCHA
-    sitekey="6LfTxZMaAAAAAMucXR_wViWghUn8rHLkAmmRA8j3"
+    sitekey="6LdDo5MaAAAAADImSetLoTAztKvwpzj0DAJMV_Tm"
     onChange={onChange}
   />
 );
