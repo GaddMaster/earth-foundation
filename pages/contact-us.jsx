@@ -8,18 +8,18 @@ import Textarea from 'components/Textarea';
 import Recaptcha from 'components/Recaptcha';
 import Head from 'next/head';
 import http from "utils/http";
-import misc from "utils/misc";
 
 const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const ContactUs = () => {
 
-    const [firstName, setFirstName] = useState('Daniel');
-    const [lastName, setLastName] = useState('Gadd');
-    const [organization, setOrganization] = useState('GaddBox');
-    const [email, setEmail] = useState('danielgadd@outlook.com');
-    const [message, setMessage] = useState('Message');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [organization, setOrganization] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
     const [captcha, setCaptcha] = useState(false);
+    const [emailSent, setEmailSent] = useState(false);
     const [submitDisabled, setSubmitDisabled] = useState(true);
 
     const onCaptchaChange = value => setCaptcha(value);
@@ -36,14 +36,19 @@ const ContactUs = () => {
         }
     }, [firstName, lastName, message, email]);
 
-    const onSubmitClick = value => {
+    const onSubmitClick = () => {
         console.log("SENDING");
         const name = `${firstName} ${lastName}`;
         const subject = `Contact request from ${name} ${organization && `(${organization})`}`;
         http.request("PUT", "/api/email", { email, name, subject, message }, ({ error, message }) => {
             console.log(`${error} ${message}`);
             if (!error) {
-                // SOMETHING
+              setEmailSent(true);
+              setFirstName('');
+              setLastName('');
+              setOrganization('');
+              setEmail('');
+              setMessage('');
             }
         });
     };
@@ -109,12 +114,17 @@ const ContactUs = () => {
                       <div className={styles.buttonsWrapper}>
                         <Recaptcha onChange={onCaptchaChange} />
                         <button
-                            type = "button"
-                            className = {styles.button}
-                            onClick = {onSubmitClick}>
-                            <span>Send Message</span>
+                          type = "button"
+                          className = {styles.button}
+                          onClick = {onSubmitClick}
+                          disabled={submitDisabled}
+                        >
+                          <span>Send Message</span>
                         </button>
                       </div>
+                      {emailSent && (
+                        <p className={styles.sent}>Your message successfully sent</p>
+                      )}
                     </form>
                 </div>
             </div>

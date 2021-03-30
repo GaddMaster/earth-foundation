@@ -12,14 +12,14 @@ const onEmail = async (email, name, subject, part, html, send = true) => {
 					},
 					To: [
 						{
-							Email: "atomicdanielgadd@hotmail.com",
+							Email: process.env.MAILJET_EMAIL_RECIEVER,
 							Name: name
 						}
 					],
 					Subject: subject,
-					TextPart: part || "The Earth Foundation PART !?",
+					TextPart: part,
 					HTMLPart: html,
-                    Headers: { "Reply-To": email }
+					Headers: { "Reply-To": email }
 				}
 			]
 		});
