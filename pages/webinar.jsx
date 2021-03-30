@@ -4,8 +4,7 @@ import Layout from "../components/Layout";
 import styles from "styles/webinar.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
-import React, {useEffect, useState} from 'react';
-import {useMediaQuery} from 'react-responsive';
+import React from 'react';
 import content from "assets/content";
 import Subscribe from 'components/Subscribe';
 import Link from 'next/link';
@@ -14,17 +13,6 @@ import Head from 'next/head';
 
 
 const Webinar = () => {
-    const isMobile = useMediaQuery({
-        query: `(max-width: 600px)`,
-    });
-    const [activeSectionIndex, setActiveSectionIndex] = useState(0);
-
-    useEffect(() => {
-        if (isMobile) {
-            setActiveSectionIndex(null);
-        }
-    }, [isMobile]);
-
     return (
       <>
         <Head>
