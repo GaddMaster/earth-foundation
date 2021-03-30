@@ -22,7 +22,7 @@ const Board = props => {
                                 <span>0{index+1}</span>
                             </div>
                             <div className = {styles.count}>
-                                <span>03</span>
+                                <span>04</span>
                             </div>
                             {/*<div className = {styles.dots}>
                                 <FontAwesomeIcon icon = {index===0?solid:hollow} className = {styles.dot} />
