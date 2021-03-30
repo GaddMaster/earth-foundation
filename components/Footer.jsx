@@ -20,8 +20,10 @@ const Footer = props => {
                     <div className = {styles.information}>
                         <div className = {styles.links}>
                             <div className = {styles.routes}>
-                                <div className = {`${styles.route} ${styles.disabled}`}>
-                                    <span>Contact Us</span>
+                                <div className = {`${styles.route}`}>
+                                    <Link href="/contact-us">
+                                        <span>Contact Us</span>
+                                    </Link>
                                 </div>
                                 <div className = {styles.route}>
                                     <Link href="/privacy-policy">

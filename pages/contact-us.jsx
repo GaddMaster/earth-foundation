@@ -123,7 +123,7 @@ const ContactUs = () => {
                         </button>
                       </div>
                       {emailSent && (
-                        <p className={styles.sent}>Your message successfully sent</p>
+                        <p className={styles.sent}>Thank you for contacting The Earth Foundation. <br />We will get back to you as soon possible.</p>
                       )}
                     </form>
                 </div>
