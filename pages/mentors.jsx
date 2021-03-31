@@ -63,7 +63,7 @@ const Mentors = () => {
 
                 <PointBlurp
                   title = "The Earth Prize’s Mentor of the Year."
-                  desc = "Each year the most engaged mentor, as voted by the The Earth Prize’s participants, will be awarded with the Mentor of the Year recognition and a $12,500 cash prize."
+                  desc = "Each year, the most engaged mentor, as voted by the The Earth Prize’s participants, will be recognized with the Mentor of the Year award and a $12,500 cash prize."
                   lean = "left" />
 
                 <PointBlurp
