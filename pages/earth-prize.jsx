@@ -167,7 +167,7 @@ const EarthPrize = () => {
                             </div>
                             <div className = {styles.divider} />
                             <div className = {styles.desc}>
-                                <span>Following the legacy of WEEC’s original Earth Prize, first awarded in 2017, Professor Mario Salomone will recognize a teacher participating in The Earth Prize who has made an outstanding contribution to education during the competition.</span>
+                                <span>Following the legacy of WEEC’s original Earth Prize, first awarded in 2017, Professor Mario Salomone will recognize a teacher who has made an outstanding contribution to education during the competition with The Earth Prize’s Educator of the Year award and a $12,500 cash prize.</span>
                             </div>
                         </div>
                     </div>
