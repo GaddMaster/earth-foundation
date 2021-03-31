@@ -4,8 +4,7 @@ import Layout from "../components/Layout";
 import styles from "styles/webinar.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
-import React, {useEffect, useState} from 'react';
-import {useMediaQuery} from 'react-responsive';
+import React from 'react';
 import content from "assets/content";
 import Subscribe from 'components/Subscribe';
 import Link from 'next/link';
@@ -14,21 +13,14 @@ import Head from 'next/head';
 
 
 const Webinar = () => {
-    const isMobile = useMediaQuery({
-        query: `(max-width: 600px)`,
-    });
-    const [activeSectionIndex, setActiveSectionIndex] = useState(0);
-
-    useEffect(() => {
-        if (isMobile) {
-            setActiveSectionIndex(null);
-        }
-    }, [isMobile]);
-
     return (
       <>
         <Head>
-          <title>Launch Webinar</title>
+          <title>The Earth Prize Launch Webinar</title>
+          <meta name="description" content="Join our launch webinar to learn more about The Earth Foundation, The Earth Prize, and how we will inspire and empower  young students to develop innovative ideas to accelerate positive change towards environmental sustainability."/>
+          <meta name="og:title" property="og:title" content="The Earth Prize Launch Webinar" />
+          <meta name="og:image" content="/images/logo.png" />
+          <meta name="og:description" property="og:description" content="Join our launch webinar to learn more about The Earth Foundation, The Earth Prize, and how we will inspire and empower  young students to develop innovative ideas to accelerate positive change towards environmental sustainability." />
         </Head>
         <Layout 
             title = "The Earth <br/> Prize"

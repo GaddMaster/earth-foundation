@@ -1,4 +1,6 @@
-import React from 'react';
+
+import { useState } from 'react';
+
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
@@ -52,7 +54,7 @@ const StyledMenuItem = withStyles((theme) => ({
 }))(MenuItem);
 
 const CustomizedMenus = ({item}) =>{
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -64,35 +66,33 @@ const CustomizedMenus = ({item}) =>{
 
   return (
     <div>
-      <Button
-        aria-controls="customized-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-        className={styles.dropdown}
-      >
-        <span>{item.name}</span>
-      </Button>
-      <StyledMenu
-        id="customized-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-    
-     { item.subItems.map((link,index) =>{
-         return (
-           <Link href={link.route}>
-              <StyledMenuItem key={index} className={styles.dropdown}>
-                {/* <ListItemText primary={link.name} /> */}
-                <span>{link.name}</span>
-              </StyledMenuItem>
-           </Link>
-         )
-     })}
-       
-      </StyledMenu>
+        <Button
+            aria-controls = "customized-menu"
+            aria-haspopup = "true"
+            onClick = {handleClick}
+            className = {styles.dropdown}>
+            <span>{item.name}</span>
+        </Button>
+        <StyledMenu
+            id = "customized-menu"
+            anchorEl = {anchorEl}
+            keepMounted
+            open = {Boolean(anchorEl)}
+            onClose = {handleClose}>
+            {item.subItems.map((link, index) => {
+                return (
+                    <Link 
+                        href = {link.route} 
+                        key = {index}>
+                        <StyledMenuItem className = {styles.dropdown}>
+                            {/* <ListItemText primary={link.name} /> */}
+                            <span>{link.name}</span>
+                        </StyledMenuItem>
+                    </Link>
+                );
+            })}
+        </StyledMenu>
     </div>
-  );
+    );
 }
 export default CustomizedMenus

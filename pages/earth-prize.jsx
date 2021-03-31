@@ -154,6 +154,23 @@ const EarthPrize = () => {
                             </div>
                         </div>
                     </div>
+                    <div className = {`${styles.circle} ${styles.educator}`}>
+                        <div className = {styles.wrapper}>
+                            <div className = {styles.index}>
+                                <span>6.</span>
+                            </div>
+                            <div className = {styles.header}>
+                                <span>The Earth Prize’s<br /> Educator of the Year</span>
+                            </div>
+                            <div className = {styles.timeline}>
+                                <span>End of March, 2022</span>
+                            </div>
+                            <div className = {styles.divider} />
+                            <div className = {styles.desc}>
+                                <span>Following the legacy of WEEC’s original Earth Prize, first awarded in 2017, Professor Mario Salomone will recognize a teacher who has made an outstanding contribution to education during the competition with The Earth Prize’s Educator of the Year award and a $12,500 cash prize.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className = {styles.ready}>
                     <div className = {styles.header}>
