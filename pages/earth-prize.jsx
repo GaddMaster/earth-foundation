@@ -160,7 +160,7 @@ const EarthPrize = () => {
                                 <span>6.</span>
                             </div>
                             <div className = {styles.header}>
-                                <span>The Earth Prize’s Educator<br /> of the Year</span>
+                                <span>The Earth Prize’s<br /> Educator of the Year</span>
                             </div>
                             <div className = {styles.timeline}>
                                 <span>End of March, 2022</span>
