@@ -62,29 +62,34 @@ const Mentors = () => {
                 </div>
 
                 <PointBlurp
+                  title = "The Earth Prize’s Mentor of the Year."
+                  desc = "Each year the most engaged mentor, as voted by the The Earth Prize’s participants, will be awarded with the Mentor of the Year recognition and a $12,500 cash prize."
+                  lean = "left" />
+
+                <PointBlurp
                     title = "Opportunity to grow your network."
                     desc = "All mentors will become part of The Earth Prize Alumni Association, a community of inspiring individuals and organizations offering mentorship, networking, internships, and professional placement opportunities."
-                    lean = "left" />
+                    lean = "right" />
 
                 <PointBlurp
                     title = "Discover promising start-ups."
-                    desc = "By becoming a mentor you will be able to connect with The Earth Foundation Incubator’s top entrepreneurs and have access to inspiring new start-ups leading the way towards environmental sustainability."
-                    lean = "right" />
+                    desc = "By becoming a mentor you will have access to a unique network of entrepreneurs thanks to The Earth Foundation’s incubator partnerships and be able to connect with inspiring new start-ups leading the way towards environmental sustainability."
+                    lean = "left" />
 
                 <PointBlurp
                     title = "Boost your CV."
                     desc = "Mentoring for the The Earth Prize offers an excellent opportunity to develop and showcase transferable skills such as project management, problem-solving, and consulting. Each mentor will receive a certificate upon completion."
-                    lean = "left" />
+                    lean = "right" />
 
                 <PointBlurp
                     title = "Expand your knowledge."
                     desc = "All mentors will have access to The Earth Prize learning platform featuring bespoke online materials on environmental issues, interviews with activists and social entrepreneurs, and real-world practical skill training on how to effect change."
-                    lean = "right" />
+                    lean = "left" />
 
                 <PointBlurp
                     title = "Make an impact."
                     desc = "Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and to serve as a role model for younger children, inspiring them to become future changemakers."
-                    lean = "left" />
+                    lean = "right" />
 
                 <br />
 

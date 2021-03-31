@@ -21,7 +21,7 @@ const Incubator = () => {
     return (
       <>
           <Head>
-              <title>The Earth Foundation Incubator</title>
+              <title>Incubator Partnerships</title>
           </Head>
         <motion.div
             initial = {{ opacity: 0 }}

@@ -54,7 +54,7 @@ const About = () => {
                           isAlwaysOpened
                             image = "/images/about/slide2.jpg"
                             title = "Vision and Mission"
-                            desc = "The Earth Foundation was founded with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it."
+                            desc = "The Earth Foundation was founded as a Swiss nonprofit with the goal of taking this passion, enthusiasm and concern for the environment seen in the youth of today and help galvanize it."
                             lean = "right" />
                         <br />
                         <PointBlurp

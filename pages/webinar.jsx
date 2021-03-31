@@ -16,7 +16,11 @@ const Webinar = () => {
     return (
       <>
         <Head>
-          <title>Launch Webinar</title>
+          <title>The Earth Prize Launch Webinar</title>
+          <meta name="description" content="Join our launch webinar to learn more about The Earth Foundation, The Earth Prize, and how we will inspire and empower  young students to develop innovative ideas to accelerate positive change towards environmental sustainability."/>
+          <meta name="og:title" property="og:title" content="The Earth Prize Launch Webinar" />
+          <meta name="og:image" content="/images/logo.png" />
+          <meta name="og:description" property="og:description" content="Join our launch webinar to learn more about The Earth Foundation, The Earth Prize, and how we will inspire and empower  young students to develop innovative ideas to accelerate positive change towards environmental sustainability." />
         </Head>
         <Layout 
             title = "The Earth <br/> Prize"

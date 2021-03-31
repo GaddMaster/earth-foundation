@@ -18,7 +18,7 @@
         padding: 20px;
         position: relative;
         margin: 0 0px 40px 0px;
-        @media (min-width: $breakpoint) { height: 1300px; margin: 20px 0px 40px 0px; }
+        @media (min-width: $breakpoint) { height: 1300px; margin: 20px 0px 200px 0px; }
         .circle {
             width: 100%;
             height: 0px;
@@ -187,6 +187,21 @@
                 z-index: 2;
             }
         }
+        .educator {
+            background: #b8814b;
+            z-index: 4;
+            height: 370px;
+            width: 370px;
+            .index, .header { color: white !important; }
+            @media (min-width: $breakpoint) {
+                height: 370px;
+                width: 370px;
+                position: absolute;
+                top: 1230px;
+                left: 383px;
+                z-index: 2;
+            }
+        }
         .deer {
             z-index: 1;
             @media (min-width: $breakpoint) {
@@ -206,7 +221,7 @@
             max-width: 900px;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
         }
         .header {
             display: flex;

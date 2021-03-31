@@ -6,8 +6,8 @@ const home = {
         title_2: " Foundation",
         sub: "Inspire. Educate. Mentor. Empower.",
         paragraphs: [
-            "The Earth Foundation aims to distribute $1 million annually to students, schools, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
-            "By encouraging and supporting these projects, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
+            "The Earth Foundation was founded in 2020 in Geneva, Switzerland, to build an ecosystem of students, schools, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
+            "Through its initiatives, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
         ],
         section: "The Earth Foundation Has Four Initiatives",
         section_height: 40,
@@ -50,13 +50,13 @@ const home = {
         },
         {
             image : "/images/magnezis-magnestic-TW62wXQ6Omc-unsplash.webp",
-            label: "The Incubator",
-            summary: "$500,000 in seed-funding to accelerate the launch of revolutionary products, organizations and enterprises worldwide.",
+            label: "Incubator Partnerships",
+            summary: "The Earth Foundation will seek seed-funding from members of its ecosystem to accelerate the launch of revolutionary products, organizations and enterprises worldwide.",
             links: [
-                {
-                    label: "Read more about the initiative",
-                    link: "/incubator"
-                }
+                // {
+                //     label: "Read more about the initiative",
+                //     link: "/incubator"
+                // }
             ],
             path: "/",
             background: "#1A3324"
@@ -284,10 +284,14 @@ const webinar = {
             ],
         },
         {
-            isUnknown: true,
-        },
-        {
-            isUnknown: true,
+            avatar: "/images/richard/avatar.jpg",
+            image: "/images/richard/portrait.jpg",
+            name: "Richard McDonald",
+            position: "Executive Director, Aiglon College (Switzerland)",
+            isUnknown: false,
+            paragraphs: [
+                "Richard McDonald served as the Head Master of Aiglon College, Switzerland, from 1994 to 2000, and again from 2009 to 2019, and is currently the school’s Executive Director. He served as Chair of the Swiss Group of International Schools from 2006-2010 and again in 2015-16. He is a global trustee of the Round Square, an expanding association of schools across the world committed to a holistic educational approach that has environmental stewardship as one of its priorities. He holds British and Swiss nationalities and has three sons currently working in Switzerland, Scotland and the USA. He aspires to see schools worldwide accelerate efforts to bring environmental responsibility to the heart of learning, living and leading."
+            ],
         },
     ],
 };
@@ -338,7 +342,7 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Can the same student/team participate more than once?',
-                answer: 'Past participants are welcome to register for The Earth Prize again, as long as they meet the eligibility criteria, with the exception of students who have been previously selected as The Earth Prize Winners and Runners-up.',
+                answer: 'Past participants, including Winners and Runners-up, are welcome to register for The Earth Prize again, as long as they meet the eligibility criteria and present a different project. Projects already submitted to The Earth Prize in a previous year or which have already been recognized with a different award will not be accepted.',
             },
             {
               question: 'Are students required to implement their projects?',
