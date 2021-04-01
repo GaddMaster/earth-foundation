@@ -24,7 +24,7 @@ const SignUp = () => {
     let [isDisabled, disable] = useState(true);
     const onChange = () => e => onEmail(e.target.value);
     const onSubscribe = () => {
-        http.request("PUT", "/api/subscribe", { email });
+        http.request("PUT", "/api/subscribe/general", { email });
         onEmail("");
         router.push('/welcome');
     };
