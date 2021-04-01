@@ -25,9 +25,9 @@ const Side = ({ onOpen }) => {
       <div className = {styles.item} onClick={() => handleLinkClick("/about")}>
         <span>The Earth Foundation</span>
       </div>
-      {/*<div className = {styles.item}>
-          <Link href="earth-prize">The Adjudicating Panel</Link>
-        </div>*/}
+      <div className = {styles.item} onClick={() => handleLinkClick("/adjudicating-panel")}>
+        <span>The Adjudicating Panel</span>
+      </div>
       <div className = {styles.item} onClick={() => handleLinkClick("/advisors")}>
         <span>Our Advisors</span>
       </div>

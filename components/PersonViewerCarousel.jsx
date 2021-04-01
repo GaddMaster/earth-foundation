@@ -46,12 +46,10 @@ const PersonViewerCarousel = props => {
         <div className = {styles.container}>
             <div className = {styles.spacing}>
                 <div className = {styles.top}>
-                    <div className = {styles.header}>
-                        <div className = {styles.label}>
-                            <h1 style={{ color: props.theme.title }}>{props.title}</h1>
-                        </div>
-                        {!isMobile && <div className = {styles.line} />}
+                    <div className = {styles.label}>
+                        <h1 style={{ color: props.theme.title }}>{props.title}</h1>
                     </div>
+                    {!isMobile && <div className = {styles.line} />}
                     {isMobile
                       ? (
                         <>
