@@ -296,6 +296,40 @@ const webinar = {
     ],
 };
 
+const adjudicatingPanel = {
+    team: [
+        {
+            avatar: "/images/rina/avatar.jpg",
+            image: "/images/rina/portrait.jpg",
+            name: "Rina Kupferschmid-Rojas",
+            position: "Head, The Earth Prize’s Adjudicating Panel",
+            isUnknown: false,
+            paragraphs: [
+                "Rina Kupferschmid-Rojas is currently Global Head of Sustainable Finance at UBS. Whereas her professional focus has been on sustainability and impact investing, her engagement beyond her work is broader and spans the areas of environmental sustainability, education, promoting women, and integrating foreigners. She has launched more than 30 social initiatives, including iamthecode, gastromotiva, Water Scarcity, and Thirst. She was an adjunct Professor at Columbia University on Sustainable and Impact Investing and since 2013 has been one of the World Economic Forum's (WEF) Young Global Leaders."
+            ],
+        },
+        {
+            avatar: "/images/karen/avatar.jpg",
+            image: "/images/karen/portrait.jpg",
+            name: "Karen Wilson",
+            position: "Member of the Panel",
+            isUnknown: false,
+            paragraphs: [
+                "Karen Wilson is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
+            ],
+        },
+        {
+            isUnknown: true,
+        },
+        {
+            isUnknown: true,
+        },
+        {
+            isUnknown: true,
+        },
+    ],
+};
+
 const faqsEarthPrize = [
     {
         sectionName: 'General FAQs',
@@ -456,4 +490,5 @@ export default {
     earthPrize,
     faqsEarthPrize,
     webinar,
+    adjudicatingPanel,
 };
