@@ -37,7 +37,7 @@ const CircleTextLink = props => {
                     );
                 })}
             </div>
-            <button disabled={props.disabled} className = {styles.link}>
+            <button disabled={props.disabled} className = {styles.link} onClick={onClick}>
                 <span>{link}</span>
                 {!props.disabled && (
                   <FontAwesomeIcon icon = {faArrowRight} />

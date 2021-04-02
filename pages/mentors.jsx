@@ -16,8 +16,10 @@ import SlideSocials from 'components/SlideSocials';
 import React, {useState} from 'react';
 import {useMediaQuery} from 'react-responsive';
 import Head from 'next/head';
+import {useRouter} from 'next/router';
 
 const Mentors = () => {
+    const router = useRouter();
     const isMobile = useMediaQuery({
         query: `(max-width: 600px)`,
     });
@@ -95,10 +97,9 @@ const Mentors = () => {
 
                 <CircleTextLink
                     text = "The Earth Prize Mentors"
-                    link = "Coming soon"
-                    disabled
+                    link = "Frequently Asked Questions"
                     radius = {60}
-                    onClick = {() => console.log("CLICKED")}
+                    onClick = {() => router.push("/faqs-mentors")}
                     justify = "flex-end" />
 
                 <br />

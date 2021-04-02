@@ -54,12 +54,12 @@ const FAQSEarthPrize = () => {
                     {isMobile
                       ? (
                         <p className={styles.subtitle}>
-                            Frequently Asked Questions on <br /> The Earth Prize Mentorship Program
+                            The Earth Prize Mentors Frequently Asked Questions
                         </p>
                       )
                       : (
                         <p className={styles.subtitle}>
-                            Frequently Asked Questions on <br /> The Earth Prize Mentorship Program
+                            The Earth Prize Mentors <br /> Frequently Asked Questions
                         </p>
                       )
                     }
