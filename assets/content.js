@@ -484,6 +484,124 @@ const faqsEarthPrize = [
     },
 ];
 
+const faqsMentors = [
+    {
+        sectionName: 'General FAQs',
+        faqs: [
+            {
+                question: 'What is The Earth Prize?',
+                answer: 'The Earth Prize is a $200,000 global youth environmental sustainability competition open to all secondary school students between the ages of 13 and 19, with rewards in the form of university scholarships for students and grants for schools.',
+            },
+            {
+                question: 'Who are The Earth Prize participants?',
+                answer: 'Secondary school students between the ages of 13 and 19.',
+            },
+            {
+                question: 'Who are The Earth Prize Mentors?',
+                answer: 'The Earth Prize Mentors are university students who are passionate about sustainability, entrepreneurship and looking for an opportunity to share their knowledge.',
+            },
+            {
+                question: 'Can I only apply if I am enrolled in a university?',
+                answer: 'Yes, all mentors are required to be enrolled in a higher education institution.',
+            },
+            {
+                question: 'Will I receive a participation certificate?',
+                answer: 'Mentors who have successfully completed the program  will receive a special certificate at the end of the competition. All participating Mentors will also be considered for The Earth Prize Mentor of the Year award.',
+            },
+            {
+                question: 'What does it mean to be part of The Earth Foundation’s Alumni Association?',
+                answer: 'Mentors who successfully complete the program will have the chance of joining The Earth Foundation Alumni Association. You will be part of an inspiring network that connects mentors, partners and participants. The Alumni Association will strengthen ties among its members, offering them support through access to educational content, mentorship, social events, and professional opportunities.',
+            },
+            {
+                question: 'When will I be able to access the Alumni Association network?',
+                answer: 'The Earth Foundation’s Alumni Association will be launched in 2022.',
+            },
+        ]
+    },
+    {
+        sectionName: 'Selection Process',
+        faqs: [
+            {
+                question: 'What is the eligibility criteria to apply to become a mentor?',
+                answer: 'Candidates are required to be enrolled in a higher education institution and have demonstrated interest and/or experience in the fields of environmental sustainability or entrepreneurship.',
+            },
+            {
+                question: 'Can I  apply if I am not enrolled in a university?',
+                answer: 'No, all mentors are required to be part of a higher education institution.',
+            },
+            {
+                question: 'What will I need to submit in my application?',
+                answer: <p>Candidates will be asked to provide their basic personal information as well as with a motivation letter and a current CV. You can see the application form <a href="https://theearthfoundation.typeform.com/to/trELQBzU">here</a>.</p>,
+            },
+            {
+                question: 'How will the mentors be selected?',
+                answer: 'The mentors will be selected based on their experience and knowledge of  environmental science, entrepreneurship and sustainability. Their interest in sharing their knowledge and teaching or tutoring experience will also be taken into account. Shortlisted candidates will be invited for a short interview.',
+            },
+            {
+                question: 'When will I find out if I have been accepted or not?',
+                answer: 'Mentors’ applications will be reviewed on a rolling basis and applicants will be notified within two to three weeks.',
+            },
+            {
+                question: 'Can I apply more than once?',
+                answer: 'Yes, applicants are welcome to reapply to become a Mentor in future editions of The Earth Prize.',
+            },
+        ],
+    },
+    {
+        sectionName: 'Mentoring',
+        faqs: [
+            {
+                question: 'What does mentoring in The Earth Prize exactly involve?',
+                answer: 'Mentoring will mostly involve answering sustainability-related questions from The Earth Prize participants.',
+            },
+            {
+                question: 'How will the mentoring take place?',
+                answer: 'All mentoring will take place virtually through The Earth Prize online platform.',
+            },
+            {
+                question: 'How long will the mentoring last?',
+                answer: 'Mentoring will last at least from September 1st, 2021until January 31st. Mentors who have demonstrated the highest levels of engagement during the first phases of the competition will be given the chance to work individually with one of the ten The Earth Prize Finalists. In this case, the mentoring will be extended until the end of the competition in March, 2022.',
+            },
+            {
+                question: 'What happens if I am not able to answer any questions?',
+                answer: 'Mentors are allowed and encouraged to use external resources for answering questions. However, if the Mentor feels that they are not able to help any of the participants, they are allowed to withdraw from the program.',
+            },
+            {
+                question: 'Are there consequences for being inactive on the platform?',
+                answer: 'The Earth Foundation reserves the right to remove any Mentor from competition and revoke their access to the Alumni platform at any time, if the Mentor is not meeting the minimum established requirements.',
+            },
+            {
+                question: 'Can I withdraw half-way through The Earth Prize competition?',
+                answer: 'Mentors are allowed to withdraw from the competition at any time. However, by doing so, Mentors will no longer have access to the learning platform or the The Earth Foundation’s Alumni Network. They will also no longer be considered for The Earth Prize Mentor of the Year award.',
+            },
+            {
+                question: 'Will I be assigned to a participating team?',
+                answer: 'Mentors will not be assigned a specific team. They will answer questions from all participating teams around the world.',
+            },
+            {
+                question: 'How will The Earth Prize Finalist Mentors be selected?',
+                answer: 'Mentors who have demonstrated the highest levels of engagement during the first phases of the competition will be given the chance to work individually with one of the ten The Earth Prize Finalists.',
+            },
+            {
+                question: 'What is the role of The Earth Prize Finalist Mentors?',
+                answer: 'During the Finalists Phase of the competition, the selected mentors will work with one of the ten finalist teams to help them prepare for their final project submission. This opportunity entails at least a one-hour call with the assigned finalist team.',
+            },
+            {
+                question: 'Will I receive training?',
+                answer: 'Mentors will not receive any training; however an introductory webinar will be held before the start of The Earth Prize competition.',
+            },
+            {
+                question: 'Can I meet the participating teams?',
+                answer: 'No. The mentoring will take place virtually and only through The Earth Prize platform. Communications outside the platform are strictly prohibited and will result in the disqualification of the mentor.',
+            },
+            {
+                question: 'What type of questions am I expected to answer?',
+                answer: 'It is difficult to anticipate the type of questions that will be asked. However, if you are selected as a mentor, it means that The Earth Foundation team trusts that you will be a valuable addition to the competition, bringing in your own unique and specific knowledge and experience.',
+            },
+        ],
+    },
+];
+
 export default {
     home,
     about,
@@ -491,4 +609,5 @@ export default {
     faqsEarthPrize,
     webinar,
     adjudicatingPanel,
+    faqsMentors,
 };

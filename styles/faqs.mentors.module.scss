@@ -1,0 +1,125 @@
+
+@import "./variables";
+
+.wrapper {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 0 70px;
+
+    @media (max-width: $breakpoint) {
+        margin-bottom: 0px;
+        padding: 0;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    @media (min-width: $breakpoint) { padding-top: 200px; }
+
+    .subtitle {
+        text-align: center;
+        color: rgb(206, 170, 122);
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin: 0 0 20px;
+
+        @media (max-width: $breakpoint) {
+            padding: 0 40px;
+            margin: 0 0 10px;
+        }
+    }
+
+    .title {
+        text-align: center;
+        color: $blue;
+        font-weight: 900;
+        font-size: 44px;
+        letter-spacing: 2px;
+
+        @media (max-width: $breakpoint) {
+            font-size: 34px;
+        }
+    }
+
+    .divider {
+        height: 1px;
+        background-color: rgb(206, 170, 122);
+        width: 150px;
+        margin: 15px auto 0;
+
+        @media (max-width: $breakpoint) {
+            width: 120px;
+        }
+    }
+
+    .faqs {
+        margin-top: 80px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        width: 100%;
+
+        @media (max-width: $breakpoint) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
+        .sections {
+            width: 300px;
+            margin-right: 100px;
+            flex-shrink: 0;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+
+            @media (max-width: $breakpoint) {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .section {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid transparent;
+                color: $blue;
+                font-weight: 400;
+                cursor: pointer;
+                transition: all 0.2s;
+                margin-bottom: 30px;
+                letter-spacing: 0.5px;
+                box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.08);
+
+                @media (max-width: $breakpoint) {
+                    max-width: 300px;
+                }
+
+                &.active {
+                    border-color: rgb(206, 170, 122);
+                    color: rgb(206, 170, 122);
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .answers {
+            flex-grow: 1;
+
+            @media (max-width: $breakpoint) {
+                padding: 0 30px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
