@@ -7,9 +7,9 @@
     justify-content: flex-start;
     flex-direction: column;
     padding: 0px 40px 0px 80px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 15px 0px;
     position: relative;
-    min-height: 87px;
+    min-height: 68px;
     @media (min-width: $breakpoint) { padding: 0px 40px 0px 120px;         margin: 0px 0px 40px 0px;
     }
     .image {
