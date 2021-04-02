@@ -10,9 +10,8 @@ const FAQ = ({ question, answer }) => {
   return (
     <div
       className={styles.faq}
-      onClick={() => open(!isOpened)}
     >
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} onClick={() => open(!isOpened)}>
         {isOpened
           ? <FontAwesomeIcon icon = {faMinus} />
           : <FontAwesomeIcon icon = {faPlus} />
