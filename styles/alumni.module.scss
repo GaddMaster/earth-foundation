@@ -1,0 +1,129 @@
+
+@import "./variables";
+
+.wrapper {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 0 70px;
+
+    @media (max-width: $breakpoint) {
+        margin-bottom: 0px;
+        padding: 0;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 0px 0px 0px;
+    @media (min-width: $breakpoint) { padding: 287px 0px 0px 0px; }
+
+    .content {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin: 110px 0 90px;
+        width: 100%;
+
+        @media (max-width: $breakpoint) {
+            margin: 40px 0 240px;
+        }
+
+        .textWrapper {
+            width: 80%;
+            padding: 60px;
+            height: 450px;
+            background-color: #02304F;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-end;
+
+            @media (max-width: $breakpoint) {
+                width: 100%;
+                padding: 30px 30px;
+                align-items: flex-start;
+                justify-content: flex-start;
+                height: 400px;
+            }
+
+            > p {
+                font-size: 14px;
+                line-height: 30px;
+                font-weight: 400;
+                margin: 0;
+
+                @media (max-width: $breakpoint) {
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .launchWrapper {
+                width: 255px;
+                display: flex;
+                align-items: flex-start;
+
+                .line {
+                    height: 1px;
+                    flex: 1;
+                    background-color: white;
+                    opacity: 0.3;
+                    position: relative;
+                    top: 15px;
+                }
+
+                .launch {
+                    font-weight: 900;
+                    color: #CEAA7A;
+                    margin: 0 0 0 20px;
+                    font-size: 20px;
+
+                    @media (max-width: $breakpoint) {
+                        margin: 0 30px 0 20px;
+                    }
+                }
+            }
+        }
+
+        .image {
+            position: absolute;
+            left: 0;
+            top: -80px;
+            width: 470px;
+            height: 470px;
+            background-image: url("/images/alumni.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 1;
+
+            @media (max-width: 950px) {
+                width: 380px;
+                height: 380px;
+                top: -40px;
+            }
+
+            @media (max-width: 800px) {
+                width: 300px;
+                height: 300px;
+                top: -40px;
+            }
+
+            @media (max-width: $breakpoint) {
+                top: 80%;
+                right: 0;
+                left: auto;
+                width: 270px;
+                height: 270px;
+            }
+        }
+    }
+}
