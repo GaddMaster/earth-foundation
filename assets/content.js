@@ -68,10 +68,10 @@ const home = {
             label_3: "Alumni Association",
             summary: "A networking platform that connects our participants, mentors, partners, and ambassadors.",
             links: [
-                // {
-                //     label: "Read more about the initiative",
-                //     link: "/incubator"
-                // }
+                {
+                    label: "Read more about the initiative",
+                    link: "/alumni"
+                }
             ],
             path: "/",
             background: "#02304F"
@@ -181,7 +181,7 @@ const about = {
             position: "Head of Strategy",
             isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -267,7 +267,7 @@ const webinar = {
             avatar: "/images/rina/avatar.jpg",
             image: "/images/rina/portrait.jpg",
             name: "Rina Kupferschmid-Rojas",
-            position: "Head, The Earth Prize’s Adjudicating Panel",
+            position: "Chair, The Earth Prize Adjudicating Panel",
             isUnknown: false,
             paragraphs: [
                 "Rina Kupferschmid-Rojas is currently Global Head of Sustainable Finance at UBS. Whereas her professional focus has been on sustainability and impact investing, her engagement beyond her work is broader and spans the areas of environmental sustainability, education, promoting women, and integrating foreigners. She has launched more than 30 social initiatives, including iamthecode, gastromotiva, Water Scarcity, and Thirst. She was an adjunct Professor at Columbia University on Sustainable and Impact Investing and since 2013 has been one of the World Economic Forum's (WEF) Young Global Leaders."
@@ -280,7 +280,7 @@ const webinar = {
             position: "Head of Strategy, The Earth Foundation",
             isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -302,7 +302,7 @@ const adjudicatingPanel = {
             avatar: "/images/rina/avatar.jpg",
             image: "/images/rina/portrait.jpg",
             name: "Rina Kupferschmid-Rojas",
-            position: "Head, The Earth Prize’s Adjudicating Panel",
+            position: "Chair of the Panel",
             isUnknown: false,
             paragraphs: [
                 "Rina Kupferschmid-Rojas is currently Global Head of Sustainable Finance at UBS. Whereas her professional focus has been on sustainability and impact investing, her engagement beyond her work is broader and spans the areas of environmental sustainability, education, promoting women, and integrating foreigners. She has launched more than 30 social initiatives, including iamthecode, gastromotiva, Water Scarcity, and Thirst. She was an adjunct Professor at Columbia University on Sustainable and Impact Investing and since 2013 has been one of the World Economic Forum's (WEF) Young Global Leaders."
@@ -478,7 +478,7 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Can a supervisor be disqualified from The Earth Prize?',
-                answer: 'Yes, The Earth Foundation reserves the right to disqualify any participant who breaches The Earth Prize’s Code of Conduct.',
+                answer: 'Yes, The Earth Foundation reserves the right to disqualify any participant who breaches The Earth Prize Code of Conduct.',
             },
         ],
     },
@@ -509,12 +509,16 @@ const faqsMentors = [
                 answer: 'Mentors who have successfully completed the program  will receive a special certificate at the end of the competition. All participating Mentors will also be considered for The Earth Prize Mentor of the Year award.',
             },
             {
-                question: 'What does it mean to be part of The Earth Foundation’s Alumni Association?',
+                question: 'What is The Earth Prize Mentor of the Year award?',
+                answer: 'Each year, participants in The Earth Prize will vote to select the most engaged mentor in the competition. This mentor will be recognized as Mentor of Year and will receive a $12,500 cash prize.',
+            },
+            {
+                question: 'What does it mean to be part of The Earth Foundation Alumni Association?',
                 answer: 'Mentors who successfully complete the program will have the chance of joining The Earth Foundation Alumni Association. You will be part of an inspiring network that connects mentors, partners and participants. The Alumni Association will strengthen ties among its members, offering them support through access to educational content, mentorship, social events, and professional opportunities.',
             },
             {
                 question: 'When will I be able to access the Alumni Association network?',
-                answer: 'The Earth Foundation’s Alumni Association will be launched in 2022.',
+                answer: 'The Earth Foundation Alumni Association will be launched in 2022.',
             },
         ]
     },
@@ -572,7 +576,7 @@ const faqsMentors = [
             },
             {
                 question: 'Can I withdraw half-way through The Earth Prize competition?',
-                answer: 'Mentors are allowed to withdraw from the competition at any time. However, by doing so, Mentors will no longer have access to the learning platform or the The Earth Foundation’s Alumni Network. They will also no longer be considered for The Earth Prize Mentor of the Year award.',
+                answer: 'Mentors are allowed to withdraw from the competition at any time. However, by doing so, Mentors will no longer have access to the learning platform or the The Earth Foundation Alumni Network. They will also no longer be considered for The Earth Prize Mentor of the Year award.',
             },
             {
                 question: 'Will I be assigned to a participating team?',

@@ -39,7 +39,11 @@ const FAQSEarthPrize = () => {
     return (
       <>
           <Head>
-              <title>FAQs The Earth Prize</title>
+              <title>Frequently Asked Questions on The Earth Prize Mentors</title>
+              <meta name="description" content="Frequently Asked Questions"/>
+              <meta name="og:title" property="og:title" content="Frequently Asked Questions on The Earth Prize Mentors" />
+              <meta name="og:image" content="/images/logo.png" />
+              <meta name="og:description" property="og:description" content="Frequently Asked Questions" />
           </Head>
         <Layout 
             title = "The Earth <br/> Prize"

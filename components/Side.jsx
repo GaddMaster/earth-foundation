@@ -46,6 +46,9 @@ const Side = ({ onOpen }) => {
       <div className = {styles.item} onClick={() => handleLinkClick("/awards")}>
         <span>The Earth Foundation Awards</span>
       </div>
+      <div className = {styles.item} onClick={() => handleLinkClick("/alumni")}>
+        <span>The Earth Foundation Alumni Association</span>
+      </div>
       {/*<div className = {styles.item} onClick={() => handleLinkClick("/incubator")}>
         <span>Incubator Partnerships</span>
       </div>*/}

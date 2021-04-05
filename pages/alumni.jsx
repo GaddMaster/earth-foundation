@@ -50,7 +50,7 @@ const Alumni = () => {
                   <div className={styles.content}>
                     <div className={styles.image} />
                     <div className={styles.textWrapper}>
-                      <p>All participants in The Earth Prize,<br /> The Earth Foundation Awards, and<br /> The Earth Foundation Incubator<br /> will be automatically enrolled<br /> in The Earth Foundation<br /> Alumni Association.</p>
+                      <p>All participants in The Earth Prize and The Earth Foundation Awards will be automatically enrolled in The Earth Foundation Alumni Association.</p>
                       <div className={styles.launchWrapper}>
                         <div className={styles.line} />
                         <p className={styles.launch}>Launching<br /> in 2022.</p>

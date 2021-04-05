@@ -41,7 +41,7 @@ const AdjudicatingPanel = () => {
                           : <h1 className={styles.title}>The Adjudicating Panel</h1>
                         }
                         <div className={styles.divider} />
-                        <p className={styles.subtitle}>The Earth Prize’s Adjudicating Panel is made up of highly renowned experts with backgrounds in corporate sustainability, academia, entrepreneurship, conservation, and communications.<br /><br />The Adjudicating Panel will adjudicate upon The Earth Prize.</p>
+                        <p className={styles.subtitle}>The Earth Prize Adjudicating Panel is made up of highly renowned experts with backgrounds in corporate sustainability, academia, entrepreneurship, conservation, and communications.<br /><br />The Adjudicating Panel will adjudicate upon The Earth Prize.</p>
                       </div>
                       <div className={styles.image} />
                     </div>

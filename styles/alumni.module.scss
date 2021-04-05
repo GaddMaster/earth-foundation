@@ -41,7 +41,7 @@
             background-color: #02304F;
             color: white;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-direction: column;
             align-items: flex-end;
 
@@ -57,19 +57,27 @@
                 font-size: 14px;
                 line-height: 30px;
                 font-weight: 400;
+                width: 300px;
                 margin: 0;
 
                 @media (max-width: $breakpoint) {
-                    font-size: 12px;
-                    line-height: 24px;
+                    font-size: 14px;
+                    line-height: 28px;
                     margin-bottom: 40px;
+                    width: 100%;
                 }
             }
 
             .launchWrapper {
-                width: 255px;
+                width: 300px;
+                margin-top: 70px;
                 display: flex;
                 align-items: flex-start;
+
+                @media (max-width: $breakpoint) {
+                    width: 100%;
+                    margin-top: 0px;
+                }
 
                 .line {
                     height: 1px;
