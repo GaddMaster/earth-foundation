@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { useState, useEffect } from "react";
 
 import Side from "./Side";
@@ -71,6 +69,10 @@ const Header = (props) => {
       //   name: "Incubator Partnerships",
       //   route: "incubator",
       // },
+      {
+        name: "The Earth Foundation Alumni Association",
+        route: "alumni",
+      },
     ],
   };
  const GetInvolvedMenu = {
@@ -131,10 +133,10 @@ const Header = (props) => {
             {/* <span>Get Involved</span> */}
             <CustomizedMenus item={GetInvolvedMenu} />
           </div>
-          
+
           <IconButton
             className={`${styles.icon}`}
-            onClick={onOpen.bind(this, !open)}
+            onClick={() => onOpen(!open)}
           >
             <FontAwesomeIcon icon={faBars} />
           </IconButton>
@@ -148,7 +150,7 @@ const Header = (props) => {
         anchor="right"
         classes={{ paper: props.classes.drawerPaper }}
         style={{ zIndex: 1 }}
-        onClose={onOpen.bind(this, false)}
+        onClose={() => onOpen(false)}
       >
         <Side onOpen={onOpen} />
       </Drawer>

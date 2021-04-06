@@ -41,6 +41,7 @@ const StyledMenuItem = withStyles((theme) => ({
     marginBottom: '15px',
     fontFamily: 'Lato',
     fontWeight: '400',
+    padding: '10px 0',
     '&:last-child': {
       marginBottom: '0',
     },
@@ -81,14 +82,16 @@ const CustomizedMenus = ({item}) =>{
             onClose = {handleClose}>
             {item.subItems.map((link, index) => {
                 return (
+                  <div key = {index}>
                     <Link 
                         href = {link.route} 
-                        key = {index}>
+                    >
                         <StyledMenuItem className = {styles.dropdown}>
                             {/* <ListItemText primary={link.name} /> */}
                             <span>{link.name}</span>
                         </StyledMenuItem>
                     </Link>
+                  </div>
                 );
             })}
         </StyledMenu>

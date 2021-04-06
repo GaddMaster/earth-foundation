@@ -1,0 +1,92 @@
+@import "./variables";
+.container{
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 1100px;
+  width: 100%;
+  background-image: url("/images/thankyou.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 450px 40px 40px;
+  @media (max-width: $breakpoint) {
+    min-height: 900px;
+    padding: 200px 40px 40px;
+  }
+
+  .title {
+    margin: -170px auto 20px;
+
+    @media (max-width: $breakpoint) {
+      letter-spacing: 0.5px;
+      margin-top: -50px;
+    }
+
+    h1 {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 50px;
+    }
+    @media (max-width: $breakpoint) {
+      h1 {
+        text-align: center;
+        font-size: 36px;
+      }
+    }
+  }
+  .divider {
+    width: 120px;
+    height: 1px;
+    background: black;
+    margin: 25px 0px 40px 0px;
+
+    @media (max-width: $breakpoint) {
+      margin: 15px 0px 40px 0px;
+      background: white;
+    }
+  }
+  .sub {
+    font-size: 18px;
+    color: $blue;
+    margin: 0px 0px 30px 0px;
+    font-weight: bold;
+    @media (max-width: $breakpoint) {
+      font-size: 16px;
+      text-align: center;
+
+    }
+  }
+
+  .text {
+    font-size: 18px;
+    color: $blue;
+    margin: 0px 0px 30px 0px;
+    max-width: 800px;
+    text-align: center;
+    @media (max-width: $breakpoint) {
+      font-size: 16px;
+      text-align: center;
+
+    }
+  }
+  .back {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin: 0px 0px 0px 10px;
+    }
+  }
+}
