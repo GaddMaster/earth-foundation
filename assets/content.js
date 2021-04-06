@@ -6,7 +6,7 @@ const home = {
         title_2: " Foundation",
         sub: "Inspire. Educate. Mentor. Empower.",
         paragraphs: [
-            "The Earth Foundation was founded in 2020 in Geneva, Switzerland, to build an ecosystem of students, schools, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
+            "The Earth Foundation was founded in 2020 in Geneva, Switzerland, to inspire, educate, mentor, and empower students, schools, researchers, and young entrepreneurs with innovative ideas to tackle environmental challenges.",
             "Through its initiatives, The Earth Foundation strives to foster a self-perpetuating ecosystem that accelerates positive change towards environmental sustainability."
         ],
         section: "The Earth Foundation Has Four Initiatives",
@@ -213,7 +213,7 @@ const earthPrize = {
             avatar: "/images/rina/avatar.jpg",
             image: "/images/rina/portrait.jpg",
             name: "Rina Kupferschmid-Rojas",
-            position: "Head of the Adjudicating Panel",
+            position: "Chair of the Panel",
             isUnknown: false,
             paragraphs: [
                 "Rina Kupferschmid-Rojas is currently Global Head of Sustainable Finance at UBS. Whereas her professional focus has been on sustainability and impact investing, her engagement beyond her work is broader and spans the areas of environmental sustainability, education, promoting women, and integrating foreigners. She has launched more than 30 social initiatives, including iamthecode, gastromotiva, Water Scarcity, and Thirst. She was an adjunct Professor at Columbia University on Sustainable and Impact Investing and since 2013 has been one of the World Economic Forum's (WEF) Young Global Leaders."

@@ -114,20 +114,34 @@
                         width: 100%;
                     }
 
-                    .announcement {
+                    .announcementMobile {
+                        font-weight: 900;
+                        margin: 0 0 25px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 1px;
+                        max-width: 420px;
+                        text-align: center;
+                        display: none;
+
+                        @media (max-width: $breakpoint) {
+                            display: block;
+                        }
+                    }
+
+                    .announcementDesktop {
                         font-weight: 900;
                         margin: 0 0 25px;
                         font-size: 18px;
                         line-height: 24px;
-                        max-width: 470px;
+                        max-width: 420px;
                         text-align: center;
 
                         @media (max-width: $breakpoint) {
-                            font-size: 14px;
-                            line-height: 20px;
-                            letter-spacing: 1px;
+                            display: none;
                         }
                     }
+
                     .logo {
                         background-image: url("/images/logotype2.jpg");
                         background-position: center;
