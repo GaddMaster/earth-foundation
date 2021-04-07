@@ -1,0 +1,107 @@
+
+@import "./variables";
+
+.wrapper {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 0 70px;
+
+    @media (max-width: $breakpoint) {
+        margin-bottom: 0px;
+        padding: 0;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    @media (min-width: $breakpoint) { padding-top: 286px; }
+
+    .ambassadorsWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        margin: 60px 0 70px;
+
+        @media (max-width: $breakpoint) {
+            grid-template-columns: 1fr;
+            padding: 0 30px;
+            margin: 80px 0 0;
+        }
+
+        .ambassador {
+            background-color: white;
+            padding: 20px 45px;
+            position: relative;
+            margin-bottom: 100px;
+            width: calc(100% - 85px);
+
+            @media (max-width: $breakpoint) {
+                width: calc(100% - 65px);
+            }
+
+            &.reversed {
+                margin: 80px 0 0 auto;
+                padding-left: 25%;
+
+                @media (max-width: $breakpoint) {
+                    padding-left: 45px;
+                    margin: 0 0 100px;
+                }
+
+                .avatar {
+                    left: -70px;
+
+                    @media (max-width: $breakpoint) {
+                        left: auto;
+                    }
+                }
+            }
+
+            .name {
+                font-weight: 900;
+                font-size: 20px;
+                margin: 0 0 5px;
+            }
+
+            .position {
+                font-weight: 400;
+                font-size: 14px;
+                margin: 0 0 30px;
+            }
+
+            > span {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 13px;
+                color: #CEAA7A;
+            }
+
+            .icon {
+                svg {
+                    height: 13px;
+                    width: 13px;
+                    margin-left: 10px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+
+            .avatar {
+                background-image: url("/images/waterfall.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center top;
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                position: absolute;
+                top: -70px;
+                right: -70px;
+            }
+        }
+    }
+}

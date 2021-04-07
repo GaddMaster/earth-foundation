@@ -111,7 +111,7 @@ const EarthPrize = () => {
                             <div className = {styles.timeline}>
                                 <span>1st Feb. 2022 - 6th Feb. 2022</span>
                             </div>
-                            <div className = {styles.divider}></div>
+                            <div className = {styles.divider} />
                             <div className = {styles.desc}>
                                 <span>Each team’s submission will be reviewed by the Adjudicating Panel, a group of highly renowned experts, based upon the official scoring rubric. The strongest Project Proposals will be awarded with The Earth Prize Distinction, which recognizes submissions of outstanding quality.</span>
                             </div>

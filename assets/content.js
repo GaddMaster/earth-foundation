@@ -606,6 +606,14 @@ const faqsMentors = [
     },
 ];
 
+const ambassadors = [
+    {
+        name: 'To be announced',
+        position: 'The Earth Foundation',
+        avatar: "/images/karen/avatar.jpg",
+    },
+]
+
 export default {
     home,
     about,
@@ -614,4 +622,5 @@ export default {
     webinar,
     adjudicatingPanel,
     faqsMentors,
+    ambassadors,
 };
