@@ -72,15 +72,16 @@ class Latest extends PureComponent {
                                 <FontAwesomeIcon icon = {faArrowRight} />
                             </div>*/}
                             <div className={styles.webinar}>
-                                <p className={styles.announcement}>The Earth Foundation will officially launch The Earth Prize on April 19th, 2021.</p>
+                                <p className={styles.announcementMobile}>The Earth Foundation<br /> will officially launch<br /> The Earth Prize on April 19th, 2021.</p>
+                                <p className={styles.announcementDesktop}>The Earth Foundation will officially launch The Earth Prize on April 19th, 2021.</p>
                                 <div className={styles.logo} />
                                 <Link href="webinar">
                                     <button>Learn more about The Earth Prize Launch Webinar</button>
                                 </Link>
                             </div>
                         </div>
-                        <div className = {`${styles.wall} ${styles.wallA}`}></div>
-                        <div className = {`${styles.wall} ${styles.wallB}`}></div>
+                        <div className = {`${styles.wall} ${styles.wallA}`} />
+                        <div className = {`${styles.wall} ${styles.wallB}`} />
                     </div>
                     {/*<div className = {styles.carousel} style = {{width:style.carousel}}>
                         <Carousel
