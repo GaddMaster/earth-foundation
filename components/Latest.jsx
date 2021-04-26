@@ -72,11 +72,11 @@ class Latest extends PureComponent {
                                 <FontAwesomeIcon icon = {faArrowRight} />
                             </div>*/}
                             <div className={styles.webinar}>
-                                <p className={styles.announcementMobile}>The Earth Foundation<br /> will officially launch<br /> The Earth Prize on April 19th, 2021.</p>
-                                <p className={styles.announcementDesktop}>The Earth Foundation will officially launch The Earth Prize on April 19th, 2021.</p>
+                                <p className={styles.announcementMobile}>The Earth Foundation launched<br /> The Earth Prize on April 19th, 2021.</p>
+                                <p className={styles.announcementDesktop}>The Earth Foundation launched The Earth Prize on April 19th, 2021.</p>
                                 <div className={styles.logo} />
-                                <Link href="webinar">
-                                    <button>Learn more about The Earth Prize Launch Webinar</button>
+                                <Link href="https://www.youtube.com/watch?v=_dLft2yTT_c">
+                                    <button>Watch The Earth Prize Launch Webinar</button>
                                 </Link>
                             </div>
                         </div>

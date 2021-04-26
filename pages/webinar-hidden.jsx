@@ -12,7 +12,7 @@ import PersonViewer from 'components/PersonViewerCarousel';
 import Head from 'next/head';
 
 
-const Webinar = () => {
+const WebinarHidden = () => {
     return (
       <>
         <Head>
@@ -22,7 +22,7 @@ const Webinar = () => {
           <meta name="og:image" content="/images/logo.png" />
           <meta name="og:description" property="og:description" content="Join our launch webinar to learn more about The Earth Foundation, The Earth Prize, and how we will inspire and empower  young students to develop innovative ideas to accelerate positive change towards environmental sustainability." />
         </Head>
-        <Layout 
+        <Layout
             title = "The Earth <br/> Prize"
             background = "whitesmoke"
             header
@@ -69,4 +69,4 @@ const Webinar = () => {
     );
 };
 
-export default Webinar;
+export default WebinarHidden;

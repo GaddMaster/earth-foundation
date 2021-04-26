@@ -66,7 +66,7 @@ const EarthPrize = () => {
                             <div className = {styles.timeline}>
                                 <span>1st Sept. 2021 - 31st Oct. 2021</span>
                             </div>
-                            <div className = {styles.divider}></div>
+                            <div className = {styles.divider} />
                             <div className = {styles.desc}>
                                 <span>Individuals or teams of up to 5 students can register with their supervisor to access bespoke environmental sustainability online learning materials, mentoring, entrepreneurial training, and a global forum to exchange with students and experts from around the world.</span>
                             </div>
@@ -83,7 +83,7 @@ const EarthPrize = () => {
                             <div className = {styles.timeline}>
                                 <span>1st Nov. 2021 - 31st Jan 2022</span>
                             </div>
-                            <div className = {styles.divider}></div>
+                            <div className = {styles.divider} />
                             <div className = {styles.desc}>
                                 <span>Registered teams will continue to work on their environmental sustainability ideas with the guidance of The Earth Prize mentors. They will then submit their Project Proposal describing their chosen solution, which could be a new idea with implementation potential or an already existing project, with local, national or global reach.</span>
                             </div>
@@ -177,7 +177,7 @@ const EarthPrize = () => {
                         <div className = {styles.line}>Ready for the</div>
                         <div className = {styles.line}>challenge?</div>
                     </div>
-                    <Link href="/faqs-earth-prize">
+                    <Link href="http://www.theearthprize.org/">
                         <div className = {styles.link}>
                             <div className = {styles.label}>
                                 <div className = {styles.line}>Discover</div>
