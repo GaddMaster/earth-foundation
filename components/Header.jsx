@@ -80,7 +80,7 @@ const Header = (props) => {
     subItems: [
       {
         name: "The Earth Prize Launch Webinar",
-        route: "webinar",
+        route: "https://www.youtube.com/watch?v=_dLft2yTT_c",
       },
       {
         name: "Become part of our network",

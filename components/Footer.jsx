@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faTwitter, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "../styles/footer.module.scss";
 
@@ -42,18 +42,18 @@ const Footer = props => {
                                 </div>
                             </div>
                             <div className = {styles.socials}>
-                                <div className = {styles.social}>
+                                <a href="https://www.facebook.com/the.earth.fdn" target="_blank" className = {styles.social}>
                                     <FontAwesomeIcon icon = {faFacebookF} />
-                                </div>
-                                <div className = {styles.social}>
+                                </a>
+                                <a href="https://twitter.com/earth_fdn" target="_blank" className = {styles.social}>
                                     <FontAwesomeIcon icon = {faTwitter} />
-                                </div>
-                                <div className = {styles.social}>
+                                </a>
+                                <a href="https://www.instagram.com/the.earthfoundation" target="_blank" className = {styles.social}>
                                     <FontAwesomeIcon icon = {faInstagram} />
-                                </div>
-                                <div className = {styles.social}>
-                                    <FontAwesomeIcon icon = {faYoutube} />
-                                </div>
+                                </a>
+                                <a href="https://www.linkedin.com/company/the-earth-foundation" target="_blank" className = {styles.social}>
+                                    <FontAwesomeIcon icon = {faLinkedinIn} />
+                                </a>
                             </div>
                         </div>
                         <div className = {styles.rights}>
