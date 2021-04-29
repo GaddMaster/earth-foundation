@@ -46,7 +46,7 @@ class Latest extends PureComponent {
                 <section className = {styles.inner}>
                     <div className = {styles.control} style = {{width:style.control,height:styles.control}}>
                         <div className = {styles.centered}>
-                            {/*<div className = {styles.spacer}>
+                            <div className = {styles.spacer}>
                                 <ButtonBase 
                                     className = {styles.button}
                                     onClick = {this.onNext}
@@ -66,24 +66,24 @@ class Latest extends PureComponent {
                             <div className = {styles.label}>
                                 <span>Latest News</span>
                             </div>
-                            <div className = {styles.all}>
+                            {/*<div className = {styles.all}>
                                 <span style = {{marginRight:10}}>Read All</span>
                                 <span className = {styles.news}>News</span>
                                 <FontAwesomeIcon icon = {faArrowRight} />
                             </div>*/}
-                            <div className={styles.webinar}>
+                            {/* <div className={styles.webinar}>
                                 <p className={styles.announcementMobile}>The Earth Foundation launched<br /> The Earth Prize on April 19th, 2021.</p>
                                 <p className={styles.announcementDesktop}>The Earth Foundation launched The Earth Prize on April 19th, 2021.</p>
                                 <div className={styles.logo} />
                                 <Link href="https://www.youtube.com/watch?v=_dLft2yTT_c">
                                     <button>Watch The Earth Prize Launch Webinar</button>
                                 </Link>
-                            </div>
+                            </div> */}
                         </div>
                         <div className = {`${styles.wall} ${styles.wallA}`} />
                         <div className = {`${styles.wall} ${styles.wallB}`} />
                     </div>
-                    {/*<div className = {styles.carousel} style = {{width:style.carousel}}>
+                    <div className = {styles.carousel} style = {{width:style.carousel}}>
                         <Carousel
                             containerClass = {mobile ? styles.carcon : styles.carmo}
                             sliderClass = {styles.slider}
@@ -96,11 +96,12 @@ class Latest extends PureComponent {
                                     <Card
                                         image = {item.image}
                                         label = {item.label}
-                                        summary = {item.summary} />
+                                        button={item.button}
+                                    route={item.buttonRoute}/>
                                 </div>
                             ))}
                         </Carousel>
-                    </div>*/}
+                    </div>
                 </section>
             </section>
         );

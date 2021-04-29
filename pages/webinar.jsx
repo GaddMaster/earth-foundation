@@ -12,7 +12,7 @@ import PersonViewer from 'components/PersonViewerCarousel';
 import Head from 'next/head';
 
 
-const WebinarHidden = () => {
+const Webinar = () => {
     return (
       <>
         <Head>
@@ -32,12 +32,11 @@ const WebinarHidden = () => {
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.wrapper}>
                 <div className = {styles.container}>
-                    <h1 className={styles.title}>Launch Webinar</h1>
-                    <p className={styles.subtitle}>The Earth Foundation will officially launch The Earth Prize on April 19th, 2021 <br /> at 6:00 PM (CET).</p>
-                    <p className={styles.text}>Join our launch webinar to learn more about The Earth Foundation and The Earth Prize, and how we will inspire and empower  young students to develop innovative ideas to accelerate positive change towards environmental sustainability.</p>
-                    <p className={styles.timezones}>9:00 AM LA｜12:00 PM NY ｜ 5:00 PM London ｜7:00 PM Beirut ｜ 8:00 PM Dubai</p>
+                    <h1 className={styles.title}>The Earth Prize <br />Launch Webinar
+                    </h1>
+                    <p className={styles.text}>Watch The Earth Prize Launch Webinar  to learn more about The Earth Foundation, and how The Earth Prize, and how we will inspire and empower young students to develop innovative ideas to accelerate positive change towards.</p>
                   <Link href="https://us02web.zoom.us/webinar/register/WN_CtR2jhLgR6Ou50sUdZOemg">
-                        <button className={styles.button}>Register for The Earth Prize Launch Webinar!</button>
+                        <button className={styles.button}>Watch The Earth Prize Launch Webinar</button>
                     </Link>
                   <div className={styles.hostedWrapper}>
                     <div className={styles.textWrapper}>
@@ -69,4 +68,4 @@ const WebinarHidden = () => {
     );
 };
 
-export default WebinarHidden;
+export default Webinar;
