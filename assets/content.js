@@ -78,10 +78,16 @@ const home = {
         }
     ],
     news: [
+        // {
+        //     image: "/images/logotype.png",
+        //     label: "The Earth Prize",
+        //     summary: "The Earth Foundation will launch April 19th, 2021.",
+        // },
         {
-            image: "/images/logotype.png",
-            label: "The Earth Prize",
-            summary: "The Earth Foundation will launch April 19th, 2021.",
+            image: "/images/earthPrizeLogo.png",
+            label: "The Earth Foundation launched The Earth Prize on April 19th, 2021.",
+            button: "The Earth Prize Launch Webinar",
+            buttonRoute: "/webinar",
         },
     ]
 };
@@ -230,7 +236,14 @@ const earthPrize = {
             ],
         },
         {
-            isUnknown: true,
+            avatar: "/images/steven/avatar.jpg",
+            image: "/images/steven/portrait.jpg",
+            name: "Steven Monfort",
+            position: "Member of the Panel",
+            isUnknown: false,
+            paragraphs: [
+                "Steve Monfort is the John and Adrienne Mars Director of the Smithsonian's National Zoo and Conservation Biology Institute. As a pioneer in the field of Conservation Biology, Dr. Monfort is a subject matter expert in Zoo Biology, Animal Health, Reproductive Biology, and Behavioral Ecology.  Over the course of his 33-year career at the Smithsonian, he has led scientists on the cutting-edge of saving species, from developing non-invasive endocrine monitoring techniques to reintroducing the previously-extinct Scimitar-horned Oryx back into the wild.  More recently, he has led the Smithsonian in adopting a “solutions-based mindset,” focusing on what is working in conservation and how we can do more of it."
+            ],
         },
         {
             isUnknown: true,
@@ -319,7 +332,14 @@ const adjudicatingPanel = {
             ],
         },
         {
-            isUnknown: true,
+            avatar: "/images/steven/avatar.jpg",
+            image: "/images/steven/portrait.jpg",
+            name: "Steven Monfort",
+            position: "Member of the Panel",
+            isUnknown: false,
+            paragraphs: [
+                "Steve Monfort is the John and Adrienne Mars Director of the Smithsonian's National Zoo and Conservation Biology Institute. As a pioneer in the field of Conservation Biology, Dr. Monfort is a subject matter expert in Zoo Biology, Animal Health, Reproductive Biology, and Behavioral Ecology.  Over the course of his 33-year career at the Smithsonian, he has led scientists on the cutting-edge of saving species, from developing non-invasive endocrine monitoring techniques to reintroducing the previously-extinct Scimitar-horned Oryx back into the wild.  More recently, he has led the Smithsonian in adopting a “solutions-based mindset,” focusing on what is working in conservation and how we can do more of it."
+            ],
         },
         {
             isUnknown: true,
