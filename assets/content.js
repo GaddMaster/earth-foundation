@@ -384,7 +384,7 @@ const faqsEarthPrize = [
             },
             {
                 question: 'Who are The Earth Prize Mentors?',
-                answer: 'The Earth Prize Mentors are university students who are passionate about sustainability and entrepreneurship and looking for an opportunity to share their knowledge. Mentors will answer participants’ questions on The Earth Prize platform and provide advice and support on students’ project proposals.',
+                answer: 'The Earth Prize Mentors are university students who are passionate about sustainability and entrepreneurship and looking for an opportunity to share their knowledge. Mentors will answer participants’ questions on The Earth Prize platform and provide advice and support on students’ submissions.',
             },
             {
                 question: 'How will the students and mentors interact?',

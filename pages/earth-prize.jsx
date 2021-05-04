@@ -152,6 +152,13 @@ const EarthPrize = () => {
                             <div className = {styles.desc}>
                                 <span>The winning team will receive a prize of $100,000, to be split in half between the team and their school. Three runner-up schools will be awarded $25,000. The Earth Prize will also recognize a mentor and an educator, who will each receive $12,500.</span>
                             </div>
+                            <Link href = "/faqs-earth-prize">
+                                <div className = {styles.link}>
+                                    <div className = {styles.label}>
+                                        <div className = {styles.line}>FAQs on The Earth Prize <FontAwesomeIcon icon = {faArrowRight} /></div>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className = {`${styles.circle} ${styles.educator}`}>

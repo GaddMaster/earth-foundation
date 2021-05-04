@@ -20,6 +20,7 @@ const CopyrightPolicy = () => {
         >
             <div className={styles.container}>
                 <h1>THE EARTH FOUNDATION COPYRIGHT POLICY</h1>
+                <p className={styles.centered}><b>Last update: 25th March, 2021</b></p><br />
                 <p className={styles.centered}>This Earth Foundation Copyright Policy is incorporated by reference into <Link href="/terms-and-conditions">The Earth Foundation Terms and Conditions</Link> (the “<b>Terms</b>”) and forms a part thereto. Any capitalized terms not defined herein have the meaning defined in the Terms.</p>
                 <h2><span>1.</span> YOUR CONTENT</h2>
                 <p>By submitting any content to us through the Website (other than personal data) (“Your Content”), you grant us unrestricted, sub-licensable, royalty-free, perpetual, and irrevocable rights to use, distribute, advertise, adapt, remix, modify, publicly display, excerpt, prepare derivative works of, and reproduce Your Content for the purposes of carrying out our legitimate interests (e.g. to offer, maintain, and promote the Website).</p>

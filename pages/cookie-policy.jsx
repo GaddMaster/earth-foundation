@@ -22,6 +22,7 @@ const PrivacyPolicy = () => {
         >
             <div className={styles.container}>
                 <h1>THE EARTH FOUNDATION COOKIE POLICY</h1>
+                <p className={styles.centered}><b>Last update: 25th March, 2021</b></p><br />
                 <p className={styles.centered}>We use cookies on this website <Link href="/">https://earth-foundation.org</Link> (the “Website”), as explained in this cookie policy. Below, you can find detailed information about the types of our cookies, their purposes, and your right to manage cookies.</p>
                 <h2><span>1.</span> WHO IS RESPONSIBLE FOR COOKIES ON THE WEBSITE?</h2>
                 <p>The data controller that is responsible for the processing of personal data through the Website, including placing first-party cookies, is The Earth Foundation having a registered address at 15 Rue de Rive, 1204 Genève, Switzerland, and the registration number CHE-439.560.973 (“<b>we</b>”, “<b>us</b>”, or “<b>our</b>”).</p>
