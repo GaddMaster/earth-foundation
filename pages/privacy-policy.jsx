@@ -22,6 +22,7 @@ const PrivacyPolicy = () => {
         >
             <div className={styles.container}>
                 <h1>THE EARTH FOUNDATION PRIVACY POLICY</h1>
+                <p className={styles.centered}><b>Last update: 25th March, 2021</b></p><br />
                 <p className={styles.centered}>This privacy policy explains in detail how we collect, use, and disclose your personal data. It also informs you about the choices that you have with respect to your personal data. Please read this privacy policy carefully before submitting any personal data to us.</p>
                 <h2><span>1.</span> GENERAL INFORMATION</h2>
                 <p className={styles.subtitle}><b>Here you can find some general information about us and our website.</b></p>

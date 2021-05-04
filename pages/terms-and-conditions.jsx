@@ -21,6 +21,7 @@ const TermsAndConditions = () => {
         >
             <div className={styles.container}>
                 <h1>THE EARTH FOUNDATION TERMS AND CONDITIONS</h1>
+                <p className={styles.centered}><b>Last update: 25th March, 2021</b></p><br />
                 <p className={styles.centered}>By accessing or using The Earth Foundation website, you agree to be legally bound by these Earth Foundation Terms and Conditions. Please read this document carefully. If you do not agree with one or more provisions, you should not use this website.</p>
                 <h2><span>1.</span> GENERAL INFORMATION</h2>
                 <p>1.1 These Earth Foundation Terms and Conditions (the “<b>Terms</b>”) constitute a legally binding agreement between The Earth Foundation having a registered address at 15 Rue de Rive, 1204 Genève, Switzerland, and the registration number CHE-439.560.973 (“<b>we</b>”, “<b>us</b>”, and “<b>our</b>”) and an individual user or an entity (“<b>you</b>” and “<b>your</b>”) accessing the website <a href="https://earth-foundation.org" target="_blank">https://earth-foundation.org</a>, the related services, and other websites controlled by us (collectively, the “<b>Website</b>”).</p>
