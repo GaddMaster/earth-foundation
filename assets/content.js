@@ -213,6 +213,23 @@ const about = {
     ]
 };
 
+const schools = [
+  "/images/schools/ahliyyah.png",
+  "/images/schools/aiglon.png",
+  "/images/schools/arcadia.jpg",
+  "/images/schools/asd.jpg",
+  "/images/schools/beau.png",
+  "/images/schools/bradfield.jpg",
+  "/images/schools/cdl.png",
+  "/images/schools/ecolint.png",
+  "/images/schools/gcds.jpg",
+  "/images/schools/hpa.png",
+  "/images/schools/ic.jpeg",
+  "/images/schools/lerosey.png",
+  "/images/schools/punahou.jpg",
+  "/images/schools/stmark.png",
+]
+
 const earthPrize = {
     team: [
         {
@@ -643,4 +660,5 @@ export default {
     adjudicatingPanel,
     faqsMentors,
     ambassadors,
+    schools,
 };
