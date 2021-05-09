@@ -183,11 +183,11 @@ const about = {
         {
             avatar: "/images/julie/avatar.jpg",
             image: "/images/julie/portrait.jpg",
-            name: "Julie Maude Rufino",
+            name: "Julie Rufino",
             position: "Head of Strategy",
             isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -306,11 +306,11 @@ const webinar = {
         {
             avatar: "/images/julie/avatar.jpg",
             image: "/images/julie/portrait.jpg",
-            name: "Julie Maude Rufino",
+            name: "Julie Rufino",
             position: "Head of Strategy, The Earth Foundation",
             isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -580,7 +580,7 @@ const faqsMentors = [
             },
             {
                 question: 'When will I find out if I have been accepted or not?',
-                answer: 'Mentors’ applications will be reviewed on a rolling basis and applicants will be notified within two to three weeks.',
+                answer: 'Applicants will be notified within two to three week after their submission.',
             },
             {
                 question: 'Can I apply more than once?',

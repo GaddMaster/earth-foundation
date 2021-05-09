@@ -81,9 +81,9 @@ const Advisors = () => {
           <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
           <div className = {styles.container}>
             <TitleDesc
-              paragraphs = {[
-                "The Earth Foundation’s mission is to inspire, educate, mentor, and empower youth to accelerate positive change towards environmental sustainability. In achieving this mission, The Earth Foundation has surrounded itself with renowned experts in the field of environmental sustainability, to help guide its strategic development."
-              ]}
+              paragraphs = {(
+                <p>The Earth Foundation’s mission is to inspire, educate, mentor, and empower youth to accelerate positive change towards environmental sustainability. In achieving this mission, The Earth Foundation has surrounded itself with renowned experts in the field of environmental sustainability, to help guide its strategic development.</p>
+              )}
               color = {{
                 title: "#16172C",
                 desc: "#17152B"

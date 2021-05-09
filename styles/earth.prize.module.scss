@@ -23,7 +23,6 @@
             width: 100%;
             height: 0px;
             padding: 50% 0px 50% 0px;
-            background: lightblue;
             border-radius: 50%;
             position: relative;
             overflow: hidden;
@@ -48,19 +47,19 @@
                 padding: 20px 40px 30px 40px;
                 text-align: center;
                 .index {
-                    color: $gold;
+                    color: white;
                     font-size: 18px;
                     font-weight: 900;
                 }
                 .header {
-                    color: $gold;
+                    color: white;
                     font-weight: 900;
                     font-size: 18px;
                     line-height: 24px;
                     margin-bottom: 10px;
                 }
                 .timeline {
-                    color: rgba(255, 255, 255, 0.5);
+                    color: white;
                     font-size: 13px;
                     font-weight: bold;
                     @media (max-width: $breakpoint) {
@@ -70,7 +69,7 @@
                 .divider {
                     min-height: 1px;
                     width: 60px;
-                    background: $gold;
+                    background: white;
                     margin: 10px auto 20px;
                 }
                 .desc {
@@ -86,7 +85,7 @@
                     display: flex;
                     align-items: center;
                     flex-direction: column;
-                    color: $gold;
+                    color: white;
                     font-weight: bold;
                     margin: 15px auto 0;
                     width: 220px;
@@ -118,8 +117,6 @@
         }
         .image img {
             position: absolute;
-            width: 100%;
-            height: 100%;
             top: 0px;
         }
         .tree {
@@ -134,7 +131,7 @@
         }
         .register {
             z-index: 2;
-            background: #17182D;
+            background: #2e5b66;
             @media (min-width: $breakpoint) {
                 height: 400px;
                 width: 400px;
@@ -145,7 +142,7 @@
         }
         .submit {
             z-index: 3;
-            background: #064D3F;
+            background: #327f89;
             height: 450px;
             width: 450px;
             @media (min-width: $breakpoint) {
@@ -157,7 +154,7 @@
             }
         }
         .final {
-            background: #02314F;
+            background: #1d8676;
             z-index: 4;
             @media (min-width: $breakpoint) {
                 height: 400px;
@@ -168,7 +165,7 @@
             }
         }
         .adjudicating {
-            background: #CFAA7B;
+            background: #2e5b66;
             z-index: 3;
             .index, .header { color: white !important; } 
             @media (min-width: $breakpoint) {
@@ -180,7 +177,7 @@
             }
         }
         .ceremony {
-            background: #1A3326;
+            background: #327f89;
             z-index: 4;
             height: 410px;
             width: 410px;
@@ -194,7 +191,7 @@
             }
         }
         .educator {
-            background: #b8814b;
+            background: #1d8676;
             z-index: 4;
             height: 370px;
             width: 370px;
@@ -219,6 +216,10 @@
             }
         }
     }
+
+    .panel {
+        padding: 40px;
+    }
     
     .ready {
         width: 100%;
@@ -241,17 +242,22 @@
         }
         .link {
             display: flex;
-            align-items: flex-end;
-            color: $gold;
-            font-weight: bold;
-            width: 220px;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 70px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-bottom-left-radius: 6px;
+            font-size: 14px;
+            background-color: rgb(10, 183, 188);
             cursor: pointer;
             .label {
-                display: flex;
-                flex-direction: column;
-                margin: 0px 16px 0px 0px;
-                line-height: 30px;
                 text-transform: uppercase;
+                width: 100%;
+                text-align: center;
+                font-weight: 900;
             }
             .icon {
                 svg {
@@ -277,7 +283,7 @@
             font-size: 32px;
             line-height: 40px;
             font-weight: 900;
-            color: $gold;
+            color: black;
             margin: 0px 0px 30px 0px;
         }
         .desc {
@@ -307,7 +313,7 @@
             margin: 0px 0px 40px 0px;
             .header {
                 font-size: 32px;
-                color: #0A4E42;
+                color: black;
                 font-weight: 900;
                 margin: 0px 0px 20px 0px
             }

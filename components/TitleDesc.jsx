@@ -12,16 +12,7 @@ const TitleDesc = props => {
                 </div>
                 <div className = {styles.divider}></div>
                 <div className = {styles.paragraphs} style = {{color:props.color.desc}}>
-                    {props.paragraphs.map((paragrpah, index) => 
-                        <div 
-                            className = {styles.paragraph} 
-                            style = {{
-                                marginBottom: index < props.paragraphs.length - 1 ? 20 : 0
-                            }}
-                            key = {index}>
-                            <span>{paragrpah}</span>
-                        </div>
-                    )}
+                    {props.paragraphs}
                 </div>
             </div>
         </div>
