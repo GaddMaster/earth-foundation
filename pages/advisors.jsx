@@ -30,6 +30,15 @@ const advisors = [
       "A geologist by training, Philippe Gillet is genuinely passionate by the Earth and the Solar system from its origin to its current functioning. He was the Director of the CNRS Institut National des Sciences de l’Univers (France), involved in research projects aimed at responding to today’s major scientific and global challenges, such as the effects of climate change, sustainable development solutions or the evaluation of renewable energies. Gillet chairs the Scientific Advisory Board of INRAE (France), the world's number one institute for research on agriculture, food, and the environment. He is a prolific scientific author, with over 200 publications."
     ],
   },
+  {
+    avatar: "/images/alisia/avatar.jpg",
+    image: "/images/alisia/portrait.jpg",
+    name: "Alisia Greenville",
+    isUnknown: false,
+    paragraphs: [
+      "Alisia Grenville is a lawyer specializing in ethics and behavioral corporate compliance and designs and builds high performing teams. Alisia earned a diploma with distinction in International Compliance from the University of Manchester & ICA, an LLB/J.D. from the University of Sussex, a Civil Law Certificate from the Université d’Avignon, a B.A. with Honors in French and Italian from Queen’s University of Kingston, as well as a Diploma in Italian Language & Cultural Studies Cum Laude from L’Università di Siena per Stranieri. She is also both a picture book author of the children’s series Sela Blue, and the creator and founder of MaRen Designs.  She lives in Switzerland with her husband and three children."
+    ],
+  },
 ];
 
 const Advisors = () => {

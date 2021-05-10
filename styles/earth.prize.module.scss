@@ -207,6 +207,7 @@
         }
         .deer {
             z-index: 1;
+            background-color: black;
             @media (min-width: $breakpoint) {
                 height: 700px;
                 width: 700px;

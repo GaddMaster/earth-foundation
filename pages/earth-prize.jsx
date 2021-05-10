@@ -53,7 +53,7 @@ const EarthPrize = () => {
                 </TitleDesc>
                 <div className = {styles.circles}>
                     <div className = {`${styles.circle} ${styles.image} ${styles.tree}`}>
-                        <img src = "/images/earthLogo.png" alt = "trees" />
+                        <img src = "/images/playground.png" alt = "trees" />
                     </div>
                     <div className = {`${styles.circle} ${styles.register}`}>
                         <div className = {styles.wrapper}>
@@ -118,7 +118,7 @@ const EarthPrize = () => {
                         </div>
                     </div>
                     <div className = {`${styles.circle} ${styles.image} ${styles.deer}`}>
-                        <img src = "/images/playground.png" alt = "deer" />
+                        <img src = "/images/earthLogo.png" alt = "deer" />
                     </div>
                     <div className = {`${styles.circle} ${styles.adjudicating}`}>
                         <div className = {styles.wrapper}>
