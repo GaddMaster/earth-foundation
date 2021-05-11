@@ -47,7 +47,7 @@ const Schools = () => {
                   </div>
                   <div className={styles.logosWrapper}>
                     {content.schools.map(school => (
-                      <div style={{ backgroundImage: `url(${school})` }} />
+                      <a href={school.url} target="_blank"><div style={{ backgroundImage: `url(${school.image})` }} /></a>
                     ))}
                   </div>
                 </div>

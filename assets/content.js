@@ -214,21 +214,21 @@ const about = {
 };
 
 const schools = [
-  "/images/schools/ahliyyah.png",
-  "/images/schools/aiglon.png",
-  "/images/schools/arcadia.jpg",
-  "/images/schools/asd.jpg",
-  "/images/schools/beau.png",
-  "/images/schools/bradfield.jpg",
-  "/images/schools/cdl.png",
-  "/images/schools/ecolint.png",
-  "/images/schools/gcds.jpg",
-  "/images/schools/hpa.png",
-  "/images/schools/ic.jpeg",
-  "/images/schools/lerosey.png",
-  "/images/schools/punahou.jpg",
-  "/images/schools/stmark.png",
-  "/images/schools/samata.png",
+    { image: "/images/schools/ahliyyah.png", url: 'https://ahliyyahmutran.edu.jo'},
+    { image: "/images/schools/aiglon.png", url: 'https://www.aiglon.ch'},
+    { image: "/images/schools/arcadia.jpg", url: 'https://arcadia.sch.ae'},
+    { image: "/images/schools/asd.jpg", url: 'https://www.asdubai.org'},
+    { image: "/images/schools/beau.png", url: 'https://www.beausoleil.ch'},
+    { image: "/images/schools/bradfield.jpg", url: 'https://www.bradfieldcollege.org.uk'},
+    { image: "/images/schools/cdl.png", url: 'https://www.nordangliaeducation.com/en/our-schools/switzerland/cdl'},
+    { image: "/images/schools/ecolint.png", url: 'https://www.ecolint.ch'},
+    { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
+    { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
+    { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
+    { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
+    { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
+    // { image: "/images/schools/stmark.png", url: ''},
+    // { image: "/images/schools/samata.png", url: ''},
 ]
 
 const earthPrize = {
