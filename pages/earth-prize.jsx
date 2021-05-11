@@ -46,10 +46,13 @@ const EarthPrize = () => {
                         desc: "#17152B"
                     }}
                 >
-                    {isMobile
+                    {/*isMobile
                       ? <h1>The <br /> Earth Prize</h1>
                       : <h1>The Earth <br /> Prize</h1>
-                    }
+                    */}
+                    <a href="http://www.theearthprize.org/">
+                        <div className={styles.earthLogo} />
+                    </a>
                 </TitleDesc>
                 <div className = {styles.circles}>
                     <div className = {`${styles.circle} ${styles.image} ${styles.tree}`}>
@@ -117,9 +120,7 @@ const EarthPrize = () => {
                             </div>
                         </div>
                     </div>
-                    <div className = {`${styles.circle} ${styles.image} ${styles.deer}`}>
-                        <img src = "/images/earthLogo.png" alt = "deer" />
-                    </div>
+                    <div className = {`${styles.circle} ${styles.image} ${styles.deer}`} />
                     <div className = {`${styles.circle} ${styles.adjudicating}`}>
                         <div className = {styles.wrapper}>
                             <div className = {styles.index}>

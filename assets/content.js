@@ -228,6 +228,7 @@ const schools = [
   "/images/schools/lerosey.png",
   "/images/schools/punahou.jpg",
   "/images/schools/stmark.png",
+  "/images/schools/samata.png",
 ]
 
 const earthPrize = {
