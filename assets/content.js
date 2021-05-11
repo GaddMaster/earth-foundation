@@ -183,11 +183,11 @@ const about = {
         {
             avatar: "/images/julie/avatar.jpg",
             image: "/images/julie/portrait.jpg",
-            name: "Julie Maude Rufino",
+            name: "Julie Rufino",
             position: "Head of Strategy",
             isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -212,6 +212,24 @@ const about = {
         },
     ]
 };
+
+const schools = [
+    { image: "/images/schools/ahliyyah.png", url: 'https://ahliyyahmutran.edu.jo'},
+    { image: "/images/schools/aiglon.png", url: 'https://www.aiglon.ch'},
+    { image: "/images/schools/arcadia.jpg", url: 'https://arcadia.sch.ae'},
+    // { image: "/images/schools/asd.jpg", url: 'https://www.asdubai.org'},
+    { image: "/images/schools/beau.png", url: 'https://www.beausoleil.ch'},
+    { image: "/images/schools/bradfield.jpg", url: 'https://www.bradfieldcollege.org.uk'},
+    { image: "/images/schools/cdl.png", url: 'https://www.nordangliaeducation.com/en/our-schools/switzerland/cdl'},
+    { image: "/images/schools/ecolint.png", url: 'https://www.ecolint.ch'},
+    // { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
+    { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
+    { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
+    { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
+    { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
+    // { image: "/images/schools/stmark.png", url: ''},
+    // { image: "/images/schools/samata.png", url: ''},
+]
 
 const earthPrize = {
     team: [
@@ -289,11 +307,11 @@ const webinar = {
         {
             avatar: "/images/julie/avatar.jpg",
             image: "/images/julie/portrait.jpg",
-            name: "Julie Maude Rufino",
+            name: "Julie Rufino",
             position: "Head of Strategy, The Earth Foundation",
             isUnknown: false,
             paragraphs: [
-                "Julie Maude Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+                "Julie Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
             ],
         },
         {
@@ -563,7 +581,7 @@ const faqsMentors = [
             },
             {
                 question: 'When will I find out if I have been accepted or not?',
-                answer: 'Mentors’ applications will be reviewed on a rolling basis and applicants will be notified within two to three weeks.',
+                answer: 'Applicants will be notified within two to three week after their submission.',
             },
             {
                 question: 'Can I apply more than once?',
@@ -643,4 +661,5 @@ export default {
     adjudicatingPanel,
     faqsMentors,
     ambassadors,
+    schools,
 };

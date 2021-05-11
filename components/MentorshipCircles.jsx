@@ -4,11 +4,8 @@ import styles from "styles/mentorship.circles.module.scss";
 const MentorshipCircles = props => {
     return (
         <div className = {styles.container}>
-            <div className = {`${styles.circle} ${styles.giraffe}`}>
-                <img src = "/images/giraffe.jpg" alt = "giraffe" />
-            </div>
+            <div className = {`${styles.circle} ${styles.giraffe}`} />
             <div className = {`${styles.circle} ${styles.boabab}`}>
-                <img src = "/images/boabab.jpg" alt = "boabab" />
             </div>
             <div className = {`${styles.circle} ${styles.when}`}>
                 <div className = {styles.padding}>

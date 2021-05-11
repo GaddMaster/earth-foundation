@@ -34,9 +34,8 @@ const Alumni = () => {
             <div className = {styles.wrapper}>
                 <div className = {styles.container}>
                   <TitleDesc
-                    paragraphs = {[
-                      "A platform for networking and encouragement amongst our community of passionate and inspiring individuals. The Earth Foundation Alumni Association will strengthen ties among its members, offering them support through access to educational content, mentorship, social events, and professional opportunities.",
-                    ]}
+                    paragraphs = {(<p>A platform for networking and encouragement amongst our community of passionate and inspiring individuals. The Earth Foundation Alumni Association will strengthen ties among its members, offering them support through access to educational content, mentorship, social events, and professional opportunities.</p>
+                    )}
                     color = {{
                       title: "#16172C",
                       desc: "#16172C"

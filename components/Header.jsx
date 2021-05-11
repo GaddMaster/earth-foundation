@@ -80,7 +80,7 @@ const Header = (props) => {
     subItems: [
       {
         name: "The Earth Prize Launch Webinar",
-        route: "https://www.youtube.com/watch?v=_dLft2yTT_c",
+        route: "webinar",
       },
       {
         name: "Become part of our network",
@@ -106,6 +106,10 @@ const Header = (props) => {
       {
         name: "Our Advisors",
         route: "advisors",
+      },
+      {
+        name: "Schools",
+        route: "schools",
       },
     ],
   };

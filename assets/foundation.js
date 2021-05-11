@@ -49,12 +49,12 @@ export default {
       description: "In financial leadership roles at MedTech, venture capital, non-profits, foundations, and audit firms. He is well versed in Swiss, European, and US regulatory, tax, GAAP, IP, and compliance laws​."
     },
     {
-      first: "Julie Maude",
+      first: "Julie",
       last: "Rufino",
       image: "/images/julie_maude_rufino.jpg",
       avatar: "/images/julie_avatar.jpg",
       position: "Strategy & Operations",
-      summary: "Julie Maude Rufino recently graduated in Business Administration at the University of St.",
+      summary: "Julie Rufino recently graduated in Business Administration at the University of St.",
       description: "Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation’s mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
     },
   ]

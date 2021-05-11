@@ -50,6 +50,10 @@
         width: 320px;
         height: 320px;
         margin: 0px 0px 0px 0px;
+        background-image: url("/images/boy.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         @media (min-width: $breakpoint) {
             margin: 0px 0px 0px 20px;
             width: 360px;
@@ -62,6 +66,10 @@
         position: absolute;
         top: 340px;
         left: 20px;
+        background-image: url("/images/wood.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         @media (min-width: $breakpoint) {
             width: 480px;
             height: 480px;

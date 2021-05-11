@@ -37,23 +37,26 @@ const EarthPrize = () => {
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.container}>
                 <TitleDesc
-                    paragraphs = {[
-                        "A $200,000 global youth environmental sustainability competition open to all students between the ages of 13 and 19, with rewards in the form of university scholarships for students and grants for schools.",
-                        "Through The Earth Prize, students are challenged, mentored, and inspired to effect real change by designing their own environmental sustainability projects, products, organizations or enterprises."
-                    ]}
+                    paragraphs = {(
+                        <p>A $200,000 global youth environmental sustainability competition open to all students between the ages of 13 and 19, with rewards in the form of university scholarships for students and grants for schools.<br /><br />
+                            Through <Link href="http://www.theearthprize.org/">The Earth Prize</Link>, students are challenged, mentored, and inspired to effect real change by designing their own environmental sustainability projects, products, organizations or enterprises.</p>
+                    )}
                     color = {{
                         title: "#17152B",
                         desc: "#17152B"
                     }}
                 >
-                    {isMobile
+                    {/*isMobile
                       ? <h1>The <br /> Earth Prize</h1>
                       : <h1>The Earth <br /> Prize</h1>
-                    }
+                    */}
+                    <a href="http://www.theearthprize.org/">
+                        <div className={styles.earthLogo} />
+                    </a>
                 </TitleDesc>
                 <div className = {styles.circles}>
                     <div className = {`${styles.circle} ${styles.image} ${styles.tree}`}>
-                        <img src = "/images/trees.jpg" alt = "trees" />
+                        <img src = "/images/playground.png" alt = "trees" />
                     </div>
                     <div className = {`${styles.circle} ${styles.register}`}>
                         <div className = {styles.wrapper}>
@@ -117,9 +120,7 @@ const EarthPrize = () => {
                             </div>
                         </div>
                     </div>
-                    <div className = {`${styles.circle} ${styles.image} ${styles.deer}`}>
-                        <img src = "/images/deer.jpg" alt = "deer" />
-                    </div>
+                    <div className = {`${styles.circle} ${styles.image} ${styles.deer}`} />
                     <div className = {`${styles.circle} ${styles.adjudicating}`}>
                         <div className = {styles.wrapper}>
                             <div className = {styles.index}>
@@ -187,11 +188,7 @@ const EarthPrize = () => {
                     <Link href="http://www.theearthprize.org/">
                         <div className = {styles.link}>
                             <div className = {styles.label}>
-                                <div className = {styles.line}>Discover</div>
-                                <div className = {styles.line}>the earth prize</div>
-                            </div>
-                            <div className = {styles.icon}>
-                                <FontAwesomeIcon icon = {faArrowRight} />
+                                <div className = {styles.line}>Discover the earth prize</div>
                             </div>
                         </div>
                     </Link>
@@ -205,16 +202,18 @@ const EarthPrize = () => {
                         <span>All participants in The Earth Prize will be automatically enrolled in The Earth Foundation Alumni Association. This is a community of passionate individuals and organizations offering mentorship, networking, internships, and professional placement opportunities.</span>
                     </div>
                 </div>
-                <PersonViewer
-                  title = "The Adjudicating Panel"
-                  items = {content.earthPrize.team}
-                  theme = {{
-                      title : "#CFAB79",
-                      header : "#FDFEFE",
-                      position: "#FDFEFE",
-                      paragraph: "#FDFEFE",
-                      background: "#064D3F"
-                  }} />
+                <div className = {styles.panel}>
+                    <PersonViewer
+                      title = "The Adjudicating Panel"
+                      items = {content.earthPrize.team}
+                      theme = {{
+                          title : "#000000",
+                          header : "#FDFEFE",
+                          position: "#FDFEFE",
+                          paragraph: "#FDFEFE",
+                          background: "#064D3F"
+                      }} />
+                </div>
                 <div className = {styles.bass}>
                     <div className = {styles.details}>
                         <div className = {styles.header}>

@@ -38,9 +38,8 @@ const Ambassadors = () => {
             <div className = {styles.wrapper}>
                 <div className = {styles.container}>
                     <TitleDesc
-                      paragraphs = {[
-                          "The Earth Prize Ambassadors are inspiring individuals with a strong passion for environmental sustainability, eager to spread the word about The Earth Foundation initiatives. These Ambassadors will also accompany The Earth Prize Finalists throughout their social media engagement campaign, helping them raise awareness about their projects and increasing their potential for impact.",
-                      ]}
+                      paragraphs = {(<p>The Earth Prize Ambassadors are inspiring individuals with a strong passion for environmental sustainability, eager to spread the word about The Earth Foundation initiatives. These Ambassadors will also accompany The Earth Prize Finalists throughout their social media engagement campaign, helping them raise awareness about their projects and increasing their potential for impact.</p>
+                      )}
                       color = {{
                           title: "#17152B",
                           desc: "#17152B"

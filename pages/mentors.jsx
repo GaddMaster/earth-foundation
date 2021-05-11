@@ -38,10 +38,10 @@ const Mentors = () => {
             <SlideSocials color="#CEAA7A" style={{ top: '220px' }} />
             <div className = {styles.container}>
                 <TitleDesc
-                    paragraphs = {[
-                        "Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19.",
-                        "Mentors will contribute to the development of students’ innovative project proposals by offering them guidance on their ideas and answering their questions. Mentors who will have demonstrated the highest levels of engagement will be given the chance to work individually with one of the ten The Earth Prize Finalists."
-                    ]}
+                    paragraphs = {(
+                        <p>Becoming an Earth Prize Mentor is  a unique opportunity for university students to share and expand their knowledge on environmental sustainability and entrepreneurship, by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19.<br /><br />
+                            Mentors will contribute to the development of students’ innovative project proposals by offering them guidance on their ideas and answering their questions. Mentors who will have demonstrated the highest levels of engagement will be given the chance to work individually with one of the ten The Earth Prize Finalists.</p>
+                    )}
                     color = {{
                         title: "#CEAA7A",
                         desc: "#17152B"
@@ -65,7 +65,7 @@ const Mentors = () => {
 
                 <PointBlurp
                   title = "The Earth Prize Mentor of the Year."
-                  desc = "Each year, the most engaged mentor, as voted by the The Earth Prize participants, will be recognized with the Mentor of the Year award and a $12,500 cash prize."
+                  desc = "Each year, the most engaged mentor, as voted by the The Earth Prize participants, will be recognized with the Mentor of the Year award and a $12,500 prize."
                   lean = "left" />
 
                 <PointBlurp
@@ -90,7 +90,7 @@ const Mentors = () => {
 
                 <PointBlurp
                     title = "Make an impact."
-                    desc = "Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and to serve as a role model for younger children, inspiring them to become future changemakers."
+                    desc = "Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and to serve as a role model for younger students, inspiring them to become future changemakers."
                     lean = "right" />
 
                 <br />
@@ -118,6 +118,7 @@ const Mentors = () => {
                         </div>
                         <div className = {styles.desc}>
                             <span>The Earth Foundation will select a limited number of mentors with different areas of expertise from all over the world.</span>
+                            <span><br />*Application deadline: 30th June 2021 at 23.59 CET</span>
                         </div>
                     </div>
                 </div>
