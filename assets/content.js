@@ -228,7 +228,7 @@ const schools = [
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
     // { image: "/images/schools/stmark.png", url: ''},
-    // { image: "/images/schools/samata.png", url: ''},
+    { image: "/images/schools/samata.png", url: ''},
 ]
 
 const earthPrize = {
