@@ -90,7 +90,7 @@ const Mentors = () => {
 
                 <PointBlurp
                     title = "Make an impact."
-                    desc = "Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and to serve as a role model for younger children, inspiring them to become future changemakers."
+                    desc = "Joining The Earth Prize as a mentor will allow you to actively contribute to projects striving to make a positive impact on the environment and to serve as a role model for younger students, inspiring them to become future changemakers."
                     lean = "right" />
 
                 <br />
