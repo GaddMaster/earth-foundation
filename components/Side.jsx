@@ -31,6 +31,9 @@ const Side = ({ onOpen }) => {
       <div className = {styles.item} onClick={() => handleLinkClick("/advisors")}>
         <span>Our Advisors</span>
       </div>
+      <div className = {styles.item} onClick={() => handleLinkClick("/schools")}>
+        <span>Schools</span>
+      </div>
 
       <br />
 
