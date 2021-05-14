@@ -63,7 +63,7 @@ const Webinar = () => {
                 <div className = {styles.container}>
                     <h1 className={styles.title}>The Earth Prize <br /> Webinar for Teachers & Schools
                     </h1>
-                  <p className={styles.text}>Wednesday May 26th, 18:00 (CEST) <br /><br /> 9 AM LA | Bogotá 11 AM | 12 PM NYC | 5 PM London | 7 PM Beirut | 8 PM Dubai</p>
+                  <p className={styles.text} style={{ fontSize: '20px' }}><b>Wednesday May 26th, 18:00 (CEST)</b> <br /><br /> 9 AM LA | Bogotá 11 AM | 12 PM NYC | 5 PM London <br />7 PM Beirut | 8 PM Dubai</p>
                     <p className={styles.text}>This webinar will give educators, teachers, and school administrators an opportunity to ask The Earth Foundation's CEO, Angela McCarthy, and the Head of Strategy, Julie Rufino, their questions regarding participation in The Earth Prize. Attendees will also hear from Karen Wilson, expert on innovation, entrepreneurship, finance, and impact measurement, and member of The Earth Prize's Adjudicating Panel.</p>
                   <Link href="https://zoom.us/webinar/register/WN_IN7dcO9GQ82HLIv8vy3pig">
                         <button className={styles.button}>Register for the webinar</button>

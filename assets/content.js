@@ -92,9 +92,9 @@ const home = {
         },
         {
             image: "/images/earthPrizeLogo.png",
-            label: "The Earth Foundation launched The Earth Prize on April 19th, 2021.",
+            label: "The Earth Prize Launch Webinar",
             text: "",
-            button: "The Earth Prize Launch Webinar",
+            button: "Watch webinar",
             buttonRoute: "/webinar",
         },
     ]
