@@ -1,0 +1,113 @@
+
+@import "./variables";
+
+.wrapper {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 0 70px;
+
+    @media (max-width: $breakpoint) {
+        margin-bottom: 0px;
+        padding: 0;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 160px;
+    @media (min-width: $breakpoint) { padding-top: 200px; }
+
+    .text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 17px;
+        margin: 20px auto 20px;
+        letter-spacing: 1px;
+        max-width: 600px;
+
+        @media (max-width: $breakpoint) {
+            padding: 0 40px;
+            margin: 20px 0 10px;
+        }
+    }
+
+    .title {
+        text-align: center;
+        color: $blue;
+        font-weight: 900;
+        font-size: 44px;
+        letter-spacing: 2px;
+
+        @media (max-width: $breakpoint) {
+            font-size: 34px;
+            padding: 0 20px;
+        }
+    }
+
+    .button {
+        margin: 20px 0 100px;
+        background-color: #CFAB79;
+        border: 0;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: $blue;
+        width: 320px;
+        cursor: pointer;
+        padding: 20px;
+
+        @media (max-width: $breakpoint) {
+            margin: 30px 0 70px;
+        }
+    }
+
+    .speakersWrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin: 70px 0 120px;
+
+        @media (max-width: $breakpoint) {
+            flex-wrap: wrap;
+            margin: 30px 0 90px;
+        }
+
+        .speakerWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            @media (max-width: $breakpoint) {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+
+            .image {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                font-weight: bold;
+                font-size: 18px;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

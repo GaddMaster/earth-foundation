@@ -84,9 +84,17 @@ const home = {
         //     summary: "The Earth Foundation will launch April 19th, 2021.",
         // },
         {
+            image: "/images/earthLogoVertical.png",
+            label: "Webinar for Teachers & Schools",
+            text: "Wednesday May 26h at 18:00 (CEST)",
+            button: "Register for the webinar",
+            buttonRoute: "/webinar-teachers-schools",
+        },
+        {
             image: "/images/earthPrizeLogo.png",
-            label: "The Earth Foundation launched The Earth Prize on April 19th, 2021.",
-            button: "The Earth Prize Launch Webinar",
+            label: "The Earth Prize Launch Webinar",
+            text: "",
+            button: "Watch webinar",
             buttonRoute: "/webinar",
         },
     ]
@@ -228,7 +236,7 @@ const schools = [
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
     // { image: "/images/schools/stmark.png", url: ''},
-    // { image: "/images/schools/samata.png", url: ''},
+    { image: "/images/schools/samata.png", url: ''},
 ]
 
 const earthPrize = {
@@ -326,6 +334,39 @@ const webinar = {
         },
     ],
 };
+
+const webinarTeachersSchools = [
+    {
+        avatar: "/images/karen/avatar.jpg",
+        image: "/images/karen/portrait.jpg",
+        name: "Karen Wilson",
+        position: "Member of The Earth Prize Adjudicating Panel",
+        isUnknown: false,
+        paragraphs: [
+            "Karen Wilson is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
+        ],
+    },
+    {
+        avatar: "/images/angela/avatar.jpg",
+        image: "/images/angela/portrait.jpg",
+        name: "Angela McCarthy",
+        position: "Chief Executive Officer, The Earth Foundation",
+        isUnknown: false,
+        paragraphs: [
+            "Angela McCarthy was instrumental in the establishment of The Earth Foundation. Angela has held management, marketing, and fundraising positions with companies in wealth management and hospitality in Geneva and London."
+        ],
+    },
+    {
+        avatar: "/images/julie/avatar.jpg",
+        image: "/images/julie/portrait.jpg",
+        name: "Julie Rufino",
+        position: "Head of Strategy, The Earth Foundation",
+        isUnknown: false,
+        paragraphs: [
+            "Julie Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+        ],
+    }
+]
 
 const adjudicatingPanel = {
     team: [
@@ -662,4 +703,5 @@ export default {
     faqsMentors,
     ambassadors,
     schools,
+    webinarTeachersSchools,
 };

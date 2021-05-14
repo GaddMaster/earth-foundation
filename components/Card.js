@@ -11,12 +11,14 @@ const Card = props => {
     return (
             <section className = {styles.card}>
                 <div className = {styles.cover} style = {{background:`url(${props.image})`}}></div>
-                <div className = {styles.label}>
-                    <span>{props.label}</span>
-                </div>
-              {/*<div className = {styles.summary}>
-                    <span>{props.summary}</span>
-                </div>*/}
+              <div className = {styles.wrapper}>
+                <p className = {styles.label}>{props.label}
+                </p>
+                {props.text && (
+                  <p className = {styles.summary}>{props.text}
+                  </p>
+                )}
+              </div>
               {/* <div className = {styles.more}>
                     <span>Read More</span>
                     <FontAwesomeIcon icon = {faArrowRight} />

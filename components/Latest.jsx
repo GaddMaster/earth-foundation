@@ -96,6 +96,7 @@ class Latest extends PureComponent {
                                     <Card
                                         image = {item.image}
                                         label = {item.label}
+                                        text = {item.text}
                                         button={item.button}
                                     route={item.buttonRoute}/>
                                 </div>
