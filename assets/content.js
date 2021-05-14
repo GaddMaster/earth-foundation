@@ -225,7 +225,7 @@ const schools = [
     { image: "/images/schools/ahliyyah.png", url: 'https://ahliyyahmutran.edu.jo'},
     { image: "/images/schools/aiglon.png", url: 'https://www.aiglon.ch'},
     { image: "/images/schools/arcadia.jpg", url: 'https://arcadia.sch.ae'},
-    // { image: "/images/schools/asd.jpg", url: 'https://www.asdubai.org'},
+    { image: "/images/schools/asd.jpg", url: 'https://www.asdubai.org'},
     { image: "/images/schools/beau.png", url: 'https://www.beausoleil.ch'},
     { image: "/images/schools/bradfield.jpg", url: 'https://www.bradfieldcollege.org.uk'},
     { image: "/images/schools/cdl.png", url: 'https://www.nordangliaeducation.com/en/our-schools/switzerland/cdl'},
@@ -236,7 +236,7 @@ const schools = [
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
     // { image: "/images/schools/stmark.png", url: ''},
-    { image: "/images/schools/samata.png", url: ''},
+    { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
 ]
 
 const earthPrize = {
