@@ -340,7 +340,7 @@ const webinarTeachersSchools = [
         avatar: "/images/karen/avatar.jpg",
         image: "/images/karen/portrait.jpg",
         name: "Karen Wilson",
-        position: "Member of the Panel",
+        position: "Member of The Earth Prize Adjudicating Panel",
         isUnknown: false,
         paragraphs: [
             "Karen Wilson is the Founder of GV Partners and an expert on innovation, entrepreneurship, finance and impact measurement, working with private sector firms, international organizations, foundations and academia. She is also an Associate Fellow at Said Business School at Oxford University and a Visiting Lecturer at the Stockholm School of Economics in Riga. She has a Bachelors of Science from Carnegie Mellon University and an MBA from Harvard Business School."
