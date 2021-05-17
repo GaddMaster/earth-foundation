@@ -235,7 +235,7 @@ const schools = [
     { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
-    // { image: "/images/schools/stmark.png", url: ''},
+    { image: "/images/schools/stmark.png", url: ''},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
 ]
 
