@@ -33,7 +33,7 @@ const advisors = [
   {
     avatar: "/images/alisia/avatar.jpg",
     image: "/images/alisia/portrait.jpg",
-    name: "Alisia Greenville",
+    name: "Alisia Grenville",
     isUnknown: false,
     paragraphs: [
       "Alisia Grenville is a lawyer specializing in ethics and behavioral corporate compliance and designs and builds high performing teams. Alisia earned a diploma with distinction in International Compliance from the University of Manchester & ICA, an LLB/J.D. from the University of Sussex, a Civil Law Certificate from the Université d’Avignon, a B.A. with Honors in French and Italian from Queen’s University of Kingston, as well as a Diploma in Italian Language & Cultural Studies Cum Laude from L’Università di Siena per Stranieri. She is also both a picture book author of the children’s series Sela Blue, and the creator and founder of MaRen Designs.  She lives in Switzerland with her husband and three children."
