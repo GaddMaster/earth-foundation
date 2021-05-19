@@ -13,12 +13,18 @@
         max-width: 1014px;
         width: 100%;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
         @media (min-width: $breakpoint) { height: 460px; }
+        @media (max-width: $breakpoint) {
+            flex-direction: column;
+        }
         .control {
             width: 200px;
             height: 200px;
             background: #CEAA7A;
             position: relative;
+            flex-shrink: 0;
             @media (max-width: $breakpoint) {
                 height: 200px;
                 width: 100% !important;
@@ -201,6 +207,7 @@
         }
         .carousel {
             position: relative;
+            flex-grow: 1;
             @media (max-width: $breakpoint) {
                 top: -60px;
                 left: 40px;

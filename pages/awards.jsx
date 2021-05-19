@@ -142,8 +142,8 @@ const Awards = props => {
                             <div className = {styles.header}>
                                 <div className = {styles.text}>
                                     <FontAwesomeIcon icon = {faQuoteLeft} />
-                                    <span>Carbon<br /></span>
-                                    <span>Offsetting</span>
+                                    <span>To be <br /></span>
+                                    <span>announced</span>
                                     <FontAwesomeIcon icon = {faQuoteRight} />
                                 </div>
                             </div>
