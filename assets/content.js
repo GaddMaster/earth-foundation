@@ -83,7 +83,7 @@ const home = {
             imageCover: true,
             label: "The Earth Prize is looking for mentors!",
             text: "",
-            button: "Find out more about The Earth Prize mentors",
+            button: "Find out more about The Earth Prize Mentors",
             buttonRoute: "/mentors",
         },
         {
@@ -238,12 +238,11 @@ const schools = [
     { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
     { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
     { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
+    { image: "/images/schools/iolani.png", url: 'https://www.iolani.org'},
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
-    { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
-    { image: "/images/schools/iolani.png", url: 'https://www.iolani.org'},
-]
+    { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},]
 
 const earthPrize = {
     team: [

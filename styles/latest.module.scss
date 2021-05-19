@@ -217,7 +217,7 @@
                 margin: 50px 0px;
             }
             .carcon { overflow: visible; }
-            .carmo { width: 100vw; }
+            .carmo { min-width: 105%; ul{ width: 100% } }
             .slider { margin: 0px 0px 0px 0px; }
             .wrapper { margin: 0px 0px 0px 0px; height: 100%; margin-right: 20px; }
         }
