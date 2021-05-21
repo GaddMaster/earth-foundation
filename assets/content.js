@@ -78,13 +78,17 @@ const home = {
         }
     ],
     news: [
-        // {
-        //     image: "/images/logotype.png",
-        //     label: "The Earth Prize",
-        //     summary: "The Earth Foundation will launch April 19th, 2021.",
-        // },
+        {
+            image: "/images/people.jpg",
+            imageCover: true,
+            label: "The Earth Prize is looking for mentors!",
+            text: "",
+            button: "Find out more about The Earth Prize Mentors",
+            buttonRoute: "/mentors",
+        },
         {
             image: "/images/earthLogoVertical.png",
+            imageCover: false,
             label: "Webinar for Teachers & Schools",
             text: "Wednesday May 26h at 18:00 (CEST)",
             button: "Register for the webinar",
@@ -92,6 +96,7 @@ const home = {
         },
         {
             image: "/images/earthPrizeLogo.png",
+            imageCover: false,
             label: "The Earth Prize Launch Webinar",
             text: "",
             button: "Watch webinar",
@@ -230,14 +235,14 @@ const schools = [
     { image: "/images/schools/bradfield.jpg", url: 'https://www.bradfieldcollege.org.uk'},
     { image: "/images/schools/cdl.png", url: 'https://www.nordangliaeducation.com/en/our-schools/switzerland/cdl'},
     { image: "/images/schools/ecolint.png", url: 'https://www.ecolint.ch'},
-    // { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
+    { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
     { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
     { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
+    { image: "/images/schools/iolani.png", url: 'https://www.iolani.org'},
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
-    { image: "/images/schools/stmark.png", url: ''},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
-]
+    { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},]
 
 const earthPrize = {
     team: [

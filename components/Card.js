@@ -10,7 +10,7 @@ import styles from "../styles/card.module.scss";
 const Card = props => {
     return (
             <section className = {styles.card}>
-                <div className = {styles.cover} style = {{background:`url(${props.image})`}}></div>
+                <div className = {styles.cover} style = {{ backgroundSize: props.imageCover ? 'cover' : 'contain', backgroundImage:`url(${props.image})` }} />
               <div className = {styles.wrapper}>
                 <p className = {styles.label}>{props.label}
                 </p>
