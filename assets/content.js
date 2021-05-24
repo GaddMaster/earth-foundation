@@ -87,15 +87,15 @@ const home = {
             buttonRoute: "/mentors",
         },
         {
-            image: "/images/earthLogoVertical.png",
-            imageCover: false,
+            image: "/images/date.jpg",
+            imageCover: true,
             label: "Webinar for Teachers & Schools",
             text: "Wednesday May 26h at 18:00 (CEST)",
             button: "Register for the webinar",
             buttonRoute: "/webinar-teachers-schools",
         },
         {
-            image: "/images/earthPrizeLogo.png",
+            image: "/images/logo.gif",
             imageCover: false,
             label: "The Earth Prize Launch Webinar",
             text: "",
