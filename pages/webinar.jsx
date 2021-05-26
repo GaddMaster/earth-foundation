@@ -35,7 +35,7 @@ const Webinar = () => {
                     <h1 className={styles.title}>The Earth Prize <br />Launch Webinar
                     </h1>
                     <p className={styles.text}>Watch The Earth Prize Launch Webinar  to learn more about The Earth Foundation, and how The Earth Prize, and how we will inspire and empower young students to develop innovative ideas to accelerate positive change towards.</p>
-                  <Link href="https://us02web.zoom.us/webinar/register/WN_CtR2jhLgR6Ou50sUdZOemg">
+                  <Link href="https://www.youtube.com/watch?v=_dLft2yTT_c&t=18s">
                         <button className={styles.button}>Watch The Earth Prize Launch Webinar</button>
                     </Link>
                   <div className={styles.hostedWrapper}>

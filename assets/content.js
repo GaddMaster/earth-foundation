@@ -87,15 +87,15 @@ const home = {
             buttonRoute: "/mentors",
         },
         {
-            image: "/images/earthLogoVertical.png",
-            imageCover: false,
-            label: "Webinar for Teachers & Schools",
+            image: "/images/date.jpg",
+            imageCover: true,
+            label: "Webinar for Teachers & The Earth Prize Schools",
             text: "Wednesday May 26h at 18:00 (CEST)",
             button: "Register for the webinar",
             buttonRoute: "/webinar-teachers-schools",
         },
         {
-            image: "/images/earthPrizeLogo.png",
+            image: "/images/logo.gif",
             imageCover: false,
             label: "The Earth Prize Launch Webinar",
             text: "",
@@ -229,6 +229,7 @@ const about = {
 const schools = [
     { image: "/images/schools/ahliyyah.png", url: 'https://ahliyyahmutran.edu.jo'},
     { image: "/images/schools/aiglon.png", url: 'https://www.aiglon.ch'},
+    { image: "/images/schools/aci.jpg", url: 'https://www.aci.k12.tr/en'},
     { image: "/images/schools/arcadia.jpg", url: 'https://arcadia.sch.ae'},
     { image: "/images/schools/asd.jpg", url: 'https://www.asdubai.org'},
     { image: "/images/schools/beau.png", url: 'https://www.beausoleil.ch'},
@@ -242,7 +243,8 @@ const schools = [
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
-    { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},]
+    { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
+    { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},]
 
 const earthPrize = {
     team: [

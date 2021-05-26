@@ -32,7 +32,7 @@ const Side = ({ onOpen }) => {
         <span>Our Advisors</span>
       </div>
       <div className = {styles.item} onClick={() => handleLinkClick("/schools")}>
-        <span>Schools</span>
+        <span>The Earth Prize Schools</span>
       </div>
 
       <br />
