@@ -113,7 +113,7 @@ const Header = (props) => {
         route: "advisors",
       },
       {
-        name: "Schools",
+        name: "The Earth Prize Schools",
         route: "schools",
       },
     ],
