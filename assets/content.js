@@ -89,7 +89,7 @@ const home = {
         {
             image: "/images/date.jpg",
             imageCover: true,
-            label: "Webinar for Teachers & Schools",
+            label: "Webinar for Teachers & The Earth Prize Schools",
             text: "Wednesday May 26h at 18:00 (CEST)",
             button: "Register for the webinar",
             buttonRoute: "/webinar-teachers-schools",
