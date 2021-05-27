@@ -216,6 +216,13 @@
                 float: left;
                 margin: 50px 0px;
             }
+            li {
+              max-width: 270px;
+
+                @media (max-width: $breakpoint) {
+                    max-width: none;
+                }
+            }
             .carcon { overflow: visible; }
             .carmo { min-width: 105%; ul{ width: 100% } }
             .slider { margin: 0px 0px 0px 0px; }
