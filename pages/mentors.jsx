@@ -13,7 +13,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "styles/earth.prize.mentor.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
-import React, {useState} from 'react';
+import React from 'react';
 import {useMediaQuery} from 'react-responsive';
 import Head from 'next/head';
 import {useRouter} from 'next/router';
@@ -27,6 +27,16 @@ const Mentors = () => {
       <>
           <Head>
               <title>The Earth Prize Mentors</title>
+              <meta
+                name="description"
+                content="The Earth Prize Mentors are university students willing to share and expand their knowledge on environmental sustainability and entrepreneurship by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19."
+              />
+              <meta property="og:title" content="The Earth Prize Mentors" />
+              <meta
+                property="og:description"
+                content="The Earth Prize Mentors are university students willing to share and expand their knowledge on environmental sustainability and entrepreneurship by advising participants in The Earth Prize, a $200,000 global youth environmental sustainability competition for students between the ages of 13 and 19."
+              />
+              <meta property="og:image" content="/images/people.jpg" />
           </Head>
         <Layout 
             title = "The Earth Prize Mentors"
