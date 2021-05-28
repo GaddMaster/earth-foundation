@@ -79,10 +79,10 @@ const Header = (props) => {
  const GetInvolvedMenu = {
     name: "Get Involved",
     subItems: [
-      // {
-      //   name: "The Earth Prize Webinar for Teachers & Schools",
-      //   route: "webinar-teachers-schools",
-      // },
+      {
+        name: "The Earth Prize Webinar for Teachers & Schools",
+        route: "https://www.youtube.com/watch?v=C6_WVPUaUik&t=15s",
+      },
       {
         name: "The Earth Prize Launch Webinar",
         route: "webinar",
