@@ -16,7 +16,7 @@ const SlideSocials = ({ color, style }) => (
     <a href="https://www.instagram.com/theearthprize/" target="_blank" className = {styles.social} style={{ borderColor: color }}>
       <FontAwesomeIcon icon = {faInstagram} style={{ color: color }} />
     </a>
-    <a href="https://twitter.com/earth_fdn" target="_blank" className = {styles.social} style={{ borderColor: color }}>
+    <a href="https://twitter.com/TheEarthPrize" target="_blank" className = {styles.social} style={{ borderColor: color }}>
       <FontAwesomeIcon icon = {faTwitter} style={{ color: color }} />
     </a>
     <a href="https://www.facebook.com/TheEarthPrize" target="_blank" className = {styles.social} style={{ borderColor: color }}>

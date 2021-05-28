@@ -242,6 +242,7 @@ const schools = [
     { image: "/images/schools/iolani.png", url: 'https://www.iolani.org'},
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
+    { image: "/images/schools/pcis.jpg", url: 'https://puntacanainternationalschool.com'},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
     { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
     { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},]
