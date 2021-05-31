@@ -245,7 +245,13 @@ const schools = [
     { image: "/images/schools/pcis.jpg", url: 'https://puntacanainternationalschool.com'},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
     { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
-    { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},]
+    { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},
+];
+
+const partners = [
+    { image: "/images/partners/sumbandila.jpg", url: '' },
+    { image: "/images/partners/round.jpg", url: '' },
+];
 
 const earthPrize = {
     team: [
@@ -712,4 +718,5 @@ export default {
     ambassadors,
     schools,
     webinarTeachersSchools,
+    partners,
 };
