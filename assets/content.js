@@ -236,6 +236,7 @@ const schools = [
     { image: "/images/schools/bradfield.jpg", url: 'https://www.bradfieldcollege.org.uk'},
     { image: "/images/schools/cdl.png", url: 'https://www.nordangliaeducation.com/en/our-schools/switzerland/cdl'},
     { image: "/images/schools/ecolint.png", url: 'https://www.ecolint.ch'},
+    { image: "/images/schools/eton.png", url: 'https://www.etoncollege.com'},
     { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
     { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
     { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
@@ -249,8 +250,9 @@ const schools = [
 ];
 
 const partners = [
-    { image: "/images/partners/sumbandila.jpg", url: '' },
-    { image: "/images/partners/round.jpg", url: '' },
+    { image: "/images/partners/blue.png", url: 'https://www.myblueplanet.ch/en/' },
+    { image: "/images/partners/sumbandila.jpg", url: 'https://www.sumbandila.org' },
+    { image: "/images/partners/round.jpg", url: 'https://www.roundsquare.org' },
 ];
 
 const earthPrize = {

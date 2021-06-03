@@ -33,8 +33,8 @@ const Schools = () => {
                     <h1 className={styles.title}>Strategic Partners
                     </h1>
                   <div className={styles.seperator} />
-                    <p className={styles.text}>The Earth Foundation’s strategic partners are non-profit, international organizations, institutions, and entrepreneurs whose goals and values are closely aligned to those of The Earth Foundation. Our partners have in common the commitment to advance positive change towards environmental sustainability and they help amplify the reach of The Earth Foundation’s initiatives.</p>
-                  <p className={styles.subtitle}>Below are some of the organizations The Earth Foundation has partnered with to amplify the potential of its initiatives.</p>
+                    <p className={styles.text}>Achieving environmental sustainability objectives calls for collective action. This is one of the fundamental principles of The Earth Foundation. In keeping with its goal of building an ecosystem that accelerates positive change, The Earth Foundation has developed mutually beneficial partnerships with numerous international organizations, institutions, and entrepreneurs which share its goals, values, and commitment to protecting the planet.</p>
+                  <p className={styles.subtitle}>The Earth Foundation is proud to have joined forces with the following Strategic Partners to boost the long-lasting impact of its initiatives.</p>
                   <div className={styles.seperatorLong} />
                   <p className={styles.text} style={{ marginBottom: '30px' }}>Is your organization interested in partnering with us?</p>
                   <div className = {styles.link}>
