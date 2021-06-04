@@ -47,7 +47,7 @@ const Schools = () => {
                   </div>
                   <div className={styles.logosWrapper}>
                     {content.partners.map(partner => (
-                      <a href={partner.url} target="_blank"><div style={{ backgroundImage: `url(${partner.image})` }} /></a>
+                      <a key={partner.url} href={partner.url} target="_blank"><div style={{ backgroundImage: `url(${partner.image})` }}/></a>
                     ))}
                   </div>
                 </div>

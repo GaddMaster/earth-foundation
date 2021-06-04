@@ -86,14 +86,13 @@ const home = {
             button: "Find out more about The Earth Prize Mentors",
             buttonRoute: "/mentors",
         },
-        // {
-        //     image: "/images/date.jpg",
-        //     imageCover: true,
-        //     label: "Webinar for Teachers & The Earth Prize Schools",
-        //     text: "Wednesday May 26h at 18:00 (CEST)",
-        //     button: "Register for the webinar",
-        //     buttonRoute: "/webinar-teachers-schools",
-        // },
+        {
+            image: "/images/platform.jpg",
+            imageCover: true,
+            label: "Webinar for Teachers & The Earth Prize Schools",
+            button: "Watch webinar",
+            buttonRoute: "/webinar-teachers-schools",
+        },
         {
             image: "/images/logo.gif",
             imageCover: false,
@@ -251,6 +250,7 @@ const schools = [
 ];
 
 const partners = [
+    { image: "/images/partners/lia.png", url: 'https://www.facebook.com/LiAbundance/?view_public_for=104149958292125' },
     { image: "/images/partners/blue.png", url: 'https://www.myblueplanet.ch/en/' },
     { image: "/images/partners/round.jpg", url: 'https://www.roundsquare.org' },
 ];

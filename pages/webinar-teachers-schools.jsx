@@ -64,7 +64,7 @@ const Webinar = () => {
                     <h1 className={styles.title}>The Earth Prize <br /> Webinar for Teachers & Schools
                     </h1>
                     <p className={styles.text}>Watch The Earth Prize Webinar for Teachers and Schools to hear Angela McCarthy (CEO at The Earth Foundation), Julie Rufino (Head of Strategy at The Earth Foundation), and Karen Wilson (Member of The Earth Prize Adjudicating Panel and expert on innovation, entrepreneurship, finance, and impact measurement) answer live questions about The Earth Prize from teachers and school administrators.</p>
-                  <Link href="Watch The Earth Prize Webinar for Teachers and Schools">
+                  <Link href="https://www.youtube.com/watch?v=C6_WVPUaUik">
                         <button className={styles.button}>Watch The Earth Prize Webinar for Teachers and Schools</button>
                     </Link>
                   <h1 style={{ color: '#064C40' }}>Event Speakers</h1>
