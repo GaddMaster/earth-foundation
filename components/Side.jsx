@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faTwitter, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from 'next/router';
 
 import styles from "../styles/side.module.scss";
@@ -27,12 +27,6 @@ const Side = ({ onOpen }) => {
       </div>
       <div className = {styles.item} onClick={() => handleLinkClick("/adjudicating-panel")}>
         <span>The Adjudicating Panel</span>
-      </div>
-      <div className = {styles.item} onClick={() => handleLinkClick("/advisors")}>
-        <span>Our Advisors</span>
-      </div>
-      <div className = {styles.item} onClick={() => handleLinkClick("/schools")}>
-        <span>The Earth Prize Schools</span>
       </div>
 
       <br />
@@ -63,9 +57,24 @@ const Side = ({ onOpen }) => {
       <br />
 
       <div className = {styles.title}>
+        <span>Our Partners</span>
+      </div>
+      <div className = {styles.item} onClick={() => handleLinkClick("/advisors")}>
+        <span>Our Advisors</span>
+      </div>
+      <div className = {styles.item} onClick={() => handleLinkClick("/schools")}>
+        <span>The Earth Prize Schools</span>
+      </div>
+      <div className = {styles.item} onClick={() => handleLinkClick("/partners")}>
+        <span>Strategic Partners</span>
+      </div>
+
+      <br />
+
+      <div className = {styles.title}>
         <span>Get Involved</span>
       </div>
-      <div className = {styles.item} onClick={() => handleLinkClick("https://www.youtube.com/watch?v=C6_WVPUaUik&t=15s")}>
+      <div className = {styles.item} onClick={() => handleLinkClick("/webinar-teachers-schools")}>
         <span>The Earth Prize Webinar for Teachers & Schools</span>
       </div>
       <div className = {styles.item} onClick={() => handleLinkClick("/webinar")}>
@@ -81,18 +90,21 @@ const Side = ({ onOpen }) => {
       <br />
 
       <div className = {styles.socials}>
-        <div className = {styles.social}>
-          <FontAwesomeIcon icon = {faFacebookF} />
-        </div>
-        <div className = {styles.social}>
-          <FontAwesomeIcon icon = {faTwitter} />
-        </div>
-        <div className = {styles.social}>
-          <FontAwesomeIcon icon = {faInstagram} />
-        </div>
-        <div className = {styles.social}>
-          <FontAwesomeIcon icon = {faYoutube} />
-        </div>
+        <a href="https://www.linkedin.com/company/the-earth-foundation" target="_blank" className = {styles.social} style={{ borderColor: "white" }}>
+          <FontAwesomeIcon icon = {faLinkedinIn} style={{ color: "white" }} />
+        </a>
+        <a href="https://www.instagram.com/theearthprize/" target="_blank" className = {styles.social} style={{ borderColor: "white" }}>
+          <FontAwesomeIcon icon = {faInstagram} style={{ color: "white" }} />
+        </a>
+        <a href="https://twitter.com/TheEarthPrize" target="_blank" className = {styles.social} style={{ borderColor: "white" }}>
+          <FontAwesomeIcon icon = {faTwitter} style={{ color: "white" }} />
+        </a>
+        <a href="https://www.facebook.com/TheEarthPrize" target="_blank" className = {styles.social} style={{ borderColor: "white" }}>
+          <FontAwesomeIcon icon = {faFacebookF} style={{ color: "white" }} />
+        </a>
+        <a href="https://www.youtube.com/watch?v=_dLft2yTT_c" target="_blank" className = {styles.social} style={{ borderColor: "white" }}>
+          <FontAwesomeIcon icon = {faYoutube} style={{ color: "white" }} />
+        </a>
       </div>
 
     </div>

@@ -81,7 +81,7 @@ const Header = (props) => {
     subItems: [
       {
         name: "The Earth Prize Webinar for Teachers & Schools",
-        route: "https://www.youtube.com/watch?v=C6_WVPUaUik&t=15s",
+        route: "/webinar-teachers-schools",
       },
       {
         name: "The Earth Prize Launch Webinar",
@@ -108,6 +108,11 @@ const Header = (props) => {
         name: "The Adjudicating Panel",
         route: "adjudicating-panel",
       },
+    ],
+  };
+  const PartnersMenu = {
+    name: "Our Partners",
+    subItems: [
       {
         name: "Our Advisors",
         route: "advisors",
@@ -116,8 +121,13 @@ const Header = (props) => {
         name: "The Earth Prize Schools",
         route: "schools",
       },
+      {
+        name: "Strategic Partners",
+        route: "partners",
+      },
     ],
   };
+
   return (
     <div className={styles.header} style={{ position: open ? 'fixed' : 'absolute' }}>
       <div className={styles.wrapper}>
@@ -138,6 +148,10 @@ const Header = (props) => {
           {/*<div className={styles.dropdown}>
             <span>News</span>
           </div>*/}
+          <div className={styles.dropdown}>
+            {/* <span>Get Involved</span> */}
+            <CustomizedMenus item={PartnersMenu} />
+          </div>
           <div className={styles.dropdown}>
             {/* <span>Get Involved</span> */}
             <CustomizedMenus item={GetInvolvedMenu} />

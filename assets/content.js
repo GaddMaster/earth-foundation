@@ -86,14 +86,13 @@ const home = {
             button: "Find out more about The Earth Prize Mentors",
             buttonRoute: "/mentors",
         },
-        // {
-        //     image: "/images/date.jpg",
-        //     imageCover: true,
-        //     label: "Webinar for Teachers & The Earth Prize Schools",
-        //     text: "Wednesday May 26h at 18:00 (CEST)",
-        //     button: "Register for the webinar",
-        //     buttonRoute: "/webinar-teachers-schools",
-        // },
+        {
+            image: "/images/platform.jpg",
+            imageCover: true,
+            label: "Webinar for Teachers & The Earth Prize Schools",
+            button: "Watch webinar",
+            buttonRoute: "/webinar-teachers-schools",
+        },
         {
             image: "/images/logo.gif",
             imageCover: false,
@@ -236,6 +235,7 @@ const schools = [
     { image: "/images/schools/bradfield.jpg", url: 'https://www.bradfieldcollege.org.uk'},
     { image: "/images/schools/cdl.png", url: 'https://www.nordangliaeducation.com/en/our-schools/switzerland/cdl'},
     { image: "/images/schools/ecolint.png", url: 'https://www.ecolint.ch'},
+    { image: "/images/schools/eton.png", url: 'https://www.etoncollege.com'},
     { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
     { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
     { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
@@ -244,8 +244,16 @@ const schools = [
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
     { image: "/images/schools/pcis.jpg", url: 'https://puntacanainternationalschool.com'},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
+    { image: "/images/partners/sumbandila.jpg", url: 'https://www.sumbandila.org' }, // needs to be in schools
     { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
-    { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},]
+    { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},
+];
+
+const partners = [
+    { image: "/images/partners/lia.png", url: 'https://www.facebook.com/LiAbundance/?view_public_for=104149958292125' },
+    { image: "/images/partners/blue.png", url: 'https://www.myblueplanet.ch/en/' },
+    { image: "/images/partners/round.jpg", url: 'https://www.roundsquare.org' },
+];
 
 const earthPrize = {
     team: [
@@ -712,4 +720,5 @@ export default {
     ambassadors,
     schools,
     webinarTeachersSchools,
+    partners,
 };
