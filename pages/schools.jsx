@@ -180,11 +180,11 @@ const Schools = () => {
             </div>
           <p className={styles.subtitle2}>Countries where schools have already pre-registered for The Earth Prize</p>
           <div id="mapdiv" className={styles.map} />
-            <Subscribe
-              background = {{
-                  outer: "whitesmoke",
-                  inner: "white"
-              }} />
+          <Subscribe
+            background = {{
+                outer: "whitesmoke",
+                inner: "white"
+            }} />
         </Layout>
       </>
     );
