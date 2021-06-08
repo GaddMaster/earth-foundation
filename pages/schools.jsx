@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import styles from "styles/schools.module.scss";
 import SlideSection from 'components/SlideSection';
 import SlideSocials from 'components/SlideSocials';
-import React from 'react';
+import React, {useEffect} from 'react';
 import content from "assets/content";
 import Subscribe from 'components/Subscribe';
 import Head from 'next/head';
@@ -12,14 +12,140 @@ import Link from 'next/link';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
-
 const Schools = () => {
-    return (
+
+  useEffect(() => {
+    AmCharts.makeChart("mapdiv", {
+      type: "map",
+      theme: "dark",
+      projection: "mercator",
+      panEventsEnabled : true,
+      backgroundColor : "#FFFFFF",
+      backgroundAlpha : 1,
+      zoomControl: {
+        zoomControlEnabled : true
+      },
+      dataProvider : {
+        map : "worldHigh",
+        getAreasFromMap : true,
+        areas :
+          [
+            {"id": "AT",
+              "showAsSelected": true
+            },
+            {
+              "id": "IT",
+              "showAsSelected": true
+            },
+            {
+              "id": "NL",
+              "showAsSelected": true
+            },
+            {
+              "id": "PL",
+              "showAsSelected": true
+            },
+            {
+              "id": "CH",
+              "showAsSelected": true
+            },
+            {
+              "id": "TR",
+              "showAsSelected": true
+            },
+            {
+              "id": "GB",
+              "showAsSelected": true
+            },
+            {
+              "id": "CR",
+              "showAsSelected": true
+            },
+            {
+              "id": "DO",
+              "showAsSelected": true
+            },
+            {
+              "id": "US",
+              "showAsSelected": true
+            },
+            {
+              "id": "AR",
+              "showAsSelected": true
+            },
+            {
+              "id": "PE",
+              "showAsSelected": true
+            },
+            {
+              "id": "ET",
+              "showAsSelected": true
+            },
+            {
+              "id": "KE",
+              "showAsSelected": true
+            },
+            {
+              "id": "ZA",
+              "showAsSelected": true
+            },
+            {
+              "id": "BT",
+              "showAsSelected": true
+            },
+            {
+              "id": "IN",
+              "showAsSelected": true
+            },
+            {
+              "id": "ID",
+              "showAsSelected": true
+            },
+            {
+              "id": "JO",
+              "showAsSelected": true
+            },
+            {
+              "id": "LB",
+              "showAsSelected": true
+            },
+            {
+              "id": "NP",
+              "showAsSelected": true
+            },
+            {
+              "id": "AE",
+              "showAsSelected": true
+            },
+            {
+              "id": "VN",
+              "showAsSelected": true
+            },
+            {
+              "id": "AU",
+              "showAsSelected": true
+            }
+          ]
+      },
+      areasSettings : {
+        autoZoom : true,
+        color : "#B4B4B7",
+        colorSolid : "#00B9BF",
+        selectedColor : "#00B9BF",
+        outlineColor : "#666666",
+        rollOverColor : "#9EC2F7",
+        rollOverOutlineColor : "#000000"
+      }
+    });
+  }, []);
+
+  return (
       <>
         <Head>
           <title>The Earth Prize Participating Schools</title>
           <meta name="og:title" property="og:title" content="The Earth Prize Participating Schools" />
           <meta name="og:image" content="/images/logo.png" />
+          <script type="text/javascript" src="/static/map.js" />
         </Head>
         <Layout
             title = "The Earth <br/> Prize Participating Schools"
@@ -52,6 +178,8 @@ const Schools = () => {
                   </div>
                 </div>
             </div>
+          <p className={styles.subtitle2}>Countries where schools have already pre-registered for The Earth Prize</p>
+          <div id="mapdiv" className={styles.map} />
             <Subscribe
               background = {{
                   outer: "whitesmoke",
