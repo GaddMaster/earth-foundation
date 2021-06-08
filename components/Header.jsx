@@ -121,10 +121,10 @@ const Header = (props) => {
         name: "The Earth Prize Schools",
         route: "schools",
       },
-      // {
-      //   name: "Strategic Partners",
-      //   route: "partners",
-      // },
+      {
+        name: "Strategic Partners",
+        route: "partners",
+      },
     ],
   };
 

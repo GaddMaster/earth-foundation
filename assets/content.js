@@ -252,8 +252,8 @@ const schools = [
 const partners = [
     { image: "/images/partners/lia.png", url: 'https://www.facebook.com/LiAbundance/?view_public_for=104149958292125' },
     { image: "/images/partners/blue.png", url: 'https://www.myblueplanet.ch/en/' },
-    { image: "/images/partners/nord.jpg", url: 'https://www.nordangliaeducation.com' },
-    { image: "/images/partners/round.jpg", url: 'https://www.roundsquare.org' },
+    // { image: "/images/partners/nord.jpg", url: 'https://www.nordangliaeducation.com' },
+    // { image: "/images/partners/round.jpg", url: 'https://www.roundsquare.org' },
 ];
 
 const earthPrize = {
