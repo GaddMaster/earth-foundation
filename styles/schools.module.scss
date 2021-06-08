@@ -118,6 +118,7 @@
         @media (max-width: $breakpoint) {
             grid-template-columns: 1fr 1fr;
             grid-gap: 40px;
+            margin-bottom: 60px;
         }
 
         div {
@@ -132,5 +133,44 @@
                 margin-bottom: 40px;
             }
         }
+    }
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #CEAA7A;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint) {
+        font-size: 16px;
+    }
+}
+
+.subtitle2 {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #CEAA7A;
+    text-align: center;
+    margin: 0 auto 80px;
+
+    @media (max-width: $breakpoint) {
+        margin-bottom: 40px;
+    }
+}
+
+.map {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    margin-bottom: 50px;
+
+    @media (max-width: $breakpoint) {
+        height: 250px;
+        width: calc(100% - 40px);
     }
 }
