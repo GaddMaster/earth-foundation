@@ -239,6 +239,7 @@ const schools = [
     { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
     { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
     { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
+    { image: "/images/schools/iszl.jpg", url: 'https://www.iszl.ch'},
     { image: "/images/schools/iolani.png", url: 'https://www.iolani.org'},
     { image: "/images/schools/lerosey.png", url: 'https://www.rosey.ch'},
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
@@ -247,6 +248,7 @@ const schools = [
     { image: "/images/partners/sumbandila.jpg", url: 'https://www.sumbandila.org' }, // needs to be in schools
     { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
     { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},
+    { image: "/images/schools/youth.jpg", url: 'https://www.youthforumswitzerland.ch'},
 ];
 
 const partners = [
