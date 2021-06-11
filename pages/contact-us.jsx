@@ -34,7 +34,7 @@ const ContactUs = () => {
         ) {
         setSubmitDisabled(false);
         }
-    }, [firstName, lastName, message, email]);
+    }, [firstName, lastName, message, email, captcha]);
 
     const onSubmitClick = () => {
         console.log("SENDING");
