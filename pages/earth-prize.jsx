@@ -88,7 +88,7 @@ const EarthPrize = () => {
                             </div>
                             <div className = {styles.divider} />
                             <div className = {styles.desc}>
-                                <span>Registered teams will continue to work on their environmental sustainability ideas with the guidance of The Earth Prize mentors. They will then submit their Project Proposal describing their chosen solution, which could be a new idea with implementation potential or an already existing project, with local, national or global reach.</span>
+                                <span>Registered teams will continue to work on their environmental sustainability ideas with the guidance of The Earth Prize Mentors. They will then submit their Fresh Idea describing their chosen solution, which could be a new idea with implementation potential or an already existing project, with local, national or global reach.</span>
                             </div>
                             <Link href = "/mentors">
                                 <div className = {styles.link}>
@@ -116,7 +116,7 @@ const EarthPrize = () => {
                             </div>
                             <div className = {styles.divider} />
                             <div className = {styles.desc}>
-                                <span>Each team’s submission will be reviewed by the Adjudicating Panel, a group of highly renowned experts, based upon the official scoring rubric. The strongest Project Proposals will be awarded with The Earth Prize Scholars distinction, which recognizes submissions of outstanding quality.</span>
+                                <span>Each team’s submission will be reviewed by the Adjudicating Panel, a group of highly renowned experts, based upon the official scoring rubric. The strongest Fresh Ideas will be awarded The Earth Prize Scholars distinction, which recognizes submissions of outstanding quality.</span>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ const EarthPrize = () => {
                             </div>
                             <div className = {styles.divider} style = {{ background: "white" }} />
                             <div className = {styles.desc}>
-                                <span>The top 10 teams will be selected and invited onto the Finalists Phase, where they will receive the support of an assigned Earth Prize Mentor and one of The Earth Prize Ambassadors to complete their Project Proposals.</span>
+                                <span>The top 10 teams will be selected and invited onto the Finalists Phase, where they will receive the support of an assigned Earth Prize Mentor and one of The Earth Prize Ambassadors to complete their Final Ideas.</span>
                             </div>
                         </div>
                     </div>
