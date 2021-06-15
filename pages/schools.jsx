@@ -30,109 +30,126 @@ const Schools = () => {
         getAreasFromMap : true,
         areas :
           [
-            {"id": "AT",
-              "showAsSelected": true
-            },
             {
-              "id": "IT",
-              "showAsSelected": true
-            },
-            {
-              "id": "NL",
-              "showAsSelected": true
-            },
-            {
-              "id": "PL",
-              "showAsSelected": true
-            },
-            {
-              "id": "CH",
-              "showAsSelected": true
-            },
-            {
-              "id": "TR",
-              "showAsSelected": true
-            },
-            {
-              "id": "GB",
-              "showAsSelected": true
-            },
-            {
-              "id": "CR",
-              "showAsSelected": true
-            },
-            {
-              "id": "DO",
-              "showAsSelected": true
-            },
-            {
-              "id": "US",
-              "showAsSelected": true
-            },
-            {
-              "id": "AR",
-              "showAsSelected": true
-            },
-            {
-              "id": "PE",
-              "showAsSelected": true
-            },
-            {
-              "id": "ET",
-              "showAsSelected": true
-            },
-            {
-              "id": "KE",
-              "showAsSelected": true
-            },
-            {
-              "id": "ZA",
-              "showAsSelected": true
-            },
-            {
-              "id": "BT",
-              "showAsSelected": true
-            },
-            {
-              "id": "IN",
-              "showAsSelected": true
-            },
-            {
-              "id": "ID",
-              "showAsSelected": true
-            },
-            {
-              "id": "JO",
-              "showAsSelected": true
-            },
-            {
-              "id": "LB",
-              "showAsSelected": true
-            },
-            {
-              "id": "NP",
-              "showAsSelected": true
-            },
-            {
-              "id": "AE",
-              "showAsSelected": true
-            },
-            {
-              "id": "VN",
-              "showAsSelected": true
-            },
-            {
-              "id": "AU",
-              "showAsSelected": true
-            }
+		"id": "AT",
+  "showAsSelected": true
+  },
+    {
+    "id": "IE",
+    "showAsSelected": true
+    },
+    {
+    "id": "IT",
+    "showAsSelected": true
+    },
+    {
+    "id": "NL",
+    "showAsSelected": true
+    },
+    {
+    "id": "NO",
+    "showAsSelected": true
+    },
+    {
+    "id": "PL",
+    "showAsSelected": true
+    },
+    {
+    "id": "ES",
+    "showAsSelected": true
+    },
+    {
+    "id": "CH",
+    "showAsSelected": true
+    },
+    {
+    "id": "TR",
+    "showAsSelected": true
+    },
+    {
+    "id": "GB",
+    "showAsSelected": true
+    },
+    {
+    "id": "CR",
+    "showAsSelected": true
+    },
+    {
+    "id": "DO",
+    "showAsSelected": true
+    },
+    {
+    "id": "US",
+    "showAsSelected": true
+    },
+    {
+    "id": "AR",
+    "showAsSelected": true
+    },
+    {
+    "id": "GF",
+    "showAsSelected": true
+    },
+    {
+    "id": "PE",
+    "showAsSelected": true
+    },
+    {
+    "id": "ET",
+    "showAsSelected": true
+    },
+    {
+    "id": "KE",
+    "showAsSelected": true
+    },
+    {
+    "id": "ZA",
+    "showAsSelected": true
+    },
+    {
+    "id": "BT",
+    "showAsSelected": true
+    },
+    {
+    "id": "IN",
+    "showAsSelected": true
+    },
+    {
+    "id": "ID",
+    "showAsSelected": true
+    },
+    {
+    "id": "JO",
+    "showAsSelected": true
+    },
+    {
+    "id": "LB",
+    "showAsSelected": true
+    },
+    {
+    "id": "NP",
+    "showAsSelected": true
+    },
+    {
+    "id": "AE",
+    "showAsSelected": true
+    },
+    {
+    "id": "VN",
+    "showAsSelected": true
+    },
+    {
+    "id": "AU",
+    "showAsSelected": true
+    }
           ]
       },
       areasSettings : {
         autoZoom : true,
-        color : "#B4B4B7",
-        colorSolid : "#00B9BF",
-        selectedColor : "#00B9BF",
-        outlineColor : "#666666",
+        color : "#AFE0D7",
+        colorSolid : "#00B7BD",
+        selectedColor : "#00B7BD",
+        outlineColor : "#FFFFFF",
         rollOverColor : "#9EC2F7",
         rollOverOutlineColor : "#000000"
       }
