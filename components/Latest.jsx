@@ -98,7 +98,10 @@ class Latest extends PureComponent {
                                         label = {item.label}
                                         text = {item.text}
                                         button={item.button}
-                                    route={item.buttonRoute}/>
+                                        route={item.buttonRoute}
+                                        secondButton={item.secondButton}
+                                        secondButtonRoute={item.secondButtonRoute}
+                                    />
                                 </div>
                             ))}
                         </Carousel>

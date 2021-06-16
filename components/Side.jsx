@@ -74,6 +74,9 @@ const Side = ({ onOpen }) => {
       <div className = {styles.title}>
         <span>Get Involved</span>
       </div>
+      <div className = {styles.item} onClick={() => handleLinkClick("/webinar-mentors")}>
+        <span>The Earth Prize Webinar for Mentors</span>
+      </div>
       <div className = {styles.item} onClick={() => handleLinkClick("/webinar-teachers-schools")}>
         <span>The Earth Prize Webinar for Teachers & Schools</span>
       </div>

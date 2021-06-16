@@ -81,10 +81,12 @@ const home = {
         {
             image: "/images/people.jpg",
             imageCover: true,
-            label: "The Earth Prize is looking for mentors!",
+            label: "The Earth Prize Webinar for Mentors",
             text: "",
-            button: "Find out more about The Earth Prize Mentors",
-            buttonRoute: "/mentors",
+            button: "Register for the webinar",
+            buttonRoute: "https://zoom.us/webinar/register/WN_dfO3iY0STcuQQFd0-0PKDQ",
+            secondButton: "Find out more about The Earth Prize Mentors",
+            secondButtonRoute: "/mentors",
         },
         {
             image: "/images/platform.jpg",
@@ -385,6 +387,39 @@ const webinarTeachersSchools = [
             "Julie Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
         ],
     }
+]
+
+const webinarMentors = [
+    {
+        avatar: "/images/julie/avatar.jpg",
+        image: "/images/julie/portrait.jpg",
+        name: "Julie Rufino",
+        position: "Head of Strategy, The Earth Foundation",
+        isUnknown: false,
+        paragraphs: [
+            "Julie Rufino graduated in Business Administration from the University of St. Gallen, Switzerland, where she specialized in Sustainable Investments. With work experience in finance and consulting, Julie contributes to The Earth Foundation mission by bringing in her sustainability knowledge and helping in defining the Foundation's strategic orientation."
+        ],
+    },
+    {
+        avatar: "/images/anett/avatar.jpg",
+        image: "/images/anett/portrait.jpg",
+        name: "Anett Thomson",
+        position: "Strategy & Operations Associate",
+        isUnknown: false,
+        paragraphs: [
+            "Anett Thomson graduated in Real Estate from the University of Aberdeen. She has experience supporting complex projects with diverse multi-sector stakeholders and is passionate about sustainability and entrepreneurship. Originally from Estonia, Anett has lived and worked in Luxembourg, Switzerland, Singapore, the United Kingdom and Hong Kong."
+        ],
+    },
+    {
+        avatar: "/images/steven/avatar.jpg",
+        image: "/images/steven/portrait.jpg",
+        name: "Steven Monfort",
+        position: "Member of the Panel",
+        isUnknown: false,
+        paragraphs: [
+            "Steve Monfort is the John and Adrienne Mars Director of the Smithsonian's National Zoo and Conservation Biology Institute. As a pioneer in the field of Conservation Biology, Dr. Monfort is a subject matter expert in Zoo Biology, Animal Health, Reproductive Biology, and Behavioral Ecology.  Over the course of his 33-year career at the Smithsonian, he has led scientists on the cutting-edge of saving species, from developing non-invasive endocrine monitoring techniques to reintroducing the previously-extinct Scimitar-horned Oryx back into the wild.  More recently, he has led the Smithsonian in adopting a “solutions-based mindset,” focusing on what is working in conservation and how we can do more of it."
+        ],
+    },
 ]
 
 const adjudicatingPanel = {
@@ -724,4 +759,5 @@ export default {
     schools,
     webinarTeachersSchools,
     partners,
+    webinarMentors,
 };

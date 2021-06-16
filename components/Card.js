@@ -26,6 +26,11 @@ const Card = props => {
               <Link href={props.route}>
                 <button>{props.button}</button>
               </Link>
+              {props.secondButton && (
+                <Link className = {styles.secondary} href={props.secondButtonRoute}>
+                  <button>{props.secondButton}</button>
+                </Link>
+              )}
             </section>
     );
 };
