@@ -85,12 +85,16 @@ class Latest extends PureComponent {
                     </div>
                     <div className = {styles.carousel} style = {{width:style.carousel}}>
                         <Carousel
-                            containerClass = {mobile ? styles.carcon : styles.carmo}
                             sliderClass = {styles.slider}
-                            ref = {el => this.myCarousel = el}
-                            arrows = {false}
+                            ref={el => this.myCarousel = el}
+                            containerClass={styles.list}
+                            additionalTransfrom={0}
+                            swipeable
+                            dragable
                             ssr
-                            responsive = {responsive}>
+                            arrows={false}
+                            minimumTouchDrag={0}
+                            responsive={responsive}>
                             {content.home.news.map((item, index) => (
                                 <div className = {styles.wrapper} key = {index}>
                                     <Card

@@ -79,14 +79,20 @@ const home = {
     ],
     news: [
         {
-            image: "/images/people.jpg",
+            image: "/images/boy-webinar.jpg",
             imageCover: true,
             label: "The Earth Prize Webinar for Mentors",
             text: "",
             button: "Register for the webinar",
-            buttonRoute: "https://zoom.us/webinar/register/WN_dfO3iY0STcuQQFd0-0PKDQ",
-            secondButton: "Find out more about The Earth Prize Mentors",
-            secondButtonRoute: "/mentors",
+            buttonRoute: "/webinar-mentors",
+        },
+        {
+            image: "/images/people.jpg",
+            imageCover: true,
+            label: "The Earth Prize is looking for mentors!",
+            text: "",
+            button: "Find out more about The Earth Prize Mentors",
+            buttonRoute: "/mentors",
         },
         {
             image: "/images/platform.jpg",
