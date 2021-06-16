@@ -60,7 +60,7 @@ const Webinar = () => {
                 <div className = {styles.container}>
                     <h1 className={styles.title}>The Earth Prize <br /> Webinar for Mentors
                     </h1>
-                    <p className={styles.text}>This webinar will give higher education students interested in participating in The Earth Prize as Mentors an opportunity to learn more about the role. In this insightful panel discussion, participants will hear from Julie Rufino, The Earth Foundation's Head of Strategy, and Anett Thomson, Strategy and Operations Associate, on the importance of mentoring for the competition. Attendees will also hear from Steven Monfort, Director of the Smithsonian’s National Zoo and Conservation Biology Institute in Washington DC, USA, and member of The Earth Prize's Adjudicating Panel.</p>
+                    <p className={styles.text}>This webinar will give higher education students interested in participating in The Earth Prize as Mentors an opportunity to learn more about the role. In this panel discussion, participants will hear from Julie Rufino, The Earth Foundation's Head of Strategy, and Anett Thomson, Strategy and Operations Associate, about the importance of mentoring for the competition. Attendees will also hear from Steven Monfort, Director of the Smithsonian’s National Zoo and Conservation Biology Institute in Washington DC, USA, and member of The Earth Prize's Adjudicating Panel.</p>
                   <Link href="https://zoom.us/webinar/register/WN_dfO3iY0STcuQQFd0-0PKDQ">
                         <button className={styles.button}>Register for The Earth Prize Webinar for Mentors</button>
                     </Link>
