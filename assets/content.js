@@ -245,6 +245,7 @@ const schools = [
     { image: "/images/schools/ecolint.png", url: 'https://www.ecolint.ch'},
     // { image: "/images/schools/eton.png", url: 'https://www.etoncollege.com'},
     { image: "/images/schools/gcds.jpg", url: 'https://www.gcds.net'},
+    { image: "/images/schools/ges.png", url: 'https://www.geschool.ch'},
     { image: "/images/schools/hpa.png", url: 'https://www.hpa.edu'},
     { image: "/images/schools/ic.jpeg", url: 'https://www.ic.edu.lb'},
     { image: "/images/schools/iszl.jpg", url: 'https://www.iszl.ch'},
@@ -253,6 +254,7 @@ const schools = [
     { image: "/images/schools/punahou.jpg", url: 'https://www.punahou.edu'},
     { image: "/images/schools/pcis.jpg", url: 'https://puntacanainternationalschool.com'},
     { image: "/images/schools/samata.png", url: 'https://web.facebook.com/Samata-school-the-bamboo-school-of-nepal-566066840153279/?_rdc=1&_rdr'},
+    { image: "/images/schools/swiss.png", url: 'https://sisd.ae'},
     { image: "/images/partners/sumbandila.jpg", url: 'https://www.sumbandila.org' }, // needs to be in schools
     { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
     { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},
@@ -260,6 +262,7 @@ const schools = [
 ];
 
 const partners = [
+    { image: "/images/partners/gcf.png", url: 'https://globalchallengesforum.org' },
     { image: "/images/partners/lia.png", url: 'https://www.facebook.com/LiAbundance/?view_public_for=104149958292125' },
     { image: "/images/partners/blue.png", url: 'https://www.myblueplanet.ch/en/' },
     { image: "/images/partners/nord.jpg", url: 'https://www.nordangliaeducation.com' },

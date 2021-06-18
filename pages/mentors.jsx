@@ -90,7 +90,7 @@ const Mentors = () => {
 
                 <PointBlurp
                     title = "Boost your CV."
-                    desc = "Mentoring for the The Earth Prize offers an excellent opportunity to develop and showcase transferable skills such as project management, problem-solving, and consulting. Each mentor will receive a certificate upon completion."
+                    desc = "Mentoring for The Earth Prize offers an excellent opportunity to develop and showcase transferable skills such as project management, problem-solving, and consulting. Each mentor will receive a certificate upon completion."
                     lean = "right" />
 
                 <PointBlurp
@@ -128,7 +128,7 @@ const Mentors = () => {
                         </div>
                         <div className = {styles.desc}>
                             <span>The Earth Foundation will select a limited number of mentors with different areas of expertise from all over the world.</span>
-                            <span><br />*Application deadline: 30th June 2021 at 23.59 CET</span>
+                            <span><br />*Application deadline: 15th July 2021 at 23.59CET</span>
                         </div>
                     </div>
                 </div>
