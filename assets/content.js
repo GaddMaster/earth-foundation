@@ -262,6 +262,7 @@ const schools = [
 ];
 
 const partners = [
+    { image: "/images/partners/gcf.png", url: 'https://globalchallengesforum.org' },
     { image: "/images/partners/lia.png", url: 'https://www.facebook.com/LiAbundance/?view_public_for=104149958292125' },
     { image: "/images/partners/blue.png", url: 'https://www.myblueplanet.ch/en/' },
     { image: "/images/partners/nord.jpg", url: 'https://www.nordangliaeducation.com' },

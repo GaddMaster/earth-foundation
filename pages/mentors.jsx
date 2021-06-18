@@ -90,7 +90,7 @@ const Mentors = () => {
 
                 <PointBlurp
                     title = "Boost your CV."
-                    desc = "Mentoring for the The Earth Prize offers an excellent opportunity to develop and showcase transferable skills such as project management, problem-solving, and consulting. Each mentor will receive a certificate upon completion."
+                    desc = "Mentoring for The Earth Prize offers an excellent opportunity to develop and showcase transferable skills such as project management, problem-solving, and consulting. Each mentor will receive a certificate upon completion."
                     lean = "right" />
 
                 <PointBlurp
