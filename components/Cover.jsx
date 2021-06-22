@@ -1,15 +1,11 @@
 
 import Header from "./Header";
-import SlideSection from "./SlideSection";
-import SlideSocials from "./SlideSocials";
 
 import styles from "styles/cover.module.scss";
 
 const Cover = props => {
     return (
         <div className = {styles.cover} style = {{backgroundImage:`${props.cover.image}`}}>
-          {props.cover.section && <SlideSection height={props.cover.section_height} name={props.cover.section} color={props.cover.section_color} />}
-          {props.cover.socials_color && <SlideSocials color={props.cover.socials_color} />}
             <div className = {styles.wrapper}>
               <div className = {styles.title}>
                 <h1>{props.cover.title}<br />{props.cover.title_2}<br />{props.cover.title_3}</h1>
