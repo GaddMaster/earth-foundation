@@ -7,6 +7,7 @@ import Subscribe from "../components/Subscribe";
 
 import content from "../assets/content";
 import SlideSection from 'components/SlideSection';
+import SlideSocials from 'components/SlideSocials';
 import Head from 'next/head';
 
 const Home = () => {
@@ -23,6 +24,8 @@ const Home = () => {
             title = "The Earth Foundation | Home | Landing"
             header
             footer>
+            {content.home.cover.section && <SlideSection height={content.home.cover.section_height} name={content.home.cover.section} color={content.home.cover.section_color} />}
+            {content.home.cover.socials_color && <SlideSocials color={content.home.cover.socials_color} />}
             <Cover cover = {content.home.cover} />
             {content.home.boards.map((board, index) =>
                 <Board

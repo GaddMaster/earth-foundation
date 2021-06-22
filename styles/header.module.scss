@@ -96,6 +96,7 @@
         align-items: flex-start;
         justify-content: center;
         z-index: 2;
+        pointer-events: none;
         img {
             height: 60px;
             @media (min-width: $breakpoint) { height: 160px; }
