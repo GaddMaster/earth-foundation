@@ -141,6 +141,14 @@ const Schools = () => {
     {
     "id": "AU",
     "showAsSelected": true
+    },
+    {
+      "id": "SG",
+      "showAsSelected": true
+    },
+    {
+      "id": "UG",
+      "showAsSelected": true
     }
           ]
       },
@@ -197,6 +205,11 @@ const Schools = () => {
             </div>
           <p className={styles.subtitle2}>Countries where schools have already pre-registered for The Earth Prize</p>
           <div id="mapdiv" className={styles.map} />
+          <div className={styles.countries}>
+            {content.schoolsCountries.sort().map(country => (
+              <p>{country}</p>
+            ))}
+          </div>
           <Subscribe
             background = {{
                 outer: "whitesmoke",
