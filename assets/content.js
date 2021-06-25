@@ -263,7 +263,7 @@ const schools = [
     { image: "/images/schools/youth.jpg", url: 'https://www.youthforumswitzerland.ch'},
 ];
 
-const schoolsCountries = ["Costa Rica", "Dominican Republic", "United States", "Argentina", "French Guyana", "Peru", "Austria", "Ireland", "Italy", "Netherlands", "Norway", "Poland", "Scotland", "Spain", "Switzerland", "Turkey", "UK"];
+const schoolsCountries = ["Costa Rica", "Dominican Republic", "United States", "Argentina", "French Guyana", "Peru", "Austria", "Ireland", "Italy", "Netherlands", "Norway", "Poland", "Scotland", "Spain", "Switzerland", "Turkey", "United Kingdom", "Ethiopia", "Ghana", "Kenya", "South Africa", "Uganda", "Bhutan", "India", "Indonesia", "Jordan", "Lebanon", "Nepal", "United Arab Emirates", "Vietnam", "Singapore", "Australia"];
 
 const partners = [
     { image: "/images/partners/gcf.png", url: 'https://globalchallengesforum.org' },
