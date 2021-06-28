@@ -83,7 +83,7 @@ const home = {
             imageCover: true,
             label: "The Earth Prize Webinar for Mentors",
             text: "",
-            button: "Register for the webinar",
+            button: "Watch webinar",
             buttonRoute: "/webinar-mentors",
         },
         {
