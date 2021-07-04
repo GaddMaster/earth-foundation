@@ -259,6 +259,7 @@ const schools = [
     { image: "/images/schools/swiss.png", url: 'https://sisd.ae'},
     { image: "/images/partners/sumbandila.jpg", url: 'https://www.sumbandila.org' }, // needs to be in schools
     { image: "/images/schools/stmark.png", url: 'https://www.stmarksschool.org'},
+    { image: "/images/schools/stahere.png", url: 'http://starehegirlscentre.co.ke'},
     { image: "/images/schools/royal.png", url: 'https://academy.bt/?fbclid=IwAR1zj63j51ZiiLnkOkMOV1ZuBLxeH29wmbHDejKN-GmSs9eqIKRGxgTf2as'},
     { image: "/images/schools/youth.jpg", url: 'https://www.youthforumswitzerland.ch'},
 ];
