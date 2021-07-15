@@ -149,6 +149,14 @@ const Schools = () => {
     {
       "id": "UG",
       "showAsSelected": true
+    },
+    {
+      "id": "IT",
+      "showAsSelected": true
+    },
+    {
+      "id": "NZ",
+      "showAsSelected": true
     }
           ]
       },

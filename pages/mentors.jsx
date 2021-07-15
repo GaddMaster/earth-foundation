@@ -128,7 +128,7 @@ const Mentors = () => {
                         </div>
                         <div className = {styles.desc}>
                             <span>The Earth Foundation will select a limited number of mentors with different areas of expertise from all over the world.</span>
-                            <span><br />*Application deadline: 15th July 2021 at 23.59CET</span>
+                            <span><br />*Application deadline: 30th July 2021 at 23.59CET</span>
                         </div>
                     </div>
                 </div>
